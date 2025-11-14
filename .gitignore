@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+
+# IDE / editor settings
+.idea/
+.vscode/
+.history/
+.DS_Store
+Thumbs.db
+
+# Caches & logs
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
+*.log
+
+# Local datasets & large generated assets
+Dataset/
+choice_reasoning_results_*.json
+error_analysis_*.txt
+
+# Tooling metadata
+.claude/
