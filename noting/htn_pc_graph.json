@@ -1,0 +1,327 @@
+{
+  "nodes": [
+    {
+      "id": "clinic_dbp",
+      "type": "other"
+    },
+    {
+      "id": "ckd",
+      "type": "other"
+    },
+    {
+      "id": "hospital_mortality",
+      "type": "other"
+    },
+    {
+      "id": "age",
+      "type": "other"
+    },
+    {
+      "id": "acei_exposed",
+      "type": "other"
+    },
+    {
+      "id": "cad",
+      "type": "other"
+    },
+    {
+      "id": "arb_exposed",
+      "type": "other"
+    },
+    {
+      "id": "diabetes",
+      "type": "other"
+    },
+    {
+      "id": "bun_baseline",
+      "type": "other"
+    },
+    {
+      "id": "glucose_baseline",
+      "type": "other"
+    },
+    {
+      "id": "clinic_sbp",
+      "type": "other"
+    },
+    {
+      "id": "sex_female",
+      "type": "other"
+    },
+    {
+      "id": "creatinine_baseline",
+      "type": "other"
+    },
+    {
+      "id": "heart_failure",
+      "type": "other"
+    }
+  ],
+  "edges": [
+    {
+      "src": "clinic_dbp",
+      "dst": "ckd",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "acei_exposed",
+      "dst": "cad",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "cad",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "arb_exposed",
+      "dst": "diabetes",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "clinic_dbp",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "arb_exposed",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "glucose_baseline",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "cad",
+      "dst": "diabetes",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "ckd",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "clinic_dbp",
+      "dst": "diabetes",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "ckd",
+      "dst": "creatinine_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "arb_exposed",
+      "dst": "heart_failure",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "cad",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "diabetes",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "clinic_dbp",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "acei_exposed",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "clinic_dbp",
+      "dst": "heart_failure",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "diabetes",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "creatinine_baseline",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "acei_exposed",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "clinic_sbp",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "glucose_baseline",
+      "dst": "acei_exposed",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "arb_exposed",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "cad",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "heart_failure",
+      "dst": "ckd",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "glucose_baseline",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "clinic_dbp",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "glucose_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "ckd",
+      "dst": "diabetes",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "ckd",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "arb_exposed",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "heart_failure",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "creatinine_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "diabetes",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "glucose_baseline",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "heart_failure",
+      "dst": "diabetes",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "creatinine_baseline",
+      "dst": "age",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "arb_exposed",
+      "dst": "acei_exposed",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "heart_failure",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "diabetes",
+      "dst": "glucose_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "clinic_sbp",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "heart_failure",
+      "dst": "cad",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "arb_exposed",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "hospital_mortality",
+      "dst": "acei_exposed",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "creatinine_baseline",
+      "dst": "bun_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "sex_female",
+      "dst": "creatinine_baseline",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "acei_exposed",
+      "dst": "diabetes",
+      "relation": "causal_candidate"
+    },
+    {
+      "src": "arb_exposed",
+      "dst": "age",
+      "relation": "causal_candidate"
+    }
+  ]
+}

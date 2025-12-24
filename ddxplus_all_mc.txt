@@ -1,0 +1,57 @@
+=== All Multiple Choice Questions in DDXPlus Dataset ===
+
+1. [E_55] Do you feel pain somewhere?
+   Total Options: 165
+   Default: V_123
+   Sample Options:
+      V_123: nowhere
+      V_14: iliac wing(R)
+      V_15: iliac wing(L)
+      V_16: groin(R)
+      V_17: groin(L)
+      ... and 160 more options
+
+2. [E_57] Does the pain radiate to another location?
+   Total Options: 165
+   Default: V_123
+   Sample Options:
+      V_123: nowhere
+      V_14: iliac wing(R)
+      V_15: iliac wing(L)
+      V_16: groin(R)
+      V_17: groin(L)
+      ... and 160 more options
+
+3. [E_54] Characterize your pain:
+   Total Options: 16
+   Default: V_11
+   Sample Options:
+      V_11: NA
+      V_71: heartbreaking
+      V_112: haunting
+      V_154: tedious
+      V_161: sensitive
+      ... and 11 more options
+
+4. [E_133] Where is the affected region located?
+   Total Options: 165
+   Default: V_123
+   Sample Options:
+      V_123: nowhere
+      V_14: iliac wing(R)
+      V_15: iliac wing(L)
+      V_16: groin(R)
+      V_17: groin(L)
+      ... and 160 more options
+
+5. [E_152] Where is the swelling located?
+   Total Options: 165
+   Default: V_123
+   Sample Options:
+      V_123: nowhere
+      V_14: iliac wing(R)
+      V_15: iliac wing(L)
+      V_16: groin(R)
+      V_17: groin(L)
+      ... and 160 more options
+

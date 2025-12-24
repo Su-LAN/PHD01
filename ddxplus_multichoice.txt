@@ -1,0 +1,32 @@
+Total Multiple Choice Questions: 5
+
+Evidence Code: E_55
+Question (English): Do you feel pain somewhere?
+Is Antecedent: False
+Data Type: M
+Default Value: V_123
+Total Possible Values: 165
+
+Sample Answer Options (first 10):
+  V_123: nowhere
+  V_14: iliac wing(R)
+  V_15: iliac wing(L)
+  V_16: groin(R)
+  V_17: groin(L)
+  V_18: axilla(R)
+  V_19: axilla(L)
+  V_20: tonsil(R)
+  V_21: tonsil(L)
+  V_22: anus
+
+Sample Answer Options (more):
+  V_23: posterior aspect of the ankle(R)
+  V_24: posterior aspect of the ankle(L)
+  V_25: back of head
+  V_26: back of the neck
+  V_27: forearm(R)
+  V_28: forearm(L)
+  V_29: lower chest
+  V_30: biceps(R)
+  V_31: biceps(L)
+  V_32: mouth
