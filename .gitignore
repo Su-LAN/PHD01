@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+_tmp_pip/
+*.whl
+*.egg
+*.zip
+*.tar.gz
+
+
 # Virtual environments
 .venv/
 venv/
