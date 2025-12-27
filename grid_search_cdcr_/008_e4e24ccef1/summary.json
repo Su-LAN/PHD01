@@ -1,0 +1,20 @@
+{
+  "config_index": 8,
+  "config_id": "e4e24ccef1",
+  "bfs_max_depth": 4,
+  "bfs_max_relations_per_node": 5,
+  "bfs_beam_width": 5,
+  "bridge_max_bridge_nodes": 3,
+  "seed_max_parents": 6,
+  "chain_max_path_length": 6,
+  "bfs_max_nodes": 50,
+  "num_samples": 212,
+  "num_correct": 138,
+  "num_wrong": 74,
+  "num_errors": 0,
+  "accuracy": 0.6509433962264151,
+  "elapsed_sec": 8437.074989557266,
+  "accuracy_EXOGENOUS_EFFECT": 0.6886792452830188,
+  "accuracy_INPARA_EFFECT": 0.6132075471698113,
+  "details_dir": "E:\\PHD\\01\\grid_search_cdcr\\008_e4e24ccef1"
+}

@@ -1,0 +1,9 @@
+{
+  "bfs_max_depth": 2,
+  "bfs_max_relations_per_node": 5,
+  "bfs_beam_width": 5,
+  "bridge_max_bridge_nodes": 3,
+  "seed_max_parents": 6,
+  "chain_max_path_length": 6,
+  "bfs_max_nodes": 50
+}

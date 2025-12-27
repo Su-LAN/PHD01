@@ -1,0 +1,407 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+1,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+2,ddxplus,more,False,no effect,c," Final answer: C|C|A
+
+Explanation:
+1. Excessive tearing (also known as lacrimation) is not directly related to Cluster headaches. However, it can be a symptom of other conditions such as migraines or sinus infections, which may coexist with cluster headaches.
+2. In some cases, excessive tearing might be caused by a reflex response to pain from the cluster headache, but this is not a defining characteristic of Cluster headaches and does not necessarily increase their probability.
+3. Therefore, while it's possible that excessive tearing could occur in patients with both Cluster headaches and other conditions, it doesn't have a significant impact on the more probability of Cluster headaches.",C,mistral:7b
+3,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+4,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+5,ddxplus,more,False,less,b," Final answer: C|less|_
+
+Explanation: The absence of HIV infection reduces the risk factors associated with cardiovascular diseases, such as high cholesterol levels and hypertension. These conditions are often exacerbated by HIV itself or its treatments. Therefore, a patient not infected with HIV would have a lower probability of developing NSTEMI (Non-ST-segment elevation myocardial infarction) or STEMI (ST-segment elevation myocardial infarction).",B,mistral:7b
+6,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+7,ddxplus,more,True,more,a, Final answer: <more>,A,mistral:7b
+8,ddxplus,less,False,no effect,c, Final answer: C|no effect|A,C,mistral:7b
+9,ddxplus,more,False,no effect,c, Final answer: C|no effect|C,C,mistral:7b
+10,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+11,ddxplus,less,True,less,b," Final answer: B | less
+
+Explanation: The presence of blood or coffee-ground-like material in vomit can be a sign of gastric ulcers, esophageal varices, or other conditions that are less likely to cause Boerhaave's syndrome. Boerhaave's syndrome is characterized by the rupture of the stomach due to increased intragastric pressure, which typically presents with sudden and severe vomiting without any blood or coffee-ground material in most cases. However, it can sometimes present with blood-streaked vomit, but this is less common than other symptoms such as abdominal pain and hypotension. Therefore, the presence of blood or coffee grounds in vomit would make a Boerhaave's syndrome diagnosis less likely.",b,mistral:7b
+12,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+13,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+14,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+15,ddxplus,less,False,no effect,c, Final answer: C|less|The patient not feeling like they are dying or being afraid that they are about to die would likely have a lessening effect on the probability of a panic attack.,C,mistral:7b
+16,ddxplus,more,True,more,a, Final answer: A|more|C,A,mistral:7b
+17,ddxplus,more,False,no effect,c, Final answer: C|less|no effect,C,mistral:7b
+18,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+19,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+20,ddxplus,more,False,no effect,c," Final answer: <C|B|A>
+
+Explanation:
+1. No effect (C): High cholesterol itself does not directly cause stable angina, but it is a risk factor for coronary artery disease, which can lead to angina. However, if the high cholesterol is being treated with medications like statins, these drugs help reduce the risk of plaque buildup in the arteries and thus may lower the risk of stable angina.
+2. Less (B): Statins, a common medication for treating high cholesterol, can help reduce the risk of coronary events, including stable angina, by decreasing the levels of low-density lipoprotein (LDL) cholesterol and slowing the progression of atherosclerosis.
+3. More (A): If the patient is not taking medications to treat high cholesterol, the risk of developing stable angina may be higher due to the increased levels of LDL cholesterol contributing to plaque buildup in the arteries and narrowing them, which can lead to reduced blood flow and angina symptoms.",C,mistral:7b
+21,ddxplus,more,False,less,b," Final answer: C|less|Myasthenia gravis is less likely with the absence of double vision, as double vision (diplopia) can be a symptom of this condition.",B,mistral:7b
+22,ddxplus,less,False,more,a," Final answer: C|C|A
+
+Explanation:
+1. The symptoms mentioned (fatigue, generalized discomfort, muscle aches, and change in well-being) are not specific to Chagas disease but can be associated with various other conditions.
+2. If these symptoms arise after the consultation, it could suggest that the patient's condition has worsened or a new issue has arisen, which would increase the probability of a diagnosis other than Chagas.
+3. However, it does not necessarily mean that the likelihood of Chagas decreases since these symptoms can be non-specific and Chagas may still be a possibility. But given the symptoms, it is more likely that another condition is causing them.",B (less),mistral:7b
+23,ddxplus,more,False,less,b, Final answer: less,b,mistral:7b
+24,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation: If a patient has not been in contact with a person with similar symptoms in the past 2 weeks, it reduces the likelihood of Viral pharyngitis (a common cause of sore throat that is often contagious) because they have not recently been exposed to the virus. This scenario suggests less probability of contracting the disease due to lack of recent exposure.",B,mistral:7b
+25,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+26,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation: Since there is no history of croup in the patient or their family, it does not affect the probability that the patient will develop croup (Option C). However, if we consider the question from a probabilistic perspective, having no family history might imply a higher chance of the first occurrence of croup in the family (Option A), as genetic factors may play a role in susceptibility to certain conditions. But it's important to note that environmental factors are usually more significant in the development of croup. Therefore, Option C is the most accurate answer for this specific scenario.",C,mistral:7b
+27,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+28,ddxplus,less,False,more,a, Final answer: A|less|C,A (more) is not the correct,mistral:7b
+29,ddxplus,less,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+30,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+31,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+32,ddxplus,less,False,no effect,c," Final answer: C|less|The difficulty in swallowing or feeling discomfort/blockage when swallowing is less likely to be associated with Epiglottitis, as the primary symptom of epiglottitis is severe sore throat and high fever, not specifically difficulty swallowing. However, it's important to note that these symptoms can overlap in certain conditions, so a proper medical evaluation is necessary for an accurate diagnosis.",C,mistral:7b
+33,ddxplus,more,False,no effect,c, Final answer: C|no effect|C,C,mistral:7b
+34,ddxplus,more,True,more,a," Final answer: C|less|C
+
+Explanation:
+1. If a patient does not feel bloated or distended, it suggests that there is no significant abdominal pressure build-up.
+2. This reduced internal pressure could potentially decrease the likelihood of an Inguinal hernia, as one of its causes includes increased intra-abdominal pressure pushing against the inguinal canal.
+3. However, it's important to note that a lack of bloating or distention does not completely rule out the possibility of an inguinal hernia, as other symptoms may still be present.
+4. Therefore, while this condition might decrease the probability of an Inguinal hernia, it is not expected to have no effect (Choice C) on the overall likelihood.",C|less|C,mistral:7b
+35,ddxplus,less,False,no effect,c," Final answer: C|C|A
+Explanation: If the patient has not recently had a viral infection, it is less likely (choice B) that they will develop Pericarditis as most cases of Pericarditis are caused by viral infections. However, it's important to note that Pericarditis can also be caused by other factors such as bacterial or fungal infections, autoimmune disorders, and certain medications (choice A). But since the question specifies that the patient has not recently had a viral infection, the most probable answer is that it will have no effect (choice C) on the likelihood of Pericarditis.",C,mistral:7b
+36,ddxplus,more,False,less,b, Final answer: less,b,mistral:7b
+37,ddxplus,less,False,no effect,c," Final answer: <C|B|A>
+Explanation: Being underweight is a risk factor for tuberculosis, as it weakens the immune system. Therefore, if the patient's BMI is not less than 18.5 (meaning they are not underweight), this would likely have no effect or even a decreased probability of tuberculosis compared to an underweight individual. However, it's important to note that other factors can still contribute to the risk of tuberculosis infection.",C,mistral:7b
+38,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation:
+1. Secondhand smoke contains numerous harmful substances, including carcinogens (cancer-causing agents).
+2. Exposure to these carcinogens increases the risk of developing lung cancer, even for non-smokers.
+3. Therefore, daily exposure to secondhand cigarette smoke would decrease the less probability of Pulmonary neoplasm (lung cancer) in a patient.",B,mistral:7b
+39,ddxplus,more,False,less,b, Final answer: B|less|C,B,mistral:7b
+40,ddxplus,more,False,no effect,c," Final answer: <C|B|A>
+Explanation:
+- Choice C: No effect - Excessive saliva production is not a direct symptom of epiglottitis. Epiglottitis is typically characterized by symptoms such as high fever, sore throat, difficulty swallowing, and a muffled or ""hot potato"" voice, rather than increased saliva production.
+- Choice B: Less - While it might seem counterintuitive, excessive saliva production could potentially be a response to the discomfort caused by epiglottitis, leading to less dryness in the mouth. However, this is not a definitive symptom of epiglottitis and should not be used as a diagnostic tool.
+- Choice A: More - This option is incorrect because excessive saliva production is not typically associated with an increased probability of epiglottitis.",C,mistral:7b
+41,ddxplus,less,True,less,b, Final answer: B|less|C,B,mistral:7b
+42,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+43,ddxplus,more,False,no effect,c," Final answer: C|less|C
+
+Explanation: The removal of lymph nodes in surgery can disrupt the normal flow of lymphatic fluid, potentially leading to edema (swelling). However, since this patient has never had such a surgery before, there is less probability of localized edema due to the absence of previous disruptions in the lymphatic system.",C,mistral:7b
+44,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+45,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+46,ddxplus,more,False,no effect,c, Final answer: C|No effect,C,mistral:7b
+47,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+48,ddxplus,less,False,more,a," Final answer: C|C|A
+
+Explanation: Since the patient does not have a known heart defect, it is less likely (choice B) that they would have Atrial Fibrillation due to a pre-existing heart condition. However, it's important to note that Atrial Fibrillation can still occur without a known heart defect, making it more probable (choice A). The presence of other risk factors such as age, hypertension, diabetes, obesity, and family history could influence the probability of developing Atrial Fibrillation.",A,mistral:7b
+49,ddxplus,more,False,less,b, Final answer: C|less|C,B,mistral:7b
+50,ddxplus,more,True,more,a, Final answer: A|less|C,A (more) is incorrect because symptoms,mistral:7b
+51,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation: Living in a non-urban area may have fewer air pollutants compared to big cities, which could potentially reduce the likelihood of bronchospasm or acute asthma exacerbations due to pollution. However, it's important to note that other factors such as individual susceptibility, allergens, and weather conditions can still contribute to asthma episodes. Therefore, while the probability might be less in non-urban areas compared to big cities, it is not completely eliminated.",B,mistral:7b
+52,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+53,ddxplus,less,False,no effect,c," Final answer: C|no effect|The fact that a patient can keep their tongue in their mouth does not directly affect the probability of Acute dystonic reactions. Acute dystonic reactions are typically caused by side effects of certain antipsychotic medications, and the ability to control the tongue is not a factor in this reaction.",C,mistral:7b
+54,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation: Living with fewer people might not significantly affect the probability of Acute laryngitis, but it could potentially increase the risk slightly due to less exposure and potential transmission of viruses. However, the primary cause of acute laryngitis is often viral infections, which can occur regardless of the number of household members. Therefore, the most accurate answer would be that living with fewer people might have a minimal effect on the probability of Acute laryngitis (Choice C). But since there's still a possibility of increased risk due to less exposure, it could also potentially lead to a slightly higher chance (Choice A). Choice B, less, is not accurate in this context.",C,mistral:7b
+55,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation: The absence of contact with a person exhibiting similar symptoms in the past 2 weeks reduces the likelihood of Ebola, as Ebola is primarily spread through direct contact with an infected person's blood, secretions, organs, or bodily fluids. However, it does not completely rule out the possibility since other modes of transmission like contact with contaminated surfaces are also possible.",B,mistral:7b
+56,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+57,ddxplus,more,False,no effect,c," Final answer: C|C|A
+
+Explanation:
+1) While certain ethnic groups, such as Caucasians and Africans, have a higher prevalence of bronchiectasis due to factors like cystic fibrosis or tuberculosis, Asian descent does not inherently increase or decrease the probability of developing bronchiectasis. However, environmental factors, lifestyle, and specific genetic mutations can play a role in an individual's risk.
+2) It is essential to consider each patient as unique, and their ethnicity should not be the sole determinant for diagnosing or predicting diseases like bronchiectasis.
+3) Therefore, while it is possible that being of Asian descent may have some influence on the probability of developing bronchiectasis, it is not a definitive factor (Choice C). However, it's important to note that further research might reveal specific genetic mutations or environmental factors unique to certain Asian populations that could increase the risk (Choice A).
+4) It is crucial to avoid making assumptions based on ethnicity and instead focus on individual patient characteristics when diagnosing and treating diseases like bronchiectasis.",C,mistral:7b
+58,ddxplus,less,False,no effect,c," Final answer: C|C|A
+Explanation: The absence of coughing up blood does not necessarily indicate a viral or bacterial cause for pharyngitis (sore throat). However, viral pharyngitis is more common than bacterial pharyngitis. Therefore, the absence of coughing up blood would have no effect on the probability of viral pharyngitis but could slightly increase its likelihood compared to bacterial pharyngitis.",C,mistral:7b
+59,ddxplus,less,False,no effect,c," Final answer: C|No Effect|C
+
+Explanation: NOACs (New Oral Anticoagulants) are a class of drugs used to prevent blood clots. They do not directly cause anemia, but they might indirectly affect hemoglobin levels by increasing the risk of bleeding, which could potentially lead to anemia if significant bleeding occurs. However, compared to warfarin (a traditional anticoagulant), NOACs are associated with a lower risk of major bleeding events and thus a lower probability of anemia due to bleeding complications. Therefore, it is reasonable to say that the use of NOACs has no significant effect on the less probability of Anemia compared to other anticoagulants like warfarin.",C,mistral:7b
+60,ddxplus,less,False,no effect,c," Final answer: C|less|C
+
+Explanation: Having a previous sexually transmitted infection (STI) does not necessarily increase or decrease the probability of contracting another STI, such as HIV. However, it can potentially affect the likelihood by increasing vulnerability due to weakened immune system from fighting off the initial STI. But in general, having an STI doesn't directly reduce the chance of getting another one. It is important to note that this response does not replace professional medical advice and should be used for educational purposes only.",C,mistral:7b
+61,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+62,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+63,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+64,ddxplus,more,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+65,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+66,ddxplus,more,False,less,b, Final answer: C|less|C,B,mistral:7b
+67,ddxplus,less,True,less,b," Final answer: <B|less|C> The patient's vaccinations being up to date will likely have a lesser probability of contracting Bronchitis, as many vaccines help protect against respiratory infections. However, it's important to note that vaccines do not guarantee complete immunity and other factors can still contribute to the development of bronchitis.",B,mistral:7b
+68,ddxplus,more,False,no effect,c, Final answer: C|no effect,C,mistral:7b
+69,ddxplus,more,True,more,a, Final answer: A|less|C,A (more) is incorrect according to,mistral:7b
+70,ddxplus,more,True,more,a," Final answer: C|less|C
+
+Explanation:
+1. An inguinal hernia occurs when a portion of the intestine or abdominal tissue bulges through a weak spot in the lower abdomen, near the groin.
+2. Constipation (difficulty passing stools) and flatulence (gas) are common symptoms associated with digestive issues, not hernias.
+3. However, constipation can potentially lead to increased straining during bowel movements, which might increase intra-abdominal pressure. This could theoretically worsen a pre-existing inguinal hernia, but it doesn't directly affect the likelihood of developing one if none exists yet.
+4. Since the patient is already experiencing symptoms and hasn't been able to pass stools or gas, it's more likely that their issue is related to constipation rather than an undiagnosed inguinal hernia. Therefore, the less probability of Inguinal hernia is expected in this case.",B|less,mistral:7b
+71,ddxplus,more,False,no effect,c," Final answer: C|no effect| The absence of a wheezing sound during exhalation does not directly affect the probability of Scombroid food poisoning, as this condition is primarily associated with the consumption of spoiled fish and not respiratory symptoms.",C,mistral:7b
+72,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation: Living with fewer people might not significantly increase or decrease the probability of URTI (Upper Respiratory Tract Infection) compared to living with more people. However, it could potentially lead to a slightly higher chance due to less exposure to other individuals and their germs. But overall, the impact would likely be minimal compared to factors like personal hygiene, immune system health, and environmental conditions.",C,mistral:7b
+73,ddxplus,more,False,less,b," Final answer: <B|less|C> If a patient does not have severe Chronic Obstructive Pulmonary Disease (COPD), it is likely that they will have a lower probability of Acute COPD exacerbation or infection, as the disease's severity often correlates with the risk of acute episodes.",B,mistral:7b
+74,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation:
+1. Former smokers have a higher risk of developing coronary artery disease compared to never-smokers, but the risk is lower than that of current smokers.
+2. After quitting smoking, the risk of NSTEMI/STEMI decreases over time due to the body's natural healing process and reduction in exposure to harmful substances. However, the risk remains higher compared to never-smokers due to the damage already caused by past smoking.
+3. Therefore, the less probability of Possible NSTEMI / STEMI for a former smoker compared to current smokers or never-smokers.",B,mistral:7b
+75,ddxplus,less,False,no effect,c, Final answer: C|less,C,mistral:7b
+76,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+77,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+78,ddxplus,less,True,less,b," Final answer: B|less|The patient is less likely to be affected by Tuberculosis if they do not take corticosteroids, as corticosteroids can suppress the immune system and make a person more susceptible to infections like tuberculosis.",B,mistral:7b
+79,ddxplus,more,True,more,a," Final answer: <more>
+
+Explanation: Diarrhea or an increase in stool frequency can weaken the digestive system, making it more susceptible to foodborne illnesses such as Scombroid food poisoning. This is because the body's ability to break down and eliminate harmful substances may be compromised, increasing the likelihood of these substances causing adverse effects. Therefore, a weakened digestive system due to diarrhea can potentially increase the probability of Scombroid food poisoning.",A,mistral:7b
+80,ddxplus,more,True,more,a, Final answer: A|less|C,A (more) is incorrect according to,mistral:7b
+81,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+82,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+83,ddxplus,more,False,no effect,c," Final answer: C | No effect
+
+Explanation:
+Gastroesophageal reflux disease (GERD) is a condition where stomach acid flows back into the esophagus, causing symptoms such as heartburn. Pregnancy itself does not directly cause or increase the risk of GERD, but hormonal changes and pressure on the abdomen during pregnancy can exacerbate existing GERD symptoms. However, whether a patient thinks they are pregnant or not would not affect the probability of GERD unless their beliefs influence lifestyle choices that may impact GERD risk (e.g., diet, stress levels). Therefore, it is more accurate to say that there is no direct effect on the probability of GERD based on the patient's belief about pregnancy.",c,mistral:7b
+84,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation:
+Given that the patient has never had a spontaneous pneumothorax before, it suggests they have not experienced this condition previously. This history would generally indicate a lower likelihood or probability of future spontaneous pneumothorax occurrences compared to someone with a prior history of the condition. However, it's important to note that individuals without a history can still develop spontaneous pneumothorax due to various risk factors such as age, smoking, and certain lung diseases. Therefore, while the probability is less, it does not mean there will be no effect or no chance of recurrence.",B,mistral:7b
+85,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+86,ddxplus,more,True,more,a," Final answer: <A|more|C>
+
+Explanation: Involuntary weight loss is a common symptom of Tuberculosis (TB). This condition, also known as consumption or wasting syndrome, occurs due to the body's immune response to the TB bacteria. As a result, the patient loses weight without intentionally dieting, making it more probable that the patient has TB.",A,mistral:7b
+87,ddxplus,less,False,no effect,c," Final answer: C|less|C
+
+Explanation: High blood pressure (hypertension) is a risk factor for several autoimmune diseases, including Systemic Lupus Erythematosus (SLE). However, having high blood pressure does not directly increase the probability of SLE. Instead, it might indirectly contribute to an increased risk by exacerbating inflammation and damaging tissues, which could potentially trigger an autoimmune response. But in terms of a direct causal relationship between high blood pressure and less probability of SLE, that's not accurate.",C,mistral:7b
+88,ddxplus,more,True,more,a, Final answer: <more>,A,mistral:7b
+89,ddxplus,less,False,no effect,c," Final answer: C|less|C
+
+Explanation: If a patient has not been in contact with someone with similar symptoms for the past 2 weeks, it suggests that they have not recently contracted or been exposed to the virus causing Upper Respiratory Tract Infection (URTI). Therefore, this would decrease the likelihood of them having URTI due to recent exposure. However, it's important to note that other factors such as environmental exposures and personal habits can still contribute to the development of URTI.",C,mistral:7b
+90,ddxplus,more,True,more,a, Final answer: A|less|C,A (more) is incorrect because per,mistral:7b
+91,ddxplus,more,False,less,b, Final answer: less,b,mistral:7b
+92,ddxplus,more,False,no effect,c," Final answer: C|no effect|C
+
+Explanation: Having up-to-date vaccinations, specifically the pneumococcal conjugate vaccine (PCV13) and Haemophilus influenzae type b (Hib) vaccine, can help reduce the risk of Acute Otitis Media (AOM) caused by these bacteria. However, it doesn't completely eliminate the risk as other factors such as environmental exposure or weakened immune system can still contribute to AOM. Therefore, it is most accurate to say that up-to-date vaccinations have no significant effect on the probability of Acute otitis media.",C,mistral:7b
+93,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+94,ddxplus,more,False,less,b," Final answer: <B|C|A>
+
+Explanation: Living in a big city may expose the patient to higher levels of air pollution, which can exacerbate allergies and increase the risk of developing allergic sinusitis. However, it's important to note that not everyone living in a big city will develop allergic sinusitis due to individual susceptibility and other factors. Therefore, while there is a possibility that living in a big city could lead to less (B) or no effect (C), the most probable outcome would be a slight decrease (less, B) in the risk of developing allergic sinusitis compared to someone living in a less polluted environment. The ""more"" (A) option is less likely because the increased exposure to allergens and pollution in a big city could potentially increase the risk, but not significantly enough to outweigh the other factors that contribute to the development of allergic sinusitis.",B,mistral:7b
+95,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+96,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+97,ddxplus,more,True,more,a," Final answer: <A|more|C>
+
+Explanation:
+- Chronic Obstructive Pulmonary Disease (COPD) is a progressive lung disease that makes it hard to breathe. Flares or exacerbations are periods when symptoms quickly get worse.
+- Having one or several flare ups in the past year indicates that the patient's condition is unstable and prone to recurrent episodes. This increases the likelihood of another acute COPD exacerbation or infection, as the lungs are already compromised and susceptible to further inflammation.
+- However, it's important to note that individual responses can vary, and some patients may have better disease control despite multiple flare-ups in the past year. Therefore, while the probability of another acute COPD exacerbation or infection is increased, it does not necessarily mean it will definitely occur (no effect option C is not applicable in this context).",A,mistral:7b
+98,ddxplus,more,True,more,a," Final answer: <more>
+
+Explanation: Systemic Lupus Erythematosus (SLE) is an autoimmune disease that can affect multiple organs in the body. Early menarche, or the onset of menstruation before age 12, has been associated with an increased risk of developing SLE due to the potential role of estrogen in triggering immune system dysregulation. However, it's important to note that not every individual who experiences early menarche will develop SLE, and other factors such as genetics and environmental influences also play a significant role.
+
+Reference(s):
+1. ""Early Menarche and the Risk of Systemic Lupus Erythematosus: A Population-Based Study."" (2013). Arthritis & Rheumatology.
+2. ""Association between early menarche and systemic lupus erythematosus: a population-based study."" (2014). Lupus.",A,mistral:7b
+99,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation:
+1. Involuntary weight loss is often a symptom associated with various types of cancers, including pancreatic neoplasm. However, it's important to note that not all cases of involuntary weight loss are indicative of cancer.
+2. In this scenario, the patient has experienced involuntary weight loss over the last 3 months. This symptom could potentially increase the suspicion for a pancreatic neoplasm, but it doesn't definitively confirm the diagnosis.
+3. Therefore, while the presence of involuntary weight loss may make the diagnosis of pancreatic neoplasm more likely, it does not necessarily decrease the probability of the condition. Instead, it increases the need for further investigation to confirm or rule out a pancreatic neoplasm.",B,mistral:7b
+100,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+101,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation:
+1. Not using intravenous drugs reduces the risk of HIV infection, as this mode of drug administration carries a higher risk for HIV transmission due to sharing of needles among users.
+2. However, it's important to note that abstinence from intravenous drug use does not completely eliminate the risk of HIV infection, as other sexual activities or blood transfusions can still potentially transmit the virus.
+3. Therefore, while not using intravenous drugs decreases the likelihood of HIV infection, it does not have a ""no effect"" on the probability of initial HIV infection.",B,mistral:7b
+102,ddxplus,more,True,more,a, Final answer: A|less|C,A (more) is incorrect. The,mistral:7b
+103,ddxplus,more,False,less,b, Final answer: less,b,mistral:7b
+104,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+105,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation: Since the patient does not have a known issue with one of their heart valves, it is unlikely to affect the probability of Atrial Fibrillation. However, other factors such as age, family history, hypertension, diabetes, obesity, and alcohol consumption can increase the risk of Atrial Fibrillation. Therefore, the probability of Atrial Fibrillation may still exist but not necessarily be affected by the heart valve issue in this case.",C,mistral:7b
+106,ddxplus,less,True,less,b," Final answer: C|less|C
+
+Explanation: The absence of pale stools and dark urine reduces the likelihood of Pancreatic neoplasm, as these symptoms are often associated with pancreatic disorders. However, it's important to note that pancreatic cancer can still occur without these specific symptoms, and a definitive diagnosis would require further diagnostic tests.",B,mistral:7b
+107,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation: Regular exercise can help improve cardiovascular health, which may reduce the risk factors for stable angina. However, it's important to note that while regular exercise is beneficial, it doesn't guarantee a complete absence of stable angina, especially in individuals with pre-existing heart conditions. Therefore, the probability of less stable angina is more likely when the patient exercises regularly.",B,mistral:7b
+108,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation: If a patient does not have a known kidney problem resulting in an inability to retain proteins, it is less likely (choice B) that they will develop generalized edema. However, localized edema can still occur due to various other factors such as injury, infection, or inflammation at specific sites (choice C). But if we consider the absence of kidney issues leading to protein retention, it could potentially increase the probability (choice A) of developing localized edema, as proteins are essential for fluid accumulation in tissues. However, this is a less direct relationship compared to generalized edema associated with kidney problems.",C,mistral:7b
+109,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
+110,ddxplus,more,False,no effect,c," Final answer: C|no effect|The patient noticing an increase in saliva production may not necessarily affect the less probability of Epiglottitis, as Epiglottitis is primarily characterized by inflammation of the epiglottis, not excessive saliva production. However, it's important to note that other symptoms such as high fever, difficulty breathing, and a muffled or ""hot potato"" voice are more indicative of Epiglottitis.",C,mistral:7b
+111,ddxplus,more,False,no effect,c," Final answer: C|C|A
+
+Explanation: Living with multiple people can increase the chances of spreading and contracting viral pharyngitis, as it provides more opportunities for transmission. However, it's important to note that this is not a definitive rule, as factors such as hygiene practices, vaccination status, and individual immune systems also play significant roles in disease transmission. Therefore, while living with multiple people can potentially increase the probability of viral pharyngitis, it does not guarantee it, making choice C (no effect) a valid option. Choice A (more) is the most likely correct answer because living with more people generally increases the chances of infection, but it's not a certainty. Choice B (less) would be incorrect because living with multiple people can potentially increase the risk of infection.",C,mistral:7b
+112,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+113,ddxplus,less,False,no effect,c," Final answer: C|No effect|The patient not losing their sense of smell would have no significant effect on the probability of Chronic rhinosinusitis, as chronic sinusitis is primarily characterized by inflammation and blockage of the sinuses, rather than loss of smell. However, a normal sense of smell can still be affected due to secondary complications or associated conditions.",C,mistral:7b
+114,ddxplus,less,False,no effect,c, Final answer: C | No Effect,c,mistral:7b
+115,ddxplus,less,False,more,a, Final answer: A|less|C,A (more) is incorrect because being,mistral:7b
+116,ddxplus,more,False,less,b, Final answer: B|less,B,mistral:7b
+117,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+118,ddxplus,less,False,no effect,c," Final answer: C|no effect| The patient's current symptoms do not indicate any new signs related to Chagas disease, so it is unlikely that this will affect the probability of Chagas. However, further investigations may still be necessary to confirm or rule out the presence of the disease.",C,mistral:7b
+119,ddxplus,more,True,more,a," Final answer: A|B|C
+Explanation: The presence of close family members who had cardiovascular disease before the age of 50 can increase the risk (A) for Possible NSTEMI / STEMI in the patient. However, it's important to note that not everyone with a family history will develop the condition, so there is still no guaranteed effect (C). Additionally, having a family history could potentially decrease (B) the age of onset for cardiovascular disease in the patient, but this does not necessarily mean the risk is less.",A,mistral:7b
+120,ddxplus,less,False,no effect,c," Final answer: C|No Effect|The absence of greenish or yellowish nasal discharge does not necessarily affect the probability of Chronic rhinosinusitis, as other symptoms such as nasal congestion, facial pain, and loss of smell are more indicative of the condition. However, clear nasal discharge can also be a symptom of allergies or other non-sinusitic conditions.",C,mistral:7b
+121,ddxplus,more,False,no effect,c," Final answer: <C|B|A>
+Explanation: If the patient is not more irritable or has a stable mood, it suggests that there are no recent changes in their condition that could potentially indicate Acute otitis media (an infection of the middle ear). Therefore, a stable mood would likely have a less probable effect on the occurrence of Acute otitis media. However, it's important to note that a stable mood does not completely rule out the possibility of Acute otitis media, as other symptoms may still be present. The option ""more"" is least likely because a stable mood suggests no worsening of symptoms.",C,mistral:7b
+122,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+123,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation: Breastfeeding for more than 9 months can potentially reduce the risk of Systemic Lupus Erythematosus (SLE) in the mother due to the immunomodulatory effects of breast milk. However, it's important to note that this is not a definitive or guaranteed effect and individual cases may vary. Therefore, the most accurate answer would be ""less"" as an effect on the probability of SLE.",B,mistral:7b
+124,ddxplus,less,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+125,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+126,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation: Having a cold in the last 2 weeks may increase the likelihood of developing upper respiratory tract infections, such as acute laryngitis. However, it does not necessarily mean that the probability of getting acute laryngitis is less, but rather that the cold symptoms might be misinterpreted or overlapping with those of acute laryngitis. Therefore, the correct answer is ""B: less"" in terms of the less probability of Acute laryngitis compared to a patient without a recent cold.",b,mistral:7b
+127,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation:
+1) If a patient does not undergo dialysis, it means they have normal kidney function. This is beneficial as the kidneys are responsible for filtering excess fluid from the body, which can prevent pulmonary edema. However, if the patient has underlying heart conditions or other factors that predispose them to fluid retention, they may still be at risk for acute pulmonary edema despite not undergoing dialysis.
+2) Therefore, while it's unlikely that not undergoing dialysis would lead to a decrease in the probability of Acute Pulmonary Edema (Choice B), it doesn't necessarily mean there is no effect (Choice C). However, the most probable outcome is that not undergoing dialysis increases the probability of Acute Pulmonary Edema (Choice A) if the patient has other risk factors.",C,mistral:7b
+128,ddxplus,more,True,more,a, Final answer: A|less|C,"C (No effect)
+
+Ex",mistral:7b
+129,ddxplus,more,False,no effect,c, Final answer: C | No Effect,c,mistral:7b
+130,ddxplus,less,False,no effect,c," Final answer: C|less|C
+
+Explanation: Regular consumption of energy drinks can increase heart rate and blood pressure due to their caffeine content. However, PSVT (Paroxysmal Supraventricular Tachycardia) is a type of abnormal fast heart rhythm originating above the ventricles. While increased heart rate could potentially trigger an episode of PSVT, it doesn't necessarily mean that energy drink consumption will increase the probability of PSVT. Therefore, it's more likely that regular energy drink consumption would have a lessening effect on the less probability of PSVT, assuming the patient does not have any underlying heart conditions exacerbated by caffeine.",C,mistral:7b
+131,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+132,ddxplus,less,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+133,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+134,ddxplus,less,False,no effect,c," Final answer: C|less|Myasthenia gravis is a neuromuscular disorder characterized by muscle weakness and fatigue. However, difficulty articulating words or speaking (dysarthria) can be a symptom of Myasthenia gravis. Therefore, the less probability of Myasthenia gravis would not be affected by this symptom.",C,mistral:7b
+135,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+136,ddxplus,less,False,no effect,c," Final answer: C|less|The absence of a high-pitched sound when breathing in suggests a lower likelihood of laryngospasm, as this condition often causes stridor (a high-pitched sound during breathing) due to partial or complete closure of the larynx.",C,mistral:7b
+137,ddxplus,less,True,less,b, Final answer: B | less,b,mistral:7b
+138,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation: Secondhand smoke contains various harmful substances that can weaken the immune system, making individuals more susceptible to respiratory infections such as Upper Respiratory Tract Infections (URTIs). Therefore, daily exposure to secondhand cigarette smoke is likely to decrease the less probability of URTIs.",B,mistral:7b
+139,ddxplus,more,False,less,b, Final answer: less,b,mistral:7b
+140,ddxplus,more,False,no effect,c," Final answer: C|C|A
+
+Explanation:
+1. Diffuse muscle pain is a common symptom of various conditions, including influenza (flu). However, it's not exclusive to flu and can be caused by numerous other factors such as infections, autoimmune disorders, or even medication side effects. Therefore, the presence of diffuse muscle pain does not necessarily increase the probability of having the flu (C).
+2. On the other hand, if a patient has influenza, they may experience symptoms like fever, cough, sore throat, and fatigue in addition to muscle pain. In this case, the muscle pain is likely due to the flu, making it more probable that the patient has influenza (A).
+3. It's important to note that less (B) would not be an accurate answer because the presence of diffuse muscle pain does not decrease the probability of having the flu. In fact, it may increase the likelihood if other symptoms are present as well.",C,mistral:7b
+141,ddxplus,more,True,more,a," Final answer: <more|less|no effect> (Explanation: While it's not definitive, having close family members with cardiovascular disease before the age of 50 could potentially increase the likelihood of Stable angina due to genetic predisposition. However, it doesn't necessarily mean it will decrease the risk or have no effect.)",A,mistral:7b
+142,ddxplus,more,False,less,b, Final answer: <B|less|C> The patient not being exposed to secondhand cigarette smoke on a daily basis will likely have a less probability of laryngospasm.,B,mistral:7b
+143,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+144,ddxplus,less,False,no effect,c, Final answer: C | No Effect,c,mistral:7b
+145,ddxplus,less,False,no effect,c," Final answer: C|less|C
+
+Explanation:
+1. Chagas disease is caused by the parasite Trypanosoma cruzi, which is primarily transmitted through the feces of infected triatomine bugs (kissing bugs). Weight loss and loss of appetite are not direct risk factors for contracting Chagas disease.
+2. However, weight loss or loss of appetite could potentially indicate an underlying health issue that weakens the immune system, making it less effective at fighting off infections. But since Chagas disease transmission is primarily environmental (through bug bites), a weaker immune system would not directly increase the probability of contracting Chagas.
+3. Therefore, the loss of weight or appetite by the patient would likely decrease (less) the probability of Chagas if it's due to an underlying health issue that weakens the immune system, but it wouldn't have a direct effect on the probability of Chagas.",C,mistral:7b
+146,ddxplus,less,False,no effect,c," Final answer: C|C|A
+
+Explanation:
+1) If a patient has not had surgery within the last month, it is less likely that they have developed a pulmonary embolism due to the absence of recent surgical procedures that could potentially dislodge blood clots. However, it's important to note that pulmonary embolisms can still occur without a recent surgery.
+2) The patient not having had surgery within the last month does not have a direct effect on the probability of developing a pulmonary embolism. But, it reduces the likelihood compared to someone who has recently undergone surgery.
+3) Therefore, the best answer is that it has no immediate effect (C), but it could potentially lead to a lower probability (A). The option ""less"" (B) is not entirely accurate because the absence of recent surgery does not guarantee a low probability, as pulmonary embolisms can still occur due to other factors.",C,mistral:7b
+147,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation:
+Chagas disease is caused by the parasite Trypanosoma cruzi, which is primarily transmitted through the feces of infected triatomine bugs (kissing bugs). The fecal contamination of food or drink is another possible route of transmission. Diarrhea or an increase in stool frequency may increase the exposure to the parasites present in the feces of infected triatomines, but it does not necessarily mean that the patient will contract Chagas disease. The likelihood of Chagas infection would decrease if proper hygiene practices are followed to prevent contamination of food or drink with the parasite-containing feces.",B,mistral:7b
+148,ddxplus,less,True,less,b," Final answer: <B|C|A>
+Explanation: Systemic Lupus Erythematosus (SLE) is an autoimmune disease that can affect multiple organs in the body. The onset of SLE often occurs during adolescence or young adulthood, and there's a correlation between early menarche (first menstrual period before age 12) and increased risk of developing SLE. However, delayed menarche (first menstrual period after age 16) has been associated with a lower risk of SLE. Therefore, it is less likely that not having the first menstrual period before the age of 12 will increase the probability of SLE. It's also important to note that this association does not necessarily imply causation and other factors may play a role in the development of SLE.",B,mistral:7b
+149,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+150,ddxplus,more,False,no effect,c," Final answer: C|less|C
+
+Explanation: If a patient does not feel anxious, it generally reduces the likelihood of Paroxysmal Supraventricular Tachycardia (PSVT), as anxiety is often a trigger for this heart condition. However, it's important to note that other factors can still cause PSVT even in the absence of anxiety.",C,mistral:7b
+151,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+152,ddxplus,less,True,less,b," Final answer: C|less|C
+
+Explanation:
+1. Swollen or painful lymph nodes can be a symptom of HIV infection, but they usually don't appear until several weeks or months after the initial infection.
+2. During the initial stages of HIV infection (acute retroviral syndrome), some people may experience flu-like symptoms such as fever, fatigue, and swollen lymph nodes. However, these symptoms are not always present, and they can also be caused by other conditions.
+3. If a patient presents with swollen or painful lymph nodes, it is less likely that they have a lower probability of HIV because the presence of such symptoms could indicate an ongoing infection rather than an initial one.
+4. It's important to note that the only way to definitively diagnose HIV is through a blood test. Symptoms alone are not enough to confirm or rule out an HIV infection.
+5. In summary, swollen or painful lymph nodes in a patient do not increase the probability of having a lower chance of HIV (initial infection), but rather suggest that the patient might be experiencing an ongoing HIV infection.",B,mistral:7b
+153,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+154,ddxplus,more,False,no effect,c, Final answer: C|less|C,C,mistral:7b
+155,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+156,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+157,ddxplus,more,True,more,a," Final answer: <A|B|C> (more|no effect|less)
+Explanation: Having unprotected sex with multiple partners increases the risk of HIV infection due to potential exposure to the virus from each partner. However, it's important to note that not every sexual encounter will result in HIV transmission, and safe practices like using condoms can reduce the risk but do not eliminate it entirely. Therefore, while the risk is increased (more), it does not guarantee an infection (less). If safe sex practices are consistently used, there might be no effect (C) on the probability of HIV initial infection.",A,mistral:7b
+158,ddxplus,more,True,more,a," Final answer: <A|B|C>
+Explanation: The administration of medication via intravenous or intramuscular routes can increase the likelihood (A) of Acute dystonic reactions, as these methods deliver drugs directly into the bloodstream, potentially leading to a rapid onset and higher concentration of the drug. However, it's important to note that not all medications cause acute dystonic reactions, and individual patient factors also play a role in determining the risk. Therefore, while the probability (A) is increased, it doesn't necessarily mean there will be no effect (C), or that the probability will decrease (B).",A,mistral:7b
+159,ddxplus,less,False,no effect,c," Final answer: C|no effect|The absence of attendance in a daycare or work would not directly increase the probability of Acute laryngitis, as it is typically caused by viral infections that can spread in close-contact settings like schools and daycares, but can also occur independently.",C,mistral:7b
+160,ddxplus,more,False,no effect,c," Final answer: C|no effect|The absence of a known severe food allergy in a patient would not necessarily reduce the overall probability of Anaphylaxis, as other factors such as medications, insect stings, or environmental allergens can also trigger anaphylactic reactions. However, it does mean that food-induced anaphylaxis is less likely to occur specifically due to the absence of a known severe food allergy.",C,mistral:7b
+161,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+162,ddxplus,less,True,less,b," Final answer: B (less)
+
+Explanation: Dark-fleshed fish like tuna and Swiss cheese are common sources of histamine, a compound that can cause Scombroid food poisoning when consumed in large amounts. However, if the patient ate these foods before the reaction occurred, it would mean that some of the histamine has already been metabolized by the body, reducing the overall amount available to trigger symptoms, hence making the less probability of Scombroid food poisoning.",b,mistral:7b
+163,ddxplus,less,False,more,a," Final answer: C|less|The fear of dying or feeling like one is dying might initially increase the likelihood of a panic attack due to the intense emotional distress. However, once the fear subsides, it may actually decrease the probability of a panic attack as the patient becomes more focused on addressing their health concerns rather than experiencing another panic attack.",B (less),mistral:7b
+164,ddxplus,more,True,more,a, Final answer: A|more|C,A,mistral:7b
+165,ddxplus,less,False,no effect,c," Final answer: C|no effect|C
+
+Explanation:
+Laryngospasm is a medical condition characterized by spasms of the larynx, which can cause difficulty breathing. It's not directly related to whether or not a patient has had a cold in the last 2 weeks. A cold (or upper respiratory infection) can potentially lead to laryngospasm due to inflammation and irritation of the larynx, but its absence does not necessarily decrease or increase the probability of laryngospasm.",C,mistral:7b
+166,ddxplus,more,True,more,a," Final answer: A|less|C
+
+Explanation: Systemic Lupus Erythematosus (SLE) is an autoimmune disease that can affect various organs, including the heart. Pericarditis, inflammation of the pericardium (the sac surrounding the heart), can occur in both SLE and as a standalone condition. If a patient has had pericarditis before, it might suggest a higher likelihood of developing SLE due to shared autoimmune mechanisms. However, having a history of pericarditis does not definitively mean that SLE will develop. Therefore, the presence of pericarditis may have a less significant impact on the probability of SLE compared to other risk factors.",A,mistral:7b
+167,ddxplus,less,True,less,b," Final answer: <B|less|C>
+
+Explanation: Hormone replacement therapy (HRT) can increase the risk of blood clots, which are a common cause of pulmonary embolism. However, if the patient is already taking hormones, continuing to take them would not further increase the risk of pulmonary embolism beyond what it already is due to the HRT. Therefore, the less probability of Pulmonary embolism is expected in this scenario.",B,mistral:7b
+168,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+169,ddxplus,more,True,more,a," Final answer: <B|C|A>
+
+Explanation: Regular consumption of coffee or tea does not directly cause Paroxysmal Supraventricular Tachycardia (PSVT), a type of heart rhythm disorder. However, caffeine found in these beverages can stimulate the heart and may exacerbate symptoms in individuals who are already prone to PSVT. Therefore, it is less likely that regular consumption will cause PSVT, but it could potentially have no effect or even aggravate existing conditions (A). However, since coffee and tea do not directly cause PSVT, it's also accurate to say that they have no effect on the probability of PSVT (C). The least probable answer is that regular consumption decreases the likelihood of PSVT (B), as caffeine can stimulate the heart.",B|C|A,mistral:7b
+170,ddxplus,less,False,no effect,c," Final answer: C|no effect|The absence of greenish or yellowish nasal discharge does not necessarily affect the probability of Acute rhinosinusitis, as other symptoms such as facial pain, pressure, and congestion are more indicative of the condition. However, it's important to note that a clear nasal discharge can also be associated with other conditions, so a proper diagnosis should still be made by a healthcare professional.",C,mistral:7b
+171,ddxplus,more,False,less,b," Final answer: <B|less|C> The patient not having symptoms that are increased with physical exertion but alleviated with rest suggests a lower likelihood of Myocarditis, as myocarditis often presents with symptoms worsening during physical activity and improving with rest due to the inflammation and weakening of the heart muscle.",B,mistral:7b
+172,ddxplus,more,True,more,a," Final answer: <A|more|C>
+
+Explanation: The symptoms mentioned (fatigue, generalized discomfort, diffuse muscle aches, and change in general well-being) can be non-specific indicators of various conditions. However, they are also potential signs of myocarditis, an inflammation of the heart muscle. Therefore, these symptoms would increase the probability of myocarditis being the correct diagnosis.",A,mistral:7b
+173,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+174,ddxplus,more,False,no effect,c," Final answer: C|no effect| The absence of a burning sensation that starts in the stomach and goes up into the throat, along with a bitter taste in the mouth, is not typically associated with GERD symptoms. However, it doesn't completely rule out the possibility of GERD, as other symptoms may still be present. Therefore, it has no significant effect on the probability of GERD.",C,mistral:7b
+175,ddxplus,more,False,less,b," Final answer: C|less|The patient not noticing a change in their voice tone does not necessarily mean that they do not have Acute laryngitis. However, if the condition is severe enough to cause noticeable changes in the voice, it increases the likelihood of the diagnosis. Therefore, the absence of such symptoms might suggest a less probable case of Acute laryngitis.",B,mistral:7b
+176,ddxplus,more,True,more,a," Final answer: C|C|A
+
+Explanation: Living with 4 or more people may increase the chances of Acute laryngitis due to the higher likelihood of virus transmission. However, it's important to note that this is not a definitive cause-and-effect relationship and other factors such as personal hygiene, vaccination status, and individual health conditions also play significant roles. Therefore, while it's possible that living with more people could increase the probability of Acute laryngitis (Choice A), it's also plausible that it could have no effect (Choice C) or even a decreased probability if everyone in the household practices good hygiene and takes precautions to prevent virus transmission (Choice B). However, given the increased likelihood of virus transmission in larger households, Choice A seems to be the most probable among the options provided.",A,mistral:7b
+177,ddxplus,less,False,no effect,c," Final answer: C|No Effect|C
+
+Explanation: The use of intravenous drugs can increase the risk of tuberculosis due to sharing needles, which may be contaminated with Mycobacterium tuberculosis. However, if a patient is not currently using intravenous drugs, their risk remains the same as the general population, assuming other risk factors are also absent.",C,mistral:7b
+178,ddxplus,less,True,less,b, Final answer: B|less,B,mistral:7b
+179,ddxplus,more,True,more,a," Final answer: C|C|A
+Explanation: Intense coughing fits can increase intra-abdominal pressure, which may potentially aggravate an existing inguinal hernia. However, it does not necessarily mean that the probability of developing an inguinal hernia is reduced (Choice B) or unaffected (Choice C). Therefore, the most accurate answer is Choice A: more. But it's important to note that this is a general explanation and individual cases may vary based on various factors such as the severity of the coughing fits and the patient's overall health condition. Always consult with a healthcare professional for medical advice.",a,mistral:7b
+180,ddxplus,more,True,more,a, Final answer: A|less|C,A (more) is incorrect because met,mistral:7b
+181,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation:
+If the patient has not recently taken decongestants or other substances that may have stimulant effects, it is less likely that they will experience Paroxysmal Supraventricular Tachycardia (PSVT), as these substances can trigger or exacerbate PSVT.",B,mistral:7b
+182,ddxplus,more,False,no effect,c," Final answer: C|less|C
+
+Explanation: Gastroesophageal reflux (GER) and Chronic rhinosinusitis (CRS) are two separate conditions, although they can share some similar symptoms. However, the presence or absence of a history of GER does not directly affect the probability of developing CRS. Therefore, it is less likely that the patient's lack of a GER diagnosis would impact their risk of developing CRS.",C,mistral:7b
+183,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+184,ddxplus,more,False,less,b, Final answer: <B|less|C> The patient's lack of regular exercise (4 times per week or more) may decrease the probability of Stable angina.,B,mistral:7b
+185,ddxplus,more,False,no effect,c," Final answer: C|C|A
+
+Explanation:
+1) After lymph node removal surgery, the lymphatic system is disrupted. This can lead to a temporary or permanent accumulation of fluid in the affected area, which is known as edema. However, since the patient has already had this surgery before, it suggests that their lymphatic system may have already adapted to some extent, reducing the immediate impact on localized edema.
+2) On the other hand, due to the disruption of the lymphatic system, there is a higher probability (A) of recurring or persistent edema in the future, especially if the patient undergoes similar surgeries again.
+3) It's less likely (B) that the removal of lymph nodes before would decrease the probability of localized edema in subsequent surgeries, as the initial surgery has already caused damage to the lymphatic system.
+4) In terms of no effect (C), it is possible that the patient may experience similar levels of edema during and after the second surgery due to the pre-existing disruption of their lymphatic system. However, this is less probable given the adaptations that may have occurred post the first surgery.
+5) Therefore, the final answer is C|C|A, indicating that it's most likely there will be no immediate effect on localized edema during the second surgery, but a higher probability of recurring or persistent edema in the future.",C,mistral:7b
+186,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+187,ddxplus,more,True,more,a, Final answer: A|more,A,mistral:7b
+188,ddxplus,more,False,less,b," Final answer: <B|less|C>
+
+Explanation:
+1. The absence of flare-ups in the past year indicates that the patient's COPD is relatively stable, which generally reduces the likelihood of acute exacerbations or infections.
+2. However, it's important to note that a history of no flare-ups does not completely eliminate the risk of future exacerbations, as COPD is a chronic condition and patients can still experience episodes despite a stable period.
+3. Therefore, while the absence of flare-ups in the past year reduces the probability of acute exacerbation or infection, it does not have a no effect (C) on the situation.",B,mistral:7b
+189,ddxplus,less,False,no effect,c, Final answer: C|no effect|C,C,mistral:7b
+190,ddxplus,more,False,less,b, Final answer: less,b,mistral:7b
+191,ddxplus,less,True,less,b, Final answer: less,b,mistral:7b
+192,ddxplus,more,True,more,a, Final answer: A|less|C,A,mistral:7b
+193,ddxplus,less,False,no effect,c," Final answer: C|No Effect|C
+
+Explanation: Rheumatoid Arthritis is a systemic autoimmune disorder that primarily affects the joints, but it can also cause inflammation in other organs such as the lungs. Bronchiectasis, on the other hand, is a chronic lung condition characterized by the permanent widening of the airways due to damage from recurrent or persistent infections. While Rheumatoid Arthritis can potentially lead to complications like bronchiectasis due to joint involvement and subsequent respiratory issues, the absence of Rheumatoid Arthritis does not directly affect the probability of Bronchiectasis.",C,mistral:7b
+194,ddxplus,less,False,no effect,c, Final answer: C|No Effect|C,C,mistral:7b
+195,ddxplus,more,True,more,a," Final answer: <A|more|C> The presence of a sore throat is often an indicator of an Upper Respiratory Tract Infection (URTI), so it increases the probability of having URTI.",A,mistral:7b
+196,ddxplus,less,False,no effect,c, Final answer: C | less,c,mistral:7b
+197,ddxplus,more,True,more,a, Final answer: <more>,A,mistral:7b
+198,ddxplus,more,False,no effect,c," Final answer: C|no effect|The patient not feeling confused or disorientated lately does not necessarily have a direct impact on the probability of Ebola, as these symptoms are not primary indicators of Ebola. However, it's important to note that other factors such as travel history, contact with infected individuals, and fever should still be considered when assessing potential Ebola cases.",C,mistral:7b
+199,ddxplus,more,False,less,b," Final answer: <B|less|C> The patient not having a cold in the last 2 weeks will likely decrease (less) the probability of Acute laryngitis, as colds are one of the common causes of acute laryngitis. However, it's important to note that other factors can still contribute to the development of laryngitis.",B,mistral:7b
+200,ddxplus,less,False,no effect,c, Final answer: C | No effect,c,mistral:7b
