@@ -1,0 +1,597 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+0,ddxplus,more,True,more,A,"Causal graph: agricultural runoff → water pollution → water quality
+
+Reasoning: Agricultural runoff is a primary source of water pollution, so reducing it directly decreases pollution levels in water bodies. Lower pollution improves water quality, meaning there is less pollution overall.
+
+Final answer: A",A,ministral-3:8b
+1,ddxplus,more,True,more,A,"**Causal graph:** evaporation → water_in_soil → soil_moisture → flooding
+
+**Reasoning:**
+Evaporation removes water from soil, reducing soil moisture. Less evaporation means more water remains in the soil, increasing soil moisture. Higher soil moisture raises the risk of flooding, as excess water cannot be absorbed. Thus, decreased evaporation leads to **more** flooding.
+
+**Final answer:** A",A,ministral-3:8b
+2,ddxplus,less,False,more,A,"Causal graph: **earthquake → stress → epilepsy**
+
+Reasoning:
+A strong earthquake can cause physical and psychological stress (e.g., trauma, sleep disruption, or injury). Chronic stress is a known risk factor for epilepsy, as it may lower the seizure threshold in susceptible individuals. Thus, an increase in earthquakes likely leads to more stress-related epilepsy cases.
+
+Final answer: **A**",A,ministral-3:8b
+3,ddxplus,more,True,more,A,"Causal graph: system → climate change
+
+Reasoning:
+A ""system"" here likely refers to a system that mitigates or contributes to greenhouse gas emissions (e.g., carbon capture, industrial processes, or energy systems). If this system *decreases* (e.g., becomes less effective or is scaled back), its ability to reduce emissions/climate impact diminishes. This would logically lead to *more* climate change (not less), as fewer mitigating actions are taken. Thus, the outcome is the opposite of ""less climate change.""
+
+Final answer: A",A,ministral-3:8b
+4,ddxplus,less,True,less,B,"Causal graph: heat_exhaustion → dehydration → dizziness, heat_exhaustion → fatigue → dizziness
+
+Reasoning:
+Heat exhaustion often leads to dehydration and fatigue, both of which can cause dizziness. If heat exhaustion decreases, dehydration and fatigue are likely to reduce as well, which would logically lead to less dizziness.
+
+Final answer: B",B,ministral-3:8b
+5,ddxplus,more,True,more,A,"**Causal graph:** artificial_food_source → nutrition_access, nutrition_access → health, health → population_growth
+
+**Reasoning:**
+Increasing the artificial food source directly enhances **nutrition_access**, which improves **health** (reducing malnutrition-related deaths). Better health outcomes typically lead to **higher population growth** (more births, lower mortality). Thus, more artificial food source → more population.
+
+**Final answer:** A",A,ministral-3:8b
+6,ddxplus,more,True,more,A,"Causal graph: **UVB radiation → skin damage → collagen breakdown → wrinkles**
+
+Reasoning:
+UVB radiation is a primary cause of skin aging, including wrinkles, by damaging collagen and elastin fibers. If UVB radiation decreases, skin damage and collagen breakdown would also decrease, leading to fewer wrinkles over time.
+
+Final answer: **A**",A,ministral-3:8b
+7,ddxplus,more,True,more,A,"Causal graph: mysterious_force → expansion_rate
+
+Reasoning:
+In cosmology, a ""mysterious force"" often refers to dark energy, which is the dominant component driving the accelerated expansion of the universe. Dark energy’s repulsive effect counteracts gravity, causing the expansion rate to increase over time. If this mysterious force (dark energy density or strength) increases, the repulsive effect becomes stronger, leading to an even faster expansion of the universe.
+
+Final answer: A",A,ministral-3:8b
+8,ddxplus,more,True,more,A,"Causal graph: **food allergens → exposure to allergens → immune response activation → anaphylaxis risk**
+
+Reasoning:
+Increasing food allergens directly raises exposure to triggers, which stimulates stronger immune responses in sensitive individuals. Anaphylaxis is a severe, life-threatening allergic reaction, so higher allergen exposure logically correlates with a higher likelihood of anaphylaxis episodes.
+
+Final answer: **A**",A,ministral-3:8b
+9,ddxplus,less,True,less,B,"**Causal graph:** pressure_points → pain_aches
+
+**Reasoning:**
+Pressure points are specific areas in the body (e.g., muscles, nerves, or joints) that, when stressed or irritated, can trigger or amplify pain signals. If these pressure points are reduced (e.g., through massage, stretching, or medical intervention), the body’s pain signals are likely to decrease because fewer sources of irritation exist to send pain cues to the brain. Thus, fewer pressure points generally correlate with fewer aches.
+
+**Final answer:** B",B,ministral-3:8b
+10,ddxplus,less,False,more,A,"**Causal graph:** oxidation_process → material_degradation, material_degradation → equipment_failure, equipment_failure → malfunction
+
+**Reasoning:**
+Oxidation is a chemical process that degrades materials over time, leading to wear, corrosion, or structural weakening. As oxidation increases, material degradation worsens, which directly raises the likelihood of equipment failure. More equipment failures logically result in more malfunctions. Thus, higher oxidation correlates with increased malfunction frequency.
+
+**Final answer:** A",A,ministral-3:8b
+11,ddxplus,more,True,more,A,"**Causal graph:** invasive_species → ecosystem_disruption → native_species_decline → biodiversity_loss, invasive_species → resource_depletion → economic_losses
+
+**Reasoning:**
+Invasive species disrupt ecosystems by outcompeting or preying on native species, reducing biodiversity. This decline in native species and altered ecosystems often leads to greater economic losses (e.g., agriculture, tourism, fisheries) due to reduced productivity and increased control costs. Thus, an increase in invasive species logically correlates with higher losses.
+
+**Final answer:** A",A,ministral-3:8b
+12,ddxplus,more,True,more,A,"**Causal graph:** water_damage → humidity, water_access_for_mold, surface_wetness → mold_growth
+
+**Reasoning:**
+Water damage introduces moisture (humidity), provides direct water access for mold spores, and keeps surfaces wet—all critical factors for mold proliferation. More moisture and wetness create ideal conditions for mold to grow rapidly. Thus, increasing water damage logically leads to more mold.
+
+**Final answer:** A",A,ministral-3:8b
+13,ddxplus,less,True,less,B,"**Causal graph:** energy_efficiency → operational_costs, operational_costs → investment_needed
+
+**Reasoning:**
+Higher energy efficiency reduces operational costs (e.g., lower utility bills, maintenance). Lower operational costs directly decrease the financial burden on a project or business, making it feasible to allocate *less* investment elsewhere (e.g., reinvesting savings or redirecting funds). Thus, increased efficiency typically correlates with reduced investment needs.
+
+**Final answer:** B",B,ministral-3:8b
+14,ddxplus,more,False,less,B,"**Causal graph:** carbon_monoxide → air_pollution → reproductive_health → infertility
+
+**Reasoning:**
+Carbon monoxide (CO) is a pollutant linked to air pollution. Higher air pollution is associated with oxidative stress, hormonal disruptions, and reproductive toxicity, which can increase infertility. If CO decreases, air pollution likely decreases, reducing these harmful effects on reproductive health. Thus, infertility should also decrease.
+
+**Final answer:** B",B,ministral-3:8b
+15,ddxplus,less,False,more,A,"Causal graph: **crop failures → food supply, food supply → starvation**
+
+Reasoning:
+Crop failures reduce the amount of food available (food supply). With less food, the risk of starvation increases because fewer people have enough nutrition. Thus, if crop failures increase, starvation should also increase.
+
+Final answer: **A**",A,ministral-3:8b
+16,ddxplus,less,False,more,A,"Causal graph: **greenhouse_gas → global_warming → ice_melt → sea_level**
+
+Reasoning:
+Increasing greenhouse gases trap heat, causing global warming. Warmer temperatures accelerate ice melt (e.g., glaciers, polar ice caps) and thermal expansion of seawater, both raising sea levels. Thus, higher greenhouse gas levels lead to **higher** sea levels.
+
+Final answer: **A**",A,ministral-3:8b
+17,ddxplus,less,True,less,B,"**Causal graph:** explosions → chain reactions
+
+**Reasoning:**
+Explosions are a direct cause of chain reactions (e.g., in nuclear fission, a single explosion can trigger further reactions). If explosions decrease, the initiating events for chain reactions also decrease, reducing their frequency or intensity.
+
+**Final answer:** B",B,ministral-3:8b
+18,ddxplus,less,False,more,A,"**Causal graph:** pressure_change → precipitation, pressure_change → river_flow, precipitation → floods, river_flow → floods
+
+**Reasoning:**
+Increased pressure changes (e.g., atmospheric pressure drops) often correlate with lower air pressure, which can lead to **higher precipitation** (e.g., storms) and **altered river flow** (e.g., heavier rainfall increasing runoff). Both higher precipitation and altered river flow typically **increase flood risk**. Thus, pressure changes that promote wetter conditions tend to cause **more floods**, not fewer.
+
+**Final answer:** B (This is incorrect based on reasoning—actual answer should be **A: more** floods, as pressure changes linked to storms/wetter conditions worsen flooding. The original output was flawed; the correct causal link is that *lower* pressure often means more floods.)
+
+---
+**Correction:**
+**Final answer:** A",A,ministral-3:8b
+19,ddxplus,less,False,more,A,"Causal graph: **earthquake_power → destruction_severity → devastation_magnitude**
+
+Reasoning:
+A more powerful earthquake directly increases destruction severity (e.g., stronger shaking, ground rupture, landslides). Higher destruction severity logically leads to greater devastation (e.g., collapsed infrastructure, casualties, economic loss). Thus, stronger earthquakes correlate with *more* devastation, not less.
+
+Final answer: **A**",A,ministral-3:8b
+20,ddxplus,less,True,less,B,"Causal graph: **UV radiation → skin damage**
+
+Reasoning:
+UV radiation is a primary cause of skin damage (e.g., sunburn, premature aging, or cancer). If UV radiation decreases, the direct cause of skin damage is reduced, leading to less damage.
+
+Final answer: **B**",B,ministral-3:8b
+21,ddxplus,less,False,more,A,"Causal graph: **water_main_break → water_pressure_drop → water_flow_reduction → water_damage**
+
+Reasoning:
+A water main break directly reduces water pressure and flow, which increases the likelihood and severity of water damage (e.g., flooding, leaks, or equipment failure). Thus, *more* water main breaks logically lead to *more* water damage, not less.
+
+Final answer: **A**",A,ministral-3:8b
+22,ddxplus,less,True,less,B,"Causal graph: water_pollution→environmental_degradation
+
+Reasoning: Water pollution is a direct contributor to environmental degradation (e.g., harming ecosystems, biodiversity loss, and air/water quality). If water pollution decreases, the negative impacts on the environment would logically reduce, leading to less overall environmental degradation.
+
+Final answer: B",B,ministral-3:8b
+23,ddxplus,less,True,less,B,"Causal graph: excess humidity → moisture retention in skin → skin hydration level
+
+Reasoning: Excess humidity in the environment increases moisture retention in the skin, which raises its hydration level. Higher hydration levels typically reduce dryness, so less skin would become dry under these conditions.
+
+Final answer: B",B,ministral-3:8b
+24,ddxplus,more,False,less,B,"**Causal graph:** earthquake → casualties
+
+**Reasoning:**
+A decrease in earthquakes logically reduces the number of disasters that cause harm. Fewer disasters mean fewer opportunities for casualties to occur, so casualties would decrease as well.
+
+**Final answer:** B",B,ministral-3:8b
+25,ddxplus,more,True,more,A,"**Causal graph:** small_population_size → extinction_risk
+
+**Reasoning:**
+A smaller population size generally reduces genetic diversity and increases vulnerability to environmental fluctuations, which raises the risk of extinction. Therefore, if the population size decreases, extinction risk tends to increase (i.e., there is *more* extinction, not less).
+
+**Final answer:** A",A,ministral-3:8b
+26,ddxplus,less,True,less,B,"Causal graph: **heat-trapping gases → global temperature → climate change**
+
+Reasoning:
+Heat-trapping gases (e.g., CO₂, methane) trap heat in the atmosphere, raising global temperatures. Higher temperatures accelerate climate change effects like melting ice, extreme weather, and sea-level rise. If heat-trapping gases decrease, less heat is trapped, reducing temperature rise and thus mitigating climate change.
+
+Final answer: **B**",B,ministral-3:8b
+27,ddxplus,more,False,less,B,"Causal graph: **food_production_decrease → agricultural_emissions_decrease, food_demand_reduction → land_use_change_reduction, agricultural_emissions_decrease → greenhouse_gas_emissions_decrease, land_use_change_reduction → deforestation_reduction → carbon_sequestration_increase, greenhouse_gas_emissions_decrease → global_climate_change_mitigation**
+
+Reasoning:
+Decreased food production typically leads to lower agricultural emissions (e.g., less fertilizer use, reduced livestock farming) and reduced demand for land expansion (e.g., less deforestation for farming). Both pathways lower greenhouse gas emissions and enhance carbon sequestration, which collectively mitigate global climate change. Thus, the net effect is a reduction in climate change impact.
+
+Final answer: **B**",B,ministral-3:8b
+28,ddxplus,more,True,more,A,"Causal graph: **1906 earthquake → damaged gas lines → ignited fires → more fires**
+
+Reasoning:
+The 1906 San Francisco earthquake caused widespread structural damage, including ruptured gas lines and broken electrical wires. These ruptures ignited fires, leading to a catastrophic fire outbreak. Thus, an increase in earthquake intensity would likely worsen fire conditions by increasing ignition sources and fuel for flames.
+
+Final answer: **A**",A,ministral-3:8b
+29,ddxplus,more,True,more,A,"Causal graph: earthquake → seismic energy release → underwater displacement → tsunami generation
+
+Reasoning: Earthquakes release seismic energy, and when this energy displaces large volumes of water (especially underwater), it generates tsunamis. Thus, an increase in earthquakes generally leads to a higher likelihood of tsunamis, assuming other factors (like magnitude and location) remain conducive.
+
+Final answer: A",A,ministral-3:8b
+30,ddxplus,less,False,more,A,"**Causal graph:** heat stress → fatigue → physical weakness
+
+**Reasoning:**
+Heat stress (e.g., from high temperatures or exertion) directly causes fatigue, which impairs muscle function and endurance. Increased fatigue logically leads to greater physical weakness. Thus, as heat stress rises, weakness should also increase.
+
+**Final answer:** A",A,ministral-3:8b
+31,ddxplus,more,True,more,A,"Causal graph: **UVB radiation → skin damage → collagen breakdown → wrinkles**
+
+Reasoning:
+UVB radiation is a primary cause of skin aging, including wrinkles, by damaging collagen and elastin fibers. If UVB radiation decreases, skin damage and collagen breakdown would also decrease, leading to fewer wrinkles over time.
+
+Final answer: **A**",A,ministral-3:8b
+32,ddxplus,more,False,less,B,"**Causal graph:** water_damage → repair_costs, water_damage → property_value, repair_costs → financial_burden, property_value → insurance_premiums, financial_burden → maintenance_circumstances
+
+**Reasoning:**
+Decreasing water damage reduces repair costs and preserves property value, lowering financial burdens and insurance premiums. This indirectly reduces the need for costly maintenance or repairs, meaning fewer circumstances requiring intervention. Thus, fewer circumstances arise when water damage decreases.
+
+**Final answer:** B",B,ministral-3:8b
+33,ddxplus,more,True,more,A,"Causal graph: **sulfuric acid → concentration → corrosiveness → severity of burns → number of burns**
+
+Reasoning:
+Sulfuric acid is highly corrosive due to its strong acidity and dehydrating properties. Increasing its concentration raises its corrosiveness, which directly worsens the severity of burns when it comes into contact with skin or tissue. More severe burns lead to a higher number of burns in affected individuals.
+
+Final answer: **A**",A,ministral-3:8b
+34,ddxplus,less,True,less,B,"**Causal graph:** earthquake_magnitude → seismic_energy → ground_motion → structural_stress → damage_severity
+
+**Reasoning:**
+A decrease in earthquake magnitude reduces the amount of seismic energy released, which in turn lowers ground motion intensity. Reduced ground motion decreases structural stress on buildings and infrastructure, leading to less severe damage overall.
+
+**Final answer:** B",B,ministral-3:8b
+35,ddxplus,less,True,less,B,"Causal graph: **storm_water_runoff → water_flow_increase → dilution_effect → contamination_dilution**
+
+Reasoning:
+Increased stormwater runoff leads to higher water flow in rivers, lakes, or other water bodies. This higher flow dilutes pollutants already present in the water, reducing their concentration. Thus, contamination levels decrease rather than increase or remain unaffected.
+
+Final answer: **B**",B,ministral-3:8b
+36,ddxplus,more,True,more,A,"Causal graph: **uv-b_radiation → skin_damage, uv-b_radiation → dna_damage, skin_damage → cellular_aging, dna_damage → mutations, mutations → cancer_risk**
+
+Reasoning:
+UV-B radiation is a known carcinogen and mutagen, directly increasing DNA damage and skin damage. Higher UV-B exposure accelerates cellular aging, mutations, and cancer risk. Thus, more UV-B radiation logically causes more damage.
+
+Final answer: **A**",A,ministral-3:8b
+37,ddxplus,less,True,less,B,"**Causal graph:** volcano → tectonic_plate_movement, volcano → crustal_stress, tectonic_plate_movement → earthquake, crustal_stress → earthquake
+
+**Reasoning:**
+Volcanoes are often linked to tectonic activity (e.g., subduction zones or hotspots), so a *decrease* in volcanic activity may indicate reduced tectonic plate movement or crustal stress. Both factors are primary causes of earthquakes. Thus, fewer volcanic events could correlate with fewer earthquakes due to diminished underlying tectonic forces.
+
+**Final answer:** B",B,ministral-3:8b
+38,ddxplus,less,True,less,B,"Causal graph: storm_system → strong_winds
+
+Reasoning:
+A storm system is a primary driver of strong winds, as storms generate low-pressure areas that create wind flow. If the storm system decreases, the force causing strong winds is reduced, leading to a decrease in their occurrence or intensity.
+
+Final answer: B",B,ministral-3:8b
+39,ddxplus,less,True,less,B,"**Causal graph:** concentration → insight
+
+**Reasoning:**
+Concentration refers to the ability to focus deeply on a task or thought, which is a key factor in generating meaningful insights. When concentration decreases, the mind becomes more scattered, reducing the depth and clarity of ideas. This makes it harder to notice patterns, connections, or novel perspectives—key components of insight. Thus, a decline in concentration typically leads to fewer insights.
+
+**Final answer:** B",B,ministral-3:8b
+40,ddxplus,more,True,more,A,"**Causal graph:** low_tire_pressure → tire_wear, low_tire_pressure → heat_generation, tire_wear → tire_failure, heat_generation → tire_failure
+
+**Reasoning:**
+Increasing low tire pressure reduces the tire’s contact area with the road, causing uneven tire wear and excessive heat buildup due to friction. Both increased wear and heat weaken the tire structure, making it more prone to failure (e.g., blowouts or cracks). Thus, higher tire pressure deviations (even if ""low"") correlate with a higher risk of tire failure.
+
+**Final answer:** A",A,ministral-3:8b
+41,ddxplus,less,True,less,B,"**Causal graph:** concentration → focus, concentration → productivity, focus → efficiency, productivity → inefficiency
+
+**Reasoning:**
+Higher concentration improves focus and productivity, which directly reduces inefficiency (since inefficiency is the opposite of effective resource use or output). Thus, increasing concentration logically leads to less inefficiency.
+
+**Final answer:** A",B,ministral-3:8b
+42,ddxplus,more,False,less,B,"**Causal graph:** soil_contamination → vegetation_health, vegetation_health → soil_erosion, soil_erosion → desertification
+
+**Reasoning:**
+Soil contamination harms plant growth (reducing vegetation health). Healthier vegetation stabilizes soil, reducing erosion (which directly contributes to desertification). Thus, less contamination → healthier vegetation → less erosion → **less desertification**.
+
+**Final answer:** B",B,ministral-3:8b
+43,ddxplus,less,True,less,B,"Causal graph: **UVB radiation → skin damage**
+
+Reasoning:
+UVB radiation is a primary cause of skin damage (e.g., sunburn, premature aging, and skin cancer). If UVB radiation decreases, the direct cause of skin damage is reduced, leading to less skin damage overall.
+
+Final answer: **B**",B,ministral-3:8b
+44,ddxplus,less,True,less,B,"Causal graph: **minimally invasive surgery → surgical trauma → recovery speed**
+
+Reasoning:
+Minimally invasive surgery reduces surgical trauma (e.g., smaller incisions, less tissue damage), which logically speeds up recovery. If minimally invasive surgery *decreases*, surgical trauma *increases*, slowing recovery. Thus, faster recovery would be **less likely**.
+
+Final answer: **B**",B,ministral-3:8b
+45,ddxplus,more,False,less,B,"**Causal graph:** heat_wave → temperature → skin_exposure_to_heat → burns
+
+**Reasoning:**
+A decrease in heat waves leads to lower temperatures, reducing the risk of skin exposure to excessive heat. With less exposure, the likelihood of burns decreases.
+
+**Final answer:** B",B,ministral-3:8b
+46,ddxplus,less,True,less,B,"Causal graph: lactic_acid_decrease→muscle_relaxation_increase, lactic_acid_decrease→pH_increase, muscle_relaxation_increase→cramps_decrease, pH_increase→cramps_decrease
+
+Reasoning: Lactic acid buildup during exercise lowers muscle pH and causes muscle fatigue, contributing to cramps. If lactic acid decreases, muscle relaxation improves and pH normalizes, reducing cramp frequency and intensity.
+
+Final answer: B",B,ministral-3:8b
+47,ddxplus,more,True,more,A,"**Causal graph:** cloud_computing_increase → cost_reduction, scalability_improvement, accessibility_increase, efficiency_gain, innovation_acceleration → **benefits**
+
+**Reasoning:**
+Increasing cloud computing typically lowers operational costs (e.g., no need for physical infrastructure), enhances scalability (on-demand resources), broadens accessibility (global reach), boosts efficiency (automation/integration), and accelerates innovation (AI/big data tools). All these factors collectively **increase** the overall benefits derived from technology adoption.
+
+**Final answer:** A",A,ministral-3:8b
+48,ddxplus,more,False,less,B,"**Causal graph:** precipitation → flooding → property damage
+
+**Reasoning:**
+Precipitation (rain, snow, etc.) directly influences flooding by increasing water levels. Flooding is a major cause of property damage (e.g., structural harm, erosion). If precipitation decreases, flooding becomes less likely, which should reduce property damage. Since the question specifies *less significant* property damage, the effect is likely to be a reduction in such incidents.
+
+**Final answer:** B",B,ministral-3:8b
+49,ddxplus,less,True,less,B,"Causal graph: storm_water_runoff → pollution_load, pollution_load → water_pollution
+
+Reasoning:
+Storm water runoff carries pollutants (e.g., chemicals, sediments, waste) from land into water bodies. If storm water runoff decreases, the amount of pollutants entering water systems also decreases, reducing overall water pollution.
+
+Final answer: B",B,ministral-3:8b
+50,ddxplus,more,True,more,A,"Causal graph: **water_main_break → water_flow_increase → pressure_drops → pipe_failure_risk_increases → water_leakage_increases → flooding**
+
+Reasoning:
+A water main break directly causes uncontrolled water release into the environment. This increases the volume of water available to flood areas, as the system cannot contain it. Higher leakage from breaks or damaged pipes exacerbates surface water accumulation, leading to more flooding. Thus, more water main breaks logically result in more flooding.
+
+Final answer: **A**",A,ministral-3:8b
+51,ddxplus,less,True,less,B,"**Causal graph:** thermal_radiation → skin_damage → scar_permanence
+
+**Reasoning:**
+Thermal radiation (e.g., heat or UV exposure) damages skin cells and collagen, weakening tissue repair. More damage generally leads to **less permanent scarring** because the body’s healing response may be compromised, resulting in weaker or more fragile scars. Thus, increased thermal radiation tends to reduce scar permanence rather than increase it.
+
+**Final answer:** B",B,ministral-3:8b
+52,ddxplus,less,True,less,B,"Causal graph: solar_variation→radiative_forcing→global_temperature→climate_change
+
+Reasoning:
+Solar variation directly influences Earth’s incoming solar energy (radiative forcing). Reduced solar variation means less energy reaches the planet, lowering global temperatures. Lower temperatures generally reduce the rate of climate change (e.g., slower ice melt, weaker greenhouse gas feedbacks). Thus, less solar variation tends to mitigate—not accelerate—climate change.
+
+Final answer: B",B,ministral-3:8b
+53,ddxplus,less,True,less,B,"**Causal graph:** fertilizer → plant growth → oxygen consumption → oxygen levels
+
+**Reasoning:**
+Increased fertilizer typically boosts plant growth (photosynthesis). More plant growth leads to higher oxygen consumption (via respiration) and potentially reduced oxygen availability in the surrounding environment. Thus, less depleted oxygen (i.e., higher oxygen levels) would logically decrease if fertilizer-driven plant activity increases oxygen demand.
+
+**Final answer:** B",B,ministral-3:8b
+54,ddxplus,less,True,less,B,"**Causal graph:** reduction → emissions, emissions → global warming
+
+**Reasoning:**
+Reduction (e.g., of greenhouse gas emissions) directly lowers emissions. Lower emissions reduce the greenhouse effect, which in turn decreases global warming. Thus, increasing reduction leads to less global warming.
+
+**Final answer:** B",B,ministral-3:8b
+55,ddxplus,less,True,less,B,"Causal graph: **increased greenhouse gases → increased atmospheric CO₂ → increased ocean absorption of CO₂ → increased ocean acidification**
+
+Reasoning:
+Greenhouse gases (GHGs) like CO₂ trap heat but also dissolve in seawater, lowering pH and increasing acidity. More GHGs → more CO₂ in the air → more CO₂ absorbed by oceans → stronger acidification. Thus, *less* ocean acidification is impossible; the correct relationship is the opposite.
+
+Final answer: **C**",B,ministral-3:8b
+56,ddxplus,less,False,more,A,"Causal graph: lipid oxidation → reactive oxygen species (ROS) → mitochondrial DNA damage → mitochondrial DNA mutations
+
+Reasoning: Lipid oxidation generates reactive oxygen species (ROS), which damage mitochondrial DNA. Increased ROS leads to higher mutation rates in mitochondrial DNA. Thus, more lipid oxidation should result in more mitochondrial DNA mutations, not fewer.
+
+Final answer: A",A,ministral-3:8b
+57,ddxplus,less,False,more,A,"**Causal graph:** reaction → more hives
+
+**Reasoning:**
+In beekeeping or pest control contexts, a ""reaction"" (e.g., defensive behavior, swarming, or pesticide application) often triggers a response that influences hive dynamics. If bees react less aggressively (e.g., reduced swarming or defensive stings), they may allocate more resources to colony growth or honey production, potentially leading to **more hives** (e.g., via successful splits or increased population). Conversely, if the reaction is high (e.g., excessive swarming or colony collapse), fewer viable hives might result. Thus, a *decrease* in reaction likely correlates with a *positive* effect on hive numbers.
+
+**Final answer:** A",A,ministral-3:8b
+58,ddxplus,more,True,more,A,"**Causal graph:** radiation exposure → biological damage → immune suppression → susceptibility to illness → sickness
+
+**Reasoning:**
+Radiation exposure damages cells and DNA, weakening the immune system and increasing vulnerability to infections or diseases. Higher exposure intensifies biological harm, raising sickness rates. Thus, more radiation logically leads to more sickness.
+
+**Final answer:** A",A,ministral-3:8b
+59,ddxplus,less,True,less,B,"Causal graph: **climate change → temperature increase → evaporation rate → water availability → drought frequency**
+
+Reasoning:
+Climate change typically leads to higher global temperatures, which increase evaporation rates and reduce precipitation in some regions. With less water availability, droughts become more frequent and severe. Thus, if climate change *decreases*, the opposite effect occurs: evaporation slows, water availability improves, and droughts become less common.
+
+Final answer: **B**",B,ministral-3:8b
+60,ddxplus,more,True,more,A,"Causal graph: tropical_storm_Alberto → rainfall, tropical_storm_Alberto → wind_speed, rainfall → soil_saturation, soil_saturation → flooding, wind_speed → coastal_water_level, coastal_water_level → flooding
+
+Reasoning:
+Tropical storm Alberto brings increased rainfall and higher wind speeds. More rainfall directly raises soil saturation, which reduces the land's ability to absorb water, leading to surface runoff and flooding. Stronger winds push water toward coastlines, raising water levels and increasing flood risks in low-lying areas. Thus, stronger storms typically correlate with more flooding.
+
+Final answer: A",A,ministral-3:8b
+61,ddxplus,less,True,less,B,"Causal graph: solar_variation→radiative_forcing→global_temperature→global_warming
+
+Reasoning:
+Solar variation directly influences Earth’s incoming solar radiation (radiative forcing). Reduced solar variation means less energy reaches Earth, lowering global temperatures. Lower temperatures reduce the intensity of global warming, as warming is driven by energy imbalance (e.g., greenhouse gases + solar input). Thus, less solar variation → less global warming.
+
+Final answer: B",B,ministral-3:8b
+62,ddxplus,less,True,less,B,"Causal graph: greenhouse_gas → global_warming
+
+Reasoning:
+Greenhouse gases (GHGs) trap heat in the atmosphere by absorbing and re-emitting infrared radiation, thereby increasing global temperatures. If GHGs decrease, less heat is trapped, which directly reduces the warming effect. Thus, a reduction in GHGs leads to less global warming.
+
+Final answer: B",B,ministral-3:8b
+63,ddxplus,more,True,more,A,"**Causal graph:** lactic_acid_decrease → muscle_relaxation_increase, muscle_relaxation_increase → range_of_motion_increase
+
+**Reasoning:**
+Lactic acid buildup in muscles during exertion causes stiffness and fatigue, restricting movement. When lactic acid decreases (e.g., post-exercise recovery), muscles relax more, allowing greater ease of motion. Thus, a reduction in lactic acid logically correlates with an *increased* range of motion.
+
+**Final answer:** A",A,ministral-3:8b
+64,ddxplus,more,True,more,A,"**Causal graph:** ionizing_radiation → biological_damage
+
+**Reasoning:**
+Ionizing radiation directly disrupts molecular structures (e.g., DNA, proteins) by ionizing atoms, creating reactive species (free radicals) that damage cells. Higher radiation doses increase the frequency of such disruptions, leading to greater biological harm (e.g., mutations, cell death). Thus, more radiation logically causes more damage.
+
+**Final answer:** A",A,ministral-3:8b
+65,ddxplus,less,True,less,B,"Causal graph: lipid oxidation → rancidity
+
+Reasoning: Lipid oxidation is the primary chemical process that generates off-flavors and odors associated with rancidity in fats and oils. If lipid oxidation decreases, the formation of rancid compounds (e.g., aldehydes, ketones) is reduced, directly lowering rancidity.
+
+Final answer: B",B,ministral-3:8b
+66,ddxplus,more,True,more,A,"Causal graph: **radiation exposure → biological damage → harm**
+
+Reasoning:
+Radiation exposure directly damages cells and DNA, increasing biological harm. Higher exposure leads to more severe cellular damage, which correlates with greater harm (e.g., cancer, mutations, or acute injury). Thus, increasing radiation exposure logically causes more harm.
+
+Final answer: **A**",A,ministral-3:8b
+67,ddxplus,less,False,more,A,"**Causal graph:** oxidation_process → aging, oxidation_process → damage_accumulation, damage_accumulation → aging
+
+**Reasoning:**
+Oxidation (e.g., oxidative stress) directly accelerates cellular damage (e.g., lipid peroxidation, protein/DNA oxidation) and DNA mutations, which are key drivers of aging. More oxidation → more damage → faster aging progression. Thus, increased oxidation correlates with *more* aging, not less.
+
+**Final answer:** A",A,ministral-3:8b
+68,ddxplus,less,True,less,B,"Causal graph: **food production → nutrition availability → health outcomes → mortality rate → population growth**
+
+Reasoning:
+Food production directly affects the availability of nutrition, which in turn influences health outcomes (e.g., malnutrition, disease resistance). Lower nutrition leads to higher mortality rates and lower birth rates, reducing population growth. Thus, a decrease in food production logically reduces population growth.
+
+Final answer: **B**",B,ministral-3:8b
+69,ddxplus,more,True,more,A,"Causal graph: **scarcity_of_food → availability_of_food → access_to_food → nutritional_security → world_hunger**
+
+Reasoning:
+Scarcity of food directly reduces the availability of food, making it harder for people to access sufficient nutrition. When fewer resources are available, more individuals face malnutrition and hunger. Thus, increased scarcity logically leads to **more** world hunger.
+
+Final answer: **A**",A,ministral-3:8b
+70,ddxplus,more,True,more,A,"Causal graph: **UVB radiation → skin cell damage → skin damage**
+
+Reasoning:
+UVB radiation is a type of ultraviolet light known to damage DNA and proteins in skin cells, leading to cellular dysfunction and tissue degradation. Higher UVB exposure directly increases the likelihood of skin cell damage, which in turn causes more skin damage (e.g., sunburn, premature aging, or cancer). Thus, an increase in UVB radiation logically correlates with increased skin damage.
+
+Final answer: **A**",A,ministral-3:8b
+71,ddxplus,less,False,more,A,"Causal graph: **plate_movement → earthquake_frequency → landslide_risk → river_blockage → flooding**
+
+Reasoning:
+Increased plate movement raises earthquake frequency, which can trigger landslides and block rivers. Blocked rivers cause water buildup, leading to **more flooding** (not less). Thus, flooding would likely increase rather than decrease.
+
+Final answer: **A**",A,ministral-3:8b
+72,ddxplus,more,False,less,B,"**Causal graph:** reactive_oxygen_species → oxidative_damage → new_species_formation
+
+**Reasoning:**
+Reactive oxygen species (ROS) are highly reactive molecules that can damage cellular components, including DNA, proteins, and lipids. When ROS levels decrease, oxidative damage to these molecules also decreases. Reduced oxidative damage lowers the likelihood of mutations or errors in biological processes, which can lead to fewer new species arising from genetic variation or adaptive changes. Thus, a decrease in ROS likely results in fewer new species over time.
+
+**Final answer:** B",B,ministral-3:8b
+73,ddxplus,more,False,less,B,"Causal graph: reaction → itchiness
+
+Reasoning:
+In many contexts (e.g., allergic reactions, immune responses, or psychological itch perception), a **reduction in the underlying cause (reaction)** logically leads to a decrease in the symptom (itchiness). For example, if an allergic reaction (e.g., histamine release) is suppressed, itchiness typically diminishes. Thus, less reaction → less itchiness.
+
+Final answer: B",B,ministral-3:8b
+74,ddxplus,more,True,more,A,"**Causal graph:** non-native species → ecosystem balance, non-native species → resource competition, ecosystem balance → biodiversity, resource competition → biodiversity
+
+**Reasoning:**
+Non-native species disrupt local ecosystems by competing with native species for resources (e.g., food, habitat), reducing biodiversity. This competition often leads to declines in native populations, which can destabilize ecosystem functions (e.g., pollination, pest control). As biodiversity decreases, ecosystems become more vulnerable to harm (e.g., disease spread, environmental degradation). Thus, an increase in non-native species typically correlates with **more harm** to ecosystems and native species.
+
+**Final answer:** A",A,ministral-3:8b
+75,ddxplus,less,True,less,B,"**Causal graph:** habitat_degradation → habitat_loss
+
+**Reasoning:**
+Habitat degradation (e.g., deforestation, pollution, climate change) directly causes habitat loss (e.g., destruction of ecosystems, fragmentation). If habitat degradation *increases*, the amount of habitat lost will also *increase* as a direct consequence. Thus, ""less habitat loss"" (Choice B) is incorrect—more habitat loss occurs.
+
+**Final answer:** A",B,ministral-3:8b
+76,ddxplus,less,False,more,A,"**Causal graph:** acid → corrosion, corrosion → material degradation, material degradation → loss
+
+**Reasoning:**
+Acid increases corrosion, which accelerates material degradation. Greater degradation typically leads to higher losses (e.g., structural failure, equipment malfunction). Thus, if acid increases, the resulting loss should also increase.
+
+**Final answer:** A",A,ministral-3:8b
+77,ddxplus,more,True,more,A,"**Causal graph:** concentration_of_power → accountability, concentration_of_power → incentives_for_abuse, accountability → oversight, oversight → corruption
+
+**Reasoning:**
+Higher concentration of power reduces oversight and accountability (e.g., fewer checks on leaders), which lowers incentives for transparency. At the same time, fewer checks create stronger incentives for abuse (e.g., unchecked authority). Both effects—weaker oversight and stronger incentives—typically *increase* corruption. Empirical evidence (e.g., studies on authoritarian regimes) supports this link.
+
+**Final answer:** A",A,ministral-3:8b
+78,ddxplus,less,False,more,A,"**Causal graph:** *heavy_precipitation → flooding → infrastructure_damage → rescue_difficulty → loss_of_life*
+
+**Reasoning:**
+Heavy precipitation causes flooding, which damages infrastructure (e.g., roads, bridges) and disrupts rescue operations. This increases rescue difficulty, raising the likelihood of loss of life rather than reducing it. Thus, more precipitation correlates with higher—not lower—loss of life.
+
+**Final answer:** A",A,ministral-3:8b
+79,ddxplus,more,True,more,A,"Causal graph: **runoff → water volume in rivers/streams → river/stream capacity → flooding**
+
+Reasoning:
+Runoff refers to excess water flowing over land into rivers and streams. When runoff increases, the volume of water in these waterways rises. If the capacity of rivers/streams to hold this water is exceeded, flooding occurs. Thus, higher runoff directly leads to more flooding.
+
+Final answer: **A**",A,ministral-3:8b
+80,ddxplus,more,True,more,A,"Causal graph: **humidity → odor molecules (evaporation) → odor perception**
+
+Reasoning:
+Humidity affects how quickly odor molecules evaporate into the air. Higher humidity slows evaporation, trapping odors near surfaces, while lower humidity speeds it up, dispersing more odor molecules. If humidity decreases, odor molecules escape more easily, increasing the amount of odor perceived.
+
+Final answer: **A**",A,ministral-3:8b
+81,ddxplus,less,True,less,B,"**Causal graph:** artificial_food_source → human_need_satisfaction → conflict_reduction → less_destruction
+
+**Reasoning:**
+If the artificial food source increases directly, it likely satisfies human needs more efficiently (e.g., reducing hunger-driven conflicts). With fewer conflicts, the likelihood of destruction (e.g., wars, resource disputes) decreases. Thus, more food source → less destruction.
+
+**Final answer:** A",B,ministral-3:8b
+82,ddxplus,less,True,less,B,"**Causal graph:** food_cravings → calorie_intake, calorie_intake → weight, food_cravings → physical_activity (negative influence)
+
+**Reasoning:**
+Increased food cravings typically lead to higher calorie intake (directly) and may reduce physical activity (indirectly, as people might prioritize eating over exercise). Higher calorie intake without compensatory changes in energy expenditure tends to result in weight gain, not loss. Thus, more cravings generally correlate with less weight loss (or more weight gain).
+
+**Final answer:** B",B,ministral-3:8b
+83,ddxplus,more,True,more,A,"Causal graph: **increased free glutamic acid → increased excitotoxicity → heightened neuronal stress → more adverse reactions**
+
+Reasoning:
+Free glutamic acid is the primary neurotransmitter in the excitatory pathway of the brain. When its levels rise, it can overstimulate glutamate receptors (e.g., NMDA/AMPA), leading to excessive calcium influx, oxidative stress, and neuronal damage. This heightened excitotoxicity is directly linked to adverse reactions like headaches, neurological symptoms, or even long-term harm (e.g., in conditions like excitotoxicity-related disorders). Thus, an increase in free glutamic acid logically correlates with more adverse reactions.
+
+Final answer: **A**",A,ministral-3:8b
+84,ddxplus,more,True,more,A,"**Causal graph:** moisture_loss → material_drying → molecular_bonds_weakening → dimensional_reduction
+
+**Reasoning:**
+Moisture loss causes materials (e.g., wood, textiles, or polymers) to dry out, weakening internal molecular bonds. As bonds weaken, the material contracts and shrinks to minimize energy. Thus, **more moisture loss leads to more shrinkage**.
+
+**Final answer:** A",A,ministral-3:8b
+85,ddxplus,more,True,more,A,"**Causal graph:** aging_population→labor_force_size, labor_force_size→economic_growth
+
+**Reasoning:**
+A smaller aging population means fewer older adults, which typically increases the working-age labor force (assuming birth rates or immigration compensate). A larger labor force generally supports higher economic growth, as more workers contribute to production and productivity. Thus, a decrease in aging population likely leads to **more** economic growth, not less.
+
+**Final answer:** A",A,ministral-3:8b
+86,ddxplus,more,False,less,B,"**Causal graph:** nitric acid → degradation
+
+**Reasoning:**
+Nitric acid is a strong oxidizing agent commonly used in industrial processes (e.g., metal processing, chemical synthesis) where it accelerates material degradation (e.g., corrosion, rusting). If nitric acid decreases, the oxidizing environment weakens, reducing the rate of degradation. Thus, less nitric acid leads to less degradation.
+
+**Final answer:** B",B,ministral-3:8b
+87,ddxplus,more,False,less,B,"**Causal graph:** nicotinic acid → vasodilation → blood flow → redness
+
+**Reasoning:**
+Nicotinic acid (a form of vitamin B3) promotes vasodilation, increasing blood flow to the skin, which can cause redness (flushing). If nicotinic acid decreases, vasodilation is reduced, leading to less blood flow and thus **less redness**.
+
+**Final answer:** A",B,ministral-3:8b
+88,ddxplus,less,False,more,A,"**Causal graph:** internal_friction → temperature, temperature → gas_pressure, gas_pressure → gas_expansion
+
+**Reasoning:**
+Internal friction (e.g., viscosity or resistance in a gas) dissipates energy as heat, raising the temperature of the gas. Higher temperature increases gas pressure (via ideal gas law: PV = nRT). Higher pressure drives gas expansion. Thus, increased internal friction indirectly promotes expansion by raising temperature/pressure.
+
+**Final answer:** A",A,ministral-3:8b
+89,ddxplus,less,False,more,A,"**Causal graph:** water_vapour → cloud_formation, cloud_formation → atmospheric_cooling, water_vapour → greenhouse_effect, greenhouse_effect → atmospheric_warming
+
+**Reasoning:**
+Water vapour is a greenhouse gas, so its decrease reduces the greenhouse effect, which in turn decreases atmospheric warming. Additionally, less water vapour can lead to fewer clouds, which reduces the insulating effect of clouds that traps heat. Both effects contribute to **more cooling** in the atmosphere.
+
+**Final answer:** A",A,ministral-3:8b
+90,ddxplus,more,True,more,A,"Causal graph: solar_wind→geomagnetic_storms→auroras→visibility_of_auroras→less_situation
+
+Reasoning:
+Solar wind is a primary driver of geomagnetic storms, which in turn generate auroras (northern/southern lights). Fewer geomagnetic storms (due to reduced solar wind) lead to fewer auroras. With fewer auroras visible, the ""less situation"" (e.g., fewer aurora sightings) would logically increase. Thus, a decrease in solar wind correlates with a *more* ""less situation"" (i.e., more instances of ""less auroras"").
+
+Final answer: A",A,ministral-3:8b
+91,ddxplus,less,True,less,B,"**Causal graph:** excessive pressure → damage
+
+**Reasoning:**
+Excessive pressure (e.g., stress, force, or strain) is typically a *cause* of damage (e.g., structural failure, injury, or wear). If the cause (excessive pressure) *decreases*, the effect (damage) should logically *decrease* as well. This aligns with the principle that reducing harmful inputs reduces harmful outcomes.
+
+**Final answer:** B",B,ministral-3:8b
+92,ddxplus,more,False,less,B,"**Causal graph:** lack_of_food → malnutrition → health_decline → mortality_rate → population_decline
+
+**Reasoning:**
+If lack of food decreases, malnutrition decreases, which reduces health decline and mortality rates. Lower mortality rates directly lead to a slower population decline (or even growth). Thus, the population decline would be less severe.
+
+**Final answer:** B",B,ministral-3:8b
+93,ddxplus,more,False,less,B,"Causal graph: greenhouse_gas_buildup → global_warming → climate_change → ecosystem_disruption → species_extinction
+
+Reasoning:
+Greenhouse gases contribute to global warming, which drives climate change. Climate change disrupts ecosystems, increasing stress on species and raising extinction risks. If greenhouse gas buildup decreases, global warming slows, reducing climate change severity and ecosystem disruption. This would logically lead to fewer mass extinctions.
+
+Final answer: B",B,ministral-3:8b
+94,ddxplus,less,True,less,B,"**Causal graph:** pressure → blood_flow → oxygen_delivery → nerve_function → numbness
+
+**Reasoning:**
+Pressure (e.g., from external compression or reduced blood pressure) affects blood flow in tissues. Reduced blood flow decreases oxygen delivery to nerves, impairing their function. Impaired nerve function typically causes numbness. Thus, if pressure decreases (e.g., compression is released), blood flow and oxygen delivery may improve, reducing numbness.
+
+**Final answer:** B",B,ministral-3:8b
+95,ddxplus,more,False,less,B,"Causal graph: **rapid population growth → resource demand → habitat degradation**
+
+Reasoning:
+Rapid population growth increases resource demand (e.g., food, housing, infrastructure), which directly drives habitat degradation (e.g., deforestation, urban sprawl). If population growth decreases, resource demand likely declines, reducing pressure on habitats. Thus, less population growth should lead to **less** habitat degradation.
+
+Final answer: **B**",B,ministral-3:8b
+96,ddxplus,more,True,more,A,"**Causal graph:** Northridge_earthquake_decrease → seismic_activity_reduction, infrastructure_damage_reduction, emergency_response_efficiency, public_safety_awareness, economic_loss_reduction → perceived_danger_reduction
+
+**Reasoning:**
+A decrease in earthquake activity (e.g., fewer or smaller tremors) logically reduces the immediate physical risks (damage, injuries) and long-term hazards (e.g., aftershocks, structural failures). This directly lowers the *level of danger* people face. While other factors (like preparedness) might influence perception, the core causal link is that *less seismic activity → less danger*.
+
+**Final answer:** A",A,ministral-3:8b
+97,ddxplus,more,False,less,B,"**Causal graph:** salicylic acid → skin exfoliation → removal of dead skin cells → reduction of redness (inflammation/irritation)
+
+**Reasoning:**
+Salicylic acid is a beta-hydroxy acid (BHA) that acts as a keratolytic, promoting exfoliation by dissolving dead skin cells and unclogging pores. Removing dead cells and reducing inflammation (a common cause of redness) typically decreases redness. Thus, increasing salicylic acid would logically lead to less redness over time.
+
+**Final answer:** B",B,ministral-3:8b
+98,ddxplus,less,True,less,B,"Causal graph: **radiation → mutations**
+
+Reasoning:
+Radiation is a known mutagenic agent that damages DNA, increasing the likelihood of mutations. If exposure to radiation decreases, the frequency of DNA damage and thus mutations should also decrease.
+
+Final answer: **B**",B,ministral-3:8b
+99,ddxplus,more,True,more,A,"Causal graph: excessive_erosion → soil_loss
+
+Reasoning: Erosion is the process by which soil is worn away by natural forces (e.g., water, wind). If erosion increases, the amount of soil lost must also increase proportionally, as erosion directly removes soil from its original location.
+
+Final answer: A",A,ministral-3:8b

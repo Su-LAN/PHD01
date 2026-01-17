@@ -151,16 +151,30 @@ class ECARECausalBuilder:
     def _call_llm(self, prompt: str) -> str:
         """调用LLM获取响应，强制 temperature=0 以保证确定性"""
         # options 参数取决于 ollama 的 python 库版本，通常如下：
-        response = ollama.generate(
-            model=self.model_name, 
+        req = dict(
+            model=self.model_name,
             prompt=prompt,
             options={
-                "temperature": 0.0, # 消除随机性
-                "seed": 42,         # 固定种子
-                "num_predict": 1024  # 限制输出长度，防止废话
-            }
+                "temperature": 0.0,  # 消除随机性
+                "seed": 42,          # 固定种子
+                "num_predict": 1024,  # 限制输出长度，防止废话
+            },
         )
-        return response['response'].strip()
+
+        # NOTE: Some reasoning models (e.g., deepseek-r1) may put most tokens in `thinking`
+        # and leave `response` empty unless JSON mode is enabled.
+        try:
+            resp = ollama.generate(**req, format="json")
+        except TypeError:
+            # Backward-compatible fallback for older ollama python clients.
+            resp = ollama.generate(**req)
+
+        text = (resp.get("response") or "").strip()
+        if not text:
+            thinking = resp.get("thinking")
+            if isinstance(thinking, str) and thinking.strip():
+                text = thinking.strip()
+        return text
     def _clean_response(self, response: str) -> str:
         # 清理可能的 markdown 代码块标记
         response = response.strip()
@@ -233,55 +247,65 @@ class ECARECausalBuilder:
             question_for_extraction = f"suppose {cause_positive} happens, how will it affect {outcome_raw}."
 
         prompt_1 = f"""
-You are a STRICT string-matching text extractor.
-Your job is ONLY to copy substrings and detect certain exact words.
-You MUST NOT infer meanings or guess intentions.
-
-Task: Extract the Cause and Outcome segments from the question.
+You are a STRICT extractor. You MUST copy substrings from the question; do NOT paraphrase.
+You MUST NOT guess intentions. Only use explicit surface patterns.
 
 Question: "{question_for_extraction}"
 
-Definitions:
-- CAUSE_EVENT:
-    * If the question contains the word "happens"/"happen", copy the text after the word "suppose" up to "happens"/"happen".
-    * Otherwise, copy the text after the word "suppose" up to the word "affect".
-- OUTCOME_TEXT_RAW: the text after the word "affect" (trim leading spaces and punctuation, but keep all words).
-- DIRECTION: ONLY based on exact tokens in OUTCOME_TEXT_RAW:
-    * If OUTCOME_TEXT_RAW contains the WHOLE WORD "more" or "greater" -> outcome_direction = "MORE"
-    * If OUTCOME_TEXT_RAW contains the WHOLE WORD "less" or "fewer"   -> outcome_direction = "LESS"
-    * Otherwise -> outcome_direction = "NONE"
-- NEGATION: if OUTCOME_TEXT_RAW contains "not", "no", or "never" as whole words -> is_negated = "true", else "false".
+Goal: output JSON with:
+- cause_event: the cause segment
+- outcome_text_raw: the outcome segment
+- outcome_direction: MORE/LESS/NONE based ONLY on exact tokens in outcome_text_raw
+- is_negated: true/false based ONLY on explicit negation tokens in outcome_text_raw
 
-VERY IMPORTANT HARD RULES:
-- You MUST NOT use synonyms or meaning to decide the direction.
-- Comparative adjectives like "smaller", "bigger", "higher", "lower", "reduced", "increased", etc. DO NOT count as direction words.
-- If OUTCOME_TEXT_RAW contains only words like "smaller", "bigger", etc., you MUST output outcome_direction = "NONE".
-- You MUST ignore the cause when deciding the direction; ONLY look at OUTCOME_TEXT_RAW.
+Extraction rules (try in order):
+A) If the question contains the token "suppose":
+   - If it also contains "happens" or "happen":
+       cause_event = text AFTER "suppose" and BEFORE the first "happens"/"happen"
+     else:
+       cause_event = text AFTER "suppose" and BEFORE the first "affect"
+B) Else if the question starts with "If" or "if":
+   cause_event = text AFTER "if" and BEFORE the first comma.
+   If no comma, end at the earliest of: "what", "then", "how".
+C) Else:
+   cause_event = text BEFORE the first "affect" (trim).
 
-EXAMPLES (follow them exactly):
+Outcome extraction:
+- If the question contains "affect": outcome_text_raw = text AFTER the first "affect"
+- Else if it contains "effect on": outcome_text_raw = text AFTER "effect on"
+- Else if it contains "happens to": outcome_text_raw = text AFTER "happens to"
+- Else: outcome_text_raw = text AFTER the first "happens"/"happen" if present; otherwise copy the last clause.
+
+Direction detection (ONLY from outcome_text_raw; whole-word match; case-insensitive):
+- MORE if outcome_text_raw contains whole word: "more" OR "greater"
+- LESS if outcome_text_raw contains whole word: "less" OR "fewer"
+- NONE otherwise
+Do NOT treat "higher/lower/smaller/bigger/increased/reduced" as direction words.
+
+Negation detection (ONLY from outcome_text_raw; whole-word match; case-insensitive):
+is_negated = true if it contains: "not" OR "no" OR "never" OR "without"
+else false.
+
+EXAMPLES (from Dataset/wiqa_causenet_1hop2hop_mcqa_mix100_meta_rigorous_meta_mixed_more_less_stratified.jsonl; copy substrings exactly):
 
 Example 1:
-Q: "suppose people eat less fish happens, how will it affect more fish."
-OUTCOME_TEXT_RAW = "more fish"
-Contains "more" -> outcome_direction = "MORE"
+Q: "If agricultural runoff decreases, what happens to less pollution?"
+cause_event = "agricultural runoff decreases"
+outcome_text_raw = "less pollution"
+outcome_direction = "LESS"
+is_negated = "false"
 
 Example 2:
-Q: "suppose people drink more water happens, how will it affect less headaches."
-OUTCOME_TEXT_RAW = "less headaches"
-Contains "less" -> outcome_direction = "LESS"
-
-Example 3:
-Q: "suppose tectonic plates are dormant happens, how will it affect smaller mountains."
-OUTCOME_TEXT_RAW = "smaller mountains"
-It does NOT contain the exact whole words "more", "less", "greater", or "fewer".
-Therefore: outcome_direction = "NONE"
-
-Now perform the extraction for the current question.
+Q: "If greenhouse gas increases, what happens to more sea level rise?"
+cause_event = "greenhouse gas increases"
+outcome_text_raw = "more sea level rise"
+outcome_direction = "MORE"
+is_negated = "false"
 
 Output ONLY valid JSON (no extra text):
 {{
-  "cause_event": "<copied text after 'suppose' and before 'affect'>",
-  "outcome_text_raw": "<copied text after 'affect'>",
+  "cause_event": "...",
+  "outcome_text_raw": "...",
   "outcome_direction": "MORE" or "LESS" or "NONE",
   "is_negated": "true" or "false"
 }}
@@ -316,19 +340,19 @@ Output ONLY valid JSON (no extra text):
         # 目的：防止模型幻觉出原句不存在的 LESS/MORE
         # 逻辑：LLM 说是 X，我们就去原句里找 X。找不到就当它是瞎说的。
         
-        valid_more_words = ["MORE", "GREATER", "INCREASE", "HIGHER", "LARGER"]
-        valid_less_words = ["LESS", "FEWER", "DECREASE", "LOWER", "SMALLER", "REDUCE"]
-        
-        outcome_upper = raw_outcome.upper() 
-        final_direction = "NONE" # 默认为 NONE
-        
-        # 只有当原句里真的包含对应词汇时，才采纳 LLM 的建议
-        if any(v in raw_dir_str for v in valid_more_words):
-            if any(w in outcome_upper for w in valid_more_words):
-                final_direction = "MORE"
-        elif any(v in raw_dir_str for v in valid_less_words):
-            if any(w in outcome_upper for w in valid_less_words):
-                final_direction = "LESS"
+        # Deterministic meta direction ONLY from surface outcome_text_raw (raw_outcome).
+        # Whole-word matching; case-insensitive:
+        # - MORE if raw_outcome contains "more" or "greater"
+        # - LESS if raw_outcome contains "less" or "fewer"
+        # - NONE otherwise
+        final_direction = "NONE"
+        if re.search(r"\b(?:more|greater)\b", raw_outcome, flags=re.IGNORECASE):
+            final_direction = "MORE"
+        elif re.search(r"\b(?:less|fewer)\b", raw_outcome, flags=re.IGNORECASE):
+            final_direction = "LESS"
+
+        # Deterministic outcome negation ONLY from surface outcome_text_raw (raw_outcome).
+        is_negated = bool(re.search(r"\b(?:not|no|never|without)\b", raw_outcome, flags=re.IGNORECASE))
         
         # 如果代码运行到这里 final_direction 依然是 NONE，说明原句无方向词，幻觉已被修正。
 
@@ -342,19 +366,22 @@ Output ONLY valid JSON (no extra text):
             # 专门的 Prompt，负责把句子变成名词短语 (Noun Phrase)
             prompt_2 = f"""
 You are a Scientific Editor.
-Task: Convert a descriptive sentence into a concise Scientific Noun Phrase.
-
+Task: Convert a descriptive sentence/question into a concise NEUTRAL Scientific Noun Phrase (the BASE VARIABLE).
 Input Sentence: "{raw_outcome}"
 Current Direction: "{final_direction}"
 
 Rules:
-1. **Remove Direction**: Delete words like '{final_direction}', 'more', 'less' from the phrase.
-2. **Noun Phrase Conversion**: Convert actions/verbs into nouns.
-   - "lava is pushed out" -> "lava ejection"
-   - "tadpoles develop legs" -> "tadpole metamorphosis"
-   - "water gets hot" -> "water temperature"
-   - "cracks occur" -> "cracks"
-3. **Format**: The result must be a short phrase (2-4 words), NOT a sentence.
+1) Remove direction and negation words:
+   - remove {final_direction}, and tokens: more/less/greater/fewer/not/no/never/without.
+2) If the sentence is framed as a question like:
+   - "what is the effect on X" / "effect on X" / "how does X change"
+   Extract X and ignore the rest.
+3) Do NOT output the words "effect" or "change".
+   - If phrase contains "<thing> change", rewrite as:
+     a) For EVENT nouns (earthquake, tsunami, flood, storm, eruption): "<thing> frequency" or "<thing> occurrence"
+     b) For PROPERTY nouns (pH, acidity, alkalinity, temperature, pressure): "<thing> level"
+     c) Otherwise default: "<thing> level"
+4) Output must be 2–5 words, noun phrase only, no full sentence.
 
 Output ONLY JSON:
 {{
@@ -407,11 +434,7 @@ Output ONLY JSON:
         
         self.outcome_direction_in_question = final_direction # 验真后的方向
         
-        # 否定逻辑兜底 (如果原句没有 not/no，强制设为 False)
-        explicit_negation_words = ["not ", "no ", "never ", "n't ", "without ", "fail "]
-        if final_direction == "LESS" and is_negated and not any(w in raw_outcome.lower() for w in explicit_negation_words):
-             is_negated = False
-        self.outcome_is_negated = is_negated
+        self.outcome_is_negated = bool(is_negated)
 
         if refined_base:
             self.A.append(f"MORE {refined_base}")
@@ -436,14 +459,20 @@ Output ONLY JSON:
         nodes_str = ", ".join([f"'{n}'" for n in nodes])
         
         prompt = f"""
-You are a strategic pathfinder in a causal graph.
+You are selecting intermediate candidates in a causal graph.
 Start Node: "{self.cause_event}"
 Target Node: "{target}"
-
 Current Candidates: [{nodes_str}]
 
-Task: Select the top {top_k} candidates that are semantically closest or most likely to be an intermediate step towards the Target Node.
-Ignore generic or irrelevant concepts (e.g., "Size", "Stability" unless relevant).
+Task: Select the top {top_k} candidates most likely to lie on a CAUSAL path from Start to Target.
+
+Ranking heuristics:
+- Prefer candidates sharing the same core entity/system as the Target.
+- Prefer mechanistic/process variables (physical/biological/chemical) over:
+  measurement/response/social/economic/meta variables.
+- Strongly penalize generic/meta terms unless Target is explicitly about them:
+  "factor", "process", "effect", "change", "awareness", "confidence", "investment", "policy", "complacency".
+- Avoid near-duplicates of Start Node unless they add a missing mechanistic step.
 
 Output ONLY JSON:
 {{
@@ -615,36 +644,40 @@ Output ONLY JSON:
             avoid_str = ", ".join([f'"{n}"' for n in truncated_avoid])
         
         prompt = f"""
-You are a causal edge finder.
+You are a causal edge proposer.
 
 Input:
 - CAUSE_NODE (X): "{X}"
 - TARGET_HINT (Y): "{target_hint}"
+- FORBIDDEN LIST (do NOT output these nodes): [{avoid_str}]
 
-Context (Existing Nodes):
-- The following events have already happened or are upstream.
-- **FORBIDDEN LIST**: [{avoid_str}]
+Interpretation:
+- Treat every node as a QUANTITY/LEVEL/FREQUENCY/PROBABILITY.
+- If X contains directional language (increase/decrease/more/less/higher/lower/more common/less common),
+  interpret X as that directional change in the underlying variable.
+  Sanity constraint: do NOT propose edges that contradict this meaning.
+  Example (forbidden): "earthquake becomes more common" -> DECREASES -> "earthquake frequency".
+  If you propose "earthquake frequency" at all, it MUST be INCREASES, or skip it as redundant.
 
 Task:
-- Propose up to {max_relations} SINGLE-HOP causal effects starting from X.
-- **TARGETED EXPANSION (IMPORTANT)**:
-  * If TARGET_HINT (Y) is NOT "NONE", you MUST expand *toward Y*.
-  * Prefer effect nodes that are plausible intermediate steps on a path from X to Y.
-  * Choose effect nodes that are semantically closer to Y than random associations.
-  * Avoid off-topic branches. If you cannot find any reasonable effect that helps reach Y, output an EMPTY list.
-- **DAG CONSTRAINT (NO LOOPS)**: Do NOT generate any node that is semantically similar to the FORBIDDEN LIST. The graph must be Acyclic.
-- **CRITICAL RULE**: The output node MUST be a NEUTRAL NOUN or NOUN PHRASE.
-  Do NOT output full sentences. Do NOT include "more/less" in the node text.
+- Propose up to {max_relations} SINGLE-HOP effects starting from X.
+- If TARGET_HINT != "NONE", bias toward plausible intermediates that can mediate X -> Y.
+- If TARGET_HINT != "NONE" and it is a plausible DIRECT effect of X, include TARGET_HINT itself among your proposals.
+
+Hard output rules:
+- Each output tail node MUST be a NEUTRAL noun phrase (no "more/less", no full sentences).
+- Do NOT output nodes containing "effect" or "change" as the main noun.
+- Avoid measurement/response variables ("warning time", "preparedness", "awareness", "response capacity")
+  unless TARGET_HINT explicitly asks about human impact/response.
 
 Signs:
-- Use "INCREASES" when X causes the effect variable to increase/rise.
-- Use "DECREASES" when X causes the effect variable to decrease/fall.
+- Use "INCREASES" when X↑ tends to make tail↑.
+- Use "DECREASES" when X↑ tends to make tail↓.
 
 Output ONLY JSON:
 {{
   "triples": [
-    ["{X}", "INCREASES" | "DECREASES", "<neutral noun phrase>"],
-    ...
+    ["{X}", "INCREASES" | "DECREASES", "<neutral noun phrase>"]
   ]
 }}
 """.strip()
@@ -730,16 +763,19 @@ TARGET NODE (Y): "{Y}"
 
 Task:
 - Propose up to {max_parents} DIRECT causes X of Y.
-- Each X must be a NEUTRAL NOUN or NOUN PHRASE (no "more/less", no full sentences).
-- Use "INCREASES" when increasing X tends to increase Y.
-- Use "DECREASES" when increasing X tends to decrease Y.
-- Prefer mechanistic/scientific variables. Avoid generic placeholders like "factor", "change", "process".
+- Each X must be a NEUTRAL noun phrase (no "more/less", no full sentences).
+- Use "INCREASES" when X↑ tends to make Y↑.
+- Use "DECREASES" when X↑ tends to make Y↓.
+
+Causality guard:
+- If Y is a natural phenomenon occurrence/intensity (e.g., tsunami/earthquake frequency),
+  do NOT propose human measurement/response variables (warning time, preparedness, evacuation readiness)
+  as direct causes; those may affect IMPACT, not OCCURRENCE.
 
 Output ONLY JSON:
 {{
   "triples": [
-    ["<neutral noun phrase>", "INCREASES" | "DECREASES", "{Y}"],
-    ...
+    ["<neutral noun phrase>", "INCREASES" | "DECREASES", "{Y}"]
   ]
 }}
 """.strip()
@@ -973,8 +1009,7 @@ Output ONLY JSON:
 
         prompt = f"""
 You are a Scientific Logic Judge.
-
-You MUST judge causality based on commonsense scientific knowledge and the question context.
+You MUST judge whether Cause can causally change Effect (forward direction), not mere correlation.
 
 Question Context:
 {context}
@@ -982,33 +1017,15 @@ Question Context:
 Cause: "{cause}"
 Effect: "{effect}"
 
-Task:
-Does knowing that the Cause happened help us predict the state (presence / absence / increase / decrease) of the Effect?
+Reject if:
+- Effect is only a human measurement/response variable unrelated to physical occurrence of Cause/Effect.
+- The relationship is backwards (Effect would cause Cause).
+- It is only a vague association without a mechanism.
 
-Criteria for ACCEPTANCE (is_valid_link = true) – pass if ANY is true:
-
-1. State Exclusion (Strong Negative):
-   - If the Cause is present, does it make the Effect impossible or strongly suppressed?
-   - Examples:
-     - "Strong sunlight on the ground" -> "Rain falling now" (sun implies no rain clouds → no rain).
-     - "Damaged eardrum" -> "Sound converted into nerve signals" (damage prevents conversion).
-
-2. Mechanism:
-   - Is there a plausible physical/logical process connecting them based on scientific knowledge?
-   - e.g. "More water in soil" -> "More plant growth" (resource).
-
-3. Indirect Dependency / Necessary Resource:
-   - The Cause provides a key resource or necessary precondition for the Effect.
-   - e.g. "Water" -> "Steam", "Electricity" -> "Light from bulbs".
-
-Criteria for REJECTION (is_valid_link = false):
-
-- Completely unrelated topics.
-- Pure coincidence or loose association with no usable predictive power.
-- Strong cross-domain jumps not supported by scientific knowledge.
-
-Decision:
-Is this a valid causal link based on scientific reasoning?
+Accept if:
+- There is a plausible physical/biological/chemical mechanism,
+- Or Cause is a necessary precondition/resource for Effect,
+- Or Cause reliably predicts change in Effect in commonsense science.
 
 Output ONLY JSON:
 {{"is_valid_link": true/false, "reasoning": "short explanation"}}
@@ -1037,38 +1054,30 @@ Output ONLY JSON:
         """
         prompt = f"""
 You are a Logic Consistency Checker.
-We are distinguishing between two types of relationships: SUBSTITUTION vs. DEPENDENCY.
+We distinguish SUBSTITUTION vs DEPENDENCY.
 
 Question Context: {context}
 A = "{cause}"
 B = "{effect}"
 
-Assumption: The graph currently says "More A -> More B".
+Graph assumption being tested: "More A -> More B".
 
-TEST: Imagine A is completely REMOVED.
-To achieve the Goal, do we now need **MORE** of B to compensate?
+Substitution means: B can replace A to achieve the SAME functional goal when A is absent.
+Dependency means: A enables/causes B; removing A does NOT make "need more B" meaningful.
 
-Type 1: SUBSTITUTION (The "Spare Tire" Logic) - RETURNS TRUE
-- "A is gone, so I must use B instead."
-- Example: No Pipes -> Need MORE Trucks.
-- Example: No Coffee -> Need MORE Tea (to stay awake).
-- Logic: A and B are COMPETITORS.
-- Verdict: **TRUE** (Flip to Negative).
+Be VERY conservative:
+- Return is_substitute=true ONLY when B is an explicit replacement/backup alternative for A.
 
-Type 2: DEPENDENCY / CAUSATION (The "Fuel" Logic) - RETURNS FALSE
-- "A is gone, so B cannot happen or is useless."
-- Example: No Soil -> No Germination. (Adding "more germination" makes no sense without soil).
-- Example: No Sunlight -> No Evaporation.
-- Logic: A causes/enables B.
-- Verdict: **FALSE** (Keep Positive).
-
-Task: Is A a SUBSTITUTE for B? (Does removing A *increase* the need/occurrence of B?)
+Hard formatting constraints (must follow):
+- Output exactly ONE JSON object and NOTHING else.
+- Do NOT output markdown, backticks, code fences, or any non-JSON text.
+- Ensure the output is directly parseable by Python json.loads(...).
 
 Output ONLY JSON:
 {{
   "identified_goal": "...",
-  "is_substitute": true/false,          // Only true when clearly substitution
-  "confidence": 0.0-1.0,                 // Conservative: use >=0.7 only if very certain
+  "is_substitute": true/false,
+  "confidence": 0.0-1.0,
   "reasoning": "..."
 }}
 """.strip()
@@ -1117,7 +1126,7 @@ Output ONLY JSON:
         """
         prompt = f"""
 You are a Broad-minded Scientific Reviewer.
-We are evaluating a causal chain based on commonsense scientific knowledge.
+We are evaluating whether a proposed causal chain is a coherent mechanistic explanation.
 
 Question Context:
 {context}
@@ -1128,43 +1137,10 @@ End Event: "{target}"
 Proposed Chain:
 {path_summary}
 
-Task:
-Determine if this chain represents a LOGICALLY COHERENT argument
-based on scientific knowledge, even if it simplifies complex processes
-and skips obvious steps.
-
-*** CRITERIA FOR APPROVAL (is_plausible = true) ***
-
-1. Implicit Steps are OK:
-   - If the chain skips obvious intermediate steps
-     (e.g. "Fewer plants -> Less seeds germinating" skipping pollination/dispersal),
-     it is still VALID. Do not be a pedant.
-
-2. General Causality:
-   - If, based on scientific knowledge, it is reasonable that A usually leads to B
-     (e.g. "Rain -> Wet ground", "More fire -> More heat"), it is VALID.
-
-3. Negative Logic:
-   - Chains explaining prevention or reduction are valid,
-     e.g. "No clouds -> No rain", "Less fuel -> Less energy".
-
-*** CRITERIA FOR REJECTION (is_plausible = false) ***
-
-1. Semantic Drift:
-   - A key word changes meaning halfway through the chain,
-     e.g. "plant shoots" (botany) -> "shooting guns" (weapons).
-
-2. Magical/Absurd Links:
-   - Connects completely unrelated concepts without a mechanism,
-     e.g. "Pollen -> Internet speed".
-
-3. Extreme Butterfly Effect:
-   - A long chain that relies on many weak, speculative jumps across unrelated domains
-     without scientific support.
-
-Verification Question:
-"Is there a reasonable scientific or commonsense explanation
-where this chain holds true as a causal explanation?"
+Guidelines:
+- Accept simplified but coherent scientific mechanisms.
+- Reject chains with domain jumps to social/economic/meta variables unless the context is social/economic.
+- Strongly suspect chains that rely on warning/preparedness/awareness to explain the OCCURRENCE of natural hazards.
 
 Output ONLY JSON:
 {{"is_plausible": true/false, "reasoning": "brief explanation"}}
@@ -1437,19 +1413,30 @@ Output ONLY JSON:
                 effect_prompt = f"""
 You are a causal direction judge.
 
-We interpret every variable as a QUANTITY / LEVEL / FREQUENCY / PROBABILITY.
-- If a variable is a bare noun (e.g., "frogs"), treat it as "number/abundance/probability of frogs (being present/surviving)".
-- health / quality / suitability / stability / strength / fitness / habitat quality are POSITIVE improvements.
-- toxicity / pollution / contamination / dangerous chemicals are NEGATIVE harms.
-
-Monotonic priors (usually true):
-- If X is health/quality/suitability/habitat quality of an organism/population, INCREASE in X usually INCREASES the population/number/probability.
-- If X is toxicity/pollution/contamination/dangerous chemicals affecting an organism/population, INCREASE in X usually DECREASES the population/number/probability.
+We interpret variables as QUANTITY/LEVEL/FREQUENCY/PROBABILITY.
+Assume an intervention: "X increases" (X↑). Decide what happens to Y (Y↑ or Y↓).
 
 Base variable (Y): "{Y}"
 Candidate node (X): "{node}"
 
+Critical non-causality rule:
+- If X is measurement/monitoring/response/awareness (warning time, detection systems, public awareness,
+  preparedness, evacuation readiness, response capacity),
+  and Y is a natural phenomenon occurrence/intensity (earthquake/tsunami/flood/storm occurrence),
+  then X does NOT causally control the occurrence of Y. Output NO_CLEAR_EFFECT.
+
+Inverse-quantity rule (flip sign when appropriate):
+- acidity ↑ => alkalinity/alkaline urine ↓
+- pH ↑ => acidity ↓
+- risk ↑ => safety/survival ↓
+- toxicity/pollution ↑ => health/quality ↓
+If X and Y are inverse measures of the same underlying state, use DECREASES.
+
 Task: If X increases, what happens to Y?
+Return:
+- INCREASES if X↑ tends to make Y↑
+- DECREASES if X↑ tends to make Y↓
+- NO_CLEAR_EFFECT if no clear direct monotonic causal effect (or only correlation).
 
 Output ONLY JSON:
 {{
@@ -1636,7 +1623,11 @@ Output ONLY JSON:
 You are a causal reasoning assistant.
 Problem: {self.question}
 C = "{node}", Y = "{Y}"
-Classify ONLY the direct relationship between C and Y.
+
+Classify ONLY the relationship between C and Y (be conservative).
+- Use "direct_step" ONLY if C plausibly and directly changes Y.
+- If they share a topic/entity but C is monitoring/response and Y is phenomenon occurrence, prefer "correlation_only" and "no_direct_effect".
+
 Output STRICT JSON:
 {{
   "causal_type": "direct_step" | "shared_cause" | "multi_step" | "correlation_only",
@@ -1771,21 +1762,18 @@ Output STRICT JSON:
 You are a scientific concept-matching assistant.
 
 Task:
-Given two short phrases A and B that refer to variables/events in a causal question,
-classify their semantic relationship into EXACTLY ONE of:
-
-- "identical": The two phrases describe the SAME underlying quantity/state/event
-               (minor rephrasing is allowed).
-- "part_of":   One is a sub-event/component of the other in the mechanism being discussed.
-- "causal_but_separate": They are causally related but NOT the same quantity.
-- "weakly_related": Vaguely or loosely related, but not clearly part-of or strongly causal.
-- "unrelated": No meaningful relation.
-- "opposite": Explicitly opposing meanings/states.
+Given A and B, classify semantic relationship into EXACTLY ONE:
+- "identical"
+- "part_of"
+- "causal_but_separate"
+- "weakly_related"
+- "unrelated"
+- "opposite"
 
 Guidance:
-- If you are NOT clearly confident they are the same underlying quantity, pick a weaker label
-  such as "causal_but_separate" or "weakly_related" instead of "identical" or "part_of".
-- Do not answer the WIQA question itself; only classify the relation.
+- Use "opposite" when they are inverse measures/states (acidity vs alkalinity; risk vs safety).
+- Use "weakly_related" (not identical) for measurement/response variables vs phenomenon occurrence
+  (e.g., tsunami warning time vs tsunami frequency).
 
 Question context (may be empty):
 {context}
@@ -2013,67 +2001,53 @@ You are judging the relationship between two variables in a causal graph.
 Variable A: "{a}"
 Variable B: "{b}"
 
-Step 1: Extract for EACH variable:
-- main entity or entities (who/what is this about?)
-- what is being measured or described (quantity, property, process, event?)
-- is it individual-level (per animal/person) or population-level (total count, density)?
-- does it describe a state itself, or a cause/effect of some other state?
-
-Step 2: Decide these fields:
-
-1) core_entity_relation:
-- "same_entity": if both mainly talk about the SAME type of entity (e.g., both about tadpoles, both about frogs).
-- "overlapping_entities": if one talks about a group that contains the other (e.g., frogs vs amphibians).
-- "different_entity": if they are about clearly different entities (e.g., human movement vs tadpoles).
-
-2) quantity_relation:
-- "same_quantity": if they describe the SAME underlying variable using different wording or granularity.
-- "subset_or_component": if one is a PART, STAGE, or COMPONENT of the other.
-- "aggregate_or_population": if one is an INDIVIDUAL-LEVEL quantity and the other is a POPULATION/AGGREGATE quantity for the same entity.
-- "different_quantity": if they measure completely different aspects.
-
-3) causal_or_structural_relation:
-- "same_state": if they basically refer to the same state or its negation.
-- "direct_cause_or_effect": if changes in one directly cause changes in the other or are a necessary condition.
-- "correlated_or_confounding": if they tend to change together but are neither identical nor a clean cause–effect.
-- "independent_or_unknown": if there is no clear structural or causal link.
-
-4) bfs_equivalence:
-Decide how B should be treated when we are searching for A as a target in a causal graph.
-
-Rules:
-- Use "exact_target" if:
-  - core_entity_relation = "same_entity", AND
-  - quantity_relation = "same_quantity" OR "subset_or_component", AND
-  - causal_or_structural_relation = "same_state".
-- Use "close_hit" if:
-  - core_entity_relation = "same_entity", AND
-  - quantity_relation ∈ {{"subset_or_component", "aggregate_or_population"}}, AND
-  - causal_or_structural_relation = "direct_cause_or_effect".
-- Use "bridge_candidate" if:
-  - core_entity_relation ∈ {{"same_entity", "overlapping_entities"}}, AND
-  - causal_or_structural_relation ∈ {{"direct_cause_or_effect", "correlated_or_confounding"}},
-  but A and B are clearly different quantities.
-- Use "not_related" ONLY if:
-  - core_entity_relation = "different_entity", AND
-  - causal_or_structural_relation = "independent_or_unknown".
-
-Very important:
-- If the entities are the same, DO NOT use "not_related" unless they are truly independent.
-
 Question context (may be empty):
 {context}
 
- Important:
- - Do NOT output bfs_equivalence. It will be derived deterministically in code from the 3 fields above.
- 
- Output ONLY JSON in this format:
- {{
-   "core_entity_relation": "...",
-   "quantity_relation": "...",
-   "causal_or_structural_relation": "...",
-   "explanation": "short explanation"
- }}
+Step 1: For EACH variable, identify:
+- core entity (what it is about)
+- what is being measured (level/frequency/risk/quality/etc.)
+- whether it is phenomenon occurrence/intensity vs human response/measurement
+
+Step 2: Output these enums EXACTLY:
+
+core_entity_relation (one of):
+- "same_entity"
+- "overlapping_entities"
+- "different_entity"
+
+quantity_relation (one of):
+- "same_quantity"
+- "subset_or_component"
+- "aggregate_or_population"
+- "different_quantity"
+
+causal_or_structural_relation (one of):
+- "same_state"
+- "direct_cause_or_effect"
+- "correlated_or_confounding"
+- "independent_or_unknown"
+
+Important guidance:
+- Hard rule: Do NOT classify as "same_entity" or "overlapping_entities" solely because the phrases share a broad umbrella word
+  (e.g., "pollution", "toxicity", "disease", "health", "environment").
+- If they are distinct measurable constructs (e.g., "toxic chemical load in rivers" vs "pollution level"),
+  set core_entity_relation="different_entity", but you may still set causal_or_structural_relation="direct_cause_or_effect".
+- If they are inverse measures of the same underlying state (acidity vs alkalinity; pH vs acidity),
+  then: core_entity_relation="same_entity", quantity_relation="different_quantity",
+  causal_or_structural_relation="direct_cause_or_effect".
+- If one is a measurement/response (warning time/preparedness) and the other is phenomenon occurrence,
+  then causal_or_structural_relation should usually be "independent_or_unknown" (not direct cause).
+
+Do NOT output bfs_equivalence.
+
+Output ONLY JSON:
+{{
+  "core_entity_relation": "...",
+  "quantity_relation": "...",
+  "causal_or_structural_relation": "...",
+  "explanation": "short explanation"
+}}
 """.strip()
 
         allowed_core = {"same_entity", "overlapping_entities", "different_entity"}
@@ -2133,6 +2107,8 @@ Question context (may be empty):
                 "frequency", "occurrence", "formation",
                 "population", "density", "abundance", "size",
                 "health", "quality", "suitability", "stability", "integrity", "availability", "scarcity",
+                # Broad umbrella words that should NOT force "same_entity"/"overlapping_entities".
+                "pollution", "toxicity", "toxic", "disease", "diseases", "environment", "environmental", "contamination",
             }
             entity_overlap = (ta & tb) - generic_noise
             if core_entity_relation == "different_entity" and entity_overlap:
@@ -2552,29 +2528,18 @@ Question context (may be empty):
         nodes_str = ", ".join(intermediate_nodes)
 
         prompt = f"""
-You are a Logic Consistency Validator. We are analyzing a causal path to answer a "What if" question.
+You are a Logic Consistency Validator. We are analyzing a causal path for a "What if" premise.
 
 Start Event (The Premise): "{start_node}"
 Intermediate Steps in Path: [{nodes_str}]
 
 Task:
-Check if any of the Intermediate Steps logically CONTRADICT or NEGATE the Start Event in the *immediate* context.
+Check whether any intermediate step logically contradicts the premise in the immediate sense.
+Invalid if:
+- A step requires the opposite of the premise to be true (undoes the premise).
+- A step reintroduces the forbidden state as a prerequisite.
 
-**Critical Rules:**
-1. **No "Undoing" the Premise:** If the Start Event says something is ABSENT (e.g., "No clouds", "No food"), and the steps rely on PRODUCING or HAVING that thing (e.g., "Cloud formation", "Eating food") to proceed, this is INVALID.
-2. **Immediate vs. Long-term:** We are looking for the *direct consequence* of the Start Event. Do not accept long-term feedback loops that restore the missing factor (e.g., "No clouds -> Evaporation -> Clouds form"). This is a logical loop, not a direct effect.
-
-Example 1:
-- Start: "No clouds"
-- Steps: "Sunlight reaches ground", "Water evaporates", "Cloud formation"
-- Verdict: INVALID. (Step 'Cloud formation' contradicts the premise 'No clouds'. You can't assume clouds form to answer what happens when there are no clouds).
-
-Example 2:
-- Start: "No clouds"
-- Steps: "Sunlight reaches ground", "Soil dries out"
-- Verdict: VALID. (Consistent with no clouds).
-
-Is this path logically consistent with maintaining the premise?
+Be conservative and focus on direct contradictions.
 
 Output ONLY JSON:
 {{"is_consistent": true/false, "reasoning": "Explain violation if any"}}
@@ -2881,64 +2846,73 @@ Output ONLY JSON:
         summary_json = json.dumps(graph_summary or {}, ensure_ascii=False, indent=2)
 
         # 2. Prompt：强调即使无路径也要根据常识作答，且避免默认 no_effect
+
         prompt = f"""
 You are solving a WIQA-style causal reasoning problem.
-Your job is to decide how the CAUSE affects the BASE VARIABLE.
+Decide how the CAUSE affects the BASE VARIABLE.
 
 Question: "{question}"
 Cause event: "{cause_event}"
 Outcome event (surface text): "{outcome_event}"
 BASE variable (outcome_base, the only quantity you judge): "{outcome_base}"
 
+Critical rule (meta wording):
+- The Question/Outcome event may include the tokens "MORE" or "LESS" (e.g., "LESS mold", "MORE algae").
+- Those tokens describe the SURFACE OUTCOME EVENT, not the BASE variable you judge.
+- You MUST ignore "MORE/LESS" when deciding effect_on_base.
+- Always judge the BASE variable "{outcome_base}" as a neutral quantity.
+- The system will map your effect_on_base to the final answer for "LESS ..." questions outside of you.
+
+Output semantics (MUST follow):
+- If the BASE variable increases => effect_on_base="more" and predicted_choice="A"
+- If the BASE variable decreases => effect_on_base="less" and predicted_choice="B"
+- If no clear causal effect => effect_on_base="no_effect" and predicted_choice="C"
+Meta example:
+- If the question says "LESS tsunami" but you conclude "{outcome_base}" increases, output effect_on_base="more" (NOT "less").
+
 Causal graph summary (may be incomplete or noisy):
 {summary_json}
 
-Evidence chains from cause → BASE (system-computed net effects; DO NOT re-multiply signs yourself):
+Evidence chains from cause -> BASE (system output; may include bridge edges):
 {evidence_block}
 
-Raw chain trace (may be noisy; optional for intuition):
+Raw chain trace (optional):
 {description}
 
-IMPORTANT:
-- You must decide the direction of change for the BASE VARIABLE only
-  ("{outcome_base}"), NOT for the surface wording of the outcome sentence.
-  Ignore "more"/"less" in the question text; mapping back to choices is
-  handled outside of you.
- - In Evidence chains, "[Net Effect: POSITIVE]" means the BASE VARIABLE INCREASES.
-   "[Net Effect: NEGATIVE]" means the BASE VARIABLE DECREASES.
- - The graph can be wrong or incomplete. Use it as evidence, but you may
-   override it using commonsense and the question text.
- - If the graph summary indicates bridge-heavy evidence (e.g., "bridge_heavy": true),
-   treat graph evidence as weak and rely more on general commonsense and the question itself.
- - "no_effect" is a rare answer. Only use "no_effect" if it is truly
-   reasonable to treat the cause as approximately independent of the BASE
-   VARIABLE, even after considering plausible mechanisms.
-- NEVER choose "no_effect" just because:
-  * there is no path in the graph, or
-  * some chains are positive and some are negative, or
-  * you feel uncertain.
-  In those cases, choose "more" or "less" and lower your confidence.
-- If most strong/credible chains are positive and commonsense agrees,
-  choose "more".
-- If most strong/credible chains are negative and commonsense agrees,
-  choose "less".
-- If evidence is mixed but biased (e.g., 2 positive vs 1 negative and
-  commonsense supports the positive story), still choose that biased
-  direction, but with lower confidence.
-- Only if the cause is clearly irrelevant or orthogonal to the BASE
-  VARIABLE, choose "no_effect".
+How to read evidence chains (IMPORTANT):
+- Each chain already has a "[Net Effect: POSITIVE (Causes Increase)]" or "[Net Effect: NEGATIVE (Causes Decrease)]".
+- Treat that Net Effect label as authoritative for that chain; do NOT re-multiply INCREASES/DECREASES yourself.
+- Use "[bridge_edges: x/y]" as a reliability hint: more bridge edges => lower reliability.
+- Example: a chain that claims "warning time -> tsunami frequency" is NOT causal control of occurrence; treat it as INVALID.
 
-Choice mapping for this dataset:
-- "more"    → answer choice "A"
-- "less"    → answer choice "B"
-- "no_effect" → answer choice "C"
+Decision rules:
+1) Interpret BASE:
+- If BASE contains "change", interpret as frequency/occurrence/intensity of the named phenomenon (not preparedness/response).
+2) Chain quality filter (strict):
+- If a chain uses measurement/monitoring/response variables (warning time, preparedness, emergency preparedness,
+  safety measures, evacuation readiness, response capacity, detection systems) to explain a natural phenomenon
+  occurrence/frequency/intensity, treat that chain as INVALID for effect_on_base and ignore it in voting.
+- If a chain has many bridge edges (bridge_edges is large relative to edges), down-weight it.
+3) Inverse-quantity correction:
+- If BASE is alkalinity/alkaline urine/pH and a chain uses acidity (or vice versa), ensure the direction follows inverse relation:
+  acidity? implies alkaline urine?; pH? implies acidity?.
+If a chain?s implied direction contradicts this, treat the chain as unreliable and do NOT let it dominate.
+4) Aggregate:
+- Prefer the direction supported by the most reliable remaining chains.
+- If all chains are invalid/unreliable but there is a plausible commonsense mechanism, choose "more" or "less" with low confidence.
+- Only choose "no_effect" if there is no plausible causal connection OR everything is clearly unrelated.
 
-Output ONLY strict JSON:
+Choice mapping:
+- "more" -> "A"
+- "less" -> "B"
+- "no_effect" -> "C"
+
+Output ONLY strict JSON (no extra text):
 {{
   "effect_on_base": "more" | "less" | "no_effect",
   "predicted_choice": "A" | "B" | "C",
   "confidence": "high" | "medium" | "low" | "very_low",
-  "reasoning": "Short explanation of why the BASE VARIABLE goes up, down, or stays effectively unchanged."
+  "reasoning": "Short explanation referencing the rules above"
 }}
 """.strip()
 
@@ -3485,48 +3459,52 @@ Output ONLY strict JSON:
 
         prompt = f"""
 You are a Common Sense Judge.
-We need to verify if a causal link is reasonable.
+We need to verify if a causal link with a SIGN is reasonable.
 
 Link: "{head}" -> {action} -> "{tail}"
 
-Task: Check this logic using two tests. You MUST judge the SIGN (direction) as well.
-1. **Direct Sense (Sign Check)**: {direct_q}
-2. **Counterfactual (Sign Check)**: {cf_q}
+Tests:
+1) Direct Sense (Sign Check): {direct_q}
+2) Counterfactual (Sign Check): {cf_q}
+Expected counterfactual direction if the sign is correct: {cf_expect}
 
- Important:
- - Ignore the original WIQA question/goal. Judge ONLY whether this generic link is reasonable.
- - If the link is plausible but the SIGN is backwards, output is_valid = false.
- - "{cf_expect}" is what we expect under removal if the SIGN is correct.
- - If you are UNSURE / not confident, output is_valid = true (fail-open) and explain uncertainty briefly.
- - If is_valid = false because the SIGN is backwards, set suggested_relation to the correct one ("INCREASES" or "DECREASES").
- - If is_valid = false for other reasons (nonsense/unrelated), set suggested_relation = "NO_SUGGESTION".
+Rules:
+- Ignore the original WIQA question; judge ONLY this generic link.
+- If the link is plausible but the SIGN is backwards, set is_valid=false and suggest the correct relation.
+- Apply inverse-quantity sanity:
+  acidity↑ => alkalinity/alkaline↓ ; pH↑ => acidity↓ ; risk↑ => safety/survival↓ ; toxicity↑ => health/quality↓
+- If head indicates "more common"/"increases" for the same underlying quantity as tail (e.g., earthquake more common vs earthquake frequency),
+  then the correct relation must be INCREASES (action=INCREASE / PROMOTE); DECREASES (action=DECREASE / SUPPRESS) is invalid.
+- If unsure, fail-open: is_valid=true, suggested_relation="NO_SUGGESTION".
 
-**Rule for "Valid"**: 
-- Output TRUE if the stated SIGN is generally correct and "{head}" is a PLAUSIBLE CONTRIBUTING factor.
-- Output TRUE even if other factors also affect "{tail}".
-- Output FALSE if the link is clearly WRONG, BACKWARDS (sign wrong), or NONSENSE.
-
-Example:
-- "Predators" -> INCREASE -> "Mortality": TRUE (Predators are a major cause of death).
-- "Good Environment" -> DECREASE -> "Survival": FALSE (Contradicts common sense).
-
-Is this link valid?
-
- Output ONLY JSON:
- {{
-   "is_valid": true/false,
-   "confidence": 0.0-1.0,
-   "reasoning": "short explanation",
-   "suggested_relation": "INCREASES" | "DECREASES" | "NO_SUGGESTION"
- }}
- """
+Output ONLY JSON:
+{{
+  "is_valid": true/false,
+  "confidence": 0.0-1.0,
+  "reasoning": "short explanation",
+  "suggested_relation": "INCREASES" | "DECREASES" | "NO_SUGGESTION"
+}}
+  """
         try:
             # 增加一点 num_predict 防止截断，但保持 temperature=0
-            response = ollama.generate(
-                model=self.model_name, 
-                prompt=prompt,
-                options={"temperature": 0.0, "num_predict": 256}
-            )['response']
+            try:
+                resp = ollama.generate(
+                    model=self.model_name,
+                    prompt=prompt,
+                    format="json",
+                    options={"temperature": 0.0, "num_predict": 256, "seed": 42},
+                )
+            except TypeError:
+                resp = ollama.generate(
+                    model=self.model_name,
+                    prompt=prompt,
+                    options={"temperature": 0.0, "num_predict": 256, "seed": 42},
+                )
+            response = (resp.get("response") or "").strip()
+            if not response:
+                thinking = resp.get("thinking")
+                if isinstance(thinking, str) and thinking.strip():
+                    response = thinking.strip()
             
             import re
             match = re.search(r'\{[\s\S]*?\}', response)
@@ -3843,9 +3821,30 @@ Is this link valid?
         
 
 
+def _run_one_datapoint_worker(payload: Tuple[Dict[str, Any], str]) -> Tuple[bool, str, str]:
+    """
+    Multiprocessing worker: run one datapoint and return (ok, id, error).
+    Note: We suppress stdout to avoid interleaved logs across processes.
+    """
+    rec, model_name = payload
+    rec_id = str((rec or {}).get("id", "") or "")
+    try:
+        import contextlib
+        import os
+
+        with open(os.devnull, "w", encoding="utf-8", errors="ignore") as devnull:
+            with contextlib.redirect_stdout(devnull):
+                builder = ECARECausalBuilder(rec, model_name=model_name)
+                ok = bool(builder.run_wiqa_pipeline())
+        return ok, rec_id, ""
+    except Exception as e:
+        return False, rec_id, f"{type(e).__name__}: {e}"
+
+
 def main():
     import argparse
     from pathlib import Path
+    from concurrent.futures import ProcessPoolExecutor, as_completed
 
     def load_jsonl(path: str) -> List[Dict[str, Any]]:
         p = Path(path)
@@ -3862,27 +3861,50 @@ def main():
     parser.add_argument(
         "--input",
         type=str,
-        default="result/e-care-more.jsonl",
+        default="Dataset\\wiqa_causenet_1hop_mcqa_no_no_effect.jsonl",
         help="Input JSONL path",
     )
-    parser.add_argument("--max-items", type=int, default=1, help="How many items to run (default: 1).")
+    parser.add_argument("--max-items", type=int, default=160, help="How many items to run (default: 1).")
     parser.add_argument("--model", type=str, default="llama3.1:8b", help="Ollama model name.")
+    parser.add_argument("--workers", type=int, default=4, help="Number of worker processes (default: 1).")
     args = parser.parse_args()
 
     rows = load_jsonl(args.input)
     if not rows:
         raise SystemExit(f"No records found in: {args.input}")
 
+    items = rows[: max(0, int(args.max_items))]
+    if not items:
+        raise SystemExit("No items selected to run (check --max-items).")
+
     total = 0
     correct = 0
-    for rec in rows[: max(0, int(args.max_items))]:
-        builder = ECARECausalBuilder(rec, model_name=args.model)
-        ok = builder.run_wiqa_pipeline()
-        total += 1
-        correct += 1 if ok else 0
+    workers = max(1, int(args.workers))
+    if workers <= 1 or len(items) <= 1:
+        for rec in items:
+            builder = ECARECausalBuilder(rec, model_name=args.model)
+            ok = builder.run_wiqa_pipeline()
+            total += 1
+            correct += 1 if ok else 0
+    else:
+        print(f"Running {len(items)} items with {workers} worker processes (stdout suppressed in workers).")
+        progress_every = max(1, len(items) // 10)
+        with ProcessPoolExecutor(max_workers=workers) as executor:
+            futures = [executor.submit(_run_one_datapoint_worker, (rec, args.model)) for rec in items]
+            for fut in as_completed(futures):
+                ok, rec_id, err = fut.result()
+                total += 1
+                correct += 1 if ok else 0
+                if err:
+                    print(f"[WorkerError] id={rec_id} {err}")
+                if total % progress_every == 0 or total == len(items):
+                    print(f"Progress: {total}/{len(items)} | acc={correct/total:.3f}")
 
     if total > 1:
         print(f"\nAccuracy: {correct}/{total} = {correct/total:.3f}")
     
 if __name__ == "__main__":
+    import multiprocessing
+
+    multiprocessing.freeze_support()
     main()

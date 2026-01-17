@@ -1,0 +1,2 @@
+config_index,config_id,bfs_max_depth,bfs_max_relations_per_node,bfs_beam_width,bridge_max_bridge_nodes,seed_max_parents,chain_max_path_length,bfs_max_nodes,num_samples,num_correct,num_wrong,num_errors,accuracy,elapsed_sec,accuracy_EXOGENOUS_EFFECT,accuracy_INPARA_EFFECT,details_dir
+1,6bf51a4612,4,3,5,3,6,6,50,212,128,84,0,0.6037735849056604,22087.02413725853,0.6037735849056604,0.6037735849056604,E:\PHD\01\grid_search_cdcr_ministral\001_6bf51a4612

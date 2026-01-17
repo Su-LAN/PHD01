@@ -1,0 +1,1802 @@
+[
+  {
+    "index": 0,
+    "question": "If the patient feels like the patient are detached from the patient's own body or the patient's surroundings, how will this affect the less probability of Panic attack?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient feels like the patient are detached from the patient's own body or the patient's surroundings",
+    "outcome_base": "Panic attack probability"
+  },
+  {
+    "index": 1,
+    "question": "If the patient feels that the patient's eyes produce excessive tears, how will this affect the more probability of Cluster headache?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient feels that the patient's eyes produce excessive tears",
+    "outcome_base": "Cluster headache probability"
+  },
+  {
+    "index": 2,
+    "question": "If the patient has not recently had a viral infection, how will this affect the more probability of Myocarditis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has not recently had a viral infection",
+    "outcome_base": "Myocarditis probability"
+  },
+  {
+    "index": 3,
+    "question": "If the patient has recently thrown up blood or something resembling coffee beans, how will this affect the more probability of GERD?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has recently thrown up blood or something resembling coffee beans",
+    "outcome_base": "GERD probability"
+  },
+  {
+    "index": 4,
+    "question": "If the patient is not infected with the human immunodeficiency virus (HIV), how will this affect the less probability of Possible NSTEMI / STEMI?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient is not infected with the human immunodeficiency virus (HIV)",
+    "outcome_base": "Possible NSTEMI/STEMI probability"
+  },
+  {
+    "index": 5,
+    "question": "If the patient answers YES to \"In the last month, have you been in contact with anyone infected with the Ebola virus\", how will this affect the more probability of Ebola?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient answers YES to \"In the last month, have you been in contact with anyone infected with the Ebola virus\"",
+    "outcome_base": "Ebola probability"
+  },
+  {
+    "index": 6,
+    "question": "If the patient has a deviated nasal septum, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has a deviated nasal septum",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 7,
+    "question": "If the patient does not have pain that is increased with movement, how will this affect the more probability of Spontaneous rib fracture?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have pain that is increased with movement",
+    "outcome_base": "Spontaneous rib fracture probability"
+  },
+  {
+    "index": 8,
+    "question": "If the patient has not recently had a loss of appetite or do the patient get full more quickly then usually, how will this affect the less probability of Pulmonary neoplasm?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not recently had a loss of appetite or do the patient get full more quickly then usually",
+    "outcome_base": "Pulmonary neoplasm probability"
+  },
+  {
+    "index": 9,
+    "question": "If the patient answers YES to \"Did your cheeks suddenly turn red\", how will this affect the more probability of Scombroid food poisoning?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient answers YES to \"Did your cheeks suddenly turn red\"",
+    "outcome_base": "Scombroid food poisoning probability"
+  },
+  {
+    "index": 10,
+    "question": "If the patient has recently thrown up blood or something resembling coffee beans, how will this affect the less probability of Boerhaave?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has recently thrown up blood or something resembling coffee beans",
+    "outcome_base": "Boerhaave probability"
+  },
+  {
+    "index": 11,
+    "question": "If the patient has not been in contact with someone who has had pertussis (whoooping cough), how will this affect the less probability of Whooping cough?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not been in contact with someone who has had pertussis (whoooping cough)",
+    "outcome_base": "Whooping cough probability"
+  },
+  {
+    "index": 12,
+    "question": "If the patient answers NO to \"Were you born prematurely or did you suffer any complication at birth\", how will this affect the more probability of Inguinal hernia?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient answers NO to \"Were you born prematurely or did you suffer any complication at birth\"",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 13,
+    "question": "If the patient has vomited several times or have the patient made several efforts to vomit, how will this affect the more probability of Boerhaave?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has vomited several times or have the patient made several efforts to vomit",
+    "outcome_base": "Boerhaave probability"
+  },
+  {
+    "index": 14,
+    "question": "If the patient does not feel like the patient are dying or were the patient afraid that the patient were about do die, how will this affect the more probability of Panic attack?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not feel like the patient are dying or were the patient afraid that the patient were about do die",
+    "outcome_base": "Panic attack probability"
+  },
+  {
+    "index": 15,
+    "question": "If the patient has had chills or shivers, how will this affect the more probability of Pneumonia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had chills or shivers",
+    "outcome_base": "Pneumonia probability"
+  },
+  {
+    "index": 16,
+    "question": "If the patient does not have high cholesterol or do the patient take medications to treat high cholesterol, how will this affect the less probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have high cholesterol or do the patient take medications to treat high cholesterol",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 17,
+    "question": "If the patient does not feel the patient's heart is beating fast (racing), irregularly (missing a beat) or do the patient feel palpitations, how will this affect the more probability of Pericarditis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not feel the patient's heart is beating fast (racing), irregularly (missing a beat) or do the patient feel palpitations",
+    "outcome_base": "Pericarditis probability"
+  },
+  {
+    "index": 18,
+    "question": "If the patient did vomit after coughing, how will this affect the less probability of Whooping cough?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient did vomit after coughing",
+    "outcome_base": "Whooping cough probability"
+  },
+  {
+    "index": 19,
+    "question": "If the patient has high cholesterol or do the patient take medications to treat high cholesterol, how will this affect the more probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has high cholesterol or do the patient take medications to treat high cholesterol",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 20,
+    "question": "If the patient does not have the perception of seeing two images of a single object seen overlapping or adjacent to each other (double vision), how will this affect the less probability of Myasthenia gravis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient does not have the perception of seeing two images of a single object seen overlapping or adjacent to each other (double vision)",
+    "outcome_base": "Myasthenia gravis probability"
+  },
+  {
+    "index": 21,
+    "question": "If the patient has noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today, how will this affect the less probability of Chagas?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today",
+    "outcome_base": "Chagas probability"
+  },
+  {
+    "index": 22,
+    "question": "If the patient is not being treated for osteoporosis, how will this affect the less probability of Spontaneous rib fracture?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient is not being treated for osteoporosis",
+    "outcome_base": "Spontaneous rib fracture probability"
+  },
+  {
+    "index": 23,
+    "question": "If the patient has not been in contact with a person with similar symptoms in the past 2 weeks, how will this affect the less probability of Viral pharyngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not been in contact with a person with similar symptoms in the past 2 weeks",
+    "outcome_base": "Viral pharyngitis probability"
+  },
+  {
+    "index": 24,
+    "question": "If the patient has never been diagnosed with gastroesophageal reflux before, how will this affect the less probability of Larygospasm?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has never been diagnosed with gastroesophageal reflux before",
+    "outcome_base": "Larygospasm probability"
+  },
+  {
+    "index": 25,
+    "question": "If the patient has not or any member of the patient's family ever had croup, how will this affect the more probability of Croup?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not or any member of the patient's family ever had croup",
+    "outcome_base": "Croup probability"
+  },
+  {
+    "index": 26,
+    "question": "If the patient does not have a deviated nasal septum, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have a deviated nasal septum",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 27,
+    "question": "If the patient has not noticed that the tone of the patient's voice has become deeper, softer or hoarse, how will this affect the more probability of Epiglottitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not noticed that the tone of the patient's voice has become deeper, softer or hoarse",
+    "outcome_base": "Epiglottis probability"
+  },
+  {
+    "index": 28,
+    "question": "If the patient is not exposed to secondhand cigarette smoke on a daily basis, how will this affect the more probability of Pulmonary neoplasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is not exposed to secondhand cigarette smoke on a daily basis",
+    "outcome_base": "Pulmonary neoplasm probability"
+  },
+  {
+    "index": 29,
+    "question": "If the patient has been in contact with someone who has had pertussis (whoooping cough), how will this affect the less probability of Whooping cough?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has been in contact with someone who has had pertussis (whoooping cough)",
+    "outcome_base": "Whooping cough probability"
+  },
+  {
+    "index": 30,
+    "question": "If the patient has been diagnosed with depression before, how will this affect the less probability of Panic attack?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has been diagnosed with depression before",
+    "outcome_base": "Panic attack probability"
+  },
+  {
+    "index": 31,
+    "question": "If the patient has difficulty swallowing, or have a feeling of discomfort/blockage when swallowing, how will this affect the less probability of Epiglottitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has difficulty swallowing, or have a feeling of discomfort/blockage when swallowing",
+    "outcome_base": "Epiglottis probability"
+  },
+  {
+    "index": 32,
+    "question": "If the patient has never had a stroke before, how will this affect the less probability of Pneumonia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has never had a stroke before",
+    "outcome_base": "Pneumonia risk"
+  },
+  {
+    "index": 33,
+    "question": "If the patient does not feel the patient's abdomen is bloated or distended (swollen due to pressure from inside), how will this affect the less probability of Inguinal hernia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not feel the patient's abdomen is bloated or distended (swollen due to pressure from inside)",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 34,
+    "question": "If the patient has not recently had a viral infection, how will this affect the more probability of Pericarditis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has not recently had a viral infection",
+    "outcome_base": "Pericarditis probability"
+  },
+  {
+    "index": 35,
+    "question": "If the patient does not have pain that is increased when the patient breathe in deeply, how will this affect the less probability of Spontaneous pneumothorax?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient does not have pain that is increased when the patient breathe in deeply",
+    "outcome_base": "Spontaneous pneumothorax probability"
+  },
+  {
+    "index": 36,
+    "question": "If the patient's BMI is not less than 18.5, or are the patient underweight, how will this affect the more probability of Tuberculosis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient's BMI is not less than 18.5, or are the patient underweight",
+    "outcome_base": "Tuberculosis probability"
+  },
+  {
+    "index": 37,
+    "question": "If the patient is exposed to secondhand cigarette smoke on a daily basis, how will this affect the less probability of Pulmonary neoplasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is exposed to secondhand cigarette smoke on a daily basis",
+    "outcome_base": "Pulmonary neoplasm probability"
+  },
+  {
+    "index": 38,
+    "question": "If the patient has not had unprotected sex with more than one partner in the last 6 months, how will this affect the less probability of HIV (initial infection)?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not had unprotected sex with more than one partner in the last 6 months",
+    "outcome_base": "HIV infection probability"
+  },
+  {
+    "index": 39,
+    "question": "If the patient has noticed that the patient produce more saliva than usual, how will this affect the more probability of Epiglottitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has noticed that the patient produce more saliva than usual",
+    "outcome_base": "Epiglottis probability"
+  },
+  {
+    "index": 40,
+    "question": "If the patient has had sexual intercourse with an HIV-positive partner in the past 12 months, how will this affect the less probability of HIV (initial infection)?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has had sexual intercourse with an HIV-positive partner in the past 12 months",
+    "outcome_base": "HIV infection probability"
+  },
+  {
+    "index": 41,
+    "question": "If the patient has any family members who have asthma, how will this affect the less probability of Bronchospasm / acute asthma exacerbation?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has any family members who have asthma",
+    "outcome_base": "Bronchospasm/Asthma Exacerbation Probability"
+  },
+  {
+    "index": 42,
+    "question": "If the patient has never had surgery to remove lymph nodes before, how will this affect the less probability of Localized edema?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has never had surgery to remove lymph nodes before",
+    "outcome_base": "Localized edema probability"
+  },
+  {
+    "index": 43,
+    "question": "If the patient has not noticed a high pitched sound when breathing in, how will this affect the less probability of Croup?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not noticed a high pitched sound when breathing in",
+    "outcome_base": "Croup probability"
+  },
+  {
+    "index": 44,
+    "question": "If the patient answers NO to \"Are there any members of your family who have been diagnosed myasthenia gravis\", how will this affect the more probability of Myasthenia gravis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient answers NO to \"Are there any members of your family who have been diagnosed myasthenia gravis\"",
+    "outcome_base": "Myasthenia gravis probability"
+  },
+  {
+    "index": 45,
+    "question": "If the patient has not lost the patient's sense of smell, how will this affect the less probability of Acute rhinosinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not lost the patient's sense of smell",
+    "outcome_base": "Acute rhinosinusitis probability"
+  },
+  {
+    "index": 46,
+    "question": "If the patient does not have polyps in the patient's nose, how will this affect the more probability of Acute rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient does not have polyps in the patient's nose",
+    "outcome_base": "Acute rhinosinusitis probability"
+  },
+  {
+    "index": 47,
+    "question": "If the patient does not have a known heart defect, how will this affect the more probability of Atrial fibrillation?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have a known heart defect",
+    "outcome_base": "Atrial fibrillation probability"
+  },
+  {
+    "index": 48,
+    "question": "If the patient does not have high cholesterol or do the patient take medications to treat high cholesterol, how will this affect the less probability of Possible NSTEMI / STEMI?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have high cholesterol or do the patient take medications to treat high cholesterol",
+    "outcome_base": "Possible NSTEMI/STEMI probability"
+  },
+  {
+    "index": 49,
+    "question": "If the patient's symptoms are more prominent at night, how will this affect the more probability of Pneumonia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient's symptoms are more prominent at night",
+    "outcome_base": "Pneumonia probability"
+  },
+  {
+    "index": 50,
+    "question": "If the patient does not live in in a big city, how will this affect the less probability of Bronchospasm / acute asthma exacerbation?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not live in in a big city",
+    "outcome_base": "Bronchospasm/Asthma Exacerbation Probability"
+  },
+  {
+    "index": 51,
+    "question": "If the patient has pain that is increased when the patient breathe in deeply, how will this affect the less probability of Spontaneous pneumothorax?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has pain that is increased when the patient breathe in deeply",
+    "outcome_base": "Spontaneous pneumothorax probability"
+  },
+  {
+    "index": 52,
+    "question": "If the patient does not have trouble keeping the patient's tongue in the patient's mouth, how will this affect the more probability of Acute dystonic reactions?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have trouble keeping the patient's tongue in the patient's mouth",
+    "outcome_base": "Acute dystonic reaction probability"
+  },
+  {
+    "index": 53,
+    "question": "If the patient does not live with 4 or more people, how will this affect the more probability of Acute laryngitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not live with 4 or more people",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 54,
+    "question": "If the patient has not been in contact with a person with similar symptoms in the past 2 weeks, how will this affect the less probability of Ebola?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not been in contact with a person with similar symptoms in the past 2 weeks",
+    "outcome_base": "Ebola probability"
+  },
+  {
+    "index": 55,
+    "question": "If the patient has polyps in the patient's nose, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has polyps in the patient's nose",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 56,
+    "question": "If the patient is of Asian descent, how will this affect the more probability of Bronchiectasis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient is of Asian descent",
+    "outcome_base": "Bronchiectasis probability"
+  },
+  {
+    "index": 57,
+    "question": "If the patient has not been coughing up blood, how will this affect the more probability of Viral pharyngitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not been coughing up blood",
+    "outcome_base": "Viral pharyngitis probability"
+  },
+  {
+    "index": 58,
+    "question": "If the patient is taking any new oral anticoagulants ((NOACs), how will this affect the less probability of Anemia?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is taking any new oral anticoagulants ((NOACs)",
+    "outcome_base": "Anemia risk"
+  },
+  {
+    "index": 59,
+    "question": "If the patient has had a sexually transmitted infection before, how will this affect the less probability of HIV (initial infection)?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has had a sexually transmitted infection before",
+    "outcome_base": "HIV infection probability"
+  },
+  {
+    "index": 60,
+    "question": "If the patient drinks alcohol excessively or do the patient have an addiction to alcohol, how will this affect the less probability of Boerhaave?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient drinks alcohol excessively or do the patient have an addiction to alcohol",
+    "outcome_base": "Boerhaave probability"
+  },
+  {
+    "index": 61,
+    "question": "If the patient is not immunosuppressed, how will this affect the less probability of Viral pharyngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient is not immunosuppressed",
+    "outcome_base": "Viral pharyngitis probability"
+  },
+  {
+    "index": 62,
+    "question": "If the patient has symptoms that are increased with physical exertion but alleviated with rest, how will this affect the more probability of Spontaneous pneumothorax?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has symptoms that are increased with physical exertion but alleviated with rest",
+    "outcome_base": "Spontaneous pneumothorax probability"
+  },
+  {
+    "index": 63,
+    "question": "If the patient does not have a chronic obstructive pulmonary disease (COPD), how will this affect the less probability of Bronchitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have a chronic obstructive pulmonary disease (COPD)",
+    "outcome_base": "Bronchitis probability"
+  },
+  {
+    "index": 64,
+    "question": "If the patient has not vomited several times or have the patient made several efforts to vomit, how will this affect the less probability of Boerhaave?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has not vomited several times or have the patient made several efforts to vomit",
+    "outcome_base": "Boerhaave probability"
+  },
+  {
+    "index": 65,
+    "question": "If the patient does not have cystic fibrosis, how will this affect the less probability of Bronchiectasis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have cystic fibrosis",
+    "outcome_base": "Bronchiectasis probability"
+  },
+  {
+    "index": 66,
+    "question": "If the patient's vaccinations are up to date, how will this affect the less probability of Bronchitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient's vaccinations are up to date",
+    "outcome_base": "Bronchitis probability"
+  },
+  {
+    "index": 67,
+    "question": "If the patient does not feel that muscle spasms or soreness in the patient's neck are keeping the patient from turning the patient's head to one side, how will this affect the less probability of Acute dystonic reactions?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not feel that muscle spasms or soreness in the patient's neck are keeping the patient from turning the patient's head to one side",
+    "outcome_base": "Acute dystonic reaction probability"
+  },
+  {
+    "index": 68,
+    "question": "If the patient has had chills or shivers, how will this affect the more probability of Influenza?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had chills or shivers",
+    "outcome_base": "Influenza probability"
+  },
+  {
+    "index": 69,
+    "question": "If the patient has not been able to pass stools or gas since the patient's symptoms increased, how will this affect the less probability of Inguinal hernia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has not been able to pass stools or gas since the patient's symptoms increased",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 70,
+    "question": "If the patient has not noticed a wheezing sound when the patient exhale, how will this affect the less probability of Scombroid food poisoning?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has not noticed a wheezing sound when the patient exhale",
+    "outcome_base": "Scombroid food poisoning risk"
+  },
+  {
+    "index": 71,
+    "question": "If the patient does not live with 4 or more people, how will this affect the more probability of URTI?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not live with 4 or more people",
+    "outcome_base": "URI probability"
+  },
+  {
+    "index": 72,
+    "question": "If the patient does not have severe Chronic Obstructive Pulmonary Disease (COPD), how will this affect the less probability of Acute COPD exacerbation / infection?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient does not have severe Chronic Obstructive Pulmonary Disease (COPD)",
+    "outcome_base": "Acute COPD exacerbation/infection probability"
+  },
+  {
+    "index": 73,
+    "question": "If the patient is a former smoker, how will this affect the less probability of Possible NSTEMI / STEMI?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is a former smoker",
+    "outcome_base": "Possible NSTEMI/STEMI probability"
+  },
+  {
+    "index": 74,
+    "question": "If the patient has noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today, how will this affect the less probability of Acute pulmonary edema?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today",
+    "outcome_base": "Acute pulmonary edema probability"
+  },
+  {
+    "index": 75,
+    "question": "If the patient does not have polyps in the patient's nose, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have polyps in the patient's nose",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 76,
+    "question": "If the patient has polyps in the patient's nose, how will this affect the less probability of Acute rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has polyps in the patient's nose",
+    "outcome_base": "Acute rhinosinusitis probability"
+  },
+  {
+    "index": 77,
+    "question": "If the patient does not take corticosteroids, how will this affect the more probability of Tuberculosis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient does not take corticosteroids",
+    "outcome_base": "Tuberculosis probability"
+  },
+  {
+    "index": 78,
+    "question": "If the patient has had diarrhea or an increase in stool frequency, how will this affect the more probability of Scombroid food poisoning?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has had diarrhea or an increase in stool frequency",
+    "outcome_base": "Scombroid food poisoning risk"
+  },
+  {
+    "index": 79,
+    "question": "If the patient has swelling in one or more areas of the patient's body, how will this affect the more probability of Anaphylaxis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has swelling in one or more areas of the patient's body",
+    "outcome_base": "Anaphylaxis probability"
+  },
+  {
+    "index": 80,
+    "question": "If the patient is feeling nauseous or do the patient feel like vomiting, how will this affect the less probability of Boerhaave?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is feeling nauseous or do the patient feel like vomiting",
+    "outcome_base": "Boerhaave probability"
+  },
+  {
+    "index": 81,
+    "question": "If the patient did not lose consciousness, how will this affect the more probability of Anaphylaxis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient did not lose consciousness",
+    "outcome_base": "Anaphylaxis probability"
+  },
+  {
+    "index": 82,
+    "question": "If the patient does think the patient are pregnant or are the patient currently pregnant, how will this affect the more probability of GERD?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does think the patient are pregnant or are the patient currently pregnant",
+    "outcome_base": "GERD probability"
+  },
+  {
+    "index": 83,
+    "question": "If the patient has never had a spontaneous pneumothorax before, how will this affect the less probability of Spontaneous pneumothorax?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has never had a spontaneous pneumothorax before",
+    "outcome_base": "Spontaneous pneumothorax probability"
+  },
+  {
+    "index": 84,
+    "question": "If the patient does not have diffuse (widespread) muscle pain, how will this affect the less probability of URTI?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have diffuse (widespread) muscle pain",
+    "outcome_base": "URI probability"
+  },
+  {
+    "index": 85,
+    "question": "If the patient has had an involuntary weight loss over the last 3 months, how will this affect the more probability of Tuberculosis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has had an involuntary weight loss over the last 3 months",
+    "outcome_base": "Tuberculosis probability"
+  },
+  {
+    "index": 86,
+    "question": "If the patient is consulting because the patient have high blood pressure, how will this affect the less probability of SLE?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is consulting because the patient have high blood pressure",
+    "outcome_base": "SLE probability"
+  },
+  {
+    "index": 87,
+    "question": "If the patient answers YES to \"Are there members of your family who have been diagnosed with pancreatic cancer\", how will this affect the more probability of Pancreatic neoplasm?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient answers YES to \"Are there members of your family who have been diagnosed with pancreatic cancer\"",
+    "outcome_base": "Pancreatic neoplasm probability"
+  },
+  {
+    "index": 88,
+    "question": "If the patient has not been in contact with a person with similar symptoms in the past 2 weeks, how will this affect the more probability of URTI?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not been in contact with a person with similar symptoms in the past 2 weeks",
+    "outcome_base": "URI probability"
+  },
+  {
+    "index": 89,
+    "question": "If the patient has pain that is increased when the patient breathe in deeply, how will this affect the more probability of Pericarditis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has pain that is increased when the patient breathe in deeply",
+    "outcome_base": "Pericarditis probability"
+  },
+  {
+    "index": 90,
+    "question": "If the patient does not have pain that improves when the patient lean forward, how will this affect the less probability of Epiglottitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have pain that improves when the patient lean forward",
+    "outcome_base": "Epiglottis probability"
+  },
+  {
+    "index": 91,
+    "question": "If the patient's vaccinations are up to date, how will this affect the more probability of Acute otitis media?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient's vaccinations are up to date",
+    "outcome_base": "Acute otitis media probability"
+  },
+  {
+    "index": 92,
+    "question": "If the patient's symptoms are more prominent at night, how will this affect the less probability of Croup?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient's symptoms are more prominent at night",
+    "outcome_base": "Croup probability"
+  },
+  {
+    "index": 93,
+    "question": "If the patient does live in in a big city, how will this affect the more probability of Allergic sinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does live in in a big city",
+    "outcome_base": "Allergic sinusitis probability"
+  },
+  {
+    "index": 94,
+    "question": "If the patient does not have a fever (either felt or measured with a thermometer), how will this affect the more probability of Acute laryngitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have a fever (either felt or measured with a thermometer)",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 95,
+    "question": "If the patient has noticed a wheezing sound when the patient exhale, how will this affect the less probability of Scombroid food poisoning?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has noticed a wheezing sound when the patient exhale",
+    "outcome_base": "Scombroid_food_poisoning_risk"
+  },
+  {
+    "index": 96,
+    "question": "If the patient has had one or several flare ups of chronic obstructive pulmonary disease (COPD) in the past year, how will this affect the more probability of Acute COPD exacerbation / infection?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had one or several flare ups of chronic obstructive pulmonary disease (COPD) in the past year",
+    "outcome_base": "Acute COPD exacerbation/infection probability"
+  },
+  {
+    "index": 97,
+    "question": "If the patient did have the patient's first menstrual period before the age of 12, how will this affect the more probability of SLE?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient did have the patient's first menstrual period before the age of 12",
+    "outcome_base": "SLE probability"
+  },
+  {
+    "index": 98,
+    "question": "If the patient has had an involuntary weight loss over the last 3 months, how will this affect the less probability of Pancreatic neoplasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has had an involuntary weight loss over the last 3 months",
+    "outcome_base": "Pancreatic neoplasm probability"
+  },
+  {
+    "index": 99,
+    "question": "If the patient answers NO to \"In the last month, have you been in contact with anyone infected with the Ebola virus\", how will this affect the more probability of Ebola?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient answers NO to \"In the last month, have you been in contact with anyone infected with the Ebola virus\"",
+    "outcome_base": "Ebola probability"
+  },
+  {
+    "index": 100,
+    "question": "If the patient is not currently using intravenous drugs, how will this affect the less probability of HIV (initial infection)?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient is not currently using intravenous drugs",
+    "outcome_base": "HIV infection probability"
+  },
+  {
+    "index": 101,
+    "question": "If the patient has symptoms that are increased with physical exertion but alleviated with rest, how will this affect the more probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has symptoms that are increased with physical exertion but alleviated with rest",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 102,
+    "question": "If the patient does not have a sore throat, how will this affect the less probability of URTI?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have a sore throat",
+    "outcome_base": "URI probability"
+  },
+  {
+    "index": 103,
+    "question": "If the patient is infected with the human immunodeficiency virus (HIV), how will this affect the less probability of Possible NSTEMI / STEMI?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is infected with the human immunodeficiency virus (HIV)",
+    "outcome_base": "Possible NSTEMI/STEMI probability"
+  },
+  {
+    "index": 104,
+    "question": "If the patient does not have a known issue with one of the patient's heart valves, how will this affect the more probability of Atrial fibrillation?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have a known issue with one of the patient's heart valves",
+    "outcome_base": "Atrial fibrillation probability"
+  },
+  {
+    "index": 105,
+    "question": "If the patient does not have pale stools and dark urine, how will this affect the more probability of Pancreatic neoplasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have pale stools and dark urine",
+    "outcome_base": "Pancreatic neoplasm probability"
+  },
+  {
+    "index": 106,
+    "question": "If the patient does exercise regularly, 4 times per week or more, how will this affect the less probability of Stable angina?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does exercise regularly, 4 times per week or more",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 107,
+    "question": "If the patient does not have a known kidney problem resulting in an inability to retain proteins, how will this affect the more probability of Localized edema?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have a known kidney problem resulting in an inability to retain proteins",
+    "outcome_base": "Localized edema probability"
+  },
+  {
+    "index": 108,
+    "question": "If the patient has not had any vaginal discharge, how will this affect the more probability of Sarcoidosis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has not had any vaginal discharge",
+    "outcome_base": "Sarcoidosis probability"
+  },
+  {
+    "index": 109,
+    "question": "If the patient has not noticed that the patient produce more saliva than usual, how will this affect the less probability of Epiglottitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has not noticed that the patient produce more saliva than usual",
+    "outcome_base": "Epiglottis probability"
+  },
+  {
+    "index": 110,
+    "question": "If the patient does live with 4 or more people, how will this affect the more probability of Viral pharyngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does live with 4 or more people",
+    "outcome_base": "Viral pharyngitis probability"
+  },
+  {
+    "index": 111,
+    "question": "If the patient has never had a heart attack or do the patient have angina (chest pain) before, how will this affect the less probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has never had a heart attack or do the patient have angina (chest pain) before",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 112,
+    "question": "If the patient has not lost the patient's sense of smell, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has not lost the patient's sense of smell",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 113,
+    "question": "If the patient does not wheeze while inhaling or is the patient's breathing noisy after coughing spells, how will this affect the more probability of Whooping cough?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient does not wheeze while inhaling or is the patient's breathing noisy after coughing spells",
+    "outcome_base": "Whooping cough probability"
+  },
+  {
+    "index": 114,
+    "question": "If the patient's vaccinations are not up to date, how will this affect the more probability of Bronchitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient's vaccinations are not up to date",
+    "outcome_base": "Bronchitis probability"
+  },
+  {
+    "index": 115,
+    "question": "If the patient does not live with 4 or more people, how will this affect the less probability of Viral pharyngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not live with 4 or more people",
+    "outcome_base": "Viral pharyngitis probability"
+  },
+  {
+    "index": 116,
+    "question": "If the patient has noticed a high pitched sound when breathing in, how will this affect the less probability of Larygospasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has noticed a high pitched sound when breathing in",
+    "outcome_base": "Larygospasm probability"
+  },
+  {
+    "index": 117,
+    "question": "If the patient has not noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today, how will this affect the more probability of Chagas?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has not noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today",
+    "outcome_base": "Chagas probability"
+  },
+  {
+    "index": 118,
+    "question": "If the patient has close family members who had a cardiovascular disease problem before the age of 50, how will this affect the more probability of Possible NSTEMI / STEMI?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has close family members who had a cardiovascular disease problem before the age of 50",
+    "outcome_base": "Possible NSTEMI / STEMI probability"
+  },
+  {
+    "index": 119,
+    "question": "If the patient does not have greenish or yellowish nasal discharge, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have greenish or yellowish nasal discharge",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 120,
+    "question": "If the patient is not more irritable or has the patient's mood been very unstable recently, how will this affect the less probability of Acute otitis media?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient is not more irritable or has the patient's mood been very unstable recently",
+    "outcome_base": "Acute otitis media probability"
+  },
+  {
+    "index": 121,
+    "question": "If the patient has swollen or painful lymph nodes, how will this affect the less probability of Chagas?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has swollen or painful lymph nodes",
+    "outcome_base": "Chagas probability"
+  },
+  {
+    "index": 122,
+    "question": "If the patient has breastfed one of the patient's children for more than 9 months, how will this affect the less probability of SLE?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has breastfed one of the patient's children for more than 9 months",
+    "outcome_base": "SLE probability"
+  },
+  {
+    "index": 123,
+    "question": "If the patient has been able to pass stools or gas since the patient's symptoms increased, how will this affect the less probability of Inguinal hernia?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has been able to pass stools or gas since the patient's symptoms increased",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 124,
+    "question": "If the patient does not attend or work in a daycare, how will this affect the less probability of Viral pharyngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not attend or work in a daycare",
+    "outcome_base": "Viral pharyngitis probability"
+  },
+  {
+    "index": 125,
+    "question": "If the patient has had a cold in the last 2 weeks, how will this affect the less probability of Acute laryngitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has had a cold in the last 2 weeks",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 126,
+    "question": "If the patient does not currently undergo dialysis, how will this affect the more probability of Acute pulmonary edema?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient does not currently undergo dialysis",
+    "outcome_base": "Acute pulmonary edema probability"
+  },
+  {
+    "index": 127,
+    "question": "If the patient has had a heart attack or do the patient have angina (chest pain) before, how will this affect the more probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has had a heart attack or do the patient have angina (chest pain) before",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 128,
+    "question": "If the patient has had any vaginal discharge, how will this affect the more probability of Sarcoidosis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had any vaginal discharge",
+    "outcome_base": "Sarcoidosis probability"
+  },
+  {
+    "index": 129,
+    "question": "If the patient does consume energy drinks regularly, how will this affect the less probability of PSVT?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does consume energy drinks regularly",
+    "outcome_base": "PSVT probability"
+  },
+  {
+    "index": 130,
+    "question": "If the patient does not have Parkinson’s disease, how will this affect the more probability of Pneumonia?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient does not have Parkinson’s disease",
+    "outcome_base": "Pneumonia probability"
+  },
+  {
+    "index": 131,
+    "question": "If the patient does not have a cough that produces colored or more abundant sputum than usual, how will this affect the more probability of Bronchitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have a cough that produces colored or more abundant sputum than usual",
+    "outcome_base": "Bronchitis probability"
+  },
+  {
+    "index": 132,
+    "question": "If the patient has chronic pancreatitis, how will this affect the less probability of Pancreatic neoplasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has chronic pancreatitis",
+    "outcome_base": "Pancreatic neoplasm probability"
+  },
+  {
+    "index": 133,
+    "question": "If the patient has difficulty articulating words/speaking, how will this affect the less probability of Myasthenia gravis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has difficulty articulating words/speaking",
+    "outcome_base": "Myasthenia gravis probability"
+  },
+  {
+    "index": 134,
+    "question": "If the patient has the perception of seeing two images of a single object seen overlapping or adjacent to each other (double vision), how will this affect the less probability of Myasthenia gravis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has the perception of seeing two images of a single object seen overlapping or adjacent to each other (double vision)",
+    "outcome_base": "Myasthenia gravis probability"
+  },
+  {
+    "index": 135,
+    "question": "If the patient has not noticed a high pitched sound when breathing in, how will this affect the more probability of Larygospasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not noticed a high pitched sound when breathing in",
+    "outcome_base": "Larygospasm probability"
+  },
+  {
+    "index": 136,
+    "question": "If the patient has pain that is increased with movement, how will this affect the less probability of Spontaneous rib fracture?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has pain that is increased with movement",
+    "outcome_base": "Spontaneous rib fracture probability"
+  },
+  {
+    "index": 137,
+    "question": "If the patient is exposed to secondhand cigarette smoke on a daily basis, how will this affect the less probability of URTI?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient is exposed to secondhand cigarette smoke on a daily basis",
+    "outcome_base": "URI probability"
+  },
+  {
+    "index": 138,
+    "question": "If the patient answers NO to \"Did your cheeks suddenly turn red\", how will this affect the less probability of Scombroid food poisoning?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient answers NO to \"Did your cheeks suddenly turn red\"",
+    "outcome_base": "Scombroid food poisoning risk"
+  },
+  {
+    "index": 139,
+    "question": "If the patient has diffuse (widespread) muscle pain, how will this affect the more probability of Influenza?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has diffuse (widespread) muscle pain",
+    "outcome_base": "Influenza probability"
+  },
+  {
+    "index": 140,
+    "question": "If the patient has close family members who had a cardiovascular disease problem before the age of 50, how will this affect the more probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has close family members who had a cardiovascular disease problem before the age of 50",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 141,
+    "question": "If the patient is not exposed to secondhand cigarette smoke on a daily basis, how will this affect the less probability of Larygospasm?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient is not exposed to secondhand cigarette smoke on a daily basis",
+    "outcome_base": "Larygospasm probability"
+  },
+  {
+    "index": 142,
+    "question": "If the patient feels out of breath with minimal physical effort, how will this affect the less probability of Myocarditis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient feels out of breath with minimal physical effort",
+    "outcome_base": "Myocarditis risk"
+  },
+  {
+    "index": 143,
+    "question": "If the patient does not have annoying muscle spasms in the patient's face, neck or any other part of the patient's body, how will this affect the more probability of Acute dystonic reactions?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have annoying muscle spasms in the patient's face, neck or any other part of the patient's body",
+    "outcome_base": "Acute dystonic reaction probability"
+  },
+  {
+    "index": 144,
+    "question": "If the patient has been unintentionally losing weight or have the patient lost the patient's appetite, how will this affect the less probability of Chagas?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has been unintentionally losing weight or have the patient lost the patient's appetite",
+    "outcome_base": "Chagas probability"
+  },
+  {
+    "index": 145,
+    "question": "If the patient has not had surgery within the last month, how will this affect the more probability of Pulmonary embolism?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not had surgery within the last month",
+    "outcome_base": "Pulmonary embolism probability"
+  },
+  {
+    "index": 146,
+    "question": "If the patient has had diarrhea or an increase in stool frequency, how will this affect the less probability of Chagas?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has had diarrhea or an increase in stool frequency",
+    "outcome_base": "Chagas probability"
+  },
+  {
+    "index": 147,
+    "question": "If the patient did not have the patient's first menstrual period before the age of 12, how will this affect the more probability of SLE?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient did not have the patient's first menstrual period before the age of 12",
+    "outcome_base": "SLE probability"
+  },
+  {
+    "index": 148,
+    "question": "If the patient does not have intense coughing fits, how will this affect the less probability of Inguinal hernia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have intense coughing fits",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 149,
+    "question": "If the patient does not feel anxious, how will this affect the less probability of PSVT?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not feel anxious",
+    "outcome_base": "PSVT probability"
+  },
+  {
+    "index": 150,
+    "question": "If the patient has had fluid in the patient's lungs before, how will this affect the less probability of Acute pulmonary edema?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has had fluid in the patient's lungs before",
+    "outcome_base": "Acute pulmonary edema probability"
+  },
+  {
+    "index": 151,
+    "question": "If the patient has swollen or painful lymph nodes, how will this affect the less probability of HIV (initial infection)?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has swollen or painful lymph nodes",
+    "outcome_base": "HIV infection probability"
+  },
+  {
+    "index": 152,
+    "question": "If the patient has a deviated nasal septum, how will this affect the more probability of Acute rhinosinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has a deviated nasal septum",
+    "outcome_base": "Acute rhinosinusitis probability"
+  },
+  {
+    "index": 153,
+    "question": "If the patient does not drink alcohol excessively or do the patient have an addiction to alcohol, how will this affect the less probability of Boerhaave?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient does not drink alcohol excessively or do the patient have an addiction to alcohol",
+    "outcome_base": "Boerhaave probability"
+  },
+  {
+    "index": 154,
+    "question": "If the patient does not have numbness, loss of sensation or tingling in the feet, how will this affect the more probability of Guillain-Barré syndrome?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have numbness, loss of sensation or tingling in the feet",
+    "outcome_base": "Guillain-Barré syndrome probability"
+  },
+  {
+    "index": 155,
+    "question": "If the patient has chest pain even at rest, how will this affect the more probability of Spontaneous pneumothorax?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has chest pain even at rest",
+    "outcome_base": "Spontaneous pneumothorax probability"
+  },
+  {
+    "index": 156,
+    "question": "If the patient has had unprotected sex with more than one partner in the last 6 months, how will this affect the more probability of HIV (initial infection)?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had unprotected sex with more than one partner in the last 6 months",
+    "outcome_base": "HIV infection probability"
+  },
+  {
+    "index": 157,
+    "question": "If the patient has been treated in hospital recently for nausea, agitation, intoxication or aggressive behavior and received medication via an intravenous or intramuscular route, how will this affect the more probability of Acute dystonic reactions?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has been treated in hospital recently for nausea, agitation, intoxication or aggressive behavior and received medication via an intravenous or intramuscular route",
+    "outcome_base": "Acute dystonic reaction probability"
+  },
+  {
+    "index": 158,
+    "question": "If the patient does not attend or work in a daycare, how will this affect the more probability of Acute laryngitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient does not attend or work in a daycare",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 159,
+    "question": "If the patient does not have a known severe food allergy, how will this affect the less probability of Anaphylaxis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have a known severe food allergy",
+    "outcome_base": "Anaphylaxis probability"
+  },
+  {
+    "index": 160,
+    "question": "If the patient's symptoms are worse when lying down and alleviated while sitting up, how will this affect the less probability of Pericarditis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient's symptoms are worse when lying down and alleviated while sitting up",
+    "outcome_base": "Pericarditis risk"
+  },
+  {
+    "index": 161,
+    "question": "If the patient did eat dark-fleshed fish (such as tuna) or Swiss cheese before the reaction occurred, how will this affect the less probability of Scombroid food poisoning?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient did eat dark-fleshed fish (such as tuna) or Swiss cheese before the reaction occurred",
+    "outcome_base": "Scombroid food poisoning risk"
+  },
+  {
+    "index": 162,
+    "question": "If the patient feels like the patient are dying or were the patient afraid that the patient were about do die, how will this affect the less probability of Panic attack?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient feels like the patient are dying or were the patient afraid that the patient were about do die",
+    "outcome_base": "Panic attack probability"
+  },
+  {
+    "index": 163,
+    "question": "If the patient has a hiatal hernia, how will this affect the more probability of GERD?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has a hiatal hernia",
+    "outcome_base": "GERD probability"
+  },
+  {
+    "index": 164,
+    "question": "If the patient has not had a cold in the last 2 weeks, how will this affect the more probability of Larygospasm?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has not had a cold in the last 2 weeks",
+    "outcome_base": "Larygospasm probability"
+  },
+  {
+    "index": 165,
+    "question": "If the patient has had a pericarditis before, how will this affect the more probability of SLE?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had a pericarditis before",
+    "outcome_base": "SLE probability"
+  },
+  {
+    "index": 166,
+    "question": "If the patient does currently take hormones, how will this affect the less probability of Pulmonary embolism?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does currently take hormones",
+    "outcome_base": "Pulmonary embolism probability"
+  },
+  {
+    "index": 167,
+    "question": "If the patient did previously, or do the patient currently, have any weakness/paralysis in one or more of the patient's limbs or in the patient's face, how will this affect the less probability of Guillain-Barré syndrome?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient did previously, or do the patient currently, have any weakness/paralysis in one or more of the patient's limbs or in the patient's face",
+    "outcome_base": "Guillain-Barré syndrome probability"
+  },
+  {
+    "index": 168,
+    "question": "If the patient does regularly drink coffee or tea, how will this affect the more probability of PSVT?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient does regularly drink coffee or tea",
+    "outcome_base": "PSVT probability"
+  },
+  {
+    "index": 169,
+    "question": "If the patient does not have greenish or yellowish nasal discharge, how will this affect the more probability of Acute rhinosinusitis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have greenish or yellowish nasal discharge",
+    "outcome_base": "Acute rhinosinusitis probability"
+  },
+  {
+    "index": 170,
+    "question": "If the patient does not have symptoms that are increased with physical exertion but alleviated with rest, how will this affect the less probability of Myocarditis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have symptoms that are increased with physical exertion but alleviated with rest",
+    "outcome_base": "Myocarditis risk"
+  },
+  {
+    "index": 171,
+    "question": "If the patient has noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today, how will this affect the more probability of Myocarditis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has noticed any new fatigue, generalized and vague discomfort, diffuse (widespread) muscle aches or a change in the patient's general well-being related to the patient's consultation today",
+    "outcome_base": "Myocarditis probability"
+  },
+  {
+    "index": 172,
+    "question": "If the patient has greenish or yellowish nasal discharge, how will this affect the more probability of Chronic rhinosinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has greenish or yellowish nasal discharge",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 173,
+    "question": "If the patient does not have a burning sensation that starts in the patient's stomach then goes up into the patient's throat, and can be associated with a bitter taste in the patient's mouth, how will this affect the less probability of GERD?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does not have a burning sensation that starts in the patient's stomach then goes up into the patient's throat, and can be associated with a bitter taste in the patient's mouth",
+    "outcome_base": "GERD probability"
+  },
+  {
+    "index": 174,
+    "question": "If the patient has not noticed that the tone of the patient's voice has become deeper, softer or hoarse, how will this affect the less probability of Acute laryngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has not noticed that the tone of the patient's voice has become deeper, softer or hoarse",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 175,
+    "question": "If the patient does live with 4 or more people, how will this affect the more probability of Acute laryngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient does live with 4 or more people",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 176,
+    "question": "If the patient is not currently using intravenous drugs, how will this affect the more probability of Tuberculosis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient is not currently using intravenous drugs",
+    "outcome_base": "Tuberculosis probability"
+  },
+  {
+    "index": 177,
+    "question": "If the patient has high cholesterol or do the patient take medications to treat high cholesterol, how will this affect the less probability of Possible NSTEMI / STEMI?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has high cholesterol or do the patient take medications to treat high cholesterol",
+    "outcome_base": "Possible NSTEMI/STEMI probability"
+  },
+  {
+    "index": 178,
+    "question": "If the patient has intense coughing fits, how will this affect the more probability of Inguinal hernia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has intense coughing fits",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 179,
+    "question": "If the patient has metastatic cancer, how will this affect the more probability of Spontaneous rib fracture?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has metastatic cancer",
+    "outcome_base": "Spontaneous rib fracture probability"
+  },
+  {
+    "index": 180,
+    "question": "If the patient has not recently taken decongestants or other substances that may have stimulant effects, how will this affect the less probability of PSVT?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has not recently taken decongestants or other substances that may have stimulant effects",
+    "outcome_base": "PSVT probability"
+  },
+  {
+    "index": 181,
+    "question": "If the patient has never been diagnosed with gastroesophageal reflux before, how will this affect the less probability of Chronic rhinosinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient has never been diagnosed with gastroesophageal reflux before",
+    "outcome_base": "Chronic rhinosinusitis probability"
+  },
+  {
+    "index": 182,
+    "question": "If the patient has an active cancer, how will this affect the less probability of Pulmonary embolism?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has an active cancer",
+    "outcome_base": "Pulmonary embolism risk"
+  },
+  {
+    "index": 183,
+    "question": "If the patient does not exercise regularly, 4 times per week or more, how will this affect the less probability of Stable angina?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": false,
+    "cause_event": "the patient does not exercise regularly, 4 times per week or more",
+    "outcome_base": "Stable angina probability"
+  },
+  {
+    "index": 184,
+    "question": "If the patient has had surgery to remove lymph nodes before, how will this affect the more probability of Localized edema?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has had surgery to remove lymph nodes before",
+    "outcome_base": "Localized edema probability"
+  },
+  {
+    "index": 185,
+    "question": "If the patient has nasal congestion or a clear runny nose, how will this affect the less probability of Cluster headache?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": false,
+    "cause_event": "the patient has nasal congestion or a clear runny nose",
+    "outcome_base": "Cluster headache probability"
+  },
+  {
+    "index": 186,
+    "question": "If the patient answers YES to \"Are there any members of your family who have been diagnosed myasthenia gravis\", how will this affect the more probability of Myasthenia gravis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient answers YES to \"Are there any members of your family who have been diagnosed myasthenia gravis\"",
+    "outcome_base": "Myasthenia gravis probability"
+  },
+  {
+    "index": 187,
+    "question": "If the patient has not had one or several flare ups of chronic obstructive pulmonary disease (COPD) in the past year, how will this affect the less probability of Acute COPD exacerbation / infection?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not had one or several flare ups of chronic obstructive pulmonary disease (COPD) in the past year",
+    "outcome_base": "Acute COPD exacerbation/infection probability"
+  },
+  {
+    "index": 188,
+    "question": "If the patient does not suffer from chronic anxiety, how will this affect the more probability of Panic attack?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not suffer from chronic anxiety",
+    "outcome_base": "Panic attack probability"
+  },
+  {
+    "index": 189,
+    "question": "If the patient has never had fluid in the patient's lungs before, how will this affect the less probability of Acute pulmonary edema?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has never had fluid in the patient's lungs before",
+    "outcome_base": "Acute pulmonary edema probability"
+  },
+  {
+    "index": 190,
+    "question": "If the patient has bouts of choking or shortness of breath that wake the patient up at night, how will this affect the less probability of Acute pulmonary edema?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient has bouts of choking or shortness of breath that wake the patient up at night",
+    "outcome_base": "Acute pulmonary edema probability"
+  },
+  {
+    "index": 191,
+    "question": "If the patient feels the patient's abdomen is bloated or distended (swollen due to pressure from inside), how will this affect the more probability of Inguinal hernia?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient feels the patient's abdomen is bloated or distended (swollen due to pressure from inside)",
+    "outcome_base": "Inguinal hernia probability"
+  },
+  {
+    "index": 192,
+    "question": "If the patient does not have Rheumatoid Arthritis, how will this affect the more probability of Bronchiectasis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have Rheumatoid Arthritis",
+    "outcome_base": "Bronchiectasis probability"
+  },
+  {
+    "index": 193,
+    "question": "If the patient does not have heart failure, how will this affect the more probability of Acute pulmonary edema?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have heart failure",
+    "outcome_base": "Acute pulmonary edema probability"
+  },
+  {
+    "index": 194,
+    "question": "If the patient has a sore throat, how will this affect the more probability of URTI?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has a sore throat",
+    "outcome_base": "URI probability"
+  },
+  {
+    "index": 195,
+    "question": "If the patient's symptoms are not worse when lying down and alleviated while sitting up, how will this affect the more probability of Pericarditis?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient's symptoms are not worse when lying down and alleviated while sitting up",
+    "outcome_base": "Pericarditis probability"
+  },
+  {
+    "index": 196,
+    "question": "If the patient has any close family members who suffer from allergies (any type), hay fever or eczema, how will this affect the more probability of Allergic sinusitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has any close family members who suffer from allergies (any type), hay fever or eczema",
+    "outcome_base": "Allergic sinusitis probability"
+  },
+  {
+    "index": 197,
+    "question": "If the patient has not felt confused or disorientated lately, how will this affect the less probability of Ebola?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not felt confused or disorientated lately",
+    "outcome_base": "Ebola probability"
+  },
+  {
+    "index": 198,
+    "question": "If the patient has not had a cold in the last 2 weeks, how will this affect the less probability of Acute laryngitis?",
+    "gold_answer": "more",
+    "gold_choice": "A",
+    "is_correct": true,
+    "cause_event": "the patient has not had a cold in the last 2 weeks",
+    "outcome_base": "Acute laryngitis probability"
+  },
+  {
+    "index": 199,
+    "question": "If the patient does not have pain somewhere, related to the patient's reason for consulting, how will this affect the more probability of Boerhaave?",
+    "gold_answer": "less",
+    "gold_choice": "B",
+    "is_correct": true,
+    "cause_event": "the patient does not have pain somewhere, related to the patient's reason for consulting",
+    "outcome_base": "Boerhaave probability"
+  }
+]

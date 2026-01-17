@@ -1,0 +1,507 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+0,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Agricultural runoff decreases (cause) → directly reduces the input of pollutants into water bodies (intermediate step). With less pollutant input, the existing pollution levels in the environment naturally decline (outcome). Thus, there is **less** pollution (Choice B).
+Final answer: B
+",B,ministral-3:8b
+1,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: evaporation_decrease -> [precipitation_absorption_decrease] -> [surface_water_saturation_increase] -> [drainage_reduction] -> [flooding_increase] -> [less_flooding_decrease]
+Reasoning: evaporation_decrease -> precipitation_absorption_decrease (soil holds less moisture) → surface_water_saturation_increase (excess water remains on surface) → drainage_reduction (less natural absorption) → flooding_increase (more water buildup) → less_flooding_decrease (flooding worsens, so incidents of 'less flooding' decline). Thus, less flooding decreases (Choice B).
+Final answer: B
+",B,ministral-3:8b
+2,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Earthquakes can cause **physical trauma** (e.g., head injuries) and **psychological stress** (e.g., anxiety, sleep disturbances), both of which are known triggers for **epileptic seizures**. Increased earthquake activity likely elevates these triggers, potentially **increasing** epilepsy cases among vulnerable individuals. Thus, more epilepsy is probable. **Answer: Choice A: more**
+Final answer: A
+",A,ministral-3:8b
+3,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+4,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: environmental_temp <-> heat_exhaustion -> cardiovascular_strain -> cerebral_perfusion -> dizziness
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+5,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increased artificial food source → **direct outcome** (e.g., improved nutrition, reduced hunger-related mortality) → **higher survival rates** → **larger population growth**. Thus, *more population* (Choice A).
+Final answer: A
+",A,ministral-3:8b
+6,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+7,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'A mysterious force acting against gravity (e.g., dark energy) promotes expansion by counteracting gravitational attraction.', 'step2': ""Increasing this force directly enhances its repulsive effect on cosmic matter, accelerating the universe's expansion rate."", 'step3': 'Thus, a stronger mysterious force leads to **more expansion** of the universe.'}
+Final answer: A
+",A,ministral-3:8b
+8,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Food allergens increase (cause) → Higher exposure to allergens triggers immune system reactions → Higher likelihood of severe allergic responses, including anaphylaxis (outcome) → **More** anaphylaxis (Choice A).
+Final answer: A
+",A,ministral-3:8b
+9,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: pressure_points_decrease -> (overcompensation_by_other_muscles -> increased_strain_on_adjacent_joints -> secondary_aches) AND (disrupted_circulation_in_nerve_paths -> heightened_nervous_system_sensitivity -> more_aches)
+Reasoning: Pressure points decrease triggers **disrupted_circulation_in_nerve_paths**, which leads to **heightened_nervous_system_sensitivity**, resulting in **more_aches**. Additionally, **overcompensation_by_other_muscles** and **increased_strain_on_adjacent_joints** also contribute to **secondary_aches**. Both pathways independently escalate aches, so the net effect is **more aches** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+10,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+11,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Invasive species increase → disrupts local ecosystems by outcompeting native species or altering habitats (cause) → leads to greater ecological imbalance (intermediate outcome) → results in higher environmental degradation, reduced biodiversity, and increased economic losses (e.g., agriculture, tourism) (outcome). Thus, losses **increase** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+12,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Water damage increases → moisture levels rise (directly caused by water) → higher moisture fosters mold growth → more mold
+Final answer: A
+",A,ministral-3:8b
+13,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+14,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+15,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+16,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Greenhouse gas increases → global warming → polar ice caps & glaciers melt → sea water volume increases (from melted ice) + thermal expansion of seawater → **sea level rises**. Thus, 'less' (Choice B) is incorrect; the correct outcome is more sea level (Choice A).
+Final answer: A
+",A,ministral-3:8b
+17,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+18,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+19,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+20,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Uv radiation → **directly causes skin/cell damage** (biological effect). *Decreasing* uv radiation → **reduces the cause of damage** → **less damage** occurs. Thus, the answer is Choice B ('less').
+Final answer: B
+",B,ministral-3:8b
+21,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+22,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+23,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+24,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: A decrease in the 2010 earthquake's severity (cause) reduces the frequency or intensity of destructive events (intermediate step: lower seismic impact). This reduction directly correlates with fewer people exposed to hazards, leading to a lower number of casualties (outcome). Thus, **less casualties** are expected. **Choice: B**
+Final answer: B
+",B,ministral-3:8b
+25,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+26,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'reasoning': ""A decrease in heat-trapping gases reduces the greenhouse effect, which directly limits Earth's ability to retain heat. Less heat retention leads to a cooler climate system, thereby reducing global warming and its associated effects—meaning *less* climate change overall."", 'selection': 'Choice B'}
+Final answer: B
+",B,ministral-3:8b
+27,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Food production decrease → lower agricultural emissions (e.g., fewer fertilizers, livestock methane, deforestation for farmland)', 'step2': 'Lower agricultural emissions → reduced greenhouse gas (GHG) concentrations in the atmosphere', 'step3': 'Reduced GHG concentrations → less global warming and climate change'}
+Final answer: B
+",B,ministral-3:8b
+28,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1906 earthquake increases (cause) → physical damage to infrastructure (e.g., gas lines, power lines) → increased risk of igniting fires → more fire (outcome).
+Final answer: A
+",A,ministral-3:8b
+29,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: earthquake_magnitude -> submarine_landslide_trigger -> underwater_debris_flow -> water_column_disruption -> tsunami_generation -> increased_tsunami_occurrence_rate
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+30,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: heat_stress -> [dehydration] -> [electrolyte_imbalance] -> [neuromuscular_junction_impairment] -> [reduced_motor_unit_recruitment] -> [increased_feeling_of_weakness]
+Reasoning: Heat stress → dehydration (loss of water), which reduces fluid levels in body. Dehydration → electrolyte imbalance (e.g., sodium/potassium loss), disrupting cellular function. Electrolyte imbalance → neuromuscular junction impairment (nerve signals misfire), reducing motor neuron communication. Impaired neuromuscular junctions → reduced motor unit recruitment (fewer muscle fibers activated). Reduced motor unit recruitment → increased feeling of *weakness* (opposite of 'less'). Thus, more weakness, not less. Answer: **A**
+Final answer: A
+",A,ministral-3:8b
+31,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+32,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+33,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+34,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: A decrease in the magnitude of an earthquake (from 7.0 to a lower value, e.g., 6.0) reduces the energy released, which corresponds to a lower seismic intensity at a given location. Lower seismic intensity correlates with less severe structural stress on buildings, reduced ground shaking, and improved resistance of infrastructure to failure. Thus, **less** severe damage occurs.
+Final answer: B
+",B,ministral-3:8b
+35,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+36,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: uv_b_radiation -> ozonosphere_depletion -> increased_atmospheric_uv_exposure -> widespread_ecosystem_impact -> elevated_mutational_load_in_organisms
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+37,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+38,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: storm_system_decreases -> [less_moisture_transport] -> [diminished_cyclonic_energy] -> [strong_wind_events_decline;_localized_peaks_weaken]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+39,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Insight often emerges from a balance between effortful focus and subconscious processing. Reduced concentration (↓) disrupts this equilibrium, as attention drifts or becomes fragmented. This fragmentation prevents the brain from forming cohesive connections or 'aha' moments, directly reducing the quantity/quality of insights (Choice B: less).
+Final answer: B
+",B,ministral-3:8b
+40,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Low tire pressure → **increased flexing of tire rubber** (due to insufficient support) → **excessive heat generation** from friction and strain → **accelerated rubber degradation** and **structural weakening** → **higher probability of tire failure**. Therefore, more tire failures are expected when tire pressure is low. **Answer: Choice A (more)**
+Final answer: A
+",A,ministral-3:8b
+41,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: X -> [Concentration] -> [Decision_Quality] -> [Resource_Misallocation] -> [Increased_Inefficiency] -> [Perceived_Inefficiency] → [Less_Noticed_Inefficiency]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+42,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Soil contamination → degraded soil structure (compaction, nutrient loss) → weaker plant cover → exposed soil to wind/water erosion → desertification. If contamination decreases, this chain reverses: less erosion → preserved topsoil → stabilized landscape → **fewer desertified areas** (Choice B).
+Final answer: B
+",B,ministral-3:8b
+43,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+44,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+45,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+46,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+47,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+48,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Decreased precipitation leads to reduced water-related hazards (e.g., floods, storms). Fewer hazards → fewer instances of property damage (since damage from water is a subset of total property damage). Less water-related damage → overall *less significant* property damage (as severe cases are rarer).
+Final answer: B
+",B,ministral-3:8b
+49,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Decreased storm water runoff reduces the volume of water carrying pollutants from streets, urban areas, and agricultural fields into rivers, lakes, and oceans. Consequently, the dilution and transport of pollutants is reduced, leading to **less** overall water pollution. **Choice B**
+Final answer: B
+",B,ministral-3:8b
+50,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increased water main breaks lead to greater water release into the environment (cause: 'water main break' → outcome: 'water supply disruption'). This excess water overwhelms drainage systems, reducing their capacity to handle rainwater or natural runoff (intermediate effect). Consequently, flooding increases because accumulated water has nowhere else to go (cause: 'drainage system overload' → outcome: 'more flooding'). Thus, **more flooding** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+51,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+52,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+53,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+54,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+55,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+56,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Lipid oxidation impairs mitochondrial function by damaging membranes and proteins, reducing energy production. Reduced ATP may lower replication fidelity of mtDNA due to inadequate energy or nucleotide pools, indirectly causing **fewer replication events and fewer mutations** (Choice B). Alternatively, excessive oxidative damage may trigger apoptosis or selective degradation of mutated mtDNA, reducing the accumulation of mutations. Thus, overall, less mtDNA mutations are expected (Choice B).
+Final answer: B
+",B,ministral-3:8b
+57,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Reaction decrease → bee colonies produce less defensive behaviors (e.g., stinging) → predators (e.g., wasps, birds) or threats (e.g., humans) face lower perceived danger → fewer hives are targeted or destroyed → **more hives survive/thrive** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+58,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+59,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+60,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increased tropical storm Alberto → stronger rainfall intensity and duration (cause) → higher water accumulation in vulnerable areas (intermediate) → greater surface runoff and river overflow (intermediate) → **more flooding** (outcome).
+Final answer: A
+",A,ministral-3:8b
+61,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+62,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+63,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+64,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increased ionizing radiation acts as a **cause** in the causal graph (cause → outcome). Ionizing radiation is known to damage cellular structures (e.g., DNA, proteins) by breaking molecular bonds or inducing oxidative stress. Thus, the **outcome** of higher ionizing radiation is logically linked to **more** biological/chemical damage. This aligns with Choice A ('more').
+Final answer: A
+",A,ministral-3:8b
+65,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+66,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+67,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+68,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+69,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Scarcity of food (cause) → **less available food per capita** (immediate effect). Reduced food availability directly decreases the nutritional intake of populations (outcome), leading to **increased world hunger** (final outcome). Thus, the effect is **more hunger**.
+Final answer: A
+",A,ministral-3:8b
+70,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+71,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+72,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+73,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+74,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: non_native_species_increase -> [resource_depletion, habitat_competition] -> [native_species_stress, food_chain_imbalance] -> ecosystem_fragility -> **more harm** (conditional on weak regulatory_measures)
+Reasoning: Increased non-native species lead to **resource_depletion** and **habitat_competition**, which directly stress native species and disrupt the food chain. This imbalance weakens ecosystem stability, increasing fragility. With weak regulatory measures, fragility translates to **more harm** to the environment and dependent species.
+Final answer: A
+",A,ministral-3:8b
+75,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Habitat degradation (cause) leads to the destruction or reduction of natural environments (intermediate effect). As habitat is lost, there are fewer suitable habitats available. Therefore, an **increase** in habitat degradation logically results in **less habitat** (outcome). **Answer: Choice B ('less')**
+Final answer: B
+",B,ministral-3:8b
+76,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Acid increase → reduces pH (more acidic environment) → decreases solubility of less-soluble substances (e.g., CaCO₃) → **less** precipitation/loss → **less loss** in dissolution/decomposition processes.
+Final answer: B
+",B,ministral-3:8b
+77,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increased concentration of power (cause) reduces checks and balances within a system. With fewer institutions or entities to oversee actions, there is diminished accountability (intermediate effect), which facilitates opportunistic behavior by those in power. Consequently, corruption (outcome) is likely to escalate as incentives to exploit resources or bend rules grow unchecked. Thus, corruption increases (Choice A: more).
+Final answer: A
+",A,ministral-3:8b
+78,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+79,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: runoff_increase -> [reduced_groundwater_infiltration] -> [waterlogged_surface_soil] -> [reduced_absorption_capacity] -> [more_flooding]
+Reasoning: Runoff increase directly causes reduced groundwater infiltration, which leads to waterlogged surface soil. This waterlogged soil then has reduced absorption capacity, resulting in more flooding. Thus, runoff increase leads to **more flooding** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+80,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Decreased humidity reduces the ability of airborne odor molecules to linger in the air (lower humidity = faster evaporation of odorants). With fewer odor molecules remaining suspended, the perception of odors (whether pleasant or unpleasant) diminishes overall, leading to **less detectable odors** regardless of source strength.
+Final answer: B
+",B,ministral-3:8b
+81,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Increase in artificial food → **lower demand for natural resources** (e.g., arable land, water, wild harvests).
+2. Reduced demand → **less agricultural expansion/land clearance** (direct cause of destruction).
+3. Less land use change → **lower habitat fragmentation** and **reduced ecosystem disruption**.
+4. Combined effects → **objective reduction in environmental destruction**.
+→ **Answer: Choice B (less)** (direct trade-off if artificial food replaces destructive farming/wild collection).
+Final answer: B
+",B,ministral-3:8b
+82,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: {'description': 'Cravings -> Mood regulation/stress relief → Weight maintenance (neutral effect)', 'path': 'X (food cravings) → [Emotional eating as coping mechanism] → [Short-term weight stabilization due to stress/appetite regulation] → [Compensated by reduced physical activity or metabolic adaptation] → Y (less weight, but not due to loss)', 'assumption': 'Cravings offset by reduced overall intake or metabolic compensatory mechanisms.'}
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+83,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+84,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Moisture loss leads to drying out of materials. When materials dry out, they lose internal water content, causing cellular structures (e.g., wood fibers or textile threads) to contract. This contraction directly correlates with **increased shrinkage**. Therefore, if moisture loss increases, shrinkage will be **more**.
+Final answer: A
+",A,ministral-3:8b
+85,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+86,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+87,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+88,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Increasing internal friction within a gas reduces the mobility of its molecules due to greater resistance between them.', 'step2': 'Reduced molecular mobility decreases the gas’s ability to spread out and occupy available volume.', 'step3': 'As a result, the gas expands *less* into the surrounding space compared to a scenario with lower friction.'}
+Final answer: B
+",B,ministral-3:8b
+89,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+90,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: solar_wind -> [reduced] -> geomagnetic_storms -> [decreased] -> satellite_drag_effect -> [reduced] -> low_orbit_decay_risk -> [decreased] -> satellite_lifetime -> [increased]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+91,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+92,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+93,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+94,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+95,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Decreased population growth → fewer people require resources (e.g., land, food, energy).', 'step2': 'Reduced resource demand → lower pressure to convert natural habitats into developed areas (e.g., cities, farms).', 'step3': 'Lower habitat conversion pressure → *less* habitat degradation.', 'answer': 'B'}
+Final answer: B
+",B,ministral-3:8b
+96,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. **Cause**: Decreased Northridge earthquakes → **lowered seismic hazard exposure** in the region.
+2. **Link**: Less seismic activity → **reduced threat of damage/casualties** linked to earthquakes.
+3. **Outcome**: The **danger level** directly correlates with earthquake frequency, so **less danger** (Choice B).
+Final answer: B
+",B,ministral-3:8b
+97,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: salicylic_acid_increase -> comedolytica_effect_enhancement -> pore_clogging_reduction -> reduced_inflammatory_responses -> less_redness_in_long_term
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+98,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: radiation_exposure -> [cell_replication_errors] -> [genetic_instability] -> [less_mutations (via repair_mechanisms)]
+Reasoning: Reduced radiation exposure → fewer cell replication errors → lower genetic instability (due to fewer errors triggering instability) → increased effectiveness of DNA repair mechanisms → fewer mutations overall. **Answer: B (less)**
+Final answer: B
+",B,ministral-3:8b
+99,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: {'description': 'Causal chain incorporating vegetation cover as a moderator', 'edges': ['Excessive_Erosion -> Reduced_Vegetation_Cover', 'Reduced_Vegetation_Cover -> Soil_Exposure_Increase', 'Soil_Exposure_Increase -> Wind_Water_Degradation_Risk', 'Wind_Water_Degradation_Risk -> Accelerated_Soil_Erosion', 'Accelerated_Soil_Erosion -> Direct_Loss_of_Soil']}
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b

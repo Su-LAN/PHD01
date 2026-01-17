@@ -9,6 +9,12 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 import ollama
 
 
+MCQA_CHOICES = [("A", "more"), ("B", "less"), ("C", "no_effect")]
+CHOICE_TO_LABEL = {k: v for k, v in MCQA_CHOICES}
+LABEL_TO_CHOICE = {v: k for k, v in MCQA_CHOICES}
+LABEL_TO_CHOICE.update({"no effect": "C", "no_change": "C"})
+
+
 def _iter_jsonl(path: str) -> Iterable[Dict[str, Any]]:
     with open(path, "r", encoding="utf-8-sig") as f:
         for line in f:
@@ -37,6 +43,14 @@ def _extract_json_object(text: str) -> Optional[str]:
         return t
     m = re.search(r"\{.*\}", t, flags=re.DOTALL)
     return m.group(0).strip() if m else None
+
+
+def _normalize_label(label: str) -> str:
+    l = (label or "").strip().lower()
+    l = re.sub(r"[\s\-]+", "_", l)
+    if l in {"noeffect", "nochange", "no_change"}:
+        return "no_effect"
+    return l
 
 
 def _label(concept: str) -> str:
@@ -257,6 +271,144 @@ def _default_out_path(in_path: str) -> str:
     return os.path.join(os.path.dirname(in_path), f"{root}_QA{ext}")
 
 
+def _ollama_mcqa_choice_one(
+    *,
+    question_stem: str,
+    model: str,
+    seed: int,
+    num_predict: int,
+    temperature: float,
+    retries: int,
+) -> str:
+    prompt = (
+        "You are answering a multiple-choice causal effect direction question.\n"
+        "Choose the best option:\n"
+        "A = more, B = less, C = no_effect.\n\n"
+        f"Question: {question_stem}\n"
+        "Choice A: more\n"
+        "Choice B: less\n"
+        "Choice C: no_effect\n\n"
+        'Return ONLY a JSON object like: {"choice": "A"}.\n'
+    )
+
+    last_err: Optional[Exception] = None
+    for attempt in range(retries + 1):
+        try:
+            resp = ollama.generate(
+                model=model,
+                system="Output English only. Return only the JSON object.",
+                prompt=prompt,
+                think=False,
+                format={
+                    "type": "object",
+                    "properties": {"choice": {"type": "string", "enum": ["A", "B", "C"]}},
+                    "required": ["choice"],
+                },
+                options={
+                    "temperature": float(temperature),
+                    "seed": int(seed),
+                    "num_predict": int(num_predict),
+                },
+            )
+            raw = (resp.get("response") or "").strip()
+            raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
+            json_text = _extract_json_object(raw)
+            if not json_text:
+                raise ValueError(f"Could not extract JSON from response: {raw[:200]}")
+            obj = json.loads(json_text)
+            choice = str(obj.get("choice", "")).strip().upper()
+            if choice not in {"A", "B", "C"}:
+                raise ValueError(f"Invalid choice (expected A/B/C): {json_text}")
+            return choice
+        except Exception as e:
+            last_err = e
+            if attempt < retries:
+                time.sleep(0.8 * (attempt + 1))
+
+    raise RuntimeError(f"Ollama MCQA prediction failed: {last_err}") from last_err
+
+
+def _eval_mcqa_accuracy(
+    *,
+    in_path: str,
+    model: str,
+    seed: int,
+    num_predict: int,
+    temperature: float,
+    retries: int,
+    limit: int,
+    workers: int,
+) -> int:
+    from collections import Counter
+
+    rows: List[Tuple[str, str, str]] = []
+    for obj in _iter_jsonl(in_path):
+        q = str(obj.get("question_stem", "")).strip()
+        gold = _normalize_label(str(obj.get("answer_label", "")))
+        if not q or gold not in {"more", "less", "no_effect"}:
+            continue
+        row_id = str(obj.get("id", "")).strip()
+        rows.append((row_id, q, gold))
+        if limit and len(rows) >= limit:
+            break
+
+    if not rows:
+        print("No valid MCQA rows found (expected fields: question_stem, answer_label).")
+        return 0
+
+    correct = 0
+    total = 0
+    gold_counts = Counter()
+    pred_counts = Counter()
+
+    def run_one(i: int, q: str) -> str:
+        return _ollama_mcqa_choice_one(
+            question_stem=q,
+            model=model,
+            seed=seed + i,
+            num_predict=num_predict,
+            temperature=temperature,
+            retries=retries,
+        )
+
+    if workers <= 1:
+        for i, (_row_id, q, gold) in enumerate(rows):
+            gold_counts[gold] += 1
+            try:
+                choice = run_one(i, q)
+                pred = CHOICE_TO_LABEL.get(choice, "")
+            except Exception:
+                pred = ""
+            pred_counts[pred or ""] += 1
+            total += 1
+            if pred == gold:
+                correct += 1
+            if total % 10 == 0:
+                print(f"[eval_mcqa] processed {total}/{len(rows)}")
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            futures = [(i, gold, ex.submit(run_one, i, q)) for i, (_row_id, q, gold) in enumerate(rows)]
+            for i, gold, fut in futures:
+                gold_counts[gold] += 1
+                try:
+                    choice = fut.result()
+                    pred = CHOICE_TO_LABEL.get(choice, "")
+                except Exception:
+                    pred = ""
+                pred_counts[pred or ""] += 1
+                total += 1
+                if pred == gold:
+                    correct += 1
+                if total % 10 == 0:
+                    print(f"[eval_mcqa] processed {total}/{len(rows)}")
+
+    acc = (correct / total) if total else 0.0
+    print(f"[eval_mcqa] accuracy: {acc:.2%} ({correct}/{total}) on {os.path.basename(in_path)} with model={model}")
+    print(f"[eval_mcqa] gold_counts: {dict(gold_counts)}")
+    print(f"[eval_mcqa] pred_counts: {dict(pred_counts)}")
+    return 0
+
+
 def _load_done_pairs(out_path: str) -> set[Tuple[str, str]]:
     done: set[Tuple[str, str]] = set()
     if not os.path.exists(out_path):
@@ -295,7 +447,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--mode",
-        choices=["judge", "build"],
+        choices=["judge", "build", "eval_mcqa"],
         default="judge",
         help="judge: label pairs yes/no; build: for rows with answer==yes, generate a WIQA-style question (answer fixed to yes).",
     )
@@ -320,6 +472,18 @@ def main() -> int:
     )
     parser.add_argument("--resume", action="store_true", help="Skip pairs already present in --out.")
     args = parser.parse_args()
+
+    if args.mode == "eval_mcqa":
+        return _eval_mcqa_accuracy(
+            in_path=args.in_path,
+            model=str(args.model),
+            seed=int(args.seed),
+            num_predict=int(args.num_predict),
+            temperature=float(args.temperature),
+            retries=int(args.retries),
+            limit=int(args.limit),
+            workers=int(args.workers),
+        )
 
     out_path = args.out_path or _default_out_path(args.in_path)
 

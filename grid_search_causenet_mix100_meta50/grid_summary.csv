@@ -1,0 +1,3 @@
+config_index,config_id,bfs_max_depth,bfs_max_relations_per_node,bfs_beam_width,bridge_max_bridge_nodes,seed_max_parents,chain_max_path_length,bfs_max_nodes,num_samples,num_correct,num_wrong,num_errors,accuracy,elapsed_sec,accuracy_,details_dir
+1,c686a016ab,2,3,5,3,6,4,50,100,66,34,0,0.66,2580.2216460704803,0.66,E:\PHD\01\grid_search_causenet_mix100_meta50\001_c686a016ab
+2,42ec4d21c0,2,3,5,3,6,6,50,100,58,42,0,0.58,2473.0032107830048,0.58,E:\PHD\01\grid_search_causenet_mix100_meta50\002_42ec4d21c0

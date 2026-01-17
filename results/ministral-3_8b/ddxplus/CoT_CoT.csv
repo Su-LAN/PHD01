@@ -1,0 +1,1377 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+0,ddxplus,less,True,less,B,"**Causal graph:** *detachment_from_body_or_surroundings → sense_of_reality_distortion → emotional_dysregulation → panic_attack_probability*
+
+**Reasoning:**
+Detachment (derealization/depersonalization) disrupts the patient’s sense of reality, increasing emotional instability and anxiety. This heightened emotional dysregulation directly raises the likelihood of panic attacks, not reduces it. Thus, detachment does not lower panic attack probability—it worsens it.
+
+**Final answer:** B",B,ministral-3:8b
+1,ddxplus,more,True,more,A,"Causal graph: **excessive tearing → trigeminal nerve irritation → cranial autonomic symptoms → cluster headache probability**
+
+Reasoning:
+Excessive tearing (epiphora) often stems from irritation or dysfunction in the trigeminal nerve (CN V) or autonomic nervous system, which also governs cluster headache symptoms (e.g., nasal congestion, eyelid drooping). Since cluster headaches are linked to cranial autonomic dysfunction, increased tearing—an autonomic symptom—may signal heightened trigeminal-autonomic reflex activity, raising the likelihood of cluster headache attacks.
+
+Final answer: **A**",A,ministral-3:8b
+2,ddxplus,less,True,less,B,"**Causal graph:** viral_infection → myocarditis
+
+**Reasoning:**
+Viral infections (e.g., COVID-19, adenovirus, or influenza) are well-established triggers for myocarditis due to immune-mediated inflammation of the heart muscle. Without a recent viral infection, the direct inflammatory pathway to myocarditis is reduced, lowering its probability. Thus, the absence of a viral trigger decreases the likelihood of myocarditis.
+
+**Final answer:** B",B,ministral-3:8b
+3,ddxplus,more,True,more,A,"**Causal graph:** *vomiting_blood_or_coffee_grounds → upper_GI_bleed → GERD_symptoms*
+
+**Reasoning:**
+Vomiting blood or coffee-ground-like material (melena) strongly suggests an **upper gastrointestinal (GI) bleed**, which is often caused by conditions like peptic ulcers, esophagitis, or severe GERD (gastroesophageal reflux disease) with complications (e.g., esophagitis-induced bleeding). While GERD itself doesn’t directly cause bleeding, severe reflux can damage the esophagus, increasing the risk of bleeding episodes. Thus, the presence of such symptoms **increases** the likelihood of underlying GERD complications (e.g., erosive esophagitis) rather than reducing it.
+
+**Final answer:** A",A,ministral-3:8b
+4,ddxplus,more,False,less,B,"**Causal graph:** HIV_infection → Immune_system_suppression → Vulnerability_to_cardiovascular_disease → Risk_of_NSTEMI/STEMI
+
+**Reasoning:**
+HIV infection suppresses the immune system and increases systemic inflammation, which is linked to higher cardiovascular risk (e.g., atherosclerosis, endothelial dysfunction). Without HIV infection, immune suppression is absent, reducing this pathway’s contribution to myocardial infarction risk. Thus, absence of HIV infection logically lowers the probability of NSTEMI/STEMI.
+
+**Final answer:** B",B,ministral-3:8b
+5,ddxplus,more,True,more,A,"**Causal graph:** patient_contact_with_Ebola_infected → probability_of_Ebola
+
+**Reasoning:**
+Direct contact with someone infected with Ebola significantly increases the likelihood of exposure and subsequent infection due to the virus's high transmissibility through bodily fluids. Answering ""YES"" to this question indicates a clear risk factor for Ebola, which should raise the probability of infection rather than reduce or have no effect.
+
+**Final answer:** A",A,ministral-3:8b
+6,ddxplus,more,True,more,A,"**Causal graph:** deviated nasal septum → airflow obstruction → mucus stasis → bacterial colonization → inflammation → chronic rhinosinusitis
+
+**Reasoning:**
+A deviated nasal septum disrupts normal airflow, causing mucus to pool and stagnate in the nasal passages. This stasis increases the risk of bacterial colonization and persistent inflammation, which are key factors in the development of chronic rhinosinusitis. Thus, the presence of a deviated septum is strongly associated with a **higher** likelihood of this condition.
+
+**Final answer:** A",A,ministral-3:8b
+7,ddxplus,less,False,no effect,C,"**Causal graph:** patient_has_no_pain_with_movement → **reduces** likelihood_of_traumatic_force, **reduces** likelihood_of_muscle_spasm, **reduces** likelihood_of_rib_fracture_detection_delay → **reduces** spontaneous_rib_fracture_probability
+
+**Reasoning:**
+Spontaneous rib fractures (e.g., from osteoporosis or pathological conditions) are often painless or minimally painful, especially in early stages. If a patient lacks pain *increased by movement*, it suggests either:
+1) No underlying fracture (lower probability of spontaneous fracture),
+2) A fracture already present but stable (less likely to worsen due to movement),
+3) A non-traumatic, painless etiology (e.g., metabolic bone disease) that may still exist independently of movement.
+However, **absence of movement-increased pain is a *negative predictor*** for acute traumatic fractures (which typically cause localized pain with movement). Since spontaneous fractures are often painless or poorly localized, the lack of movement-related pain *does not necessarily rule them out*—but it does not *increase* their probability either. The most accurate interpretation is that this symptom **does not meaningfully alter** the baseline risk of spontaneous rib fracture.
+
+**Final answer:** C",C,ministral-3:8b
+8,ddxplus,more,False,less,B,"**Causal Graph:**
+`loss_of_appetite → malnutrition → weight_loss → pulmonary_neoplasm_probability`
+`early_satiation → malnutrition → weight_loss → pulmonary_neoplasm_probability`
+
+**Reasoning:**
+Both **loss of appetite** and **early satiation** (getting full quickly) are symptoms of **malnutrition** and **weight loss**, which are associated with **pulmonary neoplasm** (lung cancer). If these symptoms are **absent**, the likelihood of underlying malnutrition/weight loss decreases, indirectly reducing the probability of pulmonary neoplasm. Thus, their absence lowers the suspicion of the condition.
+
+**Final answer:** B",B,ministral-3:8b
+9,ddxplus,more,True,more,A,"Causal graph: **sudden cheek redness → histamine release → vasodilation → flushing symptoms → Scombroid poisoning symptoms**
+
+Reasoning:
+Sudden cheek redness (flushing) is a classic symptom of **histamine toxicity**, which occurs in **Scombroid poisoning** due to spoiled fish (e.g., tuna, mackerel) containing high levels of histamine. Since flushing is a direct physiological response to histamine, its presence strongly correlates with the likelihood of Scombroid poisoning. Thus, a ""YES"" answer increases the probability of the condition.
+
+Final answer: **A**",A,ministral-3:8b
+10,ddxplus,less,True,less,B,"**Causal graph:** *vomiting_blood → upper_GI_bleed, vomiting_coffee_grounds → lower_GI_bleed, upper_GI_bleed ∧ lower_GI_bleed → Boerhaave (esophageal rupture)*
+
+**Reasoning:**
+Vomiting blood (hematemesis) or coffee-ground-like material (melena) suggests bleeding from the upper or lower GI tract, respectively. Boerhaave syndrome (esophageal rupture) typically presents with **pain, subcutaneous emphysema, and shock**, not hematemesis or melena. These symptoms are **unlikely** to occur together, so their presence actually **decreases** the probability of Boerhaave.
+
+**Final answer:** B",B,ministral-3:8b
+11,ddxplus,more,False,less,B,"**Causal graph:** *No contact with pertussis case → Reduced exposure to pathogen → Lower probability of infection*
+
+**Reasoning:**
+Lack of contact with an infected individual removes the primary route of transmission (respiratory droplets/aerosols) for *Bordetella pertussis*. Without exposure, the chance of acquiring the pathogen—and thus developing whooping cough—diminishes. This is a direct causal link: fewer contacts with the pathogen → lower infection probability.
+
+**Final answer:** B",B,ministral-3:8b
+12,ddxplus,less,True,less,B,"**Causal graph:** *premature/birth_complication → risk_of_inguinal_hernia*
+
+**Reasoning:**
+Premature birth or complications at delivery are known risk factors for inguinal hernias due to incomplete closure of the inguinal canal or abdominal wall defects. If the patient answers **NO** to having these conditions, the direct causal risk factor is removed or reduced, lowering the probability of developing an inguinal hernia.
+
+**Final answer:** B",B,ministral-3:8b
+13,ddxplus,more,True,more,A,"**Causal graph:** *vomiting_efforts → esophageal_mucosa_damage → Boerhaave_syndrome*
+
+**Reasoning:**
+Repeated vomiting or forced emetic efforts increase intrathoracic pressure, which can tear the esophageal lining (esophageal mucosa damage). This damage is a key precursor to Boerhaave syndrome (a spontaneous esophageal rupture). Thus, more vomiting efforts logically raise the risk of Boerhaave.
+
+**Final answer:** A",A,ministral-3:8b
+14,ddxplus,less,True,less,B,"**Causal graph:** *uncertainty_about_death → emotional_distress → panic_attack_probability*
+
+**Reasoning:**
+Uncertainty or fear about death introduces **emotional distress** (e.g., anxiety, dread), which is a known trigger for panic attacks. If the patient lacks this fear or denial reduces their awareness of mortality, the emotional distress may decrease, lowering the likelihood of a panic attack.
+
+**Final answer:** B",B,ministral-3:8b
+15,ddxplus,more,True,more,A,"**Causal graph:** chills → fever → immune response suppression → bacterial/viral proliferation → pneumonia risk
+
+**Reasoning:**
+Chills/shivers are a symptom of fever, which is often an early immune response to infection (e.g., from pathogens that cause pneumonia). While fever itself can help fight infection, severe or prolonged chills may indicate systemic inflammation or weakened immune defense, increasing susceptibility to pneumonia. Thus, their presence typically correlates with a higher risk of pneumonia progression.
+
+**Final answer:** A",A,ministral-3:8b
+16,ddxplus,more,False,less,B,"**Causal graph:** patient_cholesterol_level → medication_for_cholesterol → plaque_formation_in_arteries → coronary_artery_blockage → stable_angina_probability
+
+**Reasoning:**
+High cholesterol and its untreated or inadequately treated state contribute to the buildup of atherosclerotic plaques in coronary arteries, which increases the likelihood of artery blockage. Stable angina occurs due to reduced blood flow caused by these blockages. If cholesterol is low or actively managed with medication, plaque formation is reduced, lowering the risk of blockages and thus decreasing the probability of stable angina. Therefore, lower cholesterol or medication for it reduces the probability of stable angina.
+
+**Final answer:** B",B,ministral-3:8b
+17,ddxplus,less,True,less,B,"Causal graph: **patient_not_feeling_heart_racing → ⊣ (inhibits) perceived_heart_symptoms → ⊣ (reduces) diagnostic_confidence_in_pericarditis → ⊣ (reduces) probability_of_pericarditis**
+
+Reasoning:
+Pericarditis often presents with symptoms like palpitations, racing, or irregular heartbeats. If the patient lacks these symptoms, clinicians rely less on pericarditis as a likely diagnosis, reducing its probability. The absence of key symptoms weakens the causal link between pericarditis and the observed clinical picture.
+
+Final answer: **B**",B,ministral-3:8b
+18,ddxplus,less,False,more,A,"**Causal graph:** vomit → irritation_of_respiratory_tract, vomit → dehydration, irritation_of_respiratory_tract → cough, dehydration → immune_system_weakness, immune_system_weakness → susceptibility_to_whooping_cough
+
+**Reasoning:**
+Vomiting after coughing may indicate irritation of the respiratory tract (e.g., due to forceful coughing or underlying infection) or dehydration, both of which can weaken the immune system. A weakened immune system increases susceptibility to infections like whooping cough (*Bordetella pertussis*). Thus, vomiting (a symptom) likely correlates with a *higher* (not lower) probability of whooping cough, not less.
+
+**Final answer:** A",A,ministral-3:8b
+19,ddxplus,more,True,more,A,"**Causal Graph:**
+patient_high_cholesterol → plaque_formation_in_arteries → coronary_artery_narrowing → reduced_blood_flow_to_heart → stable_angina
+patient_takes_cholesterol_medication → reduced_plaque_formation → reduced_coronary_artery_narrowing → improved_blood_flow_to_heart → reduced_stable_angina
+
+**Reasoning:**
+High cholesterol directly promotes plaque buildup in arteries, which narrows coronary arteries and restricts blood flow to the heart, increasing the likelihood of stable angina. Conversely, medications that lower cholesterol reduce plaque formation, alleviate artery narrowing, and improve blood flow, thereby decreasing the risk of stable angina. Thus, high cholesterol increases the probability of stable angina, while cholesterol medications decrease it.
+
+**Final answer:** A (for high cholesterol) | B (for medications)","A, B",ministral-3:8b
+20,ddxplus,more,False,less,B,"**Causal graph:** *double vision → ocular muscle weakness → neuromuscular junction dysfunction → Myasthenia gravis*
+
+**Reasoning:**
+Double vision (diplopia) is a classic symptom of ocular muscle weakness, which often stems from impaired neuromuscular transmission at the junction between nerves and muscles. Myasthenia gravis (MG) is an autoimmune disorder that specifically targets these junctions, weakening muscle control. If a patient lacks double vision, it suggests either milder or absent ocular muscle dysfunction, which reduces the likelihood of MG-related neuromuscular junction involvement. Thus, the absence of double vision correlates with a *lower* probability of MG.
+
+**Final answer:** B",B,ministral-3:8b
+21,ddxplus,less,True,less,B,"Causal graph: **symptoms (fatigue, discomfort, muscle aches, general well-being change) → probability of Chagas diagnosis**
+
+Reasoning:
+Chagas disease (caused by *Trypanosoma cruzi*) often presents with **non-specific symptoms** like fatigue, muscle aches, and general malaise—especially in the **chronic indeterminate phase** (which can last decades). These symptoms are **highly overlapping** with other infections, autoimmune conditions, or even stress/depression. Since Chagas is **not the only cause** of these vague complaints, their presence **does not increase** the likelihood of a Chagas diagnosis but rather **decreases specificity** (i.e., they could stem from countless other conditions). Thus, these symptoms **reduce the probability of Chagas** when considered in isolation from other diagnostic clues (e.g., serology, travel history, vector exposure).
+
+Final answer: **B**",B,ministral-3:8b
+22,ddxplus,more,False,less,B,"**Causal graph:** osteoporosis_treatment → bone_strength, bone_strength → fracture_probability
+
+**Reasoning:**
+Osteoporosis weakens bones by reducing bone density and strength. Without treatment, bone strength declines further, increasing the likelihood of fractures (including spontaneous rib fractures). Thus, untreated osteoporosis raises fracture probability, meaning *less* treatment reduces the chance of spontaneous fractures becoming less likely (i.e., the condition worsens, making fractures more probable). The question asks about the *less probability* of spontaneous rib fracture—since untreated osteoporosis increases fracture risk, the probability of *not* having a spontaneous fracture decreases (i.e., the likelihood of fractures *increases*).
+
+**Final answer:** A",B,ministral-3:8b
+23,ddxplus,more,False,less,B,"**Causal graph:** patient_no_recent_contact_with_similar_symptoms → **reduced probability of viral pharyngitis transmission** → **less likely diagnosis of viral pharyngitis**
+
+**Reasoning:**
+Viral pharyngitis is typically transmitted through close contact with infected individuals. If the patient has not been in contact with someone with similar symptoms in the past 2 weeks, the likelihood of exposure to the virus is significantly lower. This reduces the probability that their symptoms are due to viral pharyngitis, as the primary mode of transmission is person-to-person contact.
+
+**Final answer:** A",B,ministral-3:8b
+24,ddxplus,more,False,less,B,"**Causal graph:** patient_has_no_GERD_history → **reduced_GERD_trigger_risk** → **lower_laryngospasm_probability**
+
+**Reasoning:**
+Gastroesophageal reflux (GERD) is a known trigger for laryngospasm due to acid exposure and irritation of the throat/larynx. If a patient has never been diagnosed with GERD, the likelihood of GERD-related triggers (e.g., acid reflux episodes) is inherently lower. This reduces the risk of laryngospasm caused by GERD, assuming other potential causes remain constant.
+
+**Final answer:** B",B,ministral-3:8b
+25,ddxplus,less,True,less,B,"Causal graph: **family_history_of_croup → genetic/immune_predisposition → susceptibility_to_croup → probability_of_croup**
+
+Reasoning:
+A family history of croup (or lack thereof) influences genetic/immune factors that may predispose an individual to recurrent or severe respiratory infections like croup. Without prior exposure or family history, the baseline susceptibility to croup is generally lower, reducing the probability of the child developing it. Thus, the absence of a family history typically correlates with a *lower* probability of croup.
+
+Final answer: **B**",B,ministral-3:8b
+26,ddxplus,less,True,less,B,"**Causal graph:** nasal_septum_alignment → nasal_airflow → sinus_drainage → sinus_inflammation → chronic_rhinosinusitis
+
+**Reasoning:**
+A non-deviated nasal septum improves nasal airflow and sinus drainage, reducing mucus stagnation and inflammation. Better drainage lowers the risk of bacterial/fungal buildup, which is a key driver of chronic rhinosinusitis. Thus, absence of septal deviation *decreases* the likelihood of developing the condition.
+
+**Final answer:** B",B,ministral-3:8b
+27,ddxplus,less,True,less,B,"**Causal graph:** patient_voice_change → patient_awareness_of_change → diagnosis_confidence → epiglottitis_probability
+
+**Reasoning:**
+Epiglottitis is a severe infection that often causes noticeable changes in voice (deeper, softer, or hoarse tone) due to inflammation or obstruction. If the patient is unaware of these voice changes, it reduces the likelihood that a clinician will suspect epiglottitis during assessment. Lower diagnosis confidence typically leads to fewer diagnostic tests or misdiagnosis, indirectly reducing the probability of correctly identifying epiglottitis. Thus, unawareness of voice changes lowers the probability of accurate diagnosis and appropriate treatment, indirectly affecting the perceived probability of epiglottitis.
+
+**Final answer:** B",B,ministral-3:8b
+28,ddxplus,less,True,less,B,"**Causal graph:** *secondhand smoke exposure → lung irritation/inflammation → DNA damage → cellular proliferation → Pulmonary neoplasm*
+
+**Reasoning:**
+Secondhand smoke contains carcinogens (e.g., benzene, formaldehyde) that directly damage lung tissue, increasing oxidative stress and mutational risk. Removing this exposure reduces chronic inflammation and DNA mutations, lowering the probability of neoplastic transformation in lung cells. Thus, reduced exposure logically decreases the likelihood of pulmonary neoplasm.
+
+**Final answer:** B",B,ministral-3:8b
+29,ddxplus,less,False,more,A,"**Causal graph:** contact_with_infected → exposure_to_bordetella_pertussis → probability_of_infection
+
+**Reasoning:**
+Contact with someone who has pertussis increases exposure to the *Bordetella pertussis* bacterium, which directly raises the likelihood of infection. Thus, proximity to an infected individual raises—not lowers—the probability of contracting whooping cough.
+
+**Final answer:** A",A,ministral-3:8b
+30,ddxplus,less,False,more,A,"**Causal graph:** depression_diagnosis → shared_psychiatric_vulnerability → panic_attack_risk, depression_diagnosis → comorbid_anxiety → panic_attack_risk
+
+**Reasoning:**
+A prior depression diagnosis often indicates an increased baseline vulnerability to other psychiatric disorders due to shared neurobiological and psychological mechanisms (e.g., dysregulation in serotonin, cognitive biases, or stress reactivity). Additionally, depression frequently co-occurs with anxiety disorders, which are strongly linked to panic attacks. Thus, having depression likely *increases* (rather than decreases) the risk of panic attacks, not reduces it.
+
+**Final answer:** A",A,ministral-3:8b
+31,ddxplus,less,False,no effect,C,"**Causal graph:** difficulty_swallowing → dysphagia_symptoms → **inflammation/obstruction_airway** → risk_epiglottitis
+
+**Reasoning:**
+Difficulty swallowing (dysphagia) with a sensation of discomfort or blockage often indicates **mechanical obstruction or inflammation** in the throat/upper airway. Epiglottitis (inflammation of the epiglottis) is a severe infection causing **swallowing difficulties, fever, and respiratory distress**. Since dysphallowing symptoms are a **key clinical feature of epiglottitis**, their presence **increases** (not decreases) the likelihood of the condition. Thus, the probability of epiglottitis is **not reduced** by these symptoms.
+
+**Final answer:** C",C,ministral-3:8b
+32,ddxplus,more,False,less,B,"**Causal graph:** patient_has_stroke_before → shared_risk_factors → pneumonia_probability
+
+**Reasoning:**
+A history of stroke often overlaps with shared risk factors for pneumonia (e.g., age, comorbidities like diabetes/hypertension, smoking, or weakened immune function). If a patient has *never* had a stroke, they are less likely to carry these overlapping risk factors, which could reduce their baseline pneumonia susceptibility. Thus, the absence of prior stroke may correlate with a *lower* probability of pneumonia.
+
+**Final answer:** B",B,ministral-3:8b
+33,ddxplus,more,False,less,B,"**Causal graph:** patient_abdominal_discomfort → abdominal_distension → inguinal_hernia_probability
+
+**Reasoning:**
+Inguinal hernias often cause or are associated with abdominal discomfort or visible distension due to the protrusion of abdominal contents through the inguinal canal. If the patient does **not** feel abdominal bloating or distension, this suggests a lower likelihood of internal pressure or structural issues (e.g., hernia) contributing to these symptoms. Thus, the absence of these symptoms reduces the probability of an inguinal hernia.
+
+**Final answer:** B",B,ministral-3:8b
+34,ddxplus,less,True,less,B,"**Causal graph:** viral_infection → immune_response → pericardial_inflammation → pericarditis
+
+**Reasoning:**
+Viral infections trigger immune responses that can lead to inflammation in the pericardium (the heart’s outer lining), increasing the risk of pericarditis. Without a recent viral trigger, the likelihood of this inflammatory pathway is reduced, lowering the probability of pericarditis.
+
+**Final answer:** B",B,ministral-3:8b
+35,ddxplus,more,False,less,B,"**Causal graph:** patient_has_no_deep_breath_pain → **reduced pleural friction** → **less lung irritation** → **lower probability of pleural inflammation/bleb rupture** → **less likely spontaneous pneumothorax**
+
+**Reasoning:**
+Absence of pain on deep inspiration suggests reduced pleural irritation or friction (e.g., no pleural inflammation, no lung overdistension, or no underlying bleb/rupture). Since spontaneous pneumothorax often stems from bleb rupture or visceral pleural irritation (triggered by coughing, deep breaths, or inflammation), mitigating these factors logically lowers its probability. Thus, the absence of pain indirectly reduces risk.
+
+**Final answer:** B",B,ministral-3:8b
+36,ddxplus,less,False,more,A,"**Causal graph:** BMI <→ Nutritional status → Immune function → Susceptibility to TB
+
+**Reasoning:**
+A BMI ≥ 18.5 (or underweight) indicates poor nutritional status, which weakens immune function. A compromised immune system increases susceptibility to infections like tuberculosis. Thus, underweight status likely raises the probability of TB.
+
+**Final answer:** A",A,ministral-3:8b
+37,ddxplus,less,False,more,A,"**Causal graph:** *secondhand smoke exposure → lung irritation/inflammation → DNA damage → cell proliferation → Pulmonary neoplasm*
+
+**Reasoning:**
+Secondhand smoke contains carcinogens (e.g., benzene, formaldehyde) that directly damage lung cells and trigger chronic inflammation, increasing oxidative stress and genetic mutations. Over time, this elevates the risk of neoplastic transformation in lung tissue. Thus, **more** exposure logically raises the probability of pulmonary neoplasm.
+
+**Final answer:** A",A,ministral-3:8b
+38,ddxplus,more,False,less,B,"**Causal graph:** *unprotected sex → exposure to HIV → probability of HIV infection*
+
+**Reasoning:**
+Unprotected sex with multiple partners increases exposure to HIV (higher risk of encountering infected individuals). If the patient has *not* had unprotected sex with multiple partners, their exposure risk decreases, lowering the probability of initial HIV infection. Thus, this behavior reduces—not increases or neutralizes—the likelihood of infection.
+
+**Final answer:** B",B,ministral-3:8b
+39,ddxplus,more,True,more,A,"Causal graph: **increased_saliva → irritation_inflammation_pharynx → swelling_airway → difficulty_breathing, increased_saliva → bacterial_growth_pharynx → infection_epiglottis → epiglottitis**
+
+Reasoning:
+Excess saliva production can indicate irritation or inflammation in the throat/pharynx (e.g., due to infection, reflux, or allergies). This irritation increases the risk of bacterial colonization and inflammation of the epiglottis, which is a hallmark of epiglottitis. While saliva itself is protective (lubricating and flushing pathogens), excessive production often correlates with underlying inflammatory or infectious processes that *raise* the likelihood of epiglottitis. Thus, the association is positive.
+
+Final answer: **A**",A,ministral-3:8b
+40,ddxplus,less,False,more,A,"**Causal graph:** *sexual intercourse with HIV-positive partner → exposure to HIV → probability of HIV infection*
+
+**Reasoning:**
+Having sexual intercourse with an HIV-positive partner increases exposure to the virus, which directly raises the likelihood of acquiring HIV infection. Thus, the probability of HIV infection is *higher*, not lower, in this scenario.
+
+**Final answer:** A",A,ministral-3:8b
+41,ddxplus,less,False,more,A,"**Causal graph:** family_asthma_genes → genetic_predisposition → airway_hypersensitivity → bronchospasm_risk
+
+**Reasoning:**
+A family history of asthma suggests shared genetic predisposition (e.g., *ADAM33*, *IL-33*, or *GATA3* variants) and environmental exposures (e.g., allergens, smoking) that increase airway hyperreactivity. This heightened baseline sensitivity likely raises the likelihood of bronchospasm or acute exacerbations, not reduces it. Thus, a positive family history is associated with a *higher* (not lower) risk.
+
+**Final answer:** A",A,ministral-3:8b
+42,ddxplus,more,False,less,B,"**Causal graph:** *No prior lymph node surgery → Lymph node function → Fluid drainage → Localized edema*
+
+**Reasoning:**
+Lymph nodes play a critical role in draining interstitial fluid. If a patient has never had surgery to remove lymph nodes, their lymphatic system remains intact, allowing for normal fluid drainage. This reduces the likelihood of localized edema (fluid buildup) compared to a scenario where lymph nodes are damaged or absent. Thus, the absence of prior surgery *decreases* the probability of localized edema.
+
+**Final answer:** B",B,ministral-3:8b
+43,ddxplus,more,False,less,B,"**Causal graph:** *high-pitched sound on inhalation → severity of croup → probability of croup diagnosis*
+
+**Reasoning:**
+A high-pitched sound (stridor) on inhalation is a classic symptom of croup (laryngotracheobronchitis), caused by narrowing of the airway. If the patient lacks this key auditory clue, it suggests either a milder case or a different condition. Thus, its absence reduces the likelihood of diagnosing croup, as the severity/probability of croup is inversely linked to the presence of this symptom.
+
+**Final answer:** B",B,ministral-3:8b
+44,ddxplus,less,True,less,B,"Causal graph: **family_history_of_myasthenia → risk_of_myasthenia**
+
+Reasoning:
+A family history of myasthenia gravis is a known genetic risk factor for the disease. If the patient answers ""NO"" to having family members with myasthenia, this reduces the likelihood of a genetic predisposition, thereby lowering the probability of developing the condition.
+
+Final answer: **B**",B,ministral-3:8b
+45,ddxplus,more,False,less,B,"**Causal graph:** patient_sense_of_smell_present → **↑** olfactory_nerve_function → **↑** sinus_drainage_efficiency → **↓** mucus_stasis → **↓** bacterial_viral_proliferation → **↓** Acute_rhinosinusitis_probability
+
+**Reasoning:**
+Preserving the sense of smell implies intact olfactory nerve function, which is linked to healthy sinus drainage (via shared neural/structural pathways). Improved drainage reduces mucus buildup and bacterial/viral colonization, lowering the risk of acute rhinosinusitis. Thus, retaining smell is associated with a *lower* probability of the condition.
+
+**Final answer:** B",B,ministral-3:8b
+46,ddxplus,less,True,less,B,"**Causal graph:** *Nasal polyps → Nasal airway obstruction → Mucociliary clearance impairment → Sinus ventilation/drainage dysfunction → Acute rhinosinusitis risk*
+
+**Reasoning:**
+Nasal polyps physically block nasal passages, reducing airflow and trapping mucus, which impairs the body’s ability to clear pathogens and irritants from the sinuses. This dysfunction directly increases the likelihood of bacterial/viral infections (acute rhinosinusitis). Therefore, *absence* of polyps removes this obstructive risk factor, lowering the probability of the condition.
+
+**Final answer:** B",B,ministral-3:8b
+47,ddxplus,less,True,less,B,"**Causal graph:** *unknown_heart_defect → structural/functional_heart_abnormality → atrial_fibrillation*
+
+**Reasoning:**
+Atrial fibrillation (AF) is strongly linked to underlying structural or functional abnormalities in the heart (e.g., valves, chambers, or conduction pathways). If a patient lacks a *known* heart defect, the absence of diagnosed abnormalities reduces the likelihood of undiagnosed but clinically significant pathology that could trigger AF. While AF can occur sporadically or due to other factors (e.g., aging, genetics), the absence of a *known* defect generally lowers the baseline risk compared to patients with documented cardiac issues.
+
+**Final answer:** B",B,ministral-3:8b
+48,ddxplus,more,False,less,B,"**Causal graph:** patient_high_cholesterol → cardiovascular_risk, patient_on_cholesterol_meds → cardiovascular_risk → NSTEMI/STEMI_probability
+
+**Reasoning:**
+High cholesterol and its treatment (e.g., statins) reduce cardiovascular risk factors (e.g., plaque buildup, inflammation) that directly contribute to the likelihood of acute coronary syndromes like NSTEMI/STEMI. If a patient lacks high cholesterol *or* is on medications to lower it, their cardiovascular risk decreases, thereby lowering the probability of NSTEMI/STEMI.
+
+**Final answer:** B",B,ministral-3:8b
+49,ddxplus,more,True,more,A,"**Causal graph:** *Nighttime symptoms → Fatigue/weakness → Immune suppression → Pneumonia susceptibility, Nighttime symptoms → Oxygen desaturation (hypoxemia) → Lung inflammation*
+
+**Reasoning:**
+Nighttime symptoms (e.g., cough, dyspnea, fever) often worsen due to:
+1. **Supine position** (reduced lung expansion, fluid pooling in alveoli).
+2. **Circadian cortisol dip** (lowered immune response at night).
+3. **Poor ventilation** (shallow breathing during sleep).
+These factors increase hypoxia, inflammation, and bacterial proliferation in the lungs, raising pneumonia risk. Thus, prominent nighttime symptoms correlate with higher susceptibility.
+
+**Final answer:** A",A,ministral-3:8b
+50,ddxplus,more,False,less,B,"**Causal Graph:**
+patient_lives_in_big_city → **access_to_emergency_care** → **timely_treatment_for_acute_conditions** → **frequency_of_acute_asthma_exacerbations** (e.g., bronchospasm)
+patient_lives_in_big_city → **air_pollution_exposure** → **lung_irritation** → **frequency_of_acute_asthma_exacerbations**
+patient_lives_in_big_city → **access_to_specialized_healthcare** → **consistent_medication_adherence** → **frequency_of_acute_asthma_exacerbations**
+
+---
+**Reasoning:**
+Living in a big city is associated with higher air pollution (e.g., particulate matter, allergens), which can trigger bronchospasm and asthma exacerbations. Urban areas also offer better access to emergency care and specialized healthcare, reducing delays in treatment and improving adherence to asthma management plans. However, the *lack* of access to timely care and higher pollution exposure in big cities *increases* the risk of acute exacerbations. Conversely, patients in smaller cities/rural areas face **less pollution exposure** and **potentially delayed care**, but the dominant effect is the **reduced environmental triggers** (e.g., fewer allergens, cleaner air), which *decreases* the likelihood of bronchospasm/exacerbations. Thus, living outside a big city likely reduces the risk.
+
+---
+**Final answer:** **B**",B,ministral-3:8b
+51,ddxplus,less,False,more,A,"**Causal graph:** pain_on_inspiration → pleural_friction → pleural_injury → pneumothorax_probability
+
+**Reasoning:**
+Pain on deep inspiration typically suggests pleural irritation or inflammation (e.g., pleural friction), which can indicate underlying pleural injury or irritation. Pleural injury increases the risk of pneumothorax (collapsed lung) by disrupting the lung surface or causing air leakage. Thus, **increased pain on inspiration** logically correlates with a **higher** (not lower) probability of spontaneous pneumothorax. The question’s phrasing (""less probability"") is counterintuitive here.
+
+**Final answer:** A",A,ministral-3:8b
+52,ddxplus,less,True,less,B,"Causal graph: **tongue control → muscle rigidity → acute dystonic reactions**
+
+Reasoning:
+Tongue control difficulties (e.g., inability to keep the tongue in the mouth) are a classic **early sign of acute dystonic reactions** (ADRs), which involve involuntary muscle contractions, including those affecting facial and tongue muscles. If a patient has **no trouble keeping their tongue in their mouth**, this suggests **less muscle rigidity and fewer dystonic symptoms**, reducing the likelihood of ADRs. Thus, better tongue control is associated with a **lower probability** of ADRs.
+
+Final answer: **B**",B,ministral-3:8b
+53,ddxplus,less,True,less,B,"**Causal Graph:**
+`living_arrangement → social_interaction → stress_level → immune_response → acute_laryngitis`
+
+**Reasoning:**
+Living with fewer people (≤3) likely reduces social interaction and exposure to respiratory infections (e.g., fewer shared spaces, less crowding). Lower stress from smaller households may also support better immune function. Both factors (reduced exposure + stronger immunity) would decrease the likelihood of acute laryngitis. Thus, the probability of acute laryngitis is **less** when living with fewer people.
+
+**Final answer:** B",B,ministral-3:8b
+54,ddxplus,more,False,less,B,"**Causal graph:** patient_no_recent_contact_with_similar_symptoms → **reduced probability of Ebola transmission** → **lower likelihood of Ebola diagnosis**
+
+**Reasoning:**
+Ebola is primarily transmitted through direct contact with bodily fluids of infected individuals. If the patient has not been in contact with someone with similar symptoms in the past 2 weeks, the likelihood of exposure to the virus is significantly reduced. This directly lowers the probability of Ebola infection or diagnosis, assuming no other high-risk exposures exist.
+
+**Final answer:** A",B,ministral-3:8b
+55,ddxplus,more,True,more,A,"**Causal graph:** nasal_polyps → nasal_obstruction → mucus_stasis → bacterial_growth → inflammation → chronic_rhinosinusitis
+
+**Reasoning:**
+Nasal polyps physically obstruct nasal passages, reducing airflow and trapping mucus, which creates stagnation (mucus_stasis). This stagnation promotes bacterial growth and chronic inflammation, directly increasing the risk of chronic rhinosinusitis. The presence of polyps thus acts as a causal factor for the condition.
+
+**Final answer:** A",A,ministral-3:8b
+56,ddxplus,more,True,more,A,"Causal graph: **Asian descent → Genetic predisposition (e.g., *CFTR* variants, *IL-10* promoter polymorphisms) → Immune dysfunction (e.g., impaired mucociliary clearance, dysregulated inflammation) → Increased susceptibility to chronic infections → Higher risk of Bronchiectasis**
+
+Reasoning:
+Asian populations exhibit higher prevalence of genetic variants linked to bronchiectasis (e.g., *CFTR* mutations in East Asians or *IL-10* promoter polymorphisms in Southeast Asians), which impair lung defense mechanisms. These genetic factors elevate susceptibility to recurrent infections and chronic inflammation, key drivers of bronchiectasis. Meta-analyses (e.g., *Lancet Respiratory Medicine*, 2023) consistently show elevated bronchiectasis incidence in Asian descent compared to European populations. Thus, Asian descent is associated with a **higher** risk.
+
+Final answer: **A**",A,ministral-3:8b
+57,ddxplus,less,False,more,A,"Causal graph: **patient → coughing up blood → hemoptysis (sign of bacterial infection) → Viral pharyngitis (less likely); patient → coughing up blood → absence → Viral pharyngitis (more likely)**
+
+Reasoning:
+The absence of coughing up blood (hemoptysis) reduces the likelihood of bacterial infections (e.g., *Streptococcus*, *Haemophilus influenzae*), which are more commonly associated with bacterial pharyngitis. Viral pharyngitis (e.g., from rhinoviruses, adenoviruses) typically lacks hemoptysis as a symptom. Thus, the lack of bloody coughing increases the relative probability of a viral cause.
+
+Final answer: **A**",A,ministral-3:8b
+58,ddxplus,less,False,more,A,"**Causal graph:** NOACs → bleeding risk → blood loss → anemia probability
+
+**Reasoning:**
+NOACs (e.g., rivaroxaban, apixaban) increase the risk of bleeding by inhibiting coagulation factors. Bleeding leads to blood loss, which can reduce hemoglobin levels and trigger anemia. Thus, higher bleeding risk from NOACs logically raises the probability of anemia, not decreases it.
+
+**Final answer:** A",A,ministral-3:8b
+59,ddxplus,less,False,more,A,"**Causal Graph:**
+`previous_STI → immune_response_modulation → HIV_vulnerability → HIV_infection_probability`
+
+**Reasoning:**
+A prior sexually transmitted infection (STI) can alter immune system responses (e.g., inflammation, antibody production, or mucosal barrier damage), which may either *increase* or *decrease* susceptibility to HIV depending on the specific STI and immune dynamics. However, studies suggest that certain STIs (e.g., herpes simplex virus, chlamydia) are associated with *higher* HIV acquisition risk due to immune activation and genital ulceration, while others (e.g., HPV) may have neutral or context-dependent effects. Thus, the net effect leans toward **increased** vulnerability, making HIV infection *more* likely after a prior STI.
+
+**Final answer:** A",A,ministral-3:8b
+60,ddxplus,less,False,more,A,"**Causal graph:** alcohol_addiction → gastric_mucosal_integrity, gastric_mucosal_integrity → esophageal_rupture_risk, esophageal_rupture_risk → Boerhaave_probability
+
+**Reasoning:**
+Excessive alcohol consumption (especially binge drinking) damages gastric mucosal integrity, increasing the risk of esophageal rupture (Boerhaave syndrome) due to vomiting-induced pressure. Alcohol addiction exacerbates this risk by promoting chronic inflammation, impaired esophageal motility, and delayed gastric emptying—all contributing to higher Boerhaave probability. Thus, alcohol addiction *increases* the likelihood of Boerhaave syndrome.
+
+**Final answer:** A",A,ministral-3:8b
+61,ddxplus,more,False,less,B,"**Causal graph:** *Immunosuppression → Susceptibility to viral infection → Viral pharyngitis*
+
+**Reasoning:**
+Immunosuppression increases susceptibility to infections (including viral pharyngitis) because the immune system is weakened. If the patient is *not* immunosuppressed, their immune system is intact, reducing the likelihood of viral pharyngitis. Thus, the absence of immunosuppression lowers the probability of viral pharyngitis.
+
+**Final answer:** B",B,ministral-3:8b
+62,ddxplus,more,True,more,A,"**Causal graph:** symptoms_of_exertion → lung_injury_risk, lung_injury_risk → pneumothorax_probability, rest_relief → lung_expansion_recovery
+
+**Reasoning:**
+Symptoms worsened by exertion and relieved by rest suggest **mechanical irritation or pressure changes** in the lung (e.g., pleural friction, small blebs). This pattern is classic for **tension or secondary pneumothorax** (e.g., due to bleb rupture or lung overinflation during exertion). Rest reduces symptoms by allowing lung recoil and alveolar stability, lowering rupture risk. Thus, the described symptom pattern **increases** the likelihood of spontaneous pneumothorax.
+
+**Final answer:** A",A,ministral-3:8b
+63,ddxplus,more,False,less,B,"**Causal graph:** COPD → Bronchitis (direct risk factor), Bronchitis → Symptoms/Exacerbations
+
+**Reasoning:**
+COPD is a chronic inflammatory lung condition that increases susceptibility to acute bronchitis due to shared risk factors (e.g., smoking, pollution) and damaged airway defenses. Removing COPD as a risk factor logically reduces the baseline probability of developing bronchitis, assuming other confounders remain constant. Thus, absence of COPD lowers—rather than raises or neutralizes—the likelihood of bronchitis.
+
+**Final answer:** B",B,ministral-3:8b
+64,ddxplus,more,False,less,B,"**Causal graph:** patient_has_not_vomited_several_times → **lower_force_on_esophagus** → **less_probability_of_esophageal_rupture (Boerhaave)**
+
+**Reasoning:**
+Boerhaave syndrome (esophageal rupture) typically occurs due to severe vomiting or retching, which increases intrathoracic pressure and tears the esophageal wall. If the patient has **not** vomited repeatedly or made forceful efforts to vomit, the mechanical stress on the esophagus is reduced. This lowers the likelihood of a rupture, thereby decreasing the probability of Boerhaave syndrome.
+
+**Final answer:** B",B,ministral-3:8b
+65,ddxplus,more,False,less,B,"**Causal graph:** cystic_fibrosis → lung_damage → bronchiectasis, cystic_fibrosis → chronic_inflammation → bronchiectasis
+
+**Reasoning:**
+Cystic fibrosis (CF) is a genetic disorder that causes thick, sticky mucus in the lungs, leading to chronic lung damage and inflammation—both key risk factors for bronchiectasis. If a patient does *not* have CF, the absence of this primary cause reduces the likelihood of the downstream lung damage and inflammation that contribute to bronchiectasis. Thus, the absence of CF lowers the probability of bronchiectasis.
+
+**Final answer:** B",B,ministral-3:8b
+66,ddxplus,less,True,less,B,"**Causal graph:** vaccinations → immune_response → susceptibility_to_infections → bronchitis_probability
+
+**Reasoning:**
+Up-to-date vaccinations enhance immune system effectiveness (immune_response), reducing the body’s susceptibility to pathogens (susceptibility_to_infections). Lower susceptibility logically decreases the probability of contracting bronchitis (bronchitis_probability). Thus, being vaccinated reduces—not increases or leaves unchanged—the likelihood of bronchitis.
+
+**Final answer:** B",B,ministral-3:8b
+67,ddxplus,more,False,less,B,"**Causal graph:** patient_perception_of_symptoms → symptom_severity → likelihood_of_acute_dystonic_reactions
+
+**Reasoning:**
+If the patient does not perceive muscle spasms or neck soreness as impairing head rotation, this suggests either:
+1) The symptoms are mild or absent, or
+2) The patient is less sensitive to them.
+Either way, symptom severity is reduced, which typically decreases the likelihood of acute dystonic reactions (ADRs) being misdiagnosed or overinterpreted as a neurological emergency. Thus, the patient’s perception of reduced impairment indirectly lowers the probability of ADRs being considered a concern.
+
+**Final answer:** B",B,ministral-3:8b
+68,ddxplus,more,True,more,A,"**Causal graph:** chills → fever → immune response → influenza likelihood
+
+**Reasoning:**
+Chills/shivers are a common symptom of fever, which is often triggered by the body’s immune response to viral infections like influenza. Since chills are a physiological response to infection (e.g., via cytokine release), their presence suggests active immune engagement with a pathogen, increasing the likelihood of influenza rather than reducing it. No direct causal link exists where chills *reduce* influenza probability.
+
+**Final answer:** A",A,ministral-3:8b
+69,ddxplus,more,True,more,A,"**Causal graph:** *symptoms_increased → constipation → intestinal_obstruction → abdominal_distension → pressure_on_inguinal_canal*
+
+**Reasoning:**
+Constipation and intestinal obstruction (evidenced by inability to pass stools or gas) increase intra-abdominal pressure. This elevated pressure can push abdominal contents (e.g., bowel loops) through weakened areas like the inguinal canal, *increasing* the likelihood of an inguinal hernia. Thus, the presence of these symptoms raises (not reduces) the probability of hernia.
+
+**Final answer:** A",A,ministral-3:8b
+70,ddxplus,more,False,no effect,C,"Causal graph: **patient_notices_wheezing → wheezing_present → respiratory_distress → scombroid_symptoms → scombroid_food_poisoning**
+
+Reasoning:
+Scombroid poisoning (caused by spoiled fish) primarily affects the cardiovascular and gastrointestinal systems, not the respiratory system. Wheezing is a respiratory symptom unrelated to the core symptoms of scombroid poisoning (e.g., flushing, headache, diarrhea). Since wheezing is not a hallmark of scombroid poisoning, its absence does not logically influence the likelihood of the condition. Thus, the absence of wheezing has no direct causal link to the probability of scombroid poisoning.
+
+Final answer: **C**",C,ministral-3:8b
+71,ddxplus,less,True,less,B,"**Causal graph:** *living_arrangement (fewer than 4 people) → social_contact → exposure_to_infections → URTI_probability*
+
+**Reasoning:**
+Living with fewer people typically reduces household crowding, which lowers the frequency of close social contact (e.g., shared surfaces, respiratory droplets). Less contact decreases exposure to respiratory pathogens, thereby reducing the probability of upper respiratory tract infections (URTI). This aligns with epidemiological evidence linking household density to infection spread.
+
+**Final answer:** B",B,ministral-3:8b
+72,ddxplus,more,False,less,B,"**Causal graph:** *COPD severity → COPD exacerbation risk*
+
+**Reasoning:**
+COPD severity directly influences the likelihood of acute exacerbations/infections. Less severe COPD means lower baseline airway obstruction, inflammation, and immune dysfunction, which reduces susceptibility to acute worsening events. Thus, milder COPD correlates with a *lower* probability of exacerbations.
+
+**Final answer:** B",B,ministral-3:8b
+73,ddxplus,less,True,less,B,"**Causal graph:** former_smoker → plaque_stability, former_smoker → coronary_artery_disease_severity, plaque_stability → NSTEMI/STEMI_risk, coronary_artery_disease_severity → NSTEMI/STEMI_risk
+
+**Reasoning:**
+Being a former smoker reduces the risk of unstable plaques (due to reduced oxidative stress and improved endothelial function) and may lower the severity of coronary artery disease over time. Both plaque stability and reduced disease severity independently lower the likelihood of acute myocardial infarction events (NSTEMI/STEMI). Thus, quitting smoking decreases the probability of these events compared to current smokers.
+
+**Final answer:** B",B,ministral-3:8b
+74,ddxplus,less,True,less,B,"Causal graph: **fatigue → symptom severity, generalized discomfort → systemic inflammation, muscle aches → metabolic stress, well-being decline → cardiac strain, cardiac strain → pulmonary edema risk**
+
+Reasoning:
+New fatigue, generalized discomfort, muscle aches, and declining well-being are **non-cardiac but systemic symptoms** that may indicate **underlying conditions** (e.g., infection, autoimmune flare, or chronic fatigue syndrome) rather than acute cardiac issues. While they could theoretically stress the heart indirectly, they are **not direct markers of pulmonary edema** (which is primarily driven by fluid overload in lungs). Thus, their presence **reduces confidence in acute pulmonary edema** as the primary diagnosis, lowering its probability.
+
+Final answer: **B**",B,ministral-3:8b
+75,ddxplus,less,True,less,B,"**Causal graph:** nasal_polyps → chronic_rhinosinusitis
+
+**Reasoning:**
+Nasal polyps are a well-known risk factor for chronic rhinosinusitis (CRS), as they obstruct airflow, impair mucus drainage, and create a chronic inflammatory environment in the sinuses. Removing this cause (absence of polyps) would logically reduce the likelihood of developing CRS, as the primary obstruction and inflammation pathway is disrupted.
+
+**Final answer:** B",B,ministral-3:8b
+76,ddxplus,less,False,more,A,"**Causal graph:** nasal_polyp → nasal_obstruction → mucus_stagnation → sinus_inflammation → acute_rhinosinusitis
+
+**Reasoning:**
+Nasal polyps physically block nasal passages, increasing obstruction. This obstruction reduces airflow and traps mucus, causing stagnation. Stagnant mucus becomes a breeding ground for bacteria, increasing the risk of sinus inflammation and infection—key factors in acute rhinosinusitis. Thus, polyps *increase* the likelihood of the condition, not decrease it.
+
+**Final answer:** A",A,ministral-3:8b
+77,ddxplus,less,True,less,B,"**Causal graph:** *corticosteroids → immune_response → TB_progression*
+
+**Reasoning:**
+Corticosteroids suppress immune function, which reduces the body’s ability to control *Mycobacterium tuberculosis* infection. Without corticosteroids, immune defenses remain intact, lowering the likelihood of TB progression or reactivation. Thus, omitting corticosteroids likely decreases TB risk or severity.
+
+**Final answer:** B",B,ministral-3:8b
+78,ddxplus,more,False,no effect,C,"Causal graph: **diarrhea → dehydration → bacterial growth (e.g., *Histamine-producing bacteria*) → Scombroid symptoms; diarrhea → gut motility → faster toxin clearance; stool frequency → dilution of toxins in gut**
+
+Reasoning:
+Scombroid poisoning is caused by histamine or other biogenic amines from spoiled fish (e.g., tuna, mackerel), not directly by gut motility or stool frequency. Diarrhea may *temporarily* reduce toxin absorption by accelerating transit, but it also increases dehydration, which can *promote* bacterial growth in the gut (e.g., *Morganella* or *Proteus*) that produce histamine. However, the primary risk factor for scombroid is pre-existing fish spoilage (e.g., high histamine levels), not diarrhea itself. Thus, diarrhea has a **mixed but net negligible effect** on the probability of scombroid poisoning.
+
+Final answer: **C**",C,ministral-3:8b
+79,ddxplus,more,True,more,A,"**Causal graph:** swelling → immune_response_activation, swelling → vascular_permeability_increase, vascular_permeability_increase → fluid_leakage, immune_response_activation → mediator_release, mediator_release → systemic_symptoms, systemic_symptoms → anaphylaxis_probability
+
+**Reasoning:**
+Swelling (e.g., localized or generalized) often indicates an immune response (e.g., mast cell degranulation, histamine release) or increased vascular permeability, which are hallmarks of allergic reactions. These mechanisms directly contribute to the progression of anaphylaxis by triggering systemic symptoms (e.g., hypotension, bronchospasm). Thus, the presence of swelling *increases* the likelihood of anaphylaxis rather than reducing or having no effect on it.
+
+**Final answer:** A",A,ministral-3:8b
+80,ddxplus,less,False,more,A,"**Causal graph:** nausea/vomiting → **↑** esophageal pressure → **↑** risk of esophageal rupture (Boerhaave syndrome)
+
+**Reasoning:**
+Nausea or vomiting increases intrathoracic pressure during forceful attempts to expel stomach contents. This elevated pressure can weaken the esophageal wall, raising the likelihood of a full-thickness tear (Boerhaave syndrome). Thus, the presence of nausea/vomiting correlates with a **higher** probability of Boerhaave.
+
+**Final answer:** A",A,ministral-3:8b
+81,ddxplus,less,True,less,B,"Causal graph: **patient consciousness → severity of allergic reaction → probability of anaphylaxis**
+
+Reasoning:
+Losing consciousness is a hallmark of severe allergic reactions (e.g., due to hypotension, hypoxia, or airway obstruction). If the patient *does not* lose consciousness, their reaction is likely milder, reducing the likelihood of anaphylaxis (a life-threatening systemic response). Thus, the absence of unconsciousness suggests a lower probability of anaphylaxis.
+
+Final answer: **B**",B,ministral-3:8b
+82,ddxplus,more,True,more,A,"**Causal Graph:**
+`pregnancy → hormonal_changes → lower_esophageal_sphincter_relaxation → GERD_probability`
+
+**Reasoning:**
+Pregnancy induces hormonal shifts (e.g., progesterone), which relax the lower esophageal sphincter (LES), allowing stomach acid to reflux into the esophagus. This physiological change directly increases GERD risk. Thus, being pregnant (or believing oneself to be) would correlate with higher GERD probability—*assuming the belief aligns with actual pregnancy status*.
+
+**Final answer:** A",A,ministral-3:8b
+83,ddxplus,more,False,less,B,"**Causal graph:** *History_of_spontaneous_pneumothorax → Risk_of_spontaneous_pneumothorax*
+
+**Reasoning:**
+A history of spontaneous pneumothorax is a well-established risk factor for recurrence. If a patient has *never* had one before, their baseline risk is inherently lower than someone with prior episodes. Thus, the absence of prior events reduces (not increases or maintains) the probability of a new spontaneous pneumothorax.
+
+**Final answer:** B",B,ministral-3:8b
+84,ddxplus,more,False,less,B,"**Causal Graph:**
+patient_has_diffuse_muscle_pain → **symptom_overlap_with_URTI** → **diagnostic_confidence_for_URTI** → **probability_of_URTI**
+patient_has_diffuse_muscle_pain ← **infection_presence** (e.g., viral/bacterial)
+**symptom_overlap_with_URTI** ← **infection_presence**
+**diagnostic_confidence_for_URTI** ← **symptom_overlap_with_URTI** + **other_symptoms** (e.g., fever, cough)
+
+---
+**Reasoning:**
+Diffuse muscle pain is a common symptom of **infections** (e.g., viral URTI) due to systemic inflammation (e.g., cytokines like IL-6). Its **absence** reduces **symptom overlap** with URTI, lowering diagnostic confidence and thus the **probability of URTI** (not increasing it). The relationship is indirect: fewer overlapping symptoms → lower likelihood of URTI being the cause, assuming other symptoms (e.g., fever, fatigue) are absent or mild.
+
+---
+**Final answer:** **B**",B,ministral-3:8b
+85,ddxplus,more,True,more,A,"**Causal graph:** involuntary_weight_loss → malnutrition → weakened_immune_system → increased_infection_risk → higher_TB_probability
+
+**Reasoning:**
+Involuntary weight loss over 3 months often signals underlying malnutrition or systemic illness (e.g., cancer, infections). Malnutrition weakens immune defenses, increasing susceptibility to opportunistic infections like tuberculosis (TB). TB risk rises when immune function declines, so weight loss indirectly elevates TB probability.
+
+**Final answer:** A",A,ministral-3:8b
+86,ddxplus,less,True,less,B,"**Causal graph:** patient_consults_for_high_blood_pressure → **increased_immune_activation** → **increased_inflammation** → **altered_autoimmune_response** → **less_probability_of_SLE**
+
+**Reasoning:**
+High blood pressure (hypertension) is often associated with chronic inflammation and immune system dysregulation. While hypertension itself does not directly cause SLE (Systemic Lupus Erythematosus), the systemic inflammation and immune activation linked to hypertension may paradoxically *reduce* the likelihood of developing SLE in some cases. SLE is an autoimmune disease driven by excessive immune overactivity, and conditions like hypertension (often linked to oxidative stress and endothelial dysfunction) may create a different immune environment that is less conducive to SLE pathogenesis. Thus, hypertension is more likely to be associated with a **lower** probability of SLE rather than increasing it.
+
+**Final answer:** B",B,ministral-3:8b
+87,ddxplus,more,True,more,A,"**Causal graph:** family_history_of_pancreatic_cancer → genetic_risk → susceptibility_to_pancreatic_neoplasm → probability_of_pancreatic_neoplasm
+
+**Reasoning:**
+A positive family history of pancreatic cancer is a well-established **risk factor** for developing pancreatic neoplasm due to shared genetic predispositions (e.g., BRCA1/2, CDKN2A mutations). This increases the likelihood of inheriting or acquiring mutations that elevate susceptibility to the disease. Thus, confirming family history logically raises the probability of the patient developing pancreatic neoplasm.
+
+**Final answer:** A",A,ministral-3:8b
+88,ddxplus,less,True,less,B,"**Causal graph:** *no recent contact → reduced exposure to infectious agents → lower probability of URTI transmission*
+
+**Reasoning:**
+No recent contact with symptomatic individuals reduces the likelihood of exposure to pathogens (e.g., viruses/bacteria) that cause upper respiratory tract infections (URTI). This lowers the probability of infection, assuming other risk factors (e.g., hygiene, immunity) remain constant.
+
+**Final answer:** B",B,ministral-3:8b
+89,ddxplus,more,True,more,A,"**Causal graph:** *pain_on_inspiration → pericardial_inflammation → chest_pain, pericardial_inflammation → friction_rub, pericardial_inflammation → pericarditis_probability*
+
+**Reasoning:**
+Pain on deep inspiration is a classic symptom of pericardial inflammation (e.g., due to pericarditis), as the inflamed pericardial layers rub together during breathing. This causal link strongly suggests a higher likelihood of pericarditis when such pain is present. No direct opposing mechanism is described here, so the probability of pericarditis increases with this symptom.
+
+**Final answer:** A",A,ministral-3:8b
+90,ddxplus,more,False,less,B,"**Causal graph:** patient_has_no_pain_on_leaning_forward → **↓** probability_of_epiglottitis
+
+**Reasoning:**
+Epiglottitis is an inflammatory condition of the epiglottis that often causes severe throat pain, especially when leaning forward (due to pressure on the epiglottis). If a patient lacks this characteristic pain response, it suggests a lower likelihood of epiglottitis, as the condition typically presents with this symptom. Thus, the absence of pain on leaning forward reduces diagnostic suspicion for epiglottitis.
+
+**Final answer:** B",B,ministral-3:8b
+91,ddxplus,more,False,less,B,"Causal graph: vaccinations_up_to_date → immune_system_strength → susceptibility_to_infections → acute_otitis_media_probability
+
+Reasoning:
+Up-to-date vaccinations enhance immune system strength by preventing or reducing exposure to pathogens that cause infections like those linked to acute otitis media (e.g., *Streptococcus pneumoniae*, *Haemophilus influenzae*). A stronger immune response lowers susceptibility to infections, including middle ear infections. Thus, being vaccinated likely reduces the probability of acute otitis media.
+
+Final answer: B",B,ministral-3:8b
+92,ddxplus,less,True,less,B,"Causal graph: **symptom_severity_at_night → likelihood_of_croup**
+
+Reasoning:
+Croup (laryngotracheobronchitis) is characterized by **daytime worsening of symptoms** (e.g., barking cough, stridor) due to viral inflammation and nighttime airway narrowing from increased mucus and secretions. If symptoms are **more prominent at night**, this pattern is **less consistent** with classic croup, which typically peaks during the day. Thus, nighttime predominance reduces the likelihood of croup.
+
+Final answer: **B**",B,ministral-3:8b
+93,ddxplus,more,True,more,A,"**Causal graph:** *big city → urban pollution exposure → respiratory irritants → sinus inflammation, big city → higher density of allergens (e.g., pollen, dust) → allergic response, big city → stress levels → immune system modulation*
+
+**Reasoning:**
+Urban environments typically have higher levels of air pollution (e.g., PM2.5, NO₂), increased allergen density (e.g., mold, pollen), and elevated stress—all of which are linked to higher rates of allergic sinusitis. While individual variability exists, the cumulative effect of these factors generally *increases* the likelihood of developing allergic sinusitis compared to rural or low-density areas.
+
+**Final answer:** A",A,ministral-3:8b
+94,ddxplus,less,True,less,B,"**Causal graph:** fever → infection/inflammation → laryngitis symptoms (including fever, sore throat, hoarseness)
+
+**Reasoning:**
+Fever is a common symptom of acute laryngitis, often caused by viral or bacterial infections/inflammation in the larynx. If a patient lacks fever, it suggests either:
+1) A milder infection/inflammation (reducing laryngitis likelihood), or
+2) A non-infectious cause (e.g., vocal strain), which is less likely to trigger acute laryngitis. Thus, absence of fever generally correlates with a lower probability of acute laryngitis.
+
+**Final answer:** B",B,ministral-3:8b
+95,ddxplus,less,False,no effect,C,"Causal graph: **wheezing_on_exhalation → respiratory_irritation → immune_response_activation → susceptibility_to_infections; immune_response_activation → inflammation; inflammation → gastrointestinal_symptoms; scombroid_poisoning → histamine_release → gastrointestinal_symptoms**
+
+**Reasoning:**
+Wheezing on exhalation typically indicates **respiratory irritation** (e.g., from allergies, asthma, or infection), which may **overload the immune system** and reduce its ability to mount an effective response to other triggers (like histamine in scombroid poisoning). Additionally, inflammation from respiratory irritation could **compete with or mask gastrointestinal symptoms** of scombroid poisoning, making it harder to diagnose. However, wheezing itself is **not directly linked** to the biochemical mechanism of scombroid poisoning (histamine release from spoiled fish). Thus, wheezing does **not meaningfully alter the probability** of scombroid poisoning—it’s a separate physiological pathway.
+
+**Final answer: C**",C,ministral-3:8b
+96,ddxplus,more,True,more,A,"**Causal graph:** *past_flare_up → COPD_severity ↑ → vulnerability_to_exacerbation ↑ → acute_exacerbation_probability ↑*
+
+**Reasoning:**
+Chronic obstructive pulmonary disease (COPD) exacerbations are often triggered by infections or environmental factors, and repeated flare-ups in the past year suggest worsening lung function and increased airway inflammation. Higher COPD severity and inflammation raise susceptibility to future acute episodes. Thus, a history of flare-ups logically increases the likelihood of another acute exacerbation/infection.
+
+**Final answer:** A",A,ministral-3:8b
+97,ddxplus,more,True,more,A,"**Causal graph:** *early_menarche → hormonal_fluctuations → immune_system_activation → SLE_risk*
+
+**Reasoning:**
+Early menarche (before age 12) is associated with prolonged exposure to hormonal fluctuations (e.g., estrogen), which can modulate immune system activity. Some evidence suggests that early puberty may increase susceptibility to autoimmune diseases like SLE due to altered immune regulation. While not definitive, the trend in epidemiological studies leans toward a higher risk.
+
+**Final answer:** A",A,ministral-3:8b
+98,ddxplus,less,False,more,A,"**Causal graph:** involuntary_weight_loss → **symptom_severity**, involuntary_weight_loss → **metabolic_alterations**, symptom_severity → **diagnostic_suspicion**, metabolic_alterations → **diagnostic_suspicion**, diagnostic_suspicion → **probability_of_pancreatic_neoplasm**
+
+**Reasoning:**
+Involuntary weight loss is a **red flag symptom** for pancreatic neoplasm due to its association with advanced malignancy (e.g., pancreatic cancer often causes cachexia via metabolic dysregulation, tumor-induced anorexia, or malabsorption). As involuntary weight loss increases, it raises clinical suspicion (diagnostic_suspicion) and metabolic abnormalities (e.g., hyperglycemia, malnourishment), both of which **increase** the likelihood of pancreatic neoplasm being considered in differential diagnoses. Thus, more weight loss → higher probability of suspicion → higher probability of pancreatic neoplasm.
+
+**Final answer:** A",A,ministral-3:8b
+99,ddxplus,less,True,less,B,"Causal graph: **patient answered ""NO"" → exposure to Ebola risk → probability of Ebola**
+
+Reasoning:
+A ""NO"" answer to contact with an infected person reduces the likelihood of exposure, which directly lowers the probability of contracting Ebola. This is a direct causal link where negating the cause (exposure) reduces the effect (disease probability).
+
+Final answer: **B**",B,ministral-3:8b
+100,ddxplus,more,False,less,B,"**Causal graph:** intravenous drug use → risk of HIV exposure → probability of HIV infection
+
+**Reasoning:**
+Intravenous drug use (IVDU) is a well-established risk factor for HIV transmission because it involves shared needles or syringes, which can carry infected blood. If a patient is *not* using IV drugs, their risk of exposure to HIV through this route is eliminated or significantly reduced. This directly lowers the probability of initial HIV infection compared to someone who does use IV drugs.
+
+**Final answer:** B",B,ministral-3:8b
+101,ddxplus,more,True,more,A,"**Causal graph:** symptoms_of_ischemia → physical_exertion_trigger → chest_pain, rest_relief → reduced_ischemia → stable_angina_probability
+
+**Reasoning:**
+The described symptom pattern (pain with exertion, relief with rest) is a hallmark of **ischemic chest pain**, which strongly suggests **stable angina**—a condition where coronary artery narrowing causes reversible myocardial ischemia during stress. This classic presentation directly increases the likelihood of stable angina, as the causal chain links exertion-induced ischemia to the diagnosis. No other option (A/B/C) aligns better with this mechanistic link.
+
+**Final answer:** A",A,ministral-3:8b
+102,ddxplus,more,False,less,B,"**Causal graph:** sore_throat → URTI_probability
+
+**Reasoning:**
+A sore throat is a common symptom of upper respiratory tract infections (URTI). If a patient lacks this symptom, it suggests a lower likelihood of URTI (since symptoms like sore throat are often associated with the condition). Thus, the absence of a sore throat reduces the probability of URTI, not increases or maintains it unchanged.
+
+**Final answer:** B",B,ministral-3:8b
+103,ddxplus,less,False,more,A,"**Causal graph:**
+HIV infection → immune system suppression → increased susceptibility to infections/inflammation → **↑ risk of cardiovascular complications** (e.g., atherosclerosis, plaque rupture) → **↑ likelihood of acute coronary syndromes (NSTEMI/STEMI)**
+
+**Reasoning:**
+HIV weakens immune function, promoting chronic inflammation and cardiovascular disease progression. This indirectly raises the probability of myocardial infarction (NSTEMI/STEMI) rather than reducing it. Thus, HIV infection does not lower the risk—it exacerbates it.
+
+**Final answer:** A",A,ministral-3:8b
+104,ddxplus,less,True,less,B,"**Causal graph:** *heart_valve_health → atrial_fibrilation_probability*
+
+**Reasoning:**
+Atrial fibrillation (AF) is strongly linked to structural or functional abnormalities in heart valves (e.g., mitral or aortic valve disease), which disrupt normal blood flow and electrical conduction. If a patient lacks known valve issues, the absence of these mechanical/functional triggers reduces the likelihood of AF development or recurrence. Thus, normal valve function likely lowers AF probability.
+
+**Final answer:** B",B,ministral-3:8b
+105,ddxplus,less,True,less,B,"**Causal graph:**
+patient_has_pale_stools → **increased** probability_of_pancreatic_neoplasm,
+patient_has_dark_urine → **increased** probability_of_pancreatic_neoplasm,
+**absence_of_pale_stools** → **decreased** indirect evidence_of_biliary_obstruction,
+**absence_of_dark_urine** → **decreased** indirect evidence_of_biliary_obstruction,
+**decreased indirect evidence_of_biliary_obstruction** → **less** probability_of_pancreatic_neoplasm (via obstruction-related symptoms).
+
+**Reasoning:**
+Pale stools (acholia) and dark urine (hematuria/bilirubinuria) are classic signs of biliary obstruction, often caused by pancreatic head tumors compressing the bile duct. Their absence reduces the likelihood of obstruction-related symptoms, which are strong indirect indicators of pancreatic neoplasm. Thus, the absence of these signs lowers the probability of the condition.
+
+**Final answer:** B",B,ministral-3:8b
+106,ddxplus,less,True,less,B,"**Causal graph:** exercise → cardiovascular fitness, exercise → blood pressure, exercise → cholesterol levels, cardiovascular fitness → endothelial function, blood pressure → arterial stiffness, cholesterol levels → plaque buildup, endothelial function → coronary artery dilation, arterial stiffness → blood flow resistance, plaque buildup → coronary artery narrowing, coronary artery dilation → blood flow, blood flow resistance → blood flow, blood flow → angina symptoms
+
+**Reasoning:**
+Regular exercise (4+ times/week) improves cardiovascular fitness, lowers blood pressure, and reduces LDL cholesterol, all of which reduce plaque buildup and arterial stiffness. These physiological changes enhance endothelial function and coronary artery dilation, improving blood flow to the heart. Better blood flow decreases the likelihood of angina (chest pain due to reduced oxygen supply), meaning exercise reduces the probability of stable angina.
+
+**Final answer:** A",B,ministral-3:8b
+107,ddxplus,less,True,less,B,"**Causal graph:** *kidney_protein_retention → blood_osmolarity → plasma_volume → capillary_fluid_balance → localized_edema*
+
+**Reasoning:**
+If the kidneys retain proteins normally, blood osmolarity (due to albumin and other proteins) remains high, pulling fluid into circulation and reducing localized edema. Without this retention issue, blood osmolarity stays adequate, maintaining capillary fluid balance and lowering the risk of fluid leakage into tissues. Thus, the absence of protein-loss-related kidney dysfunction *decreases* the probability of localized edema.
+
+**Final answer:** B",B,ministral-3:8b
+108,ddxplus,less,False,no effect,C,"Causal graph: **no_vaginal_discharge → no_gyn_related_inflammation → no_mimicking_symptoms → higher_specificity_for_other_diseases (e.g., sarcoidosis)**
+
+Reasoning:
+Sarcoidosis is a systemic granulomatous disease primarily affecting organs like the lungs, lymph nodes, and skin—not the reproductive tract. Vaginal discharge typically stems from gynecological causes (e.g., infections, inflammation), which could mask or mimic systemic symptoms. Absence of discharge reduces the likelihood of confounding gynecological conditions, indirectly increasing the relative specificity for sarcoidosis when other symptoms align. However, discharge absence alone is not a direct causal factor for sarcoidosis probability—it merely removes competing diagnoses.
+
+Final answer: **C**",C,ministral-3:8b
+109,ddxplus,more,False,less,B,"**Causal graph:** *excessive_saliva → patient_notice → patient_report → diagnosis_confidence → epiglottitis_probability*
+
+**Reasoning:**
+Excessive saliva production is a symptom of epiglottitis (or other infections). If the patient does not notice it, they are less likely to report it to a clinician. Without this symptom being reported, the doctor’s confidence in diagnosing epiglottitis decreases, reducing the probability of correct identification. Thus, unnoticed excessive saliva indirectly lowers the likelihood of epiglottitis being diagnosed or considered.
+
+**Final answer:** B",B,ministral-3:8b
+110,ddxplus,more,True,more,A,"**Causal Graph:**
+patient_lives_with_4+_people → **crowding** → **transmission_risk** → **viral_pharyngitis_probability**
+
+**Reasoning:**
+Living with 4+ people increases **crowding**, which raises the likelihood of close contact and airborne transmission of respiratory viruses (e.g., rhinoviruses, adenoviruses). Higher transmission risk directly correlates with a greater probability of viral pharyngitis. Thus, the effect is positive.
+
+**Final answer:** A",A,ministral-3:8b
+111,ddxplus,more,False,less,B,"**Causal graph:** patient_has_heart_attack → increased_atherosclerosis, patient_has_angina → increased_atherosclerosis → coronary_artery_obstruction → stable_angina_probability
+
+**Reasoning:**
+A history of heart attack or angina indicates pre-existing coronary artery disease (atherosclerosis), which directly increases the likelihood of stable angina. Absence of these events suggests lower baseline atherosclerosis, reducing the probability of stable angina. Thus, lack of prior events decreases stable angina risk.
+
+**Final answer:** B",B,ministral-3:8b
+112,ddxplus,less,True,less,B,"**Causal graph:** *Loss of smell → Chronic rhinosinusitis (CRS)*
+
+**Reasoning:**
+Loss of smell (anosmia) is a well-documented symptom of chronic rhinosinusitis due to inflammation blocking olfactory pathways. If a patient *has not* lost their sense of smell, it suggests either:
+1) **Less severe inflammation** (reducing CRS likelihood), or
+2) **Early-stage disease** where olfactory function remains intact despite mild symptoms.
+Thus, retaining smell is *associated with* a **lower probability** of established CRS.
+
+**Final answer:** B",B,ministral-3:8b
+113,ddxplus,less,True,less,B,"**Causal graph:** patient_wheezing_on_inhalation→whooping_cough, noisy_breathing_after_cough→whooping_cough
+
+**Reasoning:**
+Wheezing during inhalation and noisy breathing after coughing are classic respiratory symptoms of *Bordetella pertussis* infection (whooping cough). Their absence reduces the likelihood of diagnosing or confirming the condition, as these signs are strongly associated with pertussis-related airway irritation and paroxysmal coughing. Thus, their reduction lowers the probability of whooping cough.
+
+**Final answer:** B",B,ministral-3:8b
+114,ddxplus,less,False,more,A,"**Causal graph:** *vaccinations_up_to_date → immune_response → susceptibility_to_infections → bronchitis_probability*
+
+**Reasoning:**
+Up-to-date vaccinations enhance immune response, reducing susceptibility to respiratory infections (e.g., influenza, pertussis, or RSV, which can trigger bronchitis). If vaccinations are incomplete, the immune system is less protected, increasing the likelihood of infections that may lead to bronchitis. Thus, outdated vaccinations likely raise bronchitis risk.
+
+**Final answer:** A",A,ministral-3:8b
+115,ddxplus,more,False,less,B,"**Causal Graph:**
+`(Living arrangement → Social contact frequency) → (Viral pharyngitis transmission risk)`
+
+**Reasoning:**
+Viral pharyngitis spreads via respiratory droplets, primarily through close social contact (e.g., shared spaces, coughing/sneezing). Living with fewer people reduces overall social contact frequency, lowering exposure risk. Thus, a smaller household size *decreases* the likelihood of viral pharyngitis transmission.
+
+**Final answer:** B",B,ministral-3:8b
+116,ddxplus,less,False,more,A,"**Causal graph:** *high-pitched sound on inhalation → stridor → upper airway obstruction → risk of laryngospasm*
+
+**Reasoning:**
+A high-pitched sound (stridor) during inhalation indicates narrowing of the upper airway, which directly increases the likelihood of laryngospasm (a sudden closure of the vocal cords). Thus, the presence of this symptom raises—not reduces—the probability of laryngospasm.
+
+**Final answer:** A",A,ministral-3:8b
+117,ddxplus,less,True,less,B,"Causal graph: **absence_of_symptoms → reduced_probability_of_active_infection**
+
+Reasoning:
+The absence of key symptoms like fatigue, generalized discomfort, muscle aches, or changes in well-being—common in acute or reactivated Chagas disease—suggests a lower likelihood of active infection or disease progression. These symptoms often correlate with parasitemia, organ damage (e.g., cardiomyopathy or megasyndromes), or inflammatory responses, which are hallmarks of Chagas. Without them, the probability of a significant Chagas-related pathology decreases.
+
+Final answer: **B**",B,ministral-3:8b
+118,ddxplus,more,True,more,A,"**Causal graph:** *family_history_of_CVD_before_50 → genetic_risk → atherosclerosis_progression → coronary_artery_plaque_vulnerability → acute_coronary_event_probability*
+
+**Reasoning:**
+A family history of cardiovascular disease (CVD) before age 50 strongly suggests a genetic predisposition to early-onset atherosclerosis and plaque instability. This increases the likelihood of vulnerable plaques forming in coronary arteries, raising the risk of acute events like NSTEMI (non-ST-elevation myocardial infarction) or STEMI (ST-elevation myocardial infarction). The causal chain directly links familial CVD risk to higher acute coronary event probability.
+
+**Final answer:** A",A,ministral-3:8b
+119,ddxplus,less,True,less,B,"**Causal graph:** *Absence of greenish/yellowish nasal discharge → [directly] ↓ Inflammatory burden (e.g., bacterial load) → [indirectly] ↓ Chronic inflammation → [indirectly] ↓ Chronic rhinosinusitis risk*
+
+**Reasoning:**
+Greenish/yellowish discharge typically indicates **purulent inflammation** (often bacterial), which is a key driver of chronic rhinosinusitis (CRS). Absence of such discharge suggests **lower bacterial load** and reduced acute inflammatory triggers, which *decreases* the likelihood of developing CRS. While other factors (e.g., allergies, structural anomalies) may still contribute, the *direct* absence of purulent signs lowers CRS probability.
+
+**Final answer:** B",B,ministral-3:8b
+120,ddxplus,more,False,less,B,"**Causal Graph:**
+patient_irritability → mood_instability → **acute_otitis_media_probability**
+
+**Reasoning:**
+Irritability and mood instability are often linked to stress, immune response, or behavioral factors (e.g., frequent ear rubbing, sleep disruption). While acute otitis media (AOM) is primarily caused by bacterial/viral infections, psychological stress (reflected in irritability/mood instability) may indirectly reduce immune resilience or increase ear-related behaviors (e.g., scratching), *slightly* lowering the baseline probability of AOM in some cases. However, the direct causal link is weak, and the effect is minor compared to infectious or anatomical risk factors. Thus, **reduced irritability/stable mood** has a negligible but *theoretically* **slightly positive** (protective) effect on AOM probability—though this is not a primary factor.
+
+**Final answer:** **A** *(more probability of AOM if irritability/mood instability is present; thus, *less* irritability/stability would correlate with *less* probability of AOM—**but the question phrasing is ambiguous**. Clarification: If the patient is *not more irritable* (i.e., irritability is lower), this would likely **reduce** AOM probability, so the answer is **B** if interpreted as ""less irritability → less AOM probability."" However, the original phrasing is convoluted. Assuming the question means ""if irritability/mood instability is *lower*, how does this affect AOM probability?"", the answer is **B**.)
+
+---
+**Correction:** Reinterpreting the question as:
+*""If the patient is **not more irritable** (i.e., irritability is stable/low) or has **not had unstable mood**, how does this affect the probability of AOM?""*
+→ **Lower irritability/stable mood → likely reduces AOM probability** (minor effect).
+**Final answer: B** *(less probability of AOM)*.
+
+---
+**Clarified Causal Graph (revised):**
+**lower_irritability → lower_stress → [↓] AOM_probability**
+**stable_mood → better_sleep/immune_resilience → [↓] AOM_probability**
+
+**Final answer: B** *(less probability of AOM)*.",B,ministral-3:8b
+121,ddxplus,less,True,less,B,"**Causal graph:** swollen/painful lymph nodes → **infection/inflammation** → **less likely Chagas** (since Chagas is typically caused by *Trypanosoma cruzi* and rarely presents with prominent lymphadenopathy)
+
+**Reasoning:**
+Swollen or painful lymph nodes are more commonly associated with bacterial infections (e.g., lymphadenitis), viral infections (e.g., mononucleosis), or autoimmune conditions rather than Chagas disease. Chagas typically presents with chronic symptoms like cardiomyopathy or megacolon, and acute cases may have mild or no lymph node involvement. Thus, the presence of swollen/painful lymph nodes suggests alternative diagnoses, indirectly reducing the likelihood of Chagas.
+
+**Final answer:** B",B,ministral-3:8b
+122,ddxplus,less,True,less,B,"**Causal Graph:**
+patient → breastfed >9 months → immune system modulation → SLE risk
+
+**Reasoning:**
+Breastfeeding for >9 months is associated with immune system maturation and reduced autoimmune activity due to prolonged exposure to maternal immune factors (e.g., TGF-β, IL-10). This likely lowers the probability of developing SLE (Systemic Lupus Erythematosus), a disease linked to dysregulated immune responses. Thus, longer breastfeeding correlates with a *lower* SLE risk.
+
+**Final answer:** B",B,ministral-3:8b
+123,ddxplus,less,True,less,B,"**Causal graph:** patient_symptoms_increased → stool/gas_passage → intestinal_motility, intestinal_obstruction_probability → inguinal_hernia_probability
+
+**Reasoning:**
+Passing stools or gas after symptom onset suggests **functional intestinal motility** is preserved, reducing the risk of **intestinal obstruction** (a known mechanical cause of bowel distension that can indirectly increase intra-abdominal pressure and predispose to inguinal hernias). Since obstruction is a key pathway linking symptoms to hernia risk, maintaining motility lowers that pathway’s activation, thereby decreasing (not increasing or unaffected) the probability of an inguinal hernia.
+
+**Final answer:** B",B,ministral-3:8b
+124,ddxplus,more,False,less,B,"**Causal graph:** patient_attends_daycare → exposure_to_infectious_children → viral_infection_risk → viral_pharyngitis_probability
+
+**Reasoning:**
+Daycare attendance increases exposure to other children, who may carry viruses like those causing viral pharyngitis. If a patient does not attend daycare, their exposure to these viruses decreases, lowering their risk of viral pharyngitis. Thus, reduced daycare attendance logically reduces the probability of viral pharyngitis.
+
+**Final answer:** B",B,ministral-3:8b
+125,ddxplus,less,False,more,A,"**Causal graph:** *Cold → Upper Respiratory Infection (URI) → Inflammation of Vocal Cords → Acute Laryngitis*
+
+**Reasoning:**
+A cold (URI) causes inflammation and irritation in the upper respiratory tract, including the vocal cords. This inflammation increases the likelihood of developing acute laryngitis. Therefore, having a cold in the last 2 weeks would **increase** the probability of acute laryngitis, not decrease it.
+
+**Final answer:** A",A,ministral-3:8b
+126,ddxplus,less,False,more,A,"**Causal graph:** *kidney failure → fluid retention → increased intravascular volume → pulmonary congestion → acute pulmonary edema*
+
+**Reasoning:**
+Without dialysis, untreated kidney failure leads to worsening fluid retention and elevated intravascular volume. This directly increases pulmonary congestion and the risk of acute pulmonary edema. Thus, the absence of dialysis raises the probability of this complication.
+
+**Final answer:** A",A,ministral-3:8b
+127,ddxplus,more,True,more,A,"**Causal graph:** *heart_attack → angina_history → stable_angina, angina_history → stable_angina*
+
+**Reasoning:**
+A prior heart attack or history of angina (chest pain) indicates **coronary artery disease (CAD)** progression or ischemia. These conditions are risk factors for stable angina, as they reflect underlying plaque buildup, reduced blood flow, and myocardial vulnerability. Thus, a history of either event **increases** the likelihood of stable angina due to shared pathophysiological mechanisms (atherosclerosis, endothelial dysfunction).
+
+**Final answer:** A",A,ministral-3:8b
+128,ddxplus,more,False,no effect,C,"**Causal Graph:**
+patient → vaginal discharge → **infection/inflammation** → immune response → systemic symptoms (e.g., fatigue, lymphadenopathy)
+**systemic symptoms** ↔ sarcoidosis (shared pathway: granulomatous inflammation)
+
+---
+**Reasoning:**
+Vaginal discharge often stems from infections (e.g., bacterial vaginosis, trichomoniasis) or inflammatory conditions, which trigger localized immune responses. While these do not directly cause sarcoidosis (a systemic granulomatous disease), they may:
+1. **Confound** diagnosis by mimicking systemic symptoms (e.g., fatigue, joint pain).
+2. **Induce systemic inflammation**, theoretically increasing susceptibility to autoimmune/granulomatous disorders via shared pathways (e.g., Th1/Th17 imbalance).
+3. **Distract clinicians** from investigating sarcoidosis if symptoms are attributed to the discharge.
+
+However, no direct causal link exists between vaginal discharge and sarcoidosis. The relationship is **indirect and context-dependent**, but the presence of discharge could **increase diagnostic uncertainty** (not necessarily the probability of sarcoidosis itself).
+
+---
+**Final answer:** **C** (no effect on sarcoidosis probability, though it may complicate diagnosis)",C,ministral-3:8b
+129,ddxplus,less,False,more,A,"**Causal graph:** energy_drinks_regular_consumption → caffeine_intake ↑, caffeine_intake ↑ → sympathetic_nervous_system_activation ↑, sympathetic_nervous_system_activation ↑ → PSVT_probability ↑
+
+**Reasoning:**
+Regular energy drink consumption increases caffeine intake, which stimulates the sympathetic nervous system. Elevated sympathetic activity is a known trigger for paroxysmal supraventricular tachycardia (PSVT), a type of arrhythmia. Thus, higher caffeine intake (from energy drinks) logically raises the likelihood of PSVT, not reduces it.
+
+**Final answer:** A",A,ministral-3:8b
+130,ddxplus,less,True,less,B,"**Causal graph:** Parkinson’s disease → Risk of aspiration pneumonia (due to swallowing difficulties, immobility, or medication side effects)
+Parkinson’s disease → Immobility/inactivity → Reduced lung expansion/clearance → Higher pneumonia risk
+Parkinson’s disease → Cognitive decline → Poor self-care/hygiene → Higher pneumonia risk
+
+**Reasoning:**
+Parkinson’s disease increases pneumonia risk via multiple pathways (e.g., aspiration, immobility, or weakened immune response). If the patient *does not* have Parkinson’s, these pathways are absent or less pronounced, reducing the likelihood of pneumonia. Thus, the absence of Parkinson’s generally lowers pneumonia risk.
+
+**Final answer:** B",B,ministral-3:8b
+131,ddxplus,less,True,less,B,"**Causal graph:** *Absence_of_colored_or_abundant_sputum → Lower_infection_severity → Lower_probability_of_bronchitis*
+
+**Reasoning:**
+Bronchitis often involves inflammation of the bronchi, which can lead to increased mucus production (sputum) that may change in color (e.g., yellow/green due to infection) or volume. If a patient lacks these symptoms, it suggests milder airway irritation or a less severe infection, reducing the likelihood of bronchitis. Thus, the absence of colored/abundant sputum correlates with a *lower* probability of bronchitis.
+
+**Final answer:** B",B,ministral-3:8b
+132,ddxplus,less,False,more,A,"**Causal graph:** chronic_pancreatitis → inflammation_damage → fibrosis → pancreatic_neoplasm_probability
+
+**Reasoning:**
+Chronic pancreatitis causes persistent inflammation and tissue damage, leading to fibrosis (scarring) in the pancreas. Fibrosis disrupts normal pancreatic architecture and increases cellular atypia, which is a known risk factor for pancreatic neoplasm (cancer). Thus, the presence of chronic pancreatitis *increases* the likelihood of developing pancreatic neoplasm, not decreases it.
+
+**Final answer:** A",A,ministral-3:8b
+133,ddxplus,less,True,less,B,"Causal graph: **difficulty articulating/speaking → communication impairment → misdiagnosis or underdiagnosis → delayed/avoided testing → lower probability of confirmed Myasthenia gravis diagnosis**
+
+Reasoning:
+Difficulty articulating words/speaking can lead to communication barriers, making it harder for clinicians to recognize subtle symptoms (e.g., facial weakness, fatigue) or obtain accurate medical history. This may result in misdiagnosis (e.g., anxiety, stroke, or psychiatric conditions) or delayed testing for autoimmune disorders like Myasthenia gravis (MG). Consequently, the likelihood of a confirmed MG diagnosis decreases due to missed clinical clues or insufficient diagnostic workup.
+
+Final answer: **B**",B,ministral-3:8b
+134,ddxplus,less,False,more,A,"**Causal graph:** double vision → ocular muscle weakness → impaired neuromuscular transmission → **Myasthenia gravis (MG) likelihood**
+
+**Reasoning:**
+Double vision (diplopia) is a classic symptom of ocular muscle weakness, often caused by impaired neuromuscular transmission at the neuromuscular junction. Myasthenia gravis (MG) is an autoimmune disorder that directly disrupts this transmission, leading to fluctuating muscle weakness (including ocular muscles). Since diplopia is a hallmark of MG due to this mechanism, its presence **increases** (not decreases) the likelihood of MG. Thus, observing diplopia does not reduce MG probability—it suggests a higher probability.
+
+**Final answer:** A",A,ministral-3:8b
+135,ddxplus,less,False,more,A,"**Causal graph:** *Absence_of_high_pitched_inspiratory_sound → Reduced_laryngeal_airflow → Increased_laryngeal_stiffness → Higher_laryngospasm_probability*
+
+**Reasoning:**
+A high-pitched inspiratory sound (stridor) typically arises from turbulent airflow through a narrowed larynx (e.g., due to edema, spasm, or obstruction). If the patient **does not** hear this sound, it suggests either:
+1) **No significant narrowing** (lowering laryngospasm risk), or
+2) **Complete obstruction** (e.g., vocal cord closure), which paradoxically *increases* the likelihood of laryngospasm (since airflow is already compromised and spasm is more likely to occur). Clinically, **absence of stridor** in a high-risk scenario (e.g., post-extubation) is often a red flag for impending laryngospasm due to silent but severe airway compromise.
+
+**Final answer:** A",A,ministral-3:8b
+136,ddxplus,less,False,more,A,"**Causal graph:** pain → movement → rib fracture
+
+**Reasoning:**
+Pain that worsens with movement suggests mechanical irritation or structural instability (e.g., rib cage injury). Increased pain during movement implies higher mechanical stress on ribs, raising the likelihood of a spontaneous fracture (e.g., due to microtrauma or underlying fragility). Thus, worsening pain with movement correlates with a *higher* probability of spontaneous rib fracture, not lower.
+
+**Final answer:** A",A,ministral-3:8b
+137,ddxplus,less,False,more,A,"**Causal graph:** *secondhand smoke → lung irritation → immune response suppression → URTI susceptibility*
+
+**Reasoning:**
+Secondhand smoke contains toxins (e.g., nicotine, tar) that irritate the upper respiratory tract, weakening mucosal defenses. Chronic irritation suppresses immune responses, increasing vulnerability to upper respiratory tract infections (URTI). Thus, exposure *reduces* the probability of *resistance* to URTI, meaning the likelihood of *contracting* URTI *increases*—but the question asks about the *probability of URTI* (i.e., susceptibility), which is *higher* due to impaired defenses. However, the phrasing ""less probability of URTI"" is ambiguous: if interpreted as *resistance* (i.e., lower immunity), then exposure *reduces* resistance (i.e., *less* probability of *not* getting URTI). The most direct interpretation is that exposure *lowers* the body’s ability to avoid URTI, so the ""probability of URTI"" (risk) *increases*—but since the question asks for ""less probability,"" the answer aligns with **B: less** (i.e., the *protective* probability is diminished).
+
+**Final answer:** **B** *(correction: Clarification needed—if ""less probability of URTI"" means *lower risk*, the answer would be **A** (more exposure → higher risk). Given standard causality, exposure → higher URTI risk. Assuming the question intends ""lower resistance,"" the answer is **B** (less protective probability). However, the phrasing is likely reversed. The correct causal link is: exposure → *increased* URTI probability. Thus, the answer should be **A** if ""less probability"" is a misphrasing for ""lower resistance."" For strict interpretation: **A** (exposure → higher URTI probability).)*
+
+---
+**Revised interpretation (assuming typo in question):**
+If the question meant *""how will this affect the **risk** of URTI?""* → **A: more**.
+If it meant *""how will this affect the **resistance** to URTI?""* → **B: less**.
+Given the original phrasing *""less probability of URTI""* is likely a misstatement, the intended answer is **A** (exposure → higher URTI probability).
+
+**Final answer (corrected):** **A**",A,ministral-3:8b
+138,ddxplus,more,False,less,B,"Causal graph: **patient_answers_NO_to_red_cheeks → ∆(probability_of_Scombroid_poisoning)**
+
+Reasoning:
+Scombroid poisoning (caused by spoiled fish, particularly tuna/swordfish) often triggers **flushing, facial redness, or warmth** due to histamine release. If the patient explicitly denies sudden cheek redness, this **reduces the likelihood** that histamine-mediated symptoms (a hallmark of scombroid) are present. Thus, a ""NO"" answer to red cheeks **decreases** the probability of scombroid poisoning.
+
+Final answer: **B**",B,ministral-3:8b
+139,ddxplus,more,True,more,A,"Causal graph: **diffuse muscle pain → fever symptoms → viral infection likelihood, diffuse muscle pain → systemic inflammation → immune response activation**
+
+Reasoning:
+Diffuse muscle pain is a common symptom of viral infections like influenza due to systemic inflammation and immune activation. While muscle pain itself is not a direct cause of influenza, it often co-occurs with viral infections, increasing the likelihood of influenza when present alongside other flu-like symptoms (e.g., fever, fatigue). Thus, the presence of widespread muscle pain suggests a higher probability of an underlying viral infection like influenza rather than reducing or having no effect on it.
+
+Final answer: **A**",A,ministral-3:8b
+140,ddxplus,more,True,more,A,"**Causal graph:** *family_history_of_CVD_before_50 → genetic_risk → atherosclerosis_development → coronary_artery_disease_severity → stable_angina_probability*
+
+**Reasoning:**
+A family history of cardiovascular disease (CVD) before age 50 is a strong genetic/epigenetic risk factor for premature atherosclerosis and coronary artery disease (CAD). These conditions directly increase the likelihood of stable angina by reducing arterial elasticity and increasing plaque burden. While lifestyle and environmental factors also play a role, genetic predisposition remains a major driver of CAD progression and angina development.
+
+**Final answer:** A",A,ministral-3:8b
+141,ddxplus,more,False,less,B,"**Causal graph:** *Secondhand smoke exposure → Respiratory irritation → Airway inflammation → Laryngospasm risk*
+
+**Reasoning:**
+Secondhand smoke exposure increases respiratory irritation and airway inflammation, which are known triggers for laryngospasm. Removing this exposure (i.e., no daily exposure) would logically reduce these intermediate risk factors, thereby lowering the probability of laryngospasm.
+
+**Final answer:** A",B,ministral-3:8b
+142,ddxplus,less,False,more,A,"Causal graph: **shortness_of_breath_with_minimal_effort → cardiac_dysfunction → myocarditis_probability**
+
+Reasoning:
+Shortness of breath with minimal effort is a **symptom of cardiac dysfunction**, which can arise from conditions like myocarditis (inflammation of the heart muscle). If a patient experiences this symptom, it **increases the likelihood of an underlying cardiac issue**, including myocarditis. Thus, the presence of this symptom **reduces the probability of myocarditis being ruled out** (i.e., it makes myocarditis **more probable**, not less).
+
+Final answer: **A**",A,ministral-3:8b
+143,ddxplus,less,True,less,B,"**Causal graph:** muscle_spasms → Acute_dystonic_reactions
+
+**Reasoning:**
+Acute dystonic reactions (ADRs) are a type of extrapyramidal symptom often characterized by **involuntary muscle contractions**, including **spasms** (e.g., oculogyric crisis, torticollis, orofacial dyskinesia). The absence of muscle spasms in the face, neck, or body suggests a **lower likelihood** of ADRs, as these symptoms are hallmark manifestations of the condition. Thus, reducing muscle spasms would logically decrease the probability of ADRs.
+
+**Final answer:** B",B,ministral-3:8b
+144,ddxplus,less,False,more,A,"**Causal Graph:**
+patient_unintentional_weight_loss → **malnutrition/protein-energy deficiency** → **immune suppression** → **increased susceptibility to infections/diseases** (including Chagas)
+patient_lost_appetite → **malnutrition/protein-energy deficiency** → **immune suppression** → **increased susceptibility to infections/diseases** (including Chagas)
+
+*(Note: Both weight loss and appetite loss are linked to malnutrition, which weakens immunity, potentially altering Chagas disease progression or diagnosis likelihood.)*
+
+**Reasoning:**
+Unintentional weight loss and loss of appetite often indicate malnutrition or systemic illness (e.g., infections, cancers, or autoimmune disorders). Malnutrition weakens the immune system, which may *increase* susceptibility to *Trypanosoma cruzi* (the parasite causing Chagas) or alter diagnostic test accuracy (e.g., lower parasitemia levels). However, Chagas disease itself can also cause weight loss/appetite loss as symptoms. Here, the question focuses on *predictive probability* of Chagas given these symptoms: **weight loss/appetite loss are more commonly associated with advanced disease or immune compromise**, which *indirectly* suggests a *higher* likelihood of Chagas (or other severe conditions). But strictly for Chagas *diagnosis probability* (e.g., via serology), malnutrition might lower detectable antibody levels, complicating detection. The question likely refers to **clinical suspicion** (symptoms pointing toward Chagas), where weight loss/appetite loss are *red flags* for higher probability.
+
+**Final answer:** **A** *(more probability of Chagas suspicion/diagnostic concern)*
+
+---
+*Clarification note:* If the question intended ""probability of *detecting* Chagas"" (e.g., via lab tests), the answer might shift to **B** (less detectable). Context matters. Here, we assume ""probability of Chagas"" in a clinical context.",A,ministral-3:8b
+145,ddxplus,less,True,less,B,"Causal graph: **no surgery → increased blood stasis → hypercoagulability → higher risk of pulmonary embolism (PE)**
+
+Reasoning:
+Recent surgery (especially abdominal, thoracic, or orthopedic procedures) increases the risk of PE due to venous stasis, endothelial injury, and hypercoagulability (Virchow’s triad). Without surgery in the last month, these prothrombotic triggers are absent or reduced, lowering the baseline risk of PE.
+
+Final answer: **B**",B,ministral-3:8b
+146,ddxplus,less,False,more,A,"**Causal graph:** diarrhea → stool frequency, stool frequency → dehydration, dehydration → immune response, immune response → susceptibility to Chagas infection
+
+**Reasoning:**
+Diarrhea or increased stool frequency can lead to dehydration, which may weaken the immune system. A compromised immune system increases susceptibility to infections like Chagas disease (caused by *Trypanosoma cruzi*). Thus, diarrhea/stool frequency indirectly raises the likelihood of Chagas infection, not reduces it. The correct relationship is that diarrhea *increases* (not decreases) the probability of Chagas infection.
+
+**Final answer:** A",A,ministral-3:8b
+147,ddxplus,less,True,less,B,"**Causal Graph:**
+`menstrual_debut_age → reproductive_hormones → immune_system_maturity → SLE_probability`
+
+**Reasoning:**
+Primary amenorrhea (no menstruation by age 12) often indicates delayed puberty, which may correlate with lower estrogen exposure and incomplete immune system maturation. SLE (Systemic Lupus Erythematosus) risk is influenced by hormonal and immune factors, and delayed puberty/menarche has been associated with a *lower* likelihood of autoimmune diseases in some studies. Thus, this condition likely reduces SLE probability rather than increasing it.
+
+**Final answer:** B",B,ministral-3:8b
+148,ddxplus,more,False,less,B,"**Causal Graph:**
+patient_intense_coughing → abdominal_pressure_increase → inguinal_hernia_probability
+
+**Reasoning:**
+Intense coughing increases intra-abdominal pressure, which is a known risk factor for inguinal hernias. If coughing fits are less intense or absent, the pressure on the abdominal wall is reduced, lowering the likelihood of hernia development. Thus, reduced coughing indirectly decreases hernia probability.
+
+**Final answer:** B",B,ministral-3:8b
+149,ddxplus,more,False,less,B,"**Causal graph:** *anxiety → PSVT probability*
+
+**Reasoning:**
+Anxiety is a known trigger for paroxysmal supraventricular tachycardia (PSVT), a type of irregular heartbeat. If anxiety decreases, the physiological stress response (e.g., increased heart rate, catecholamine release) that may precipitate PSVT is reduced. This lowers the likelihood of PSVT occurrence. Thus, reduced anxiety → lower PSVT probability.
+
+**Final answer:** B",B,ministral-3:8b
+150,ddxplus,less,False,more,A,"**Causal graph:** *past_fluid_in_lungs → pulmonary_fibrosis_or_damage → pulmonary_compliance_reduction → acute_pulmonary_edema_probability*
+
+**Reasoning:**
+A history of fluid in the lungs (e.g., from prior pulmonary edema or heart failure) often causes structural or functional changes like fibrosis or stiffness in lung tissue. These changes reduce pulmonary compliance (the lung’s ability to expand and recoil), making it harder for the lungs to handle fluid accumulation during future episodes. Thus, a prior fluid event *increases* the likelihood of recurrent acute pulmonary edema, not decreases it.
+
+**Final answer:** A",A,ministral-3:8b
+151,ddxplus,less,False,more,A,"Causal graph: swollen/painful lymph nodes → immune response activation → viral load detection → HIV test sensitivity
+
+Reasoning:
+Swollen or painful lymph nodes often indicate an active immune response, which can increase the likelihood of detecting HIV antibodies or viral RNA during testing. This heightened immune activity may lead to a higher viral load or more pronounced antibody presence, thereby increasing the probability that an HIV test will correctly identify infection. Thus, the presence of swollen/painful lymph nodes would likely *increase* the probability of detecting HIV (initial infection) rather than decrease it.
+
+Final answer: A",A,ministral-3:8b
+152,ddxplus,more,True,more,A,"**Causal graph:** deviated nasal septum → nasal airway obstruction → mucus stasis → sinus inflammation → Acute rhinosinusitis
+
+**Reasoning:**
+A deviated nasal septum obstructs one or both nasal passages, reducing airflow and causing mucus to accumulate (stasis) in the sinuses. Stagnant mucus provides a breeding ground for bacteria, increasing the risk of sinus inflammation and infection (acute rhinosinusitis). Thus, the deviation directly raises the likelihood of developing the condition.
+
+**Final answer:** A",A,ministral-3:8b
+153,ddxplus,more,False,less,B,"**Causal graph:** *alcohol use → esophageal injury → Boerhaave syndrome*
+
+**Reasoning:**
+Boerhaave syndrome is a severe esophageal rupture often triggered by forceful vomiting or severe retching, which can be exacerbated by alcohol consumption (e.g., alcohol lowers inhibition, increasing the risk of vomiting). Reducing alcohol use or avoiding addiction lowers the likelihood of vomiting-induced esophageal trauma, thereby decreasing the probability of Boerhaave syndrome.
+
+**Final answer:** B",B,ministral-3:8b
+154,ddxplus,less,True,less,B,"Causal graph: **patient → symptoms (numbness/tingling) → probability of Guillain-Barré syndrome**
+
+Reasoning:
+Guillain-Barré syndrome (GBS) is characterized by **ascending peripheral neuropathy**, often presenting with **symptoms like numbness, tingling, or weakness in the lower limbs** (e.g., feet/legs). The absence of these classic sensory symptoms (numbness/tingling) suggests a **lower likelihood of GBS**, as these are core diagnostic features. Thus, their absence would decrease the probability of GBS rather than increase or have no effect.
+
+Final answer: **B**",B,ministral-3:8b
+155,ddxplus,more,True,more,A,"Causal graph: **chest pain at rest → increased respiratory effort → lung hyperinflation → risk of alveolar rupture → risk of spontaneous pneumothorax**
+
+Reasoning:
+Chest pain at rest often suggests underlying conditions like chronic obstructive pulmonary disease (COPD), asthma, or other lung pathologies that cause **hyperinflation** (e.g., air trapping) and **increased respiratory effort**. These mechanisms raise intrathoracic pressure and stress on lung parenchyma, increasing the likelihood of alveolar rupture—a key step in spontaneous pneumothorax development. Thus, the presence of rest chest pain is **associated with a higher risk** of spontaneous pneumothorax.
+
+Final answer: **A**",A,ministral-3:8b
+156,ddxplus,more,True,more,A,"**Causal graph:** unprotected_sex_with_multiple_partners → exposure_to_HIV_risk → probability_of_HIV_infection
+
+**Reasoning:**
+Unprotected sex with multiple partners increases the likelihood of exposure to HIV through unprotected vaginal, anal, or oral contact. More partners mean a higher chance of encountering an infected individual, as HIV prevalence may vary among populations. This directly raises the probability of initial HIV infection. Thus, the behavior is causally linked to increased risk.
+
+**Final answer:** A",A,ministral-3:8b
+157,ddxplus,more,True,more,A,"**Causal graph:** *recent hospital treatment (IV/IM) → medication administration → dopamine receptor blockade → acute dystonic reactions*
+
+**Reasoning:**
+Intravenous or intramuscular administration of antipsychotics (common in hospital settings for agitation/aggression) directly increases dopamine receptor blockade, which is the primary mechanism for acute dystonic reactions (e.g., oculogyric crisis, torticollis). Higher doses or rapid onset via IV/IM elevate risk compared to oral routes. Thus, recent hospital treatment with these medications raises the probability of dystonic reactions.
+
+**Final answer:** A",A,ministral-3:8b
+158,ddxplus,less,True,less,B,"**Causal graph:** patient_attends_daycare → exposure_to_infectious_agents → risk_of_respiratory_infections → probability_of_acute_laryngitis
+
+**Reasoning:**
+Daycare attendance increases exposure to respiratory viruses (e.g., rhinoviruses, coronaviruses) that can trigger acute laryngitis. Without daycare, exposure to these pathogens likely decreases, reducing the likelihood of infection and inflammation of the larynx. Thus, reduced daycare attendance should lower the probability of acute laryngitis.
+
+**Final answer:** B",B,ministral-3:8b
+159,ddxplus,more,False,less,B,"**Causal graph:** patient_has_severe_allergy → risk_of_anaphylaxis
+
+**Reasoning:**
+The absence of a known severe food allergy directly reduces the baseline risk of anaphylaxis, as anaphylaxis is primarily triggered by allergic reactions to allergens. Without a severe allergy, the probability of encountering an allergen that provokes anaphylaxis is lower. Thus, the patient’s risk decreases.
+
+**Final answer:** B",B,ministral-3:8b
+160,ddxplus,less,False,more,A,"**Causal graph:** *symptom_worsens_on_lying_down → pericardial_friction → pericarditis_probability, symptom_worsens_on_lying_down → pleural_effusion → pericarditis_probability*
+
+**Reasoning:**
+Symptoms worsening when lying down (e.g., orthopnea-like discomfort) strongly suggests **pericardial effusion** (fluid around the heart), a hallmark of **pericarditis**. This is a classic presentation due to fluid accumulation increasing pressure on the heart when upright is relieved by sitting up. Thus, the presence of this symptom pattern **increases** the likelihood of pericarditis, not decreases it.
+
+**Final answer:** A",A,ministral-3:8b
+161,ddxplus,less,False,more,A,"Causal graph: **eating dark-fleshed fish/Swiss cheese → histamine release → histamine accumulation → scombroid symptoms**
+
+Reasoning:
+Dark-fleshed fish (e.g., tuna) and Swiss cheese are known to contain high levels of naturally occurring histamine or to support histamine-producing bacteria (e.g., *H. *fremontii* in fish). Consuming these foods increases histamine exposure, which directly raises the risk of scombroid poisoning symptoms (flushing, headache, diarrhea). Thus, eating them *before* a reaction would **increase** the probability of scombroid poisoning, not decrease it.
+
+Final answer: **A**",A,ministral-3:8b
+162,ddxplus,less,False,more,A,"**Causal graph:** *fear_of_death → perceived_threat → physiological_arousal → panic_attack_probability*
+
+**Reasoning:**
+Fear of dying or impending death heightens perceived threat, triggering physiological arousal (e.g., rapid heartbeat, hyperventilation). This arousal directly increases the likelihood of a panic attack. Thus, greater fear reduces the probability of avoiding a panic attack.
+
+**Final answer:** A",A,ministral-3:8b
+163,ddxplus,more,True,more,A,"**Causal graph:** hiatal hernia → stomach acid reflux into esophagus → GERD symptoms
+
+**Reasoning:**
+A hiatal hernia occurs when part of the stomach protrudes through the diaphragm into the chest, weakening the lower esophageal sphincter (LES). This allows stomach acid to reflux more easily into the esophagus, directly increasing the likelihood of GERD (gastroesophageal reflux disease) symptoms. Thus, the presence of a hiatal hernia raises the probability of GERD.
+
+**Final answer:** A",A,ministral-3:8b
+164,ddxplus,less,True,less,B,"**Causal graph:** *Cold → Upper respiratory inflammation → Laryngeal irritation → Laryngospasm*
+
+**Reasoning:**
+A cold typically causes inflammation in the upper respiratory tract, including the larynx, which can trigger laryngospasm (sudden closure of the vocal cords). If the patient has *not* had a cold in the last 2 weeks, this reduces the likelihood of inflammation and irritation in the larynx, thereby lowering the probability of laryngospasm.
+
+**Final answer:** B",B,ministral-3:8b
+165,ddxplus,more,True,more,A,"**Causal graph:** *pericarditis → shared autoimmune mechanisms → SLE risk, pericarditis → inflammation → immune dysregulation → SLE risk*
+
+**Reasoning:**
+Pericarditis is often associated with autoimmune or inflammatory conditions. A prior episode of pericarditis suggests a predisposition to immune dysregulation, which is a key pathway in the development of systemic lupus erythematosus (SLE). While not a direct causal link, the shared inflammatory/autoimmune background increases the likelihood of SLE. Thus, a history of pericarditis is generally associated with a **higher** probability of SLE.
+
+**Final answer:** A",A,ministral-3:8b
+166,ddxplus,less,False,more,A,"**Causal graph:** *hormone_use → blood_coagulation → pulmonary_embolism_probability*
+
+**Reasoning:**
+Hormone therapy (e.g., estrogen-containing contraceptives or HRT) increases blood coagulation factors (e.g., fibrinogen, von Willebrand factor), raising the risk of venous thromboembolism (including pulmonary embolism). Thus, **current hormone use would logically increase** the probability of pulmonary embolism, not decrease it.
+
+**Final answer:** A",A,ministral-3:8b
+167,ddxplus,less,True,less,B,"**Causal graph:** weakness/paralysis → **increases** neurological symptom severity → **decreases** likelihood of misdiagnosis as Guillain-Barré syndrome (GBS) (since GBS is a well-defined acute inflammatory neuropathy with progressive weakness/paralysis)
+
+**Reasoning:**
+Guillain-Barré syndrome (GBS) is characterized by progressive weakness/paralysis due to immune-mediated demyelination of peripheral nerves. If a patient already has weakness/paralysis in limbs or facial muscles, this is a **core symptom of GBS**, not a risk factor. However, if the question implies *pre-existing* weakness/paralysis (e.g., from stroke, spinal cord injury, or other conditions), this would **decrease** the probability of GBS because:
+1) GBS typically presents *de novo* (new-onset) weakness.
+2) Chronic or pre-existing weakness suggests an alternative diagnosis.
+3) The presence of other symptoms (e.g., sensory loss, autonomic dysfunction) would further reduce GBS likelihood.
+
+**Final answer:** B
+
+---
+*Note: If the question intended to ask how pre-existing weakness affects *risk* of developing GBS (rather than diagnostic probability), the answer would differ (e.g., autoimmune conditions might increase risk). Clarification of phrasing is needed for absolute certainty.*",B,ministral-3:8b
+168,ddxplus,more,True,more,A,"**Causal Graph:**
+caffeine_intake → sympathetic_nervous_system_activation → heart_rate → PSVT_probability
+
+**Reasoning:**
+Caffeine (from coffee/tea) stimulates the sympathetic nervous system, increasing heart rate and cardiac excitability. Higher sympathetic activity and heart rate are known risk factors for paroxysmal supraventricular tachycardia (PSVT). Thus, regular caffeine intake likely **increases** the likelihood of PSVT episodes.
+
+**Final answer:** A",A,ministral-3:8b
+169,ddxplus,less,True,less,B,"**Causal graph:** *Absence of greenish/yellowish nasal discharge → [directly] ↓ Likelihood of Acute Rhinosinusitis (ARS)*
+
+**Reasoning:**
+Greenish/yellowish nasal discharge is a classic clinical sign of **purulent inflammation**, often caused by bacterial infection (e.g., *Streptococcus pneumoniae*, *Haemophilus influenzae*), which are common pathogens in acute rhinosinusitis. The absence of this discharge suggests **less bacterial involvement** or a milder inflammatory response, reducing the probability of ARS. While other symptoms (e.g., congestion, pain) may still indicate ARS, the lack of purulent discharge is a **negative predictor** for bacterial-driven sinusitis.
+
+**Final answer:** B",B,ministral-3:8b
+170,ddxplus,more,False,less,B,"**Causal graph:** patient_symptoms_exertion_dependent → myocarditis_probability
+
+**Reasoning:**
+Myocarditis typically presents with **exertion-induced symptoms** (e.g., chest pain, dyspnea) due to inflammation weakening the heart’s ability to pump blood during stress. If symptoms are **not worsened by exertion or relieved by rest**, this pattern is **less consistent** with myocarditis (which often follows this classic ""exertional"" pattern). Thus, the absence of this hallmark feature reduces diagnostic suspicion, lowering the probability of myocarditis.
+
+**Final answer:** B",B,ministral-3:8b
+171,ddxplus,more,True,more,A,"Causal graph: **fatigue → general discomfort → diffuse muscle aches → decline in well-being → *increased suspicion of myocarditis (via systemic inflammation/stress response)*
+
+Reasoning:
+Generalized fatigue, vague discomfort, and diffuse muscle aches are **non-specific but common symptoms of systemic inflammation** (e.g., viral infections, autoimmune responses). While myocarditis itself may present with fatigue and malaise, these symptoms are **more likely due to concurrent illness** (e.g., COVID-19, flu, or other viral triggers) rather than myocarditis directly. However, if these symptoms are **new, persistent, or worsening**—especially in a patient with known risk factors (e.g., recent viral infection, autoimmune disease, or cardiac history)—they **increase clinical suspicion** of myocarditis as a secondary complication. Thus, their presence **raises the probability** of considering myocarditis in the differential diagnosis.
+
+Final answer: **A**",A,ministral-3:8b
+172,ddxplus,more,True,more,A,"**Causal graph:** *nasal_discharge_color (greenish/yellowish) → infection_presence → inflammation → chronic_rhinosinusitis_probability*
+
+**Reasoning:**
+Greenish/yellowish nasal discharge often indicates **bacterial infection** (due to pus or immune response), which increases inflammation and tissue damage in the sinuses. Chronic inflammation is a key driver of chronic rhinosinusitis (CRS). Thus, this symptom is **associated with a higher likelihood** of CRS progression or persistence.
+
+**Final answer:** A",A,ministral-3:8b
+173,ddxplus,more,False,less,B,"Causal graph: **absence_of_burning_sensation → reduced_GERD_probability → less_probability_of_GERD**
+
+Reasoning:
+A burning sensation radiating from the stomach to the throat (often with a bitter taste) is a classic symptom of **gastroesophageal reflux disease (GERD)** caused by stomach acid reflux. The absence of this symptom suggests a lower likelihood of acid reflux occurring, which directly reduces the probability of GERD. Thus, the lack of this symptom correlates with a **lower** probability of GERD.
+
+Final answer: **B**",B,ministral-3:8b
+174,ddxplus,more,False,less,B,"**Causal graph:** patient_voice_change → voice_noticed_by_patient → awareness_of_symptoms → diagnosis_confidence → acute_laryngitis_probability
+
+**Reasoning:**
+If the patient does not notice changes in their voice (deeper, softer, or hoarse), they are less likely to recognize symptoms of acute laryngitis. Without symptom awareness, the likelihood of seeking medical evaluation or diagnosis decreases, indirectly reducing the probability of confirming acute laryngitis. Thus, unnoticed voice changes correlate with a **lower** probability of diagnosis.
+
+**Final answer:** B",B,ministral-3:8b
+175,ddxplus,more,True,more,A,"**Causal Graph:**
+`living_with_4+_people → crowded_environment → airborne_disease_exposure → respiratory_infection_risk → acute_laryngitis_probability`
+
+**Reasoning:**
+Living with 4+ people increases the likelihood of a crowded environment, which raises exposure to airborne pathogens (e.g., viruses/bacteria). Higher respiratory infection risk (including viral upper respiratory infections) correlates with a greater probability of developing acute laryngitis, a common viral-induced inflammation of the larynx.
+
+**Final answer:** A",A,ministral-3:8b
+176,ddxplus,less,True,less,B,"**Causal graph:** intravenous_drug_use → immune_system_suppression → susceptibility_to_infections → tuberculosis_probability
+
+**Reasoning:**
+Intravenous drug use (IVDU) is strongly linked to immune suppression due to factors like shared needle contamination (HIV/hepatitis), malnutrition, and direct drug-induced harm to immune function. Reduced immune function increases susceptibility to opportunistic infections, including tuberculosis (TB). Since the patient is *not* using IV drugs, their immune system is less compromised, lowering their risk of TB compared to IV drug users. Thus, the absence of IV drug use reduces TB probability.
+
+**Final answer:** B",B,ministral-3:8b
+177,ddxplus,less,True,less,B,"**Causal Graph:**
+patient_has_high_cholesterol → plaque_formation_in_arteries → coronary_artery_blockage → **NSTEMI/STEMI_probability**
+patient_takes_cholesterol_medication → **plaque_formation_in_arteries** (negative effect) → coronary_artery_blockage → **NSTEMI/STEMI_probability**
+
+---
+**Reasoning:**
+High cholesterol directly promotes plaque buildup in arteries, increasing the risk of coronary blockages (and thus NSTEMI/STEMI). Cholesterol-lowering medications (e.g., statins) reduce plaque formation, thereby lowering this risk. Thus, **both high cholesterol and its treatment have opposing effects on NSTEMI/STEMI probability**: untreated high cholesterol *increases* risk, while medication *decreases* it. Since the question asks about the *effect of treatment* (not untreated high cholesterol), the answer focuses on the reduction in risk.
+
+---
+**Final answer:** **B**",B,ministral-3:8b
+178,ddxplus,more,True,more,A,"**Causal graph:** *coughing_force → abdominal_pressure ↑ → inguinal_ring_stress ↑ → hernia_probability ↑*
+
+**Reasoning:**
+Intense coughing generates high intra-abdominal pressure, which increases strain on the inguinal ring (a common hernia site). Over time, repeated pressure spikes weaken the abdominal wall, raising the likelihood of an inguinal hernia. Thus, more coughing → higher hernia probability.
+
+**Final answer:** A",A,ministral-3:8b
+179,ddxplus,more,True,more,A,"**Causal graph:** *metastatic cancer → bone weakness → reduced bone integrity → increased fracture risk*
+
+**Reasoning:**
+Metastatic cancer often spreads to bones (e.g., via prostate, breast, or lung primaries), weakening them through processes like osteolysis or osteoblastic metastasis. This directly compromises bone strength, raising the likelihood of spontaneous fractures (e.g., ribs breaking without trauma). Thus, metastatic cancer *increases* the probability of spontaneous rib fractures.
+
+**Final answer:** A",A,ministral-3:8b
+180,ddxplus,more,False,less,B,"**Causal graph:** patient_not_taking_stimulants → **↓** sympathetic_nerve_activity → **↓** atrial_automaticity → **↓** PSVT_probability
+
+**Reasoning:**
+Decongestants and stimulants (e.g., caffeine, amphetamines) increase sympathetic nervous system activity, which can enhance atrial automaticity and trigger paroxysmal supraventricular tachycardia (PSVT). If the patient avoids these substances, sympathetic tone and atrial excitability are reduced, lowering the likelihood of PSVT.
+
+**Final answer:** A",B,ministral-3:8b
+181,ddxplus,more,False,less,B,"**Causal graph:** *Gastroesophageal reflux (GER) → Esophageal inflammation → Aspiration of stomach contents → Lower airway irritation → Chronic rhinosinusitis (CRS)*
+
+**Reasoning:**
+GER can cause esophageal inflammation, leading to aspiration of stomach contents into the respiratory tract. This irritation may contribute to lower airway inflammation, which is linked to CRS. If a patient has **no prior GER diagnosis**, the baseline risk of GER-related aspiration is lower, reducing the likelihood of GER-induced CRS. Thus, the absence of GER history likely **decreases** the probability of CRS in this causal pathway.
+
+**Final answer:** B",B,ministral-3:8b
+182,ddxplus,less,False,no effect,C,"**Causal graph:** *active_cancer → inflammation → coagulation_activation → venous_stasis → pulmonary_embolism_probability*
+
+**Reasoning:**
+Active cancer increases systemic inflammation and promotes hypercoagulability (e.g., via tumor-derived factors like tissue factor or reduced protein S/C). This raises the risk of venous thrombosis, which can embolize to the lungs. Thus, active cancer *increases* the probability of pulmonary embolism, not decreases it.
+
+**Final answer:** C",C,ministral-3:8b
+183,ddxplus,more,True,more,A,"**Causal graph:** *exercise_frequency → cardiovascular_health → stable_angina_probability*
+
+**Reasoning:**
+Regular exercise (≥4x/week) improves cardiovascular health by enhancing blood flow, reducing plaque buildup, and lowering blood pressure. Poor exercise habits (e.g., <4x/week) weaken these protective effects, increasing the risk of coronary artery disease—directly raising the likelihood of stable angina. Thus, *less* exercise correlates with a **higher** probability of stable angina.
+
+**Final answer:** A",A,ministral-3:8b
+184,ddxplus,more,True,more,A,"**Causal graph:** *surgery_lymph_nodes → lymphatic_drainage_disruption → fluid_accumulation → localized_edema*
+
+**Reasoning:**
+Removing lymph nodes disrupts lymphatic drainage, impairing the body’s ability to transport interstitial fluid back into circulation. This fluid buildup increases the likelihood of localized edema (swelling) in the affected area. Thus, prior lymph node surgery raises the probability of edema.
+
+**Final answer:** A",A,ministral-3:8b
+185,ddxplus,less,False,more,A,"**Causal Graph:**
+nasal congestion/clear runny nose → **sinus pressure** → **trigeminal nerve irritation** → **cluster headache probability**
+
+**Reasoning:**
+Nasal congestion or a clear runny nose often stems from sinus inflammation or fluid buildup, increasing sinus pressure. Elevated sinus pressure can irritate the trigeminal nerve (which is linked to cluster headaches), potentially triggering or worsening attacks. Thus, these symptoms likely **increase** the likelihood of cluster headaches rather than reducing it.
+
+**Final answer:** A",A,ministral-3:8b
+186,ddxplus,more,True,more,A,"Causal graph: **family_member_has_myasthenia → genetic_risk → probability_of_myasthenia**
+
+Reasoning:
+Myasthenia gravis (MG) has a known genetic component, with familial clustering observed in ~10% of cases (vs. sporadic cases). A ""YES"" answer to family history increases genetic predisposition, raising the likelihood of MG diagnosis. This aligns with established epidemiological evidence linking family history to higher risk.
+
+Final answer: **A**",A,ministral-3:8b
+187,ddxplus,more,False,less,B,"**Causal graph:** *no_flare_up_in_past_year → lower_exacerbation_risk → less_probability_of_acute_COPD_exacerbation*
+
+**Reasoning:**
+A history of no flare-ups in the past year suggests the patient’s condition is currently stable, which reduces the likelihood of future acute exacerbations or infections. This is because prior flare-ups are a known risk factor for recurrence, and their absence implies improved respiratory stability and lower susceptibility to triggers (e.g., infections, pollution). Thus, the absence of flare-ups logically decreases the probability of an acute event.
+
+**Final answer:** B",B,ministral-3:8b
+188,ddxplus,less,True,less,B,"**Causal graph:** chronic_anxiety → panic_attack_probability
+
+**Reasoning:**
+Chronic anxiety is a well-established risk factor for panic attacks, as it creates a heightened state of physiological arousal and cognitive hypervigilance. Removing this chronic stressor (i.e., no chronic anxiety) would logically reduce the baseline likelihood of panic attacks, as the underlying vulnerability is diminished. Thus, the absence of chronic anxiety should decrease the probability of panic attacks.
+
+**Final answer:** B",B,ministral-3:8b
+189,ddxplus,more,False,less,B,"**Causal graph:** patient_has_no_previous_pulmonary_edema → **reduced risk of acute pulmonary edema**
+
+**Reasoning:**
+A history of pulmonary edema (or lack thereof) influences the likelihood of recurrence or new onset due to shared pathophysiological mechanisms (e.g., fluid accumulation, cardiac dysfunction, or vascular permeability). If a patient has **never** had fluid in their lungs before, their baseline risk of acute pulmonary edema is inherently lower because prior episodes suggest pre-existing vulnerabilities (e.g., weakened heart function, chronic hypertension, or compromised lung compliance). Thus, the absence of prior fluid accumulation **reduces** the probability of acute pulmonary edema.
+
+**Final answer:** B",B,ministral-3:8b
+190,ddxplus,less,False,more,A,"**Causal graph:** *nocturnal choking/shortness of breath → severity of pulmonary congestion → risk of acute pulmonary edema*
+
+**Reasoning:**
+Nocturnal choking or dyspnea (shortness of breath) is a classic symptom of **pulmonary congestion**, often due to left ventricular dysfunction or fluid overload. Worsening congestion increases the likelihood of acute pulmonary edema (fluid accumulation in lungs). Thus, the presence of these symptoms suggests **higher** (not lower) risk of acute pulmonary edema.
+
+**Final answer:** A",A,ministral-3:8b
+191,ddxplus,more,True,more,A,"**Causal graph:** abdomen_bloating → intra-abdominal_pressure, intra-abdominal_pressure → hernia_risk, abdomen_bloating → bowel_gas_traps, bowel_gas_traps → intra-abdominal_pressure
+
+**Reasoning:**
+Abdominal bloating (distension) increases intra-abdominal pressure due to trapped gas or fluid. Higher pressure weakens the inguinal canal’s structural integrity over time, raising the likelihood of a hernia. Additionally, gas accumulation may directly contribute to pressure buildup, further elevating risk. Thus, bloating is causally linked to increased hernia probability.
+
+**Final answer:** A",A,ministral-3:8b
+192,ddxplus,less,True,less,B,"**Causal Graph:**
+patient_has_rheumatoid_arthritis → **shared_risk_factors** (e.g., smoking, autoimmune dysfunction, chronic inflammation) → **bronchiectasis_probability**
+patient_has_rheumatoid_arthritis ← **genetic_vulnerability** (e.g., HLA-DRB1 shared with bronchiectasis)
+**shared_risk_factors** ← **genetic_vulnerability**
+
+---
+**Reasoning:**
+Rheumatoid arthritis (RA) and bronchiectasis share risk factors like chronic inflammation, smoking, and genetic predispositions (e.g., HLA-DRB1 alleles). While RA itself is not a direct cause of bronchiectasis, its presence often overlaps with these shared vulnerabilities, *increasing* the baseline risk of bronchiectasis. Thus, **lacking RA** would reduce exposure to these indirect risk pathways, lowering bronchiectasis probability.
+
+---
+**Final answer:** **B**",B,ministral-3:8b
+193,ddxplus,less,True,less,B,"**Causal graph:** heart_failure → acute_pulmonary_edema
+
+**Reasoning:**
+Heart failure is a primary cause of acute pulmonary edema due to fluid overload and impaired cardiac function. If heart failure is absent, the risk of acute pulmonary edema decreases because the underlying mechanism driving fluid accumulation in the lungs is removed.
+
+**Final answer:** B",B,ministral-3:8b
+194,ddxplus,more,True,more,A,"**Causal graph:** sore_throat → URTI
+
+**Reasoning:**
+A sore throat is a common symptom of **upper respiratory tract infections (URTI)**, such as the common cold or flu. Since URTIs often cause inflammation and irritation in the throat, the presence of a sore throat strongly suggests an active URTI. Thus, a sore throat increases the likelihood of having an URTI rather than reducing or having no effect on it.
+
+**Final answer:** A",A,ministral-3:8b
+195,ddxplus,less,True,less,B,"**Causal graph:** *Symptoms_worsen_on_lie_down → Pericarditis_probability, Symptoms_improve_on_sitting_up → Pericarditis_probability*
+
+**Reasoning:**
+Pericarditis (inflammation of the pericardium) often causes **pleuritic chest pain** that worsens with **inspiration, lying flat, or deep breathing** due to friction between the inflamed layers. If symptoms **improve when sitting up** (reducing pericardial friction) and **do not worsen in supine position**, this pattern is **less consistent** with pericarditis. It may suggest alternative diagnoses (e.g., musculoskeletal pain, GERD, or non-cardiac causes). Thus, the probability of pericarditis is **lower** in this scenario.
+
+**Final answer:** B",B,ministral-3:8b
+196,ddxplus,more,True,more,A,"**Causal graph:** *family_allergies → genetic_predisposition → immune_system_sensitivity → allergic_sinusitis*
+
+**Reasoning:**
+Allergies (hay fever, eczema) in close family members suggest a **genetic predisposition** to immune system hypersensitivity. This heightened sensitivity increases the likelihood of developing **allergic sinusitis** due to shared inflammatory pathways. Thus, a family history of allergies raises the probability of allergic sinusitis.
+
+**Final answer:** A",A,ministral-3:8b
+197,ddxplus,more,False,less,B,"**Causal graph:** patient_feeling_confused_or_disorientated → **probability_of_Ebola**
+
+**Reasoning:**
+Confusion or disorientation are common neurological symptoms of Ebola infection due to viral invasion of the central nervous system. If the patient lacks these symptoms, it suggests a lower likelihood of Ebola (or another severe neurological condition). Thus, the absence of confusion/disorientation reduces the probability of Ebola.
+
+**Final answer:** A",B,ministral-3:8b
+198,ddxplus,more,False,less,B,"**Causal graph:** patient_has_no_cold_last_2_weeks → **reduced_pharyngeal_inflammation** → **reduced_laryngeal_irritation** → **lower_probability_of_acute_laryngitis**
+
+**Reasoning:**
+Acute laryngitis is often triggered or exacerbated by viral infections (e.g., colds) that cause pharyngeal inflammation and irritation of the vocal cords. If the patient has not had a cold in the last 2 weeks, the likelihood of recent viral-induced inflammation is lower, directly reducing the risk of acute laryngitis. This forms a clear causal chain from absence of cold → less irritation → lower probability of the condition.
+
+**Final answer:** B",B,ministral-3:8b
+199,ddxplus,less,True,less,B,"**Causal graph:** patient_has_pain → **symptom_severity** → **diagnostic_confidence** → **Boerhaave_probability**
+
+**Reasoning:**
+Boerhaave syndrome (esophageal perforation) typically presents with severe, sudden chest/upper abdominal pain (often radiating to the back), often after vomiting or retching. If the patient lacks this classic pain symptom—especially when consulting for suspected Boerhaave—it strongly suggests the condition is **unlikely**. Absence of pain reduces symptom severity, lowers diagnostic confidence, and thus decreases the probability of Boerhaave.
+
+**Final answer:** B",B,ministral-3:8b
+200,ddxplus,less,True,less,B,"**Causal graph:** nucleotides → base_pairs (A-T/G-C), base_pairs → pairing_count
+
+**Reasoning:**
+More nucleotides increase the total number of possible base pairs (A-T/G-C), but if the question specifies *less* A-T and G-C pairing specifically, this implies a shift in pairing dynamics (e.g., mismatches or alternative bonds). Thus, an increase in nucleotides could lead to fewer traditional A-T/G-C pairings if resources (e.g., complementary bases) are constrained or misaligned. This aligns with a reduction in conventional pairing.
+
+**Final answer:** B",B,ministral-3:8b
+201,ddxplus,less,False,more,A,"**Causal graph:** more bees alive → more pollination → more flowers survive/reproduce → fewer flowers die → **more flowers in environment**
+
+**Reasoning:**
+More bees alive directly increases pollination, which helps flowers reproduce and survive. This would logically lead to an *increase* in the number of flowers in the environment, not fewer. The presence of more bees counteracts the initial condition of ""less flowers"" by enhancing their growth and survival.
+
+**Final answer:** A",A,ministral-3:8b
+202,ddxplus,more,False,less,B,"**Causal graph:** weaker heat source → temperature ↓ → molecular kinetic energy ↓ → molecular motion speed ↓
+
+**Reasoning:**
+A weaker heat source reduces the thermal energy available to molecules. Lower thermal energy directly decreases the average kinetic energy of the molecules, causing them to move more slowly. Thus, the effect of a weaker heat source is a reduction in molecular motion speed.
+
+**Final answer:** B",B,ministral-3:8b
+203,ddxplus,more,False,less,B,"Causal graph: **global_warming → less_rain → less_crops**
+
+Reasoning:
+Global warming reduces rainfall (drought), which directly harms plant growth and agricultural productivity. Since crops rely on adequate water, less rain leads to fewer crops. Thus, the effect cascades logically from cause to outcome.
+
+Final answer: **B**",B,ministral-3:8b
+204,ddxplus,more,True,more,A,"**Causal graph:** algae_growth → fish_food_availability → fish_population
+
+**Reasoning:**
+More algae growth directly increases the availability of food for fish, as algae serve as a primary food source. With greater food availability, fish are better nourished, have higher survival rates, and can reproduce more successfully, leading to an increase in the fish population. There are no indications of limiting factors (e.g., predators, habitat loss) overriding this effect in this scenario.
+
+**Final answer:** A",A,ministral-3:8b
+205,ddxplus,more,False,less,B,"**Causal graph:** more tadpoles → more resources competition → fewer surviving tadpoles → fewer young frogs
+
+**Reasoning:**
+If more tadpoles hatch, they will compete for limited resources (food, space, etc.). Increased competition likely reduces survival rates, meaning fewer tadpoles will successfully metamorphose into young frogs. Thus, the outcome is a decrease in young frogs despite the initial increase in tadpoles.
+
+**Final answer:** B",B,ministral-3:8b
+206,ddxplus,less,True,less,B,"**Causal graph:** *plate_adjustment → crustal_stress → mountain_formation, crustal_stress → erosion_rate*
+
+**Reasoning:**
+If Earth’s tectonic plates adjust without violent collisions (e.g., fewer earthquakes or subduction), crustal stress decreases. Lower stress reduces uplift forces (less mountain-building) but may also slow erosion (e.g., less seismic activity to destabilize peaks). However, the primary effect is diminished tectonic uplift, which dominates over minor erosion changes. Thus, mountains would likely *shrink* over time due to reduced formation and slower replenishment.
+
+**Final answer:** B",B,ministral-3:8b
+207,ddxplus,more,False,less,B,"**Causal graph:** magma_absence → tectonic_plate_movement, magma_absence → volcanic_activity, magma_absence → heat_loss_earth, heat_loss_earth → crust_stability, tectonic_plate_movement → crust_stability
+
+**Reasoning:**
+Magma under Earth’s surface drives tectonic plate movement (via convection currents) and volcanic activity, which both contribute to crustal instability. Without magma, these processes would weaken or halt, reducing heat-driven motion and volcanic stress. The crust would likely become more stable as internal forces dissipate over time, but the absence of magma also accelerates heat loss, potentially causing long-term cooling and contraction—though this effect is secondary to the immediate stabilization of plate dynamics.
+
+**Final answer:** A",B,ministral-3:8b
+208,ddxplus,less,True,less,B,"Causal graph: fewer_eggs_laid → fewer_frogs → fewer_tadpoles
+
+Reasoning: If fewer eggs are laid, fewer frogs will hatch from those eggs. Since tadpoles are the larval stage of frogs, a reduction in frog numbers directly leads to fewer tadpoles. Thus, fewer eggs laid causes fewer tadpoles, not more.
+
+Final answer: B",B,ministral-3:8b
+209,ddxplus,less,True,less,B,"**Causal graph:** less water condensation → less water vapor in atmosphere → weaker precipitation → less water returns to land/ocean → weaker evaporation → weaker water cycle
+
+**Reasoning:**
+If less water condenses, there is less water vapor available in the atmosphere to form clouds and precipitation. This reduces the overall amount of water returning to land and oceans, weakening the evaporation process that fuels the water cycle. A weaker evaporation rate means less moisture is reintroduced into the atmosphere, further reducing the intensity of the water cycle.
+
+**Final answer:** B",B,ministral-3:8b
+210,ddxplus,less,False,more,A,"**Causal graph:** fertilizer_ratio → crop_yield
+
+**Reasoning:**
+The correct ratio of fertilizer provides optimal nutrients for plant growth, which directly supports higher crop yield. If the ratio is too low, plants may lack essential nutrients, leading to stunted growth and reduced harvests. Thus, applying the correct ratio should **increase** crop yield rather than decrease or leave it unchanged.
+
+**Final answer:** A",A,ministral-3:8b
+211,ddxplus,less,True,less,B,"**Causal graph:** *pollen_sticks_to_flower → pollen_available_for_other_flowers*
+
+**Reasoning:**
+If pollen sticks to a flower (e.g., on its stigma or petals), it is no longer available to pollinate other flowers. This reduces the total pollen supply, directly lowering the likelihood of successful cross-pollination for remaining flowers. Thus, fewer flowers get pollinated.
+
+**Final answer:** B",B,ministral-3:8b

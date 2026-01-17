@@ -235,7 +235,7 @@ def main() -> int:
     # Controls
     # -----------------------------
     RANDOM_SEED = 42
-    MAX_WORKERS = max(1, _int_env("WIQA_MAX_WORKERS", 4))
+    MAX_WORKERS = max(1, _int_env("WIQA_MAX_WORKERS", 8))
     MAX_SAMPLES = max(0, _int_env("WIQA_MAX_SAMPLES", 0))  # 0 = all
     MAX_CONFIGS = max(0, _int_env("WIQA_MAX_CONFIGS", 0))  # 0 = all
 
@@ -251,12 +251,12 @@ def main() -> int:
     # Parameter grid (edit these)
     # -----------------------------
     SEARCH_SPACE = {
-        "bfs_max_depth": [2, 4, 6],
-        "bfs_max_relations_per_node": [3, 5],
+        "bfs_max_depth": [4],
+        "bfs_max_relations_per_node": [3],
         "bfs_beam_width": [5],
         "bridge_max_bridge_nodes": [3],
         "seed_max_parents": [6],
-        "chain_max_path_length": [4, 6],
+        "chain_max_path_length": [6],
         "bfs_max_nodes": [50],
     }
 

@@ -188,12 +188,12 @@ def _process_record(record, run_params, config_id: str, config_index: int, model
 
 
 DEFAULT_SEARCH_SPACE = {
-    "bfs_max_depth": [2, 4, 6],
-    "bfs_max_relations_per_node": [3, 5],
+    "bfs_max_depth": [4],
+    "bfs_max_relations_per_node": [3],
     "bfs_beam_width": [5],
     "bridge_max_bridge_nodes": [3],
     "seed_max_parents": [6],
-    "chain_max_path_length": [4, 6],
+    "chain_max_path_length": [6],
     "bfs_max_nodes": [50],
 }
 
@@ -222,7 +222,7 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--model-name", default=os.environ.get("WIQA_MODEL_NAME", "llama3.1:8b"))
     parser.add_argument("--random-seed", type=int, default=_int_env("WIQA_RANDOM_SEED", 42))
-    parser.add_argument("--max-workers", type=int, default=max(1, _int_env("WIQA_MAX_WORKERS", 4)))
+    parser.add_argument("--max-workers", type=int, default=max(1, _int_env("WIQA_MAX_WORKERS", 8)))
     parser.add_argument("--max-samples", type=int, default=max(0, _int_env("WIQA_MAX_SAMPLES", 0)))
     parser.add_argument("--max-configs", type=int, default=max(0, _int_env("WIQA_MAX_CONFIGS", 0)))
     parser.add_argument(

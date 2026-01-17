@@ -1,0 +1,1084 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+0,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+1,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+2,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: The action of excavating a hole for a pumpkin seed (cause) **reduces** soil compaction in that localized area (intermediate effect) because the act of digging loosens the ground. Consequently, this makes it **less difficult** to dig another hole in the same area (outcome) in the future, leading to **less** ground hardness for subsequent digging tasks. Therefore, the correct answer is **B: less**.
+Final answer: B
+",B,ministral-3:8b
+3,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+4,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Less eggs to hatch → fewer tadpoles emerge (direct reduction in initial population). Thus, the effect on tadpole count is **less** (Choice B).
+Final answer: B
+",B,ministral-3:8b
+5,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Tectonic plates crashing (convergent boundary) forces the crust to uplift and thicken, increasing the height of mountains through compressional forces and folding. Thus, **more** significant mountain formations result over time → **Choice A: more**
+Final answer: A
+",A,ministral-3:8b
+6,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+7,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Drought reduces rainfall because dry air and lack of water evaporation from dry soils limit cloud formation via the water cycle.', 'step2': 'Fewer clouds result in lower precipitation (water drops falling back to earth).', 'step3': 'Therefore, fewer water drops fall back to earth → **Choice B: less**.'}
+Final answer: B
+",B,ministral-3:8b
+8,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: magma → lava (outflow via volcano) → rapid cooling/rapid solidification (surface or shallow subsurface) → forms extrusive igneous rocks (e.g., basalt, andesite) → **more igneous rock formed** (higher eruption rates produce voluminous new rock).
+Final answer: A
+",A,ministral-3:8b
+9,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+10,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+11,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+12,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+13,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+14,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: New frogs introduced → genetic diversity increases due to unrelated individuals → competition for resources/mates → potential for hybridization pressure → **more** inter-family mating attempts → **more** cross-breeding. **Answer: Choice A**
+Final answer: A
+",A,ministral-3:8b
+15,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+16,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+17,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Unknown fertilizer precedence → farmers may apply fertilizer at the wrong timing (e.g., too early/late relative to planting/harvesting).', 'step2': 'Improper timing disrupts nutrient uptake by crops (e.g., nutrients wasted or unavailable during critical growth phases).', 'step3': 'Disrupted nutrient availability → weakened plant health, stunted growth, or increased susceptibility to pests/disease.', 'step4': 'Consequence: **more** crop mortality due to stress-induced failures.'}
+Final answer: A
+",A,ministral-3:8b
+18,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+19,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: less_earthquakes -> [reduced_seismic_activity] -> [less_land_surface_disruption] -> [stabilized_soil_compaction] -> [slower_weathering_rates] -> [gradual_mountain_growth_or_stability] -> [smaller_mountains_remain_small_or_grow_marginally]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+20,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1) More frogs jumping from other areas *increases the total frog population* (more individuals present).
+2) *Larger population density* → *higher probability of encounters* between frogs.
+3) *More encounters* → *greater likelihood of finding mates* due to increased opportunities for interaction.
+→ **Conclusion**: More frogs will have more mates. (Choice A: more)
+Final answer: A
+",A,ministral-3:8b
+21,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+22,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+23,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+24,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: less time watering (cause) → reduced water availability for roots (intermediate) → impaired nutrient/oxygen uptake → slowed photosynthesis (outcome) → plant growth reduction (final outcome: B: less).
+Final answer: B
+",B,ministral-3:8b
+25,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+26,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'effect': 'Adult frog lays eggs in water → Frog population increases due to successful reproduction.', 'indirect_effect': 'Increased frog population → More adult frogs available to lay eggs in the future.', 'result': 'Consequence: Number of adult frogs capable of laying eggs becomes **more** in the long term.'}
+Final answer: A
+",A,ministral-3:8b
+27,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+28,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+29,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: less_cracks_form -> [reduced_landslide_risk] -> [slower_mass_wasting] -> [maintained_mountain_height] -> [larger_mountains_remain_stable]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+30,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+31,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: pollen_sticks_to_flower -> [pollen_consumption_increases] -> [reduced_pollen_availability_for_other_flowers] -> [flowers_lack_pollination_opportunities] -> [less_flowers_receive_pollination]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+32,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: {'description': 'Causal pathway emphasizing magma supply system and volcanic architecture.', 'structure': 'eruption_frequency -> magma_reservoir_drainage_rate -> magma_accumulation -> conduit_formation_and_weakening -> increased_new_volcano_formation_probability'}
+Reasoning: Fewer eruptions reduce magma_reservoir_drainage_rate, slowing pressure relief in the crust. Over time, stagnant magma may solidify or redistribute unevenly, destabilizing potential conduit pathways. This could *decrease* localized magma flow and crustal weaknesses, lowering the probability of new volcano formation (contrary to initial intuition). However, globally, reduced drainage may *indirectly* promote magma buildup in regions where drainage was previously dominant, increasing long-term *new_volcano_formation_probability* in those areas. **Net effect leans toward *Choice A*—more new volcanoes, though with regional variability.**
+Final answer: A
+",A,ministral-3:8b
+33,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+34,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+35,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+36,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: More fish mating → **higher offspring production** (assuming viable spawns) → **population growth** → **directly opposes 'less fish'**. Unless mating is maladaptive (e.g., inbreeding or resource competition), this would **reduce** the condition 'less fish'. Thus, the effect of 'more mating' **neutralizes** the premise 'less fish', implying **no net effect** (C) on the observed 'less fish' state.
+Final answer: C
+",C,ministral-3:8b
+37,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+38,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If the water becomes safe for the frog to lay eggs, it removes the primary obstacle preventing the frog from reproducing (unsafe water). This action directly increases the likelihood that the frog can lay eggs, thus decreasing the outcome 'the frog cannot lay eggs' (i.e., making it *less*).
+Final answer: B
+",B,ministral-3:8b
+39,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: More magma cooling → Increased solidification of magma into igneous rock → **Choice A: more** igneous rock forms.
+Final answer: A
+",A,ministral-3:8b
+40,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+41,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+42,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+43,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+44,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: More frog eggs hatching (cause) → leads to an increased frog population (outcome) because there are more individual frogs alive to reach maturity and reproduce. This results in **more** frogs over time.
+Final answer: A
+",A,ministral-3:8b
+45,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+46,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+47,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: EPA monitoring increases near the pond -> potential identification and mitigation of environmental threats (e.g., pollution, habitat destruction) -> improved frog habitat safety -> reduced frog deaths -> higher frog population count. Thus, 'less frogs' (B: less) is incorrect; frogs would likely *increase* (A: more).
+Final answer: A
+",A,ministral-3:8b
+48,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Reduced enzyme levels disrupt the enzyme-substrate balance required for coordinated replication (e.g., helicase-unwinding + polymerase-synthesis coupling).', 'step2': 'This causes **increased DNA damage** (e.g., nicks, gaps) or **cell cycle arrest** due to replication stress, as checkpoint proteins detect incomplete synthesis.', 'step3': 'Net effect: Replication fidelity/speed suffers, so overall replication quality declines (**less** proper replication; Choice B).'}
+Final answer: B
+",B,ministral-3:8b
+49,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Female fish lays **more eggs** → **increase in total egg count** (direct causal link).
+2. **Higher egg count** → **more available substrates/food competition** (assuming limited resources for larvae survival).
+3. **Increased competition/limited resources** → **reduced survival rate of larvae** → **less larvae hatch** (indirect negative effect).
+**Answer:** Choice B: *less*
+Final answer: B
+",B,ministral-3:8b
+50,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: more_crops_planted -> [improved_agricultural_tech_adoption] -> [higher_tech_efficiency] -> [increased_yield_per_unit_area] -> more_crops_harvested
+Reasoning: more_crops_planted → directly enables [improved_agricultural_tech_adoption] (e.g., scaling operations justifies investment) → higher_tech_efficiency (tech adapts to larger scale) → increased_yield_per_unit_area (efficiency scales with inputs) → more_crops_harvested (net output rises beyond initial planted volume). **Result: Choice A (more crops harvested).**
+Final answer: A
+",A,ministral-3:8b
+51,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+52,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+53,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+54,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+55,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+56,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+57,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Long periods of time increase **weathering and erosion** (e.g., wind, water, freeze-thaw cycles) over small mountains due to repeated exposure to natural forces. This leads to **gradual reduction in elevation**, meaning smaller mountains will become less prominent over time. **Therefore, the effect is 'less'.**
+Final answer: B
+",B,ministral-3:8b
+58,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+59,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+60,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+61,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+62,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Government mandating more ethanol use → increases demand for ethanol → ethanol is typically made from crops like corn, sugarcane, or soybeans → higher demand for these crops → **more crops needed to meet production demands**. (Choice A: more)
+Final answer: A
+",A,ministral-3:8b
+63,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+64,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+65,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: more_frogs_lay_eggs -> [increased_egg_count] -> [resource_depletion_food_limitation] -> [lowered_juvenile_survival_rate] -> [reduced_adult_frog_population] -> less_frogs
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+66,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+67,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+68,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+69,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Fertilized egg hatching (cause) directly triggers the initiation of embryonic development (intermediate outcome).
+2. Successful hatching enables the egg to transition into a larvae stage by activating growth processes (e.g., nutrient absorption, metabolic activation).
+3. Thus, hatching **promotes** the transformation of the egg into a larvae → **more** likely/possible.
+Final answer: A
+",A,ministral-3:8b
+70,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+71,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+72,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+73,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+74,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+75,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+76,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+77,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. A bee collects a lot of pollen (cause) -> 2. The bee carries more pollen to new flowers (direct effect) -> 3. More flowers receive pollen grains (intermediate effect) -> 4. **Result: more flowers get pollinated** (outcome: Choice A).
+*(Assumes efficient pollen transfer and no resource constraints.)*
+Final answer: A
+",A,ministral-3:8b
+78,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+79,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+80,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+81,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+82,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+83,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+84,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+85,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+86,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+87,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+88,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Hatching occurs when environmental conditions are optimal (e.g., temperature). This implies a successful increase in tadpole population due to higher viability of eggs.', 'step2': 'A larger tadpole population competes for limited resources (e.g., food, space) in the environment.', 'step3': 'Increased competition for resources accelerates metabolic activity and stress, leading tadpoles to mature faster and lose their tails prematurely.', 'conclusion': 'Thus, **more** tadpoles will lose their tails.'}
+Final answer: A
+",A,ministral-3:8b
+89,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+90,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+91,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+92,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+93,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+94,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+95,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Freezing the icing over water reduces oxygen availability in the environment (direct effect of ice formation blocking surface exchange).', 'step2': 'Reduced oxygen leads to hypoxic conditions in water, which directly stresses aquatic organisms like tadpoles.', 'step3': 'Stressed tadpoles expend energy to survive (metabolic stress) rather than growth/development, reducing their growth rates and survival chances.', 'step4': 'Fewer tadpoles survive stress → fewer tadpoles mature into frogs (outcome: *less*).'}
+Final answer: B
+",B,ministral-3:8b
+96,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+97,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: crop_yield <- fertilizer <- farmer_awareness
+                      farmer_awareness -> pest_management
+                      pest_management <- unknown_precipitation
+                      pest_management -> crop_yield
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+98,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+99,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: More water condensation → increases cloud cover and precipitation → heightened runoff and infiltration → accelerates surface water flow into water bodies → elevates humidity and temperature (via latent heat release) → enhances overall moisture transport and phase changes (evaporation/transpiration) → **amplifies the water cycle's speed and magnitude** → **more intense water cycle**. **Choice: A (more)**
+Final answer: A
+",A,ministral-3:8b
+100,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+101,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+102,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+103,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+104,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Irrigation system is set up (cause) → directly controls water supply to crops (mediate).
+2. Proper water supply → reduces the likelihood of crops being under-watered.
+3. Therefore, 'crop is not watered properly' (outcome) decreases in frequency.
+→ Answer: Choice B ('less').
+Final answer: B
+",B,ministral-3:8b
+105,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Chemicals breaking the DNA helix disrupts the double-stranded structure, making it harder for helicase to unwind and separate strands during replication initiation.', 'step2': 'Unwinding is essential to expose single-stranded templates for DNA polymerase to synthesize complementary strands.', 'step3': 'If strand separation is impaired, replication origins fail to replicate properly or stall, reducing overall DNA replication fidelity and efficiency.', 'conclusion': 'Thus, helix breakage → **less** efficient/reliable replication (Choice B)'}
+Final answer: B
+",B,ministral-3:8b
+106,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+107,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: less_food_available -> fewer_pollinators (e.g., bees) -> less_efficient_pollination -> less_flower_pollination -> [B: less flowers pollinated (plausible)]
+Reasoning: Less food available reduces pollinator populations (e.g., bees) → fewer pollinators lead to less efficient pollination → fewer flowers are pollinated (Choice B: less).
+Final answer: B
+",B,ministral-3:8b
+108,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+109,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: {'description': 'Stability in inner Earth → Increased crustal rigidity → Reduced subduction/continental collisions → Lower orogeny (mountain formation) rates → Decreased erosion-driven relief adjustments → Small mountains persist but do not proliferate', 'effect_on_small_mountains': 'less'}
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+110,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+111,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+112,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+113,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+114,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+115,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+116,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Human removal of frogspawn (eggs) directly eliminates a portion of the frog population at the earliest life stage.', 'step2': 'This reduction in eggs reduces the number of tadpoles that survive to metamorphosis and adulthood.', 'step3': 'Fewer tadpoles → fewer adult frogs → net decrease in total frog population.', 'outcome': 'Choice B: less'}
+Final answer: B
+",B,ministral-3:8b
+117,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+118,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+119,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+120,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If heating the liquid happens less (cause), then less heat energy is provided to the molecules. With reduced thermal energy, fewer molecules will have sufficient kinetic energy to overcome the intermolecular forces and transition into the gaseous state (outcome). Therefore, fewer molecules go into the gaseous state: **Choice B: less**.
+Final answer: B
+",B,ministral-3:8b
+121,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+122,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+123,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+124,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+125,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Earthquakes → crustal fracturing/rift extension → altered magma pathways, localized cooling, and reduced magma retention → diminished volcanic output → fewer igneous rocks (extrusive lava flows/plutonic intrusions) due to interrupted tectonic processes. *Final answer: Choice B*.
+Final answer: B
+",B,ministral-3:8b
+126,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: less seeds sown (cause) → directly limits crop count regardless of other factors → reduced harvest volume → **less** crops (outcome).
+Final answer: B
+",B,ministral-3:8b
+127,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: More commercial fishing (cause) -> overfishing of target species (intermediate effect) -> fewer adult fish available to reproduce -> reduced egg/larvae production -> fewer fry reach adulthood (outcome). **Answer: Choice B (less)**
+Final answer: B
+",B,ministral-3:8b
+128,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+129,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: less_dna_available -> [reduced_replication_fidelity] -> [higher_error_rate_during_synthesis] -> [higher_damage_to_dna_strand_integrity] -> more
+Reasoning: Insufficient DNA (less_dna_available) forces replication machinery to work under crowded or suboptimal conditions, increasing misalignment/stress during synthesis. This directly **reduces_replication_fidelity**, causing **higher_error_rate_during_synthesis** and **accumulated damage** (e.g., nicks, mismatches) to the newly synthesized strands. The outcome is **more** compromised DNA strand integrity. Answer: **Choice A: more**.
+Final answer: A
+",A,ministral-3:8b
+130,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+131,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+132,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Soil quality → impacts nutrient availability for plants. Poor soil quality reduces nutrient availability → plants cannot grow optimally → crop yield decreases. Therefore, poorer soil quality leads to **less** crop production.
+Final answer: B
+",B,ministral-3:8b
+133,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Tadpole health directly influences survival to adulthood (cause -> outcome).
+2. Healthy tadpoles have higher survival rates (biological fact).
+3. Increased survival → more adult frogs.
+4. More adult frogs → reproductive success increases → population grows over time.
+5. **Consequence:** *Less frogs* in the population is incorrect; **Choice A (more)** is the result.
+Final answer: A
+",A,ministral-3:8b
+134,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: more_rock_melted -> [volcanic_activity_increase] -> [magma_eruption] -> [less_residual_magma_in_chamber] -> [less_magma_available_to_cool]
+Reasoning: {'step1': 'More rock melted → higher magma generation (implied causal link, as melting rock creates magma).', 'step2': 'However, eruptions (due to increased activity) expel a proportionally larger volume of magma (per graph: less_residual_magma_in_chamber).', 'step3': 'This directly reduces the volume of magma remaining in the chamber for cooling processes.', 'result': 'less'}
+Final answer: B
+",B,ministral-3:8b
+135,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: less infiltration → less water stored in aquifers/soil moisture → reduced plant-available water → decreased transpiration (plant-to-atmosphere moisture release) → less atmospheric moisture → but **surface runoff dominates** (short-term), increasing **rivers/lakes evaporation** → **net increase** in moisture flux → **more intense** water cycle (via faster precipitation-evaporation loop).
+Final answer: A
+",A,ministral-3:8b
+136,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: more_fry -> (competition_for_food_resources, increased_disease_spread) -> decreased_fish_population -> less_fish
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+137,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If **regular pressure happens** (e.g., periodic compression/release cycles) is maintained, it reduces the likelihood of a sudden, unchecked build-up. This **prevents extreme pressure accumulation**, so when the system releases (e.g., valve opens), the pressure at release is **less** than if the pressure built up uncontrollably (Choice B).
+Final answer: B
+",B,ministral-3:8b
+138,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: liver_acid_breakdown_increased -> toxin_accumulation_in_blood -> cellular_damage -> kidney_function_decline -> waste_removal_decreased -> less_waste_removed_from_body
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+139,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+140,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+141,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+142,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increased magma supply leads to **more volcanic eruptions or intrusions**, where magma cools and solidifies underground (intrusive) or at the surface (extrusive), both processes forming **igneous rock**. Thus, **more magma → more igneous rock formation**. *Choice: A (more)*
+Final answer: A
+",A,ministral-3:8b
+143,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+144,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+145,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+146,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+147,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+148,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+149,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+150,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+151,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+152,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+153,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+154,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+155,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+156,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Increased number of bees (+bees) directly increases the frequency of pollination events because bees are primary pollinators for many plants.', 'step2': 'More pollination events (+pollination) lead to a higher likelihood of pollen transfer between flowers, which directly results in more flowers being pollinated (+flowers_pollinated).', 'step3': 'Therefore, the effect of more bees causes **more** flowers to be pollinated.', 'outcome': 'Choice A: more'}
+Final answer: A
+",A,ministral-3:8b
+157,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Earthquakes are caused by sudden **plate movements** (lateral or convergent/divergent tectonic shifts). If there is **no plate movement**, the fundamental driver of earthquake generation is eliminated. Thus, the likelihood of an earthquake occurring decreases significantly, making the outcome **less** frequent. **Answer: B**
+Final answer: B
+",B,ministral-3:8b
+158,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: more_eggs_hatch -> [limited_food_resources] -> [fewer_tadpoles_survive_to_metamorphosis] -> [less_tadpoles_form_into_frogs] ← [competition]
+Reasoning: {'step1': 'More eggs hatch → increases the number of tadpoles in the environment.', 'step2': 'Limited food resources become strained due to the higher number of tadpoles competing for sustenance.', 'step3': 'Fewer tadpoles survive to metamorphosis because of insufficient food, leading to reduced survival rates.', 'step4': 'Therefore, **less** tadpoles successfully form into frogs (Choice B).'}
+Final answer: B
+",B,ministral-3:8b
+159,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If the crust is pushed downward, it creates a **localized compression** in the crust, reducing the **available space** for upward movement. This compression can **inhibit buoyant forces** (e.g., magma pressure or tectonic uplift) that normally drive upward crust displacement. Thus, **less** crust would be pushed upward due to the opposing downward force. *Choice: B*
+Final answer: B
+",B,ministral-3:8b
+160,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: pumpkin_watering_increase -> soil_moisture_excess -> root_oxygen_depletion_reduction -> plant_stress_positive -> nutrient_uptake_decrease -> plant_growth_decrease -> **pumpkin_plant_grows_less**
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+161,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+162,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Fish eat more frogs → Tadpoles experience reduced predation pressure (fewer frogs → fewer adult tadpoles to eat) → Tadpoles survive longer → More tadpoles mature, shedding tails naturally → **More tadpoles lose their tails** (higher survival + natural metamorphosis).
+Final answer: A
+",A,ministral-3:8b
+163,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+164,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+165,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Higher temperatures increase evaporation rates from oceans, lakes, and other water bodies (cause: temperature rise → more energy for phase transition). Warmer air can also hold more moisture (due to higher vapor pressure), leading to increased precipitation. Thus, the overall water cycle accelerates (intensifies) with greater evaporation and condensation (outcome: more intense).
+Final answer: A
+",A,ministral-3:8b
+166,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+167,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+168,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+169,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+170,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Fewer ocean predators → fewer prey (including small fish/fry) are consumed in the ocean', 'step2': 'Reduced predation pressure → increased survival rate of fry (small fish)', 'step3': 'Higher survival rate → more fry reach maturity/emerge as adults', 'result': 'Choice A: more'}
+Final answer: A
+",A,ministral-3:8b
+171,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+172,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: fewer_ocean_predators -> ↓ competition_for_food -> ↑ energy_reserve_fry -> ↑ fry_adult_transition -> more_adult_fish
+Reasoning: If fewer ocean predators occur, competition for food among fry decreases (↓ competition_for_food). With less competition, fry have more access to resources, leading to increased energy reserves (↑ energy_reserve_fry). Higher energy reserves improve the fry's chances of successfully transitioning to adulthood (↑ fry_adult_transition), resulting in **more** adult fish. Therefore, the effect on 'fewer fry becoming adult fish' is **Choice A: more**.
+Final answer: A
+",A,ministral-3:8b
+173,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+174,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+175,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+176,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+177,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+178,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+179,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+180,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+181,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+182,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+183,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+184,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Increased number of bees (+bees) directly increases the frequency of pollination events because bees are primary pollinators for many plants.', 'step2': 'More pollination events (+pollination) lead to a higher likelihood of pollen transfer between flowers, which directly results in more flowers being pollinated (+flowers_pollinated).', 'step3': 'Therefore, the effect of more bees causes **more** flowers to be pollinated.', 'outcome': 'Choice A: more'}
+Final answer: A
+",A,ministral-3:8b
+185,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Death stops metabolic processes (cause: biological cessation of life) → 2. Metabolism is responsible for many waste removal processes (e.g., cellular respiration, enzyme activity) → 3. With metabolism halted, waste removal (e.g., urea, CO₂, toxins) decreases → 4. **Outcome**: Less waste is removed from the body. **Answer: B (less)**
+Final answer: B
+",B,ministral-3:8b
+186,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: soil_fertility -> seed_viability
+seed_viability -> planting_area_utilization
+planting_area_utilization -> planting_area_availability
+planting_area_availability -> planting_area_for_seed
+pumpkin_failure -> (inhibits) planting_area_for_seed
+Reasoning: Low soil fertility directly lowers seed viability (soil_fertility → seed_viability), discouraging planting efforts (planting_area_utilization → planting_area_availability). With lower seed viability, farmers may rationally conclude there is no point in allocating more area to planting seeds (pumpkin_failure inhibits planting_area_for_seed). Instead, they may reduce planting area (Choice B: less) to avoid wasting resources on unproductive seeds.
+Final answer: B
+",B,ministral-3:8b
+187,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+188,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+189,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+190,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+191,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+192,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If the water is safe for the frog to lay eggs, the frog is more likely to successfully lay and fertilize its eggs. A safe environment reduces environmental stress and threats (e.g., predators, pollutants, or parasites), increasing the survival rate of eggs. This would lead to a **higher probability of eggs developing into tadpoles**, assuming other factors (e.g., temperature, nutrition) are favorable. Thus, **more** tadpoles result. **Choice: A**
+Final answer: A
+",A,ministral-3:8b
+193,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+194,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+195,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+196,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: More sunlight → higher **temperature** → accelerates **soil moisture loss** → reduces **water availability** for seeds → **drought stress** → **seed germination failure** or **weakened growth**. Additionally, **excessive light stress** (e.g., UV damage) can **inhibit enzyme activity** in seeds/plants, reducing **nutrient uptake** and **photosynthetic capacity**. Both mechanisms contribute to **less crops** as outcomes.
+Final answer: B
+",B,ministral-3:8b
+197,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+198,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+199,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Freeze (icing over water) → Tadpoles' metabolic activity decreases due to cold stress → Reduced energy availability → Slower or halted growth → Tadpoles cannot complete metamorphosis → **Fewer tadpoles turn into young frogs (Choice B: less)**
+Final answer: B
+",B,ministral-3:8b
+200,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+201,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+202,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Weaker heat source → reduces energy available to molecules → lower kinetic energy → decreased average speed of molecular motion → molecules move **less**.
+Final answer: B
+",B,ministral-3:8b
+203,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+204,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+205,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+206,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+207,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+208,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+209,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: less_water_condensation ->↓ [global_relative_humidity] ->↑ [air_temperature] ->↑ [solar_absorption] ->↑ [surface_evaporation] ->↑ [upward_moisture_transport] ->↑ [tropical_precipitation] ->↑ [ocean_surface_warming] ->↑ [intensity_of_convection] (*more intense water cycle*: higher energy turnover)
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+210,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: {'description': 'Fertilizer Ratio → Soil Nutrient Levels → Plant Growth Rate → Crop Yield → Crop Quantity', 'explanation': 'In this graph, the correct ratio of fertilizer increases soil nutrient levels, which directly enhances plant growth rate. This, in turn, leads to higher crop yield, resulting in a higher crop quantity. Thus, the correct ratio of fertilizer will likely produce more crops, ruling out Choices B and C.'}
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+211,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If pollen sticks to a flower (cause), the pollen may no longer be available to reach other flowers (intermediate step). With less pollen dispersed, the pollination of other flowers (outcome) decreases, leading to **less** flowers being pollinated. → **Choice B**
+Final answer: B
+",B,ministral-3:8b

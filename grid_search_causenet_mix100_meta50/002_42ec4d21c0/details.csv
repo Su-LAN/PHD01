@@ -1,0 +1,101 @@
+config_index,config_id,csv_id,question,question_type,improved_question,gold_answer,gold_choice,is_correct,cause_event,outcome_base
+2,42ec4d21c0,causenet-mix-000087,"If agricultural runoff increases, what happens to MORE pollution?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000075,"If we increase increased evaporation, what is the effect on LESS flooding?",,,less,B,True,we increase increased evaporation,flooding
+2,42ec4d21c0,causenet-mix-000060,"When great earthquake goes up, what happens to MORE epilepsy?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000089,"If we increase system, what is the effect on MORE climate change?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000047,Suppose heat exhaustion becomes more common. How does LESS dizziness change?,,,less,B,True,heat exhaustion becomes more common,dizziness change
+2,42ec4d21c0,causenet-mix-000006,"When direct outcome of this artificial food source goes up, what happens to increase in population?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000093,Suppose uvb radiation becomes more common. How does wrinkles change?,,,more,A,True,uvb radiation becomes more common,
+2,42ec4d21c0,causenet-mix-000010,"When mysterious force goes up, what happens to LESS expansion of the universe?",,,less,B,True,,
+2,42ec4d21c0,causenet-mix-000012,"When food allergens goes up, what happens to anaphylaxis?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000049,"When pressure points goes up, what happens to MORE aches?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000082,"If we increase oxidation process, what is the effect on malfunction?",,,more,A,False,,malfunction
+2,42ec4d21c0,causenet-mix-000020,"If invasive species increases, what happens to losses?",,,more,A,True,,losses.
+2,42ec4d21c0,causenet-mix-000042,"If we increase water damage, what is the effect on MORE mold?",,,more,A,False,we increase water damage,mold
+2,42ec4d21c0,causenet-mix-000056,"When energy efficiency goes up, what happens to MORE investment?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000051,"If we increase carbon monoxide, what is the effect on LESS infertility?",,,less,B,False,we increase carbon monoxide,infertility
+2,42ec4d21c0,causenet-mix-000054,Suppose crop failures becomes more common. How does starvation change?,,,more,A,False,crop failures becomes more common,starvation change
+2,42ec4d21c0,causenet-mix-000072,Suppose greenhouse gas becomes more common. How does LESS rise in sea level change?,,,less,B,True,greenhouse gas becomes more common,rise in sea level change
+2,42ec4d21c0,causenet-mix-000019,"When explosions goes up, what happens to chain reaction?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000096,"If pressure changes increases, what happens to MORE floods?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000098,"If powerful earthquake increases, what happens to MORE devastation?",,,more,A,True,powerful earthquake increases,devastation
+2,42ec4d21c0,causenet-mix-000025,"When uv radiation goes up, what happens to MORE damage?",,,more,A,True,uv radiation goes up,damage
+2,42ec4d21c0,causenet-mix-000094,"If water main break increases, what happens to MORE water damage?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000039,Suppose water pollution becomes more common. How does environmental degradation change?,,,more,A,True,water pollution becomes more common,environmental degradation change
+2,42ec4d21c0,causenet-mix-000064,"If excess humidity increases, what happens to MORE skin to become dry?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000059,"When 2010 earthquake goes up, what happens to more casualties?",,,more,A,False,,casualties
+2,42ec4d21c0,causenet-mix-000053,"If small population size increases, what happens to extinction?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000021,"If heat-trapping gases increases, what happens to climate change?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000081,Suppose food production becomes more common. How does global climate change change?,,,more,A,True,food production becomes more common,How does global climate change change?
+2,42ec4d21c0,causenet-mix-000002,"If we increase 1906 earthquake, what is the effect on MORE fire?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000024,Suppose earthquake becomes more common. How does MORE tsunami change?,,,more,A,True,earthquake becomes more common,tsunami change
+2,42ec4d21c0,causenet-mix-000084,"If heat stress increases, what happens to LESS weakness?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000065,"When uvb radiation goes up, what happens to MORE wrinkles?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000077,"When water damages goes up, what happens to circumstances?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000036,"If sulfuric acid increases, what happens to MORE burns?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000023,"When 7.0 magnitude earthquake goes up, what happens to severe damage?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000080,Suppose storm water run-off becomes more common. How does LESS contamination of water change?,,,less,B,True,storm water run-off becomes more common,water contamination
+2,42ec4d21c0,causenet-mix-000038,"If we increase uv-b radiation, what is the effect on damage?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000007,"When volcano goes up, what happens to earthquake?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000013,"If we increase storm system, what is the effect on strong winds?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000027,"When concentration goes up, what happens to insight?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000050,"If low tire pressure increases, what happens to tire failure?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000076,"If concentration increases, what happens to inefficiency?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000097,"If soil contamination increases, what happens to desertification?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000045,"If we increase uvb radiation, what is the effect on skin damage?",,,more,A,True,we increase uvb radiation,skin damage
+2,42ec4d21c0,causenet-mix-000037,"When minimally invasive surgery goes up, what happens to MORE faster recovery?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000083,Suppose heat wave becomes more common. How does burns change?,,,more,A,False,heat wave becomes more common,
+2,42ec4d21c0,causenet-mix-000035,Suppose lactic acid becomes more common. How does LESS cramps change?,,,less,B,False,lactic acid becomes more common,cramps change
+2,42ec4d21c0,causenet-mix-000014,"If we increase cloud computing, what is the effect on LESS benefits?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000079,Suppose increased precipitation becomes more common. How does significant property damage change?,,,more,A,False,increased precipitation becomes more common,How does significant property damage change
+2,42ec4d21c0,causenet-mix-000043,Suppose storm water runoff becomes more common. How does LESS water pollution change?,,,less,B,True,storm water runoff becomes more common,water pollution change
+2,42ec4d21c0,causenet-mix-000018,"When water main break goes up, what happens to flooding?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000086,"If we increase thermal radiation, what is the effect on LESS permanent scarring?",,,less,B,True,we increase thermal radiation,permanent scarring
+2,42ec4d21c0,causenet-mix-000033,"If solar variation increases, what happens to climate change?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000074,"If we increase fertilizer, what is the effect on LESS depleted oxygen?",,,less,B,True,,
+2,42ec4d21c0,causenet-mix-000088,"When reduction goes up, what happens to LESS global warming?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000066,"When accumulation of greenhouse gases goes up, what happens to ocean acidification?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000062,Suppose lipid oxidation becomes more common. How does mitochondrial dna mutations change?,,,more,A,True,lipid oxidation becomes more common,mitochondrial dna mutations change
+2,42ec4d21c0,causenet-mix-000015,"If we increase reaction, what is the effect on MORE hives?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000004,"If radiation exposure increases, what happens to MORE sickness?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000041,"If changes in climate increases, what happens to droughts?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000046,"If we increase tropical storm alberto, what is the effect on LESS flooding?",,,less,B,True,increase tropical storm alberto,flooding
+2,42ec4d21c0,causenet-mix-000005,"If we increase solar variation, what is the effect on LESS global warming?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000001,Suppose greenhouse gas becomes more common. How does global warming change?,,,more,A,False,greenhouse gas becomes more common,global warming change
+2,42ec4d21c0,causenet-mix-000091,"When lactic acid goes up, what happens to LESS limited range of motion?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000030,Suppose ionizing radiation becomes more common. How does MORE damage change?,,,more,A,False,ionizing radiation becomes more common,damage change
+2,42ec4d21c0,causenet-mix-000003,"When lipid oxidation goes up, what happens to MORE rancidity?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000044,"When radiation exposure goes up, what happens to harm?",,,more,A,False,,harm
+2,42ec4d21c0,causenet-mix-000092,Suppose oxidation process becomes more common. How does age change?,,,more,A,True,oxidation process becomes more common,
+2,42ec4d21c0,causenet-mix-000029,Suppose increased food production becomes more common. How does population growth change?,,,more,A,False,increased food production becomes more common,population growth change
+2,42ec4d21c0,causenet-mix-000032,Suppose scarcity of food becomes more common. How does MORE world hunger change?,,,more,A,True,scarcity of food becomes more common,world hunger
+2,42ec4d21c0,causenet-mix-000016,"If uvb radiation increases, what happens to LESS skin damage?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000058,"If plate movement increases, what happens to LESS flooding?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000067,"If we increase reactive oxygen species, what is the effect on MORE new species?",,,more,A,True,we increase reactive oxygen species,new species
+2,42ec4d21c0,causenet-mix-000057,Suppose reaction becomes more common. How does itchiness change?,,,more,A,True,reaction becomes more common.,itchiness change?
+2,42ec4d21c0,causenet-mix-000048,"If non-native species increases, what happens to LESS harm?",,,less,B,False,,harm
+2,42ec4d21c0,causenet-mix-000052,"If we increase habitat degradation, what is the effect on habitat loss?",,,more,A,True,we increase habitat degradation,habitat loss
+2,42ec4d21c0,causenet-mix-000100,Suppose acid becomes more common. How does loss change?,,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000026,"If concentration of power increases, what happens to LESS corruption?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000070,"When heavy precipitation goes up, what happens to loss of life?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000028,Suppose increased runoff becomes more common. How does MORE flooding change?,,,more,A,False,increased runoff becomes more common,flooding change
+2,42ec4d21c0,causenet-mix-000055,"If we increase excessive humidity, what is the effect on MORE odors?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000078,"When direct outcome of this artificial food source goes up, what happens to LESS destruction?",,,less,B,True,,
+2,42ec4d21c0,causenet-mix-000068,Suppose food cravings becomes more common. How does MORE weight change?,,,more,A,False,food cravings becomes more common,weight change
+2,42ec4d21c0,causenet-mix-000034,"If we increase processed free glutamic acid, what is the effect on adverse reactions?",,,more,A,True,we increase processed free glutamic acid,adverse reactions
+2,42ec4d21c0,causenet-mix-000022,"If moisture loss increases, what happens to shrinkage?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000071,"If we increase aging population, what is the effect on growth?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000061,"If nitric acid increases, what happens to LESS degradation?",,,less,B,True,,degradation
+2,42ec4d21c0,causenet-mix-000085,"When nicotinic acid goes up, what happens to LESS redness?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000090,"When internal friction goes up, what happens to gases to expand?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000017,"If we increase water vapour, what is the effect on LESS cooling?",,,less,B,False,,
+2,42ec4d21c0,causenet-mix-000069,"If we increase solar wind, what is the effect on situation?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000009,"If we increase excessive pressure, what is the effect on LESS damage?",,,less,B,True,,
+2,42ec4d21c0,causenet-mix-000063,"When lack of food goes up, what happens to population decline?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000095,"If we increase buildup of greenhouse gases, what is the effect on mass extinctions?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000011,"If pressure increases, what happens to numbness?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000073,"If we increase rapid population growth, what is the effect on habitat degradation?",,,more,A,True,,
+2,42ec4d21c0,causenet-mix-000099,"If we increase northridge earthquake, what is the effect on danger?",,,more,A,True,we increase northridge earthquake,on danger
+2,42ec4d21c0,causenet-mix-000008,"If salicylic acid increases, what happens to redness?",,,more,A,False,,
+2,42ec4d21c0,causenet-mix-000031,Suppose exposure to radiation becomes more common. How does mutations change?,,,more,A,False,exposure to radiation becomes more common,
+2,42ec4d21c0,causenet-mix-000040,"If we increase excessive erosion, what is the effect on outright loss of soil?",,,more,A,True,we increase excessive erosion,total soil loss

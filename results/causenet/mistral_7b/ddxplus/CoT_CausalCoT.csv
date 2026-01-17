@@ -1,0 +1,501 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+0,ddxplus,more,False,less,B," Causal graph: AgriculturalRunoff -> Pollution
+
+Reasoning: Decrease in agricultural runoff leads to a reduction in the amount of pollutants entering water bodies, thus causing less pollution.
+
+Final answer: B",B,mistral:7b
+1,ddxplus,more,False,less,B," Causal graph: Evaporation -> Flooding (Evaporation decreases, which leads to less water evaporating and more water accumulating, potentially causing less flooding)
+Reasoning: Decreased evaporation results in increased water accumulation. This excess water can either be absorbed by the ground or flow as runoff, reducing the likelihood of flooding events.
+Final answer: B (less)",B,mistral:7b
+2,ddxplus,less,False,no effect,C," Causal graph: Earthquake -> Ground Motion, Ground Motion -> Soil Stress, Soil Stress -> Brain Waves, Brain Waves -> Epilepsy
+
+Reasoning: A great earthquake increases ground motion, which in turn increases soil stress. The increased soil stress can cause changes in brain waves, but these changes are not directly related to the occurrence of epilepsy. Instead, abnormal brain wave activity is a symptom of epilepsy. Therefore, an increase in earthquakes would not lead to a decrease in epilepsy.
+
+Final answer: C (no effect)",C,mistral:7b
+3,ddxplus,more,False,less,B," Causal graph: System -> Climate Change
+
+Reasoning: A decrease in the system (assumed to be a factor contributing to greenhouse gas emissions) would lead to a reduction in those emissions, thus causing less climate change.
+
+Final answer: B",B,mistral:7b
+4,ddxplus,less,True,less,B," Causal graph: Heat Exhaustion -> Dizziness
+
+Reasoning: Heat exhaustion is a condition that can lead to symptoms such as dizziness. When heat exhaustion decreases, the severity of these symptoms, including dizziness, typically lessens due to the alleviation of the underlying condition.
+
+Final answer: B (less)",B,mistral:7b
+5,ddxplus,more,True,more,A," Causal graph: Food Source -> Food Quantity, Food Quantity -> Population Size
+
+Reasoning: An increase in the artificial food source leads to an increase in the quantity of food available. This increased food quantity then results in a larger population due to improved survival and reproduction rates among organisms that consume the food.
+
+Final answer: A (more)",A,mistral:7b
+6,ddxplus,more,False,less,B," Causal graph: UVB radiation (X) -> Skin aging (M) -> Wrinkles (Y)
+
+Reasoning: UVB radiation is a known factor in skin aging, causing damage to the skin that leads to wrinkles. When UVB radiation decreases, it reduces the rate of skin aging and thus results in fewer wrinkles.
+
+Final answer: B",B,mistral:7b
+7,ddxplus,more,True,more,A," Causal graph: Mysterious force (X) -> Expansion of the universe (Y)
+
+Reasoning: The mysterious force is assumed to be a factor influencing the expansion rate of the universe, as per the cosmological models that suggest dark energy drives this expansion. An increase in the mysterious force would likely lead to an accelerated expansion of the universe.
+
+Final answer: A",A,mistral:7b
+8,ddxplus,more,True,more,A," Causal graph: Food Allergens -> Anaphylaxis
+
+Reasoning: Increased food allergens lead to an increased exposure to allergenic substances, which can trigger an immune response in sensitive individuals. This response may result in more severe symptoms, including anaphylaxis.
+
+Final answer: A (more)",A,mistral:7b
+9,ddxplus,less,True,less,B," Causal graph: Pressure_points -> Aches
+
+Reasoning: Decreasing pressure points can lead to a reduction in the stimulation of nerve endings, which may result in less pain or aches being felt. However, it's important to note that this relationship is not always straightforward and can depend on various factors such as the specific location of the pressure point and individual sensitivity.
+
+Final answer: B (less)",B,mistral:7b
+10,ddxplus,less,True,less,B," Causal graph: Oxidation process (Ox) -> Malfunction (M), Malfunction (M) -> Less malfunction (LM)
+
+Reasoning: The oxidation process can cause the degradation of materials, which in turn leads to an increase in malfunctions. However, as more malfunctions are addressed or prevented due to the increased oxidation process, there is a decrease in less malfunction. So, when the oxidation process increases, less malfunction decreases.
+
+Final answer: B",B,mistral:7b
+11,ddxplus,more,True,more,A," Causal graph: Invasive species (S) -> More losses (L)
+
+Reasoning: The invasive species, by nature of being an unwanted presence in an ecosystem, can disrupt the balance and lead to increased competition for resources. This disruption often results in negative impacts on native species, which can cause more losses.
+
+Final answer: A",A,mistral:7b
+12,ddxplus,more,True,more,A," Causal graph: WaterDamage -> Mold
+
+Reasoning: Water damage increases the moisture level, which provides a conducive environment for mold growth. Therefore, an increase in water damage leads to more mold.
+
+Final answer: A (more)",A,mistral:7b
+13,ddxplus,less,False,more,A," Causal graph: Energy Efficiency (EE) -> Investment (I)
+
+Reasoning: Increased energy efficiency often leads to cost savings, which can potentially free up resources for other investments. However, the exact relationship between energy efficiency and investment may depend on various factors such as company policies, market conditions, and government regulations. In some cases, companies might choose to reinvest the savings into further improving energy efficiency rather than increasing overall investment.
+
+Final answer: A (more)",A,mistral:7b
+14,ddxplus,more,False,less,B," Causal graph: CarbonMonoxide -> MaternalHealth (indirectly) -> Infertility
+
+Reasoning: Carbon monoxide is a toxic gas that can negatively affect maternal health, leading to various complications. One such complication could be infertility, as poor maternal health can impact the reproductive system. However, the direct causal effect of carbon monoxide on infertility is indirect and mediated through its impact on maternal health.
+
+Final answer: B (less)",B,mistral:7b
+15,ddxplus,less,False,more,A," Causal graph: Crop failures (C) -> Starvation (S)
+
+Reasoning: Crop failures increase the scarcity of food, which in turn leads to an increase in starvation. Therefore, when crop failures increase, there is less food available, leading to more starvation.
+
+Final answer: A: more",A,mistral:7b
+16,ddxplus,less,False,more,A," Causal graph: Greenhouse gas (GHG) -> Sea level (SL)
+
+Reasoning: Increased greenhouse gases trap more heat in the Earth's atmosphere, causing polar ice caps and glaciers to melt. This melting results in an increase in sea levels.
+
+Final answer: A (more)",A,mistral:7b
+17,ddxplus,less,True,less,B," Causal graph: Explosions -> Chain Reaction
+
+Reasoning: Explosions cause a chain reaction by releasing energy that triggers subsequent reactions. Therefore, if explosions decrease, the number of subsequent reactions (chain reaction) will also decrease due to less energy being released.
+
+Final answer: B",B,mistral:7b
+18,ddxplus,less,True,less,B," Causal graph: Pressure -> Floods (indirect) -> Less floods
+
+Reasoning: An increase in pressure can cause a decrease in water level, which indirectly leads to less flooding. However, the direct effect of increased pressure on less floods is not immediate because there are other factors involved such as rainfall and water storage capacity that also influence flooding.
+
+Final answer: B (less)",B,mistral:7b
+19,ddxplus,less,False,more,A," Causal graph: Earthquake -> Devastation
+
+Reasoning: A powerful earthquake directly causes an increase in the level of devastation. The more intense the earthquake, the greater the destruction it causes. Therefore, a stronger earthquake leads to more devastation, not less or no effect.
+
+Final answer: A (more)",A,mistral:7b
+20,ddxplus,less,True,less,B," Causal graph: UV radiation (X) -> Sunburn damage (Y)
+
+Reasoning: UV radiation is a known cause of sunburn damage. When UV radiation decreases, the amount of harmful ultraviolet rays reaching the skin also decreases, leading to less sunburn damage.
+
+Final answer: B",B,mistral:7b
+21,ddxplus,less,False,more,A," Causal graph: Water main break (X) -> Increased water flow (M) -> More water damage (Y)
+
+Reasoning: A water main break increases the flow of water, which leads to an increase in water damage.
+
+Final answer: A (more)",A,mistral:7b
+22,ddxplus,less,True,less,B," Causal graph: Water Pollution (WP) -> Environmental Degradation (ED)
+
+Reasoning: Decreasing water pollution leads to a cleaner environment, which in turn reduces environmental degradation. A cleaner environment means less harm to ecosystems and wildlife, thus leading to less environmental degradation.
+
+Final answer: B",B,mistral:7b
+23,ddxplus,less,True,less,B," Causal graph: Humidity -> Skin Moisture, Skin Moisture -> Skin Dryness
+
+Reasoning: Excess humidity increases the level of moisture in the air, which indirectly affects skin moisture. When skin moisture levels increase, it leads to less skin becoming dry due to the hydrating effect.
+
+Final answer: B: less",B,mistral:7b
+24,ddxplus,more,False,less,B," Causal graph: Earthquake (E) -> Intensity (I) -> Casualties (C)
+
+Reasoning: The intensity of an earthquake directly affects the number of casualties. A stronger earthquake leads to more damage and thus more casualties. Therefore, if we decrease the earthquake's intensity, we should expect fewer casualties.
+
+Final answer: B",B,mistral:7b
+25,ddxplus,more,False,less,B," Causal graph: PopulationSize -> ExtinctionRate
+
+Reasoning: A smaller population size (intervention variable) increases the risk of extinction (outcome variable). This is due to the fact that a smaller population has fewer individuals, making it more susceptible to random events such as disease outbreaks or natural disasters that could lead to extinction.
+
+Final answer: B",B,mistral:7b
+26,ddxplus,less,True,less,B," Causal graph: Heat-trapping gases (H) -> Climate change (C)
+
+Reasoning: Decrease in heat-trapping gases leads to a reduction in the greenhouse effect, which in turn results in less trapping of heat in the Earth's atmosphere. This decrease in trapped heat causes a slowdown in global warming and climate change.
+
+Final answer: B (less)",B,mistral:7b
+27,ddxplus,more,True,more,A," Causal graph: FoodProduction -> ClimateChange
+
+Reasoning: Decrease in food production can lead to increased use of fossil fuels for agricultural machinery and fertilizers, which in turn increases greenhouse gas emissions and contributes to global climate change.
+
+Final answer: A (more)",A,mistral:7b
+28,ddxplus,more,True,more,A," Causal graph: Earthquake (E) -> Intensity of fire (F)
+
+Reasoning: The 1906 earthquake causes ground shaking, which can lead to the ignition of fires due to broken gas lines, fallen electrical wires, and other related factors. Therefore, an increase in the intensity of the earthquake would likely result in a higher intensity of fire.
+
+Final answer: A (more)",A,mistral:7b
+29,ddxplus,more,True,more,A," Causal graph: Earthquake (E) -> Tsunami (T)
+
+Reasoning: An earthquake generates seismic waves that can trigger a tsunami. The stronger the earthquake, the larger the seismic waves and thus the higher the likelihood of a tsunami.
+
+Final answer: A",A,mistral:7b
+30,ddxplus,less,False,more,A," Causal graph: HeatStress -> LessWeakness
+
+Reasoning: Heat stress increases body temperature, which can lead to dehydration and fatigue, causing less strength.
+
+Final answer: A (more)",A,mistral:7b
+31,ddxplus,more,False,less,B," Causal graph: UVB radiation (X) -> Skin aging (M) -> Wrinkles (Y)
+
+Reasoning: UVB radiation is a known factor in skin aging, causing damage to the skin that leads to wrinkles. When UVB radiation decreases, it reduces the rate of skin aging and thus results in fewer wrinkles.
+
+Final answer: B",B,mistral:7b
+32,ddxplus,more,False,less,B," Causal graph: Water Damages (WD) -> Less Circumstances (LC)
+
+Reasoning: When water damages decrease, it leads to a reduction in the number of circumstances that require repair or restoration due to water damage. Therefore, less circumstances occur.
+
+Final answer: B",B,mistral:7b
+33,ddxplus,more,True,more,A," Causal graph: SulfuricAcid -> Burns
+
+Reasoning: Increased sulfuric acid can lead to more burns due to its corrosive nature. It reacts with skin and other tissues, causing chemical burns.
+
+Final answer: A",A,mistral:7b
+34,ddxplus,less,True,less,B," Causal graph: Earthquake (E) -> Magnitude (M) -> Damage (D)
+
+Reasoning: A 7.0 magnitude earthquake is a cause that increases the severity of the earthquake (magnitude M). The more severe the earthquake, the more damage it causes (D). Therefore, if the earthquake decreases in magnitude, the damage caused will decrease as well.
+
+Final answer: B",B,mistral:7b
+35,ddxplus,less,False,more,A," Causal graph: Storm_water_runoff -> Contamination_of_water
+
+Reasoning: Increased storm water run-off can lead to an increase in the amount of pollutants being washed into bodies of water, thereby increasing contamination.
+
+Final answer: A (more)",A,mistral:7b
+36,ddxplus,more,True,more,A," Causal graph: UV-b radiation (X) -> Damage (Y)
+
+Reasoning: UV-b radiation is a type of ultraviolet light that can cause damage to skin cells. When the exposure to UV-b radiation increases, it leads to an increase in the number of harmful effects on the skin such as sunburns, premature aging, and potentially skin cancer. Therefore, more damage occurs when UV-b radiation increases.
+
+Final answer: A",A,mistral:7b
+37,ddxplus,less,True,less,B," Causal graph: Volcano (V) -> Magma pressure (M), Magma pressure (M) -> Earthquake (E)
+
+Reasoning: A decrease in volcanic activity can lead to a reduction in magma production, which in turn decreases the pressure on the earth's crust. Lower pressure on the crust may result in fewer earthquakes.
+
+Final answer: B (less)",B,mistral:7b
+38,ddxplus,less,True,less,B," Causal graph: Storm system -> Wind strength
+
+Reasoning: A storm system is a large area of weather disturbance, and it can influence wind strength by creating or intensifying wind currents. When the storm system decreases in size or intensity, it leads to a decrease in wind speed due to reduced air movement. Therefore, fewer strong winds are expected.
+
+Final answer: B",B,mistral:7b
+39,ddxplus,less,True,less,B," Causal graph: Concentration -> Insight
+
+Reasoning: Decreased concentration can lead to a decrease in cognitive abilities, such as focus and attention, which are essential for gaining more insight. Therefore, when concentration decreases, it is likely that the amount of insight will also decrease.
+
+Final answer: B",B,mistral:7b
+40,ddxplus,more,True,more,A," Causal graph: Tire Pressure (TP) -> Tire Failure (TF)
+
+Reasoning: Low tire pressure increases the stress on the tires, which can lead to more frequent failures due to increased wear and tear.
+
+Final answer: A",A,mistral:7b
+41,ddxplus,less,False,more,A," Causal graph: Concentration (X) -> Efficiency (M) -> Inefficiency (Y)
+
+Reasoning: Increased concentration can lead to improved efficiency, which in turn results in less inefficiency. This is because a higher concentration of a substance or resource allows for more effective use, reducing waste and thus decreasing inefficiency.
+
+Final answer: A (more)",A,mistral:7b
+42,ddxplus,more,False,less,B," Causal graph: SoilContamination -> Desertification
+
+Reasoning: Soil contamination can lead to a decrease in the fertility and productivity of soil, which in turn can contribute to desertification. A less contaminated soil would be more resistant to desertification.
+
+Final answer: B",B,mistral:7b
+43,ddxplus,less,True,less,B," Causal graph: UVB radiation (X) -> Skin Damage (Y)
+
+Reasoning: UVB radiation is a known cause of skin damage. When the level of UVB radiation decreases, it leads to less exposure and thus results in less skin damage.
+
+Final answer: B",B,mistral:7b
+44,ddxplus,less,True,less,B," Causal graph: Intervention (Minimally Invasive Surgery) -> Outcome (Faster Recovery)
+
+Reasoning: Minimally invasive surgery is designed to cause less trauma and damage to the body compared to traditional surgeries. This results in a quicker healing process, leading to faster recovery. Therefore, when minimally invasive surgery decreases, it leads to a decrease in the speed of recovery (less).
+
+Final answer: B",B,mistral:7b
+45,ddxplus,more,False,less,B," Causal graph: Heat wave -> Burns (decrease in heat wave leads to a decrease in burns)
+
+Reasoning: A heat wave increases the temperature, which can lead to an increase in the number of fires and thus burns. Conversely, a decrease in heat wave would result in a decrease in the number of fires and subsequently fewer burns.
+
+Final answer: B (less)",B,mistral:7b
+46,ddxplus,less,True,less,B," Causal graph: LacticAcid -> MuscleFatigue, MuscleFatigue -> Cramps
+
+Reasoning: Lactic acid buildup in muscles can lead to muscle fatigue, which in turn causes cramps. A decrease in lactic acid would therefore result in less muscle fatigue and subsequently fewer cramps.
+
+Final answer: B",B,mistral:7b
+47,ddxplus,more,True,more,A," Causal graph: Cloud Computing (X) -> Increased Benefits (Y)
+
+Reasoning: Cloud computing, as a service, provides scalable and on-demand access to shared resources, infrastructure, and applications. This increased availability and efficiency of resources lead to more benefits such as cost savings, improved collaboration, and faster innovation.
+
+Final answer: A",A,mistral:7b
+48,ddxplus,more,False,less,B," Causal graph: Precipitation -> Property Damage
+
+Reasoning: Decreased precipitation can lead to less moisture in the environment, which may result in reduced soil saturation and thus a lower likelihood of flooding or other water-related property damages. Conversely, less property damage would be expected due to fewer instances of extreme weather events that are often associated with heavy rainfall.
+
+Final answer: B (less)",B,mistral:7b
+49,ddxplus,less,False,more,A," Causal graph: Storm water runoff (S) -> Water pollution (P)
+
+Reasoning: Storm water runoff is a major source of water pollution. When storm water runoff decreases, less polluted water flows into bodies of water, thereby reducing the level of water pollution.
+
+Final answer: A (more)",A,mistral:7b
+50,ddxplus,more,True,more,A," Causal graph: Water main break (X) -> Increased water flow (M) -> More flooding (Y)
+
+Reasoning: A water main break increases the flow of water, which leads to an increase in the amount of water available for flooding. This increased water flow contributes to more flooding.
+
+Final answer: A",A,mistral:7b
+51,ddxplus,less,False,more,A," Causal graph: Thermal Radiation (X) -> Less Permanent Scarring (Y)
+
+Reasoning: Increased thermal radiation can cause burns, which may lead to scarring. However, less permanent scarring is typically a result of milder burns or quicker healing processes. In this case, the increased thermal radiation would likely lead to more severe burns and thus more scarring, not less.
+
+Final answer: A (more)",A,mistral:7b
+52,ddxplus,less,False,more,A," Causal graph: Solar Variation -> Climate Change
+
+Reasoning: Solar variation directly affects the Earth's climate through solar radiation. A decrease in solar variation leads to a decrease in solar radiation, which can cause an increase in global temperatures and other climate changes due to the greenhouse effect (trapping of heat by certain gases in the atmosphere).
+
+Final answer: A (more)",A,mistral:7b
+53,ddxplus,less,True,less,B," Causal graph: Fertilizer (F) -> Crop Growth (M) -> Oxygen Depletion (Y)
+
+Reasoning: Fertilizers provide nutrients to crops, which in turn absorb more carbon dioxide during photosynthesis. This process consumes oxygen and releases carbon dioxide, leading to less available oxygen.
+
+Final answer: B
+
+By providing fertilizer, we increase the amount of nutrients for crop growth, which results in less depleted oxygen due to increased oxygen consumption by the crops during photosynthesis.",B,mistral:7b
+54,ddxplus,less,True,less,B," Causal graph: Reduction -> Global Warming (Reduction decreases global warming)
+
+Reasoning: Reduction in certain factors, such as greenhouse gas emissions or deforestation, can lead to a decrease in global warming because these activities contribute to the increase of greenhouse gases in the atmosphere, which trap heat and cause global temperatures to rise. Therefore, reducing these activities results in less global warming.
+
+Final answer: B (less)",B,mistral:7b
+55,ddxplus,less,False,more,A," Causal graph: Greenhouse gases (GHG) -> Ocean acidification (OA)
+
+Reasoning: Increased accumulation of greenhouse gases leads to increased absorption of carbon dioxide by the ocean, which in turn increases the acidity level of the ocean. This is due to the chemical reaction between CO2 and seawater that produces carbonic acid.
+
+Final answer: A (more)",A,mistral:7b
+56,ddxplus,less,False,more,A," Causal graph: Lipid Oxidation (L) -> Mitochondrial DNA Mutations (M)
+
+Reasoning: Lipid oxidation is a process that generates reactive oxygen species (ROS), which can damage cellular components, including mitochondrial DNA. As lipid oxidation increases, the production of ROS also increases, leading to an increase in the number of mitochondrial DNA mutations.
+
+Final answer: A (more)",A,mistral:7b
+57,ddxplus,less,False,more,A," Causal graph: Reaction -> Hives
+
+Reasoning: A decrease in reaction (cause) can lead to a decrease in the production of pheromones, which are used by social insects like bees for communication and colony regulation. This decrease in pheromone levels may disrupt the colony's ability to coordinate activities such as swarming or reproduction, potentially leading to the formation of new hives (outcome).
+
+Final answer: A (more)",A,mistral:7b
+58,ddxplus,more,True,more,A," Causal graph: RadiationExposure -> Sickness
+
+Reasoning: Radiation exposure is known to cause ionization in the body, which can lead to DNA damage and mutations. These mutations can increase the risk of various diseases and health problems, leading to more sickness.
+
+Final answer: A (more)",A,mistral:7b
+59,ddxplus,less,False,more,A," Causal graph: Climate -> Droughts
+
+Reasoning: Changes in climate can influence the frequency and severity of droughts. Warmer temperatures and shifts in precipitation patterns often lead to drier conditions, which increase the likelihood of droughts.
+
+Final answer: A (more)",A,mistral:7b
+60,ddxplus,more,True,more,A," Causal graph: Tropical Storm Alberto (TSA) -> Flooding (Flood)
+
+Reasoning: Tropical storm Alberto is a weather event that can cause heavy rainfall, which in turn leads to flooding. An increase in the intensity of tropical storm Alberto would result in more rainfall, and consequently, more flooding.
+
+Final answer: A (more)",A,mistral:7b
+61,ddxplus,less,True,less,B," Causal graph: Solar variation -> Global warming
+
+Reasoning: Solar variation affects the amount of solar radiation reaching Earth, which directly influences the Earth's temperature and thus global warming. A decrease in solar variation would lead to a decrease in solar radiation, causing a cooling effect on Earth and potentially less global warming.
+
+Final answer: B",B,mistral:7b
+62,ddxplus,less,True,less,B," Causal graph: Greenhouse gas (GHG) -> Global warming (GW)
+
+Reasoning: Greenhouse gases, such as carbon dioxide and methane, trap heat in the Earth's atmosphere, leading to an increase in global temperatures, a phenomenon known as global warming. Therefore, if greenhouse gas decreases, it would result in less global warming.
+
+Final answer: B",B,mistral:7b
+63,ddxplus,more,True,more,A," Causal graph: Lactic acid (LA) -> Range of motion (ROM)
+
+Reasoning: Lactic acid is a byproduct of muscle metabolism, and its accumulation can lead to muscle fatigue and decreased range of motion. When lactic acid decreases, it reduces the fatigue in muscles, which should result in an increased range of motion.
+
+Final answer: A (more)",A,mistral:7b
+64,ddxplus,more,True,more,A," Causal graph: Ionizing Radiation (R) -> Damage (D)
+
+Reasoning: Ionizing radiation is known to cause damage to living tissue due to the creation of ions and free radicals. These can break chemical bonds in cells, leading to cellular damage. Therefore, an increase in ionizing radiation would lead to more damage.
+
+Final answer: A (more)",A,mistral:7b
+65,ddxplus,less,True,less,B," Causal graph: Lipid Oxidation (X) -> Rancidity (Y)
+
+Reasoning: Lipid oxidation is a chemical reaction that causes food to become rancid. When lipid oxidation decreases, the rate of this reaction slows down, leading to less rancidity in the food.
+
+Final answer: B",B,mistral:7b
+66,ddxplus,more,True,more,A," Causal graph: RadiationExposure -> Harm
+
+Reasoning: Radiation exposure is known to cause harm in living organisms due to the ionizing radiation damaging cells and DNA. This damage can lead to various health issues, including cancer, genetic mutations, and other harmful effects.
+
+Final answer: A (more)",A,mistral:7b
+67,ddxplus,less,False,more,A," Causal graph: Oxidation process (Ox) -> Less age (Age)
+
+Reasoning: The oxidation process leads to aging, as it causes damage to cells and tissues over time. Therefore, an increase in the oxidation process would lead to more aging.
+
+Final answer: A (more)",A,mistral:7b
+68,ddxplus,less,True,less,B," Causal graph: FoodProduction -> PopulationGrowth
+
+Reasoning: Decrease in food production can lead to scarcity, which may result in increased competition for resources. This competition could potentially limit population growth due to factors such as higher mortality rates or reduced fertility rates.
+
+Final answer: B (less)",B,mistral:7b
+69,ddxplus,more,True,more,A," Causal graph: FoodScarcity -> Hunger
+
+Reasoning: An increase in food scarcity directly leads to a decrease in the availability of food, which in turn increases world hunger.
+
+Final answer: A (more)",A,mistral:7b
+70,ddxplus,more,True,more,A," Causal graph: UVB radiation (UVB) -> Skin damage (SD)
+
+Reasoning: UVB radiation is a type of ultraviolet light that can cause skin damage by damaging the DNA in skin cells. This damage leads to various effects such as sunburn, premature aging, and potentially skin cancer. Therefore, an increase in UVB radiation would lead to more skin damage.
+
+Final answer: A",A,mistral:7b
+71,ddxplus,less,False,more,A," Causal graph: Plate Movement -> Earthquakes, Earthquakes -> Ground Shaking, Ground Shaking -> Soil Compaction, Soil Compaction -> Drainage System Damage, Drainage System Damage -> Flooding
+
+Reasoning: Plate movement causes earthquakes, which in turn cause ground shaking. The ground shaking leads to soil compaction, and when the drainage system is damaged due to soil compaction, it results in more flooding.
+
+Final answer: A (more)",A,mistral:7b
+72,ddxplus,more,False,less,B," Causal graph: Reactive oxygen species (ROS) -> New species
+
+Reasoning: Reactive oxygen species (ROS) are highly reactive molecules that can cause damage to cells and their components. A decrease in ROS levels would reduce the amount of oxidative stress, which is necessary for the formation of new species through various chemical reactions. Therefore, a decrease in ROS leads to less new species being produced.
+
+Final answer: B",B,mistral:7b
+73,ddxplus,more,False,less,B," Causal graph: Reaction -> Itchiness
+
+Reasoning: A decrease in reaction (e.g., due to medication) typically leads to a reduction in itchiness, as the reaction is often associated with inflammation or irritation that causes the sensation of itchiness.
+
+Final answer: B",B,mistral:7b
+74,ddxplus,more,True,more,A," Causal graph: NativeSpecies -> EcosystemBalance, NonNativeSpecies -> NativeSpecies, NonNativeSpecies -> EcosystemHealth
+
+Reasoning: The introduction of non-native species can disrupt the balance of native species in an ecosystem (NonNativeSpecies -> NativeSpecies). This disruption can lead to a decrease in the overall health and stability of the ecosystem (NativeSpecies -> EcosystemBalance, NativeSpecies -> EcosystemHealth). Therefore, when non-native species increase, more harm occurs.
+
+Final answer: A",A,mistral:7b
+75,ddxplus,less,False,more,A," Causal graph: HabitatDegradation -> HabitatLoss
+
+Reasoning: Habitat degradation directly leads to a decrease in the availability of suitable habitats, thereby causing an increase in habitat loss. Conversely, less habitat loss would not be expected to cause habitat degradation.
+
+Final answer: A (more)",A,mistral:7b
+76,ddxplus,less,False,more,A," Causal graph: Acid -> Less Loss
+
+Reasoning: Increasing the amount of acid in a system can lead to an increase in corrosion or decomposition, which results in more loss. Therefore, when acid increases, there is more loss.
+
+Final answer: A",A,mistral:7b
+77,ddxplus,more,True,more,A," Causal graph: Power -> Corruption
+
+Reasoning: Increased concentration of power often leads to an increase in opportunities for corruption, as those with more power may have greater ability to manipulate resources and influence decisions in their favor. This can result in a lack of accountability and transparency, which are key factors contributing to corruption.
+
+Final answer: A (more)",A,mistral:7b
+78,ddxplus,less,False,more,A," Causal graph: Heavy Precipitation (H) -> Loss of Life (L)
+
+Reasoning: Heavy precipitation can lead to natural disasters such as floods, which increase the risk of loss of life. Therefore, an increase in heavy precipitation would likely result in more loss of life.
+
+Final answer: A (more)",A,mistral:7b
+79,ddxplus,more,True,more,A," Causal graph: Runoff -> Flooding
+
+Reasoning: Increased runoff leads to more water in a given area, which can exceed the capacity of waterways and flood defenses, resulting in more flooding.
+
+Final answer: A (more)",A,mistral:7b
+80,ddxplus,more,False,less,B," Causal graph: Humidity -> Odors (Edge: Humidity decreases -> Odors decrease)
+
+Reasoning: Excessive humidity can promote the growth of microorganisms, which are often the source of unpleasant odors. Therefore, a decrease in humidity would lead to a decrease in the number of these microorganisms and consequently less odor.
+
+Final answer: B (less)",B,mistral:7b
+81,ddxplus,less,True,less,B," Causal graph: Food Source -> Outcome, Outcome -> Destruction
+
+Reasoning: An increase in the artificial food source (intervention/cause variable) leads to an increase in the outcome (e.g., population growth). This increased outcome may put less pressure on natural resources, leading to less destruction (outcome variable).
+
+Final answer: B",B,mistral:7b
+82,ddxplus,less,False,more,A," Causal graph: FoodCravings -> Weight
+
+Reasoning: Increased food cravings typically lead to increased food intake, which in turn leads to an increase in weight. Therefore, if food cravings increase, less weight is not expected (Choice B).
+
+Final answer: A (more)",A,mistral:7b
+83,ddxplus,more,True,more,A," Causal graph: Free Glutamic Acid (FGA) -> More Adverse Reactions (MAR)
+
+Reasoning: Processed free glutamic acid is a neuroexcitatory amino acid that can over-stimulate the nervous system. This over-stimulation may lead to more adverse reactions in individuals, such as headaches, nausea, and allergic responses.
+
+Final answer: A (more)",A,mistral:7b
+84,ddxplus,more,True,more,A," Causal graph: Moisture Loss -> Shrinkage
+
+Reasoning: Increased moisture loss leads to a decrease in the amount of water available for wood or other materials, causing them to dry out. As they dry out, these materials shrink due to the loss of water molecules. Therefore, when moisture loss increases, more shrinkage occurs.
+
+Final answer: A (more)",A,mistral:7b
+85,ddxplus,more,True,more,A," Causal graph: Aging population (A) -> Less growth (Y)
+
+Reasoning: An aging population typically leads to a decrease in the number of working individuals, which can result in reduced productivity and economic growth. This is because there are fewer people contributing to the workforce, leading to less output or growth.
+
+Final answer: A (less)",A,mistral:7b
+86,ddxplus,more,False,less,B," Causal graph: Nitric Acid (NA) -> Degradation (D)
+
+Reasoning: Nitric acid is a degrading agent for various substances. When the amount of nitric acid decreases, it leads to less degradation because there is less of the degrading agent available.
+
+Final answer: B",B,mistral:7b
+87,ddxplus,more,False,less,B," Causal graph: Nicotinic acid (NA) -> Redness (R)
+
+Reasoning: Nicotinic acid is a compound that can reduce inflammation and improve blood flow. By decreasing the amount of nicotinic acid, we are reducing its ability to improve blood flow, which may lead to poorer oxygen delivery to the skin. This poorer oxygen delivery could potentially increase redness, but since nicotinic acid is known for its anti-inflammatory and vasodilatory effects, a decrease in it would likely result in less redness.
+
+Final answer: B (less)",B,mistral:7b
+88,ddxplus,less,True,less,B," Causal graph: Internal Friction (F) -> Gas Expansion (E)
+
+Reasoning: Increased internal friction in a gas causes the molecules to collide more frequently and with greater force, reducing the average distance between them. This increased density restricts the expansion of gases, leading to less expansion overall.
+
+Final answer: B",B,mistral:7b
+89,ddxplus,less,False,more,A," Causal graph: Water vapour (W) -> Cooling (C)
+
+Reasoning: Decrease in water vapour leads to less water vapor condensation, which results in less release of latent heat and thus more cooling.
+
+Final answer: A",A,mistral:7b
+90,ddxplus,more,False,less,B," Causal graph: Solar wind -> Less situation
+
+Reasoning: Solar wind affects the amount of solar particles that reach Earth's magnetosphere. A decrease in solar wind results in a decrease in the number of solar particles, which can lead to less geomagnetic activity and thus a less situation on Earth (e.g., less auroras, less ionizing radiation).
+
+Final answer: B",B,mistral:7b
+91,ddxplus,less,True,less,B," Causal graph: Pressure -> Damage
+
+Reasoning: Excessive pressure can cause damage to various structures, such as blood vessels or organs. When the pressure decreases, it reduces the stress on these structures, leading to less damage overall.
+
+Final answer: B",B,mistral:7b
+92,ddxplus,more,True,more,A," Causal graph: Food -> Population
+
+Reasoning: Lack of food (intervention/cause variable) directly affects the population (outcome variable). When there is a decrease in food availability, it leads to malnutrition and starvation, which in turn results in an increase in mortality rates. This reduction in survival rate causes a decline in the population over time.
+
+Final answer: A (more)",A,mistral:7b
+93,ddxplus,more,False,less,B," Causal graph: Greenhouse gases (GHG) -> Mass extinctions (M)
+
+Reasoning: The buildup of greenhouse gases contributes to global warming and climate change, which can lead to various environmental changes such as sea-level rise, extreme weather events, and alterations in ecosystems. These changes can put stress on species and their habitats, potentially leading to mass extinctions. Therefore, a decrease in greenhouse gases would likely result in fewer mass extinctions.
+
+Final answer: B",B,mistral:7b
+94,ddxplus,less,False,more,A," Causal graph: Pressure -> Numbness
+
+Reasoning: Decrease in pressure can lead to an increase in blood flow, which may cause swelling or inflammation in the affected area. This increased swelling or inflammation could potentially result in more numbness due to the compression of nerves.
+
+Final answer: A (more)",A,mistral:7b
+95,ddxplus,more,False,less,B," Causal graph: Population Growth (P) -> Habitat Degradation (M), Habitat Degradation (M) -> Less Habitat (Y)
+
+Reasoning: Rapid population growth leads to an increase in the number of people, which can result in more resource consumption and urbanization, causing habitat degradation. This degraded habitat results in less available space for wildlife, thus leading to less habitat.
+
+Final answer: B: less",B,mistral:7b
+96,ddxplus,more,False,less,B," Causal graph: NorthridgeEarthquake -> Danger
+
+Reasoning: The Northridge earthquake is the cause variable, and less danger is the outcome variable. In this case, a larger earthquake would increase the level of danger, so a decrease in the earthquake should lead to a decrease in danger.
+
+Final answer: B",B,mistral:7b
+97,ddxplus,more,False,less,B," Causal graph: Salicylic Acid (SA) -> Redness (R)
+
+Reasoning: Salicylic acid is a common ingredient in topical creams and ointments that reduces inflammation and pain. When applied to the skin, it works by inhibiting the enzyme cyclooxygenase, which helps produce prostaglandins, chemicals that cause redness and swelling. Therefore, an increase in salicylic acid leads to a decrease in redness.
+
+Final answer: B (less)",B,mistral:7b
+98,ddxplus,less,True,less,B," Causal graph: Radiation -> Mutations
+
+Reasoning: Exposure to radiation increases the likelihood of mutations due to ionizing radiation damaging DNA and causing genetic changes. Therefore, a decrease in exposure to radiation would lead to fewer mutations.
+
+Final answer: B",B,mistral:7b
+99,ddxplus,more,True,more,A," Causal graph: Erosion -> Soil Erosion
+
+Reasoning: Excessive erosion increases the rate at which soil particles are washed away, leading to a more significant loss of soil.
+
+Final answer: A",A,mistral:7b

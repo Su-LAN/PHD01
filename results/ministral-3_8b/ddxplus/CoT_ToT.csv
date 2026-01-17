@@ -1,0 +1,1066 @@
+id,question_type,label,is_correct,answer,letter_answer,llm_output,llm_extracted_output,model
+0,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+1,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: nasal_congestion_in_autonomic_activation → reflexive_tearing (epiphora) → perceived_excessive_tearing → ↓ vasomotor_response_sensitivity → Cluster_Headache_probability ↓
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+2,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: The absence of a recent viral infection disrupts the main causal chain: *virus → immune response → myocarditis*. Without viral exposure, alternative causes (e.g., autoimmune, bacterial, or idiopathic) become relatively more influential, but they are less probable overall. Thus, the probability of myocarditis decreases. → **Choice B: less**.
+Final answer: B
+",B,ministral-3:8b
+3,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+4,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+5,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Answering 'YES' to the contact question increases the likelihood of prior exposure to Ebola (intermediate factor: exposure risk). Higher exposure risk directly elevates the probability of Ebola infection. **Therefore, the effect on Ebola probability is more.**
+Final answer: A
+",A,ministral-3:8b
+6,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+7,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+8,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+9,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+10,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+11,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+12,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+13,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+14,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+15,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+16,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+17,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+18,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+19,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+20,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Absence of double vision (diplopia) suggests reduced likelihood of **ocular myasthenia** (a common presentation of MG due to weakened extraocular muscles). Since diplopia is a classic symptom of MG (caused by weakened ocular muscles failing to coordinate properly), its *lack* implies healthier ocular nerve/muscle function → **lower probability of MG** (Choice B).
+Final answer: B
+",B,ministral-3:8b
+21,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+22,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+23,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+24,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: No prior diagnosis of gastroesophageal reflux (GER) means the patient has not experienced GER-related triggers or chronic irritation of the esophagus/pharynx, which are established risk factors for laryngospasm (sudden vocal cord closure). Since GER can mechanically or chemically irritate the larynx, its absence reduces the likelihood of laryngospasm, leading to a **less** probable occurrence. **Answer: B**
+Final answer: B
+",B,ministral-3:8b
+25,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+26,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'steps': ['1. A deviated nasal septum acts as a physical obstruction, disrupting normal airflow through the nasal passages.', '2. Poor airflow increases the risk of mucus buildup, stagnation, and poor drainage in the sinuses.', '3. Mucus stagnation creates an ideal environment for bacterial/fungal growth and inflammation, directly contributing to Chronic rhinosinusitis (CRS).', '4. If the septum is *not* deviated, airflow is unimpeded, reducing the likelihood of stagnation and CRS risk.'], 'conclusion': 'Choice B: less'}
+Final answer: B
+",B,ministral-3:8b
+27,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+28,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Absence of daily secondhand cigarette smoke reduces exposure to carcinogens (e.g., benzene, polycyclic aromatic hydrocarbons) linked to lung cell mutations. Reduced carcinogen exposure lowers the likelihood of uncontrolled cell proliferation in pulmonary tissue, directly decreasing the probability of pulmonary neoplasm (lung cancer). **Choice B: less**
+Final answer: B
+",B,ministral-3:8b
+29,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: contact_with_infected -> potential_transmission_of_bordetella_pertrussis -> immune_response_activation -> reduced_infection_probability_if_vaccinated_or_previously_exposed
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+30,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+31,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+32,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+33,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+34,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. **Viral infection** → *common trigger for pericarditis* (e.g., coxsackievirus, adenovirus, influenza).
+2. If **no recent viral infection**, the primary *mechanistic pathway* to pericarditis (molecular inflammation, immune response) is **reduced** or absent.
+3. → Lower probability of developing pericarditis → **Choice B: less**.
+Final answer: B
+",B,ministral-3:8b
+35,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+36,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+37,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+38,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. *Cause* reduces high-risk sexual behavior (monogamy/protected sex) → *mechanism*: Eliminates/limits transmission routes (e.g., unprotected encounters with unknown partners). 2. Fewer transmission routes → *outcome*: Statistically significant decrease in HIV acquisition risk (Choice B: 'less').
+Final answer: B
+",B,ministral-3:8b
+39,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+40,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. Having sexual intercourse with an HIV-positive partner increases exposure to HIV (cause) because bodily fluids containing the virus are exchanged. 2. Greater exposure to HIV raises the likelihood of viral transmission, which directly correlates with an increased probability of initial HIV infection (outcome). 3. Therefore, sexual intercourse with an HIV-positive partner *increases* the probability of HIV infection, making the correct choice: **A (more)**.
+Final answer: A
+",A,ministral-3:8b
+41,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+42,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+43,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+44,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: A ‘NO’ to family history of MG aligns with the principle of **negative predictive value**: absence of a confirmed familial marker reduces the baseline risk of MG (though other factors like age, gender, or autoimmune conditions may still apply). This directly diminishes the probability of MG diagnosis, favoring **Choice B: less** unless other high-risk indicators override it.
+Final answer: B
+",B,ministral-3:8b
+45,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+46,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+47,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+48,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+49,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Pneumonia’s pathophysiology (e.g., inflammation, fluid accumulation) is primarily driven by pathogen load/inflammatory response—not circadian rhythms. If symptoms worsen at night, it may indicate **alternative diagnoses** (e.g., heart failure, COPD exacerbation) where nocturnal mechanics (e.g., recumbency) dominate. This specificity *lowers* the pretest probability for pneumonia, as its hallmark symptoms (fever, sputum, dyspnea) are less likely to show such strict diurnal patterns. **Answer: B (less)**
+Final answer: B
+",B,ministral-3:8b
+50,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+51,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+52,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+53,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+54,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+55,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+56,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Asian descent → **genetic predisposition to certain immune-related disorders** (e.g., higher prevalence of *STAT6* mutations linked to immune dysfunction) → **increased susceptibility to chronic airway inflammation** → **elevated risk of bronchiectasis development** (evidence: studies show higher incidence in Asian populations vs. global averages). Thus, **more likely** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+57,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+58,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+59,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+60,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+61,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+62,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Symptoms worsening with exertion and improving with rest are characteristic of **ischemic pain** (e.g., angina), suggesting **oxygen demand-supply mismatch** (e.g., coronary artery disease). Spontaneous pneumothorax (SP) typically causes **pleuritic chest pain exacerbated by inspiration/coughing**, unrelated to exertion. Thus, the described pattern **reduces** the likelihood of SP, favoring other diagnoses (e.g., cardiac ischemia). *→ Choice B: less*.
+Final answer: B
+",B,ministral-3:8b
+63,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+64,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+65,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: CF -> (Chronic_Inflammation/Airway_Obstruction) -> Recurrent_Lung_Infections -> Bronchiectasis -> Decreased_Risk_Probability_In_Non_CF_Patients
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+66,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+67,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+68,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+69,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+70,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+71,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+72,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'No severe COPD means the patient has a milder form of the disease or is not suffering from COPD at all.', 'step2': 'Milder COPD or no COPD reduces the baseline risk of lung function deterioration and susceptibility to infections.', 'step3': 'Reduced baseline risk leads to a **lower probability** of acute exacerbations or infections due to improved lung reserve and fewer triggers for flare-ups.', 'result': 'Choice B: less'}
+Final answer: B
+",B,ministral-3:8b
+73,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+74,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+75,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+76,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+77,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+78,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+79,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+80,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+81,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+82,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+83,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+84,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+85,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+86,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+87,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+88,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'reasoning': 'No recent contact with similarly symptomatic individuals reduces the likelihood of exposure to shared pathogens (e.g., viruses/bacteria) that commonly cause **Upper Respiratory Tract Infections (URTI)**. Since URTI is typically transmitted via respiratory droplets/close contact, eliminating this risk factor lowers the probability of contracting the infection, all else being equal.', 'choice': 'B', 'graph_justification': 'The absence of contact with an infected cause → **reduced probability of pathogen exposure** → **lower probability of URTI (outcome)**.'}
+Final answer: B
+",B,ministral-3:8b
+89,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Pain worsened by deep breathing suggests **pleuritic chest pain**, which is classically associated with **pericarditis** (inflammation of the pericardium) due to irritation of the parietal pleura during movement. The causal link is: *pain trigger (deep breathing) → pleuritic component → higher likelihood of pericardial irritation/inflammation (pericarditis)*. Thus, this symptom increases diagnostic suspicion, favoring **Choice A: more**.
+Final answer: A
+",A,ministral-3:8b
+90,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: Patient_symptoms → Absent_forward_lean_pain_relief_node → Epiglottitis_exclusion_probability → (Exclusion_probability ↔ Differential_diagnosis_expansion) → Reduced_Epiglottitis_likelihood ↔ Final_probability_assessment
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+91,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+92,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+93,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+94,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+95,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+96,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: A history of **one or more flare-ups of COPD in the past year** increases the **fragility of lung tissue** and **impairs airway stability** (cause). **Chronic inflammation and structural damage** from prior exacerbations elevate baseline susceptibility to further infections and instability (mechanism). Therefore, the **probability of an acute COPD exacerbation/infection** rises (outcome). → **Choice A: more**
+Final answer: A
+",A,ministral-3:8b
+97,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: Menstrual_Onset_Age_≤12 ← Early_Ovarian_Hormone_Exposure → Autoimmune_Predisposition_Genetic → Dysregulated_Lymphocyte_Activation → Elevated_SLE_Probability
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+98,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+99,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: The answer 'NO' to 'contact with someone infected with Ebola' directly removes a primary risk factor (exposure) for Ebola infection, reducing the likelihood of transmission. Since exposure is a foundational cause of Ebola probability in the graph, this lowers the probability of the outcome (Ebola). **Answer: Choice B (less)**
+Final answer: B
+",B,ministral-3:8b
+100,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+101,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+102,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+103,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+104,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: The absence of a known heart valve issue reduces the likelihood of structural or functional abnormalities in the heart (e.g., mitral valve regurgitation, aortic stenosis) that are established risk factors for atrial fibrillation (AF). Since damaged valves can disrupt normal blood flow and atrial stretch/re-entry circuits—key triggers for AF—the reduced risk of valve-related pathology decreases the probability of AF development, **suggesting 'less' probability.**
+Final answer: B
+",B,ministral-3:8b
+105,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+106,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+107,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+108,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+109,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+110,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+111,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+112,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+113,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+114,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+115,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+116,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+117,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+118,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+119,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+120,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+121,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+122,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+123,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+124,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+125,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+126,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: {'description': 'Dialysis absence → Acute Kidney Injury (AKI) from unmanaged uremia → Sudden volume overload → Acute Pulmonary Edema', 'explanation': 'Here, lack of dialysis triggers **acute kidney injury (AKI)** due to unmitigated uremia and electrolyte imbalances, causing **rapid fluid shifts** that precipitate pulmonary edema. The direct link is a sudden, severe physiological stressor rather than a chronic process.', 'answer_choice': 'A: more'}
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+127,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: A heart attack (myocardial infarction) or previous angina (chest pain) represents prior **ischemic heart disease (coronary artery disease)**. This existing coronary atherosclerosis and reduced blood flow to the myocardium increase the likelihood of **stable angina** (chronic, predictable chest pain due to reduced myocardial oxygen supply during exertion). Thus, the probability of stable angina is **more likely** in such patients.
+Final answer: A
+",A,ministral-3:8b
+128,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+129,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+130,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+131,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+132,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+133,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Myasthenia gravis arises from **autoantibodies disrupting acetylcholine receptors at neuromuscular junctions**, impairing voluntary muscle control, including those for speech. Without such antibodies/defects, symptoms like dysarthria/dysphonia are **unlikely**. If dysarthria is *less* probable (e.g., ruled out), this reduces the **posterior probability of MG** (Choice B: less), as these symptoms are a hallmark of the disease.
+Final answer: B
+",B,ministral-3:8b
+134,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+135,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Stridor on inspiration is a key **symptom of laryngospasm** due to vocal cord closure restricting airflow. If the patient lacks this sound, it signals **no severe obstruction** or spasm. Reduced stridor correlates with **diminished risk** of laryngospasm. **Answer: B (less)**
+Final answer: B
+",B,ministral-3:8b
+136,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+137,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Chronic SHS exposure disrupts epithelial integrity and triggers inflammatory responses in the upper respiratory tract. The pro-inflammatory state (e.g., cytokines, oxidative stress) lowers resistance to pathogens, creating a conducive environment for URTI pathogens. Therefore, daily SHS exposure **elevates** the probability of URTI. **Answer: A**
+Final answer: B
+",A,ministral-3:8b
+138,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: NO_(sudden_cheeks_red) ← [Missing_Symptom] ← Scombroid_Poisoning ← Histamine_Accumulation ← Poor_Storage → [Reduced_Suspicion_Of_Poisoning] → [Decreased_Testing/Investigation] ← Lower_Probability_Of_Diagnosis_As_Scombroid
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+139,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+140,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+141,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: No daily exposure to secondhand cigarette smoke reduces respiratory irritation and inflammation in the larynx (cause), which lowers the physiological stress on laryngeal muscles (intermediate). This decreased stress directly lowers the probability of **laryngospasm** (outcome). Thus, the effect is **more** likely to reduce laryngospasm risk.
+Final answer: A
+",A,ministral-3:8b
+142,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+143,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+144,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+145,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+146,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+147,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+148,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+149,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+150,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+151,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+152,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+153,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+154,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+155,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+156,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+157,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+158,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+159,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Anaphylaxis arises from **immune reactions**—primarily driven by known allergens (e.g., food, venom). Excluding a severe food allergy (a high-risk pathway) narrows the mechanisms triggering anaphylaxis, which mathematically decreases its overall probability. Hence, the absence of this cause logically results in a **less likely** occurrence of the outcome, confirming **Choice B: less**.
+Final answer: B
+",B,ministral-3:8b
+160,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+161,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+162,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+163,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+164,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+165,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+166,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+167,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+168,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+169,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+170,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+171,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+172,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: Patient_Observation (Greenish/Yellowish Nasal Discharge) -> [Underlying_Cause: Bacterial_Infection] -> [Immune_Response: ↓_Clearance_Efficiency] -> [Sinus_Pathology: ↑] -> [Chronic_Rhinosinusitis_Progression: ↑] -> [Chronic_Rhinosinusitis_Likelihood: ↑] -> [Risk_of_Recurrence: ↑]
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+173,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+174,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+175,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+176,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+177,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+178,ddxplus,more,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+179,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Metastatic cancer → increased bone metastasis likelihood → weakened bone integrity due to tumor infiltration and osteoporosis-like effects → **increased probability of spontaneous rib fractures** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+180,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: 1. PSVT (Paroxysmal Supraventricular Tachycardia) is a type of abnormal heart rhythm often triggered or worsened by **sympathetic stimulation** (e.g., stress, caffeine, nicotine, or stimulants).
+2. Decongestants and stimulant substances (e.g., pseudoephedrine) increase **sympathetic nervous system activity**, thereby **increasing** the likelihood of PSVT.
+3. *Absence* of these substances **removes this pro-arrhythmic trigger**, theoretically **reducing** the probability of PSVT.
+→ **Answer: B (less)**
+Final answer: B
+",B,ministral-3:8b
+181,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+182,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+183,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+184,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: {'step1': 'Lymph node removal (lymphadenectomy) disrupts the lymphatic drainage system, impairing fluid return from tissues to the bloodstream.', 'step2': 'Impaired lymphatic flow leads to localized fluid accumulation (edema) in the affected region due to reduced fluid resorption.', 'step3': 'Thus, prior lymph node surgery *increases* the probability of localized edema in the affected area.', 'answer': 'A'}
+Final answer: A
+",A,ministral-3:8b
+185,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+186,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Family history of myasthenia gravis (MG) is a well-documented genetic risk factor. Since MG has been linked to **autoimmune susceptibility genes** (e.g., *CTLA-4*, *TGF-β*), a positive family history indicates shared genetic predisposition. Therefore, if the patient answers YES, the **probability of MG is increased** (Choice A: 'more').
+Final answer: A
+",A,ministral-3:8b
+187,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+188,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+189,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+190,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+191,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+192,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+193,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+194,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+195,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+196,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Family history of allergies, hay fever, or eczema → **genetic predisposition** to hypersensitivity and immune dysregulation → increased risk of **IgE-mediated allergic responses** → higher likelihood of **allergic sinusitis** (immune overreaction to allergens in nasal passages). **Conclusion: more** (Choice A).
+Final answer: A
+",A,ministral-3:8b
+197,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+198,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+199,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+200,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+201,ddxplus,less,False,no effect,C,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: C
+",C,ministral-3:8b
+202,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Weaker heat source → reduces energy available to molecules → lower kinetic energy → decreased average speed of molecular motion → molecules move **less**.
+Final answer: B
+",B,ministral-3:8b
+203,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+204,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+205,ddxplus,more,True,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+206,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+207,ddxplus,more,False,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+208,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: Increasing the cause increases the outcome.
+Final answer: B
+",B,ministral-3:8b
+209,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: less_water_condensation ->↓ [global_relative_humidity] ->↑ [air_temperature] ->↑ [solar_absorption] ->↑ [surface_evaporation] ->↑ [upward_moisture_transport] ->↑ [tropical_precipitation] ->↑ [ocean_surface_warming] ->↑ [intensity_of_convection] (*more intense water cycle*: higher energy turnover)
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+210,ddxplus,less,False,more,A,"ToT Trace
+Causal graph: {'description': 'Fertilizer Ratio → Soil Nutrient Levels → Plant Growth Rate → Crop Yield → Crop Quantity', 'explanation': 'In this graph, the correct ratio of fertilizer increases soil nutrient levels, which directly enhances plant growth rate. This, in turn, leads to higher crop yield, resulting in a higher crop quantity. Thus, the correct ratio of fertilizer will likely produce more crops, ruling out Choices B and C.'}
+Reasoning: Increasing the cause increases the outcome.
+Final answer: A
+",A,ministral-3:8b
+211,ddxplus,less,True,less,B,"ToT Trace
+Causal graph: cause -> outcome
+Reasoning: If pollen sticks to a flower (cause), the pollen may no longer be available to reach other flowers (intermediate step). With less pollen dispersed, the pollination of other flowers (outcome) decreases, leading to **less** flowers being pollinated. → **Choice B**
+Final answer: B
+",B,ministral-3:8b
